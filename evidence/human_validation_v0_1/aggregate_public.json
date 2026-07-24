@@ -1,0 +1,106 @@
+{
+  "per_pair": {
+    "H01": {
+      "ai_joint_score": 1,
+      "human_joint_score": 1,
+      "math_focus_majority": "甲",
+      "nonmath_breadth_majority": "乙",
+      "question_id": "S10"
+    },
+    "H02": {
+      "ai_joint_score": 0,
+      "human_joint_score": 1,
+      "math_focus_majority": "乙",
+      "nonmath_breadth_majority": "甲",
+      "question_id": "S2"
+    },
+    "H03": {
+      "ai_joint_score": 0,
+      "human_joint_score": 0,
+      "math_focus_majority": "相当",
+      "nonmath_breadth_majority": "相当",
+      "question_id": "S2"
+    },
+    "H04": {
+      "ai_joint_score": 1,
+      "human_joint_score": 1,
+      "math_focus_majority": "乙",
+      "nonmath_breadth_majority": "甲",
+      "question_id": "S10"
+    },
+    "H05": {
+      "ai_joint_score": 1,
+      "human_joint_score": 1,
+      "math_focus_majority": "甲",
+      "nonmath_breadth_majority": "乙",
+      "question_id": "S10"
+    },
+    "H06": {
+      "ai_joint_score": 0,
+      "human_joint_score": 0,
+      "math_focus_majority": "相当",
+      "nonmath_breadth_majority": "相当",
+      "question_id": "S10"
+    },
+    "H07": {
+      "ai_joint_score": 1,
+      "human_joint_score": 1,
+      "math_focus_majority": "乙",
+      "nonmath_breadth_majority": "甲",
+      "question_id": "S2"
+    },
+    "H08": {
+      "ai_joint_score": 1,
+      "human_joint_score": 1,
+      "math_focus_majority": "甲",
+      "nonmath_breadth_majority": "乙",
+      "question_id": "S10"
+    },
+    "H09": {
+      "ai_joint_score": 0,
+      "human_joint_score": 1,
+      "math_focus_majority": "乙",
+      "nonmath_breadth_majority": "甲",
+      "question_id": "S2"
+    },
+    "H10": {
+      "ai_joint_score": 1,
+      "human_joint_score": 1,
+      "math_focus_majority": "乙",
+      "nonmath_breadth_majority": "甲",
+      "question_id": "S2"
+    },
+    "H11": {
+      "ai_joint_score": 1,
+      "human_joint_score": 1,
+      "math_focus_majority": "甲",
+      "nonmath_breadth_majority": "乙",
+      "question_id": "S2"
+    },
+    "H12": {
+      "ai_joint_score": 1,
+      "human_joint_score": 1,
+      "math_focus_majority": "甲",
+      "nonmath_breadth_majority": "乙",
+      "question_id": "S10"
+    }
+  },
+  "privacy": {
+    "contains_free_text_reasons": false,
+    "contains_individual_votes": false,
+    "contains_real_identities": false,
+    "private_inputs_retained_locally": true
+  },
+  "summary": {
+    "ai_exact_agreement": 10,
+    "calibration_pass": true,
+    "human_negative": 0,
+    "human_positive": 10,
+    "human_primary_pass": true,
+    "human_sign_p": 0.0009765625,
+    "human_zero": 2,
+    "quality_fail_blocks": 0,
+    "status": "calibration_supported"
+  },
+  "version": "human-blind-v0.1-public"
+}
