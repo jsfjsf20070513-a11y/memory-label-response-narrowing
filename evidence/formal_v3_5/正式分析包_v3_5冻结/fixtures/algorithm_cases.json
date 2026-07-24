@@ -1,0 +1,48 @@
+{
+  "blind_mapping": {
+    "A": "G",
+    "B": "M",
+    "C": "N"
+  },
+  "group_vote_cases": [
+    {
+      "expected_result": null,
+      "expected_status": "family_split",
+      "name": "two_claude_cannot_outvote_codex",
+      "votes": {"M1": "A", "M2": "A", "M3": "B"}
+    },
+    {
+      "expected_result": "A",
+      "expected_status": "direction",
+      "name": "codex_plus_one_claude_is_direction",
+      "votes": {"M1": "A", "M2": "B", "M3": "A"}
+    },
+    {
+      "expected_result": "无法判断",
+      "expected_status": "measurement_failure",
+      "name": "two_cannot_is_failure",
+      "votes": {"O1": "无法判断", "O2": "无法判断", "O3": "A"}
+    },
+    {
+      "expected_result": "相当",
+      "expected_status": "equal",
+      "name": "equal_uses_simple_majority",
+      "votes": {"O1": "相当", "O2": "相当", "O3": "B"}
+    }
+  ],
+  "evidence_review_cases": [
+    {"expected": "无法判断", "judgments": {"M2": false, "M3": false}, "name": "both_reject_downgrades"},
+    {"expected": "A", "judgments": {"M2": true, "M3": false}, "name": "split_review_keeps_vote"},
+    {"expected": "A", "judgments": {"M2": true, "M3": true}, "name": "both_support_keep_vote"}
+  ],
+  "fixed_sequence_cases": [
+    {"primary": false, "secondary": true, "secondary_tested": false, "specificity": false},
+    {"primary": true, "secondary": false, "secondary_tested": true, "specificity": false},
+    {"primary": true, "secondary": true, "secondary_tested": true, "specificity": true}
+  ],
+  "sign_cases": [
+    {"k": 5, "n": 5, "p": 0.03125},
+    {"k": 7, "n": 8, "p": 0.03515625},
+    {"k": 10, "n": 12, "p": 0.019287109375}
+  ]
+}

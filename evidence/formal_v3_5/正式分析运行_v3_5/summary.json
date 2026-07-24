@@ -1,0 +1,150 @@
+{
+  "cross_question_repetition": {
+    "eligible_only_if_primary_passes": true,
+    "per_question": {
+      "S10": {
+        "blocks_total": 6,
+        "consensus_negative": 0,
+        "consensus_positive": 5,
+        "consensus_zero": 1,
+        "repetition_threshold_met": true
+      },
+      "S2": {
+        "blocks_total": 6,
+        "consensus_negative": 0,
+        "consensus_positive": 3,
+        "consensus_zero": 3,
+        "repetition_threshold_met": true
+      }
+    },
+    "repeated_across_both_questions": true,
+    "reporting_note": "两道新题均达到登记的重复标准"
+  },
+  "descriptive_G_vs_N": {
+    "blocks_total": 12,
+    "consensus_negative": 0,
+    "consensus_positive": 0,
+    "consensus_zero": 12
+  },
+  "identity_surface": {
+    "counts": {
+      "menu": {
+        "G": 0,
+        "M": 10,
+        "N": 0
+      },
+      "open": {
+        "G": 0,
+        "M": 10,
+        "N": 0
+      }
+    },
+    "denominators": {
+      "G": 16,
+      "M": 16,
+      "N": 16
+    }
+  },
+  "length": {
+    "alarm": false,
+    "m_nonmath_less_blocks": 8,
+    "m_nonmath_more_blocks": 1,
+    "main_arm_medians_unicode_chars": {
+      "G": 1456.0,
+      "M": 1579.5,
+      "N": 1303.0
+    },
+    "required_caveat": null
+  },
+  "primary_M_vs_N": {
+    "blocks_total": 12,
+    "consensus_negative": 0,
+    "consensus_positive": 8,
+    "consensus_zero": 4,
+    "nonzero_n": 8,
+    "one_sided_exact_p": 0.00390625,
+    "pass": true
+  },
+  "primary_separate_accounts": {
+    "measurement_quality": {
+      "cannot_judge_count": 2,
+      "cannot_judge_rate": 0.041666666666666664,
+      "group_account_denominator": 48,
+      "status_counts": {
+        "direction": 39,
+        "equal": 4,
+        "family_split": 1,
+        "measurement_failure": 2,
+        "no_majority": 2
+      }
+    },
+    "method_disagreement": {
+      "joint_score_count": 0,
+      "joint_score_denominator": 12,
+      "joint_score_rate": 0.0,
+      "per_account_counts": {
+        "math_focus": 3,
+        "nonmath_breadth": 2
+      },
+      "per_account_denominator": 12
+    },
+    "methods": {
+      "menu": {
+        "math_focus": {
+          "M_more": 8,
+          "N_more": 0,
+          "equal": 2,
+          "family_split": 0,
+          "measurement_failure": 2,
+          "no_majority": 0
+        },
+        "nonmath_breadth": {
+          "M_more": 1,
+          "N_more": 9,
+          "equal": 0,
+          "family_split": 0,
+          "measurement_failure": 0,
+          "no_majority": 2
+        }
+      },
+      "open": {
+        "math_focus": {
+          "M_more": 11,
+          "N_more": 0,
+          "equal": 1,
+          "family_split": 0,
+          "measurement_failure": 0,
+          "no_majority": 0
+        },
+        "nonmath_breadth": {
+          "M_more": 2,
+          "N_more": 8,
+          "equal": 1,
+          "family_split": 1,
+          "measurement_failure": 0,
+          "no_majority": 0
+        }
+      }
+    },
+    "warning": "单账只作描述，不得替代联合命中。"
+  },
+  "registered_replication_S8": {
+    "negative": 0,
+    "pass": false,
+    "positive": 2,
+    "zero": 2
+  },
+  "scope": "仅适用于冻结模型、通道、题目与背景注入方式；全部编码与复核均为 AI。",
+  "secondary_M_vs_G": {
+    "blocks_total": 12,
+    "consensus_negative": 0,
+    "consensus_positive": 6,
+    "consensus_zero": 6,
+    "inferentially_tested": true,
+    "nonzero_n": 6,
+    "one_sided_exact_p": 0.015625,
+    "pass": true,
+    "registered_threshold_met_descriptively": true,
+    "specificity_supported": true
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "authorization_scope": "formal_analysis_v3_5_quota_resume_up_to_23_calls",
+  "authorized_at": "2026-07-22T02:24:13Z",
+  "claude_cli_version": "2.1.215 (Claude Code)",
+  "codex_cli_version": "codex-cli 0.142.5",
+  "package_manifest_sha256": "f36c62570c26c4f577559d86932c583ee997fdcfa23c4a1a1da466b86884e6e0",
+  "user_instruction": "开工"
+}

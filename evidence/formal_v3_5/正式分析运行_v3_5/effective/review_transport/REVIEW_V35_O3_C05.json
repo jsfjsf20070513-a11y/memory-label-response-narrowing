@@ -1,0 +1,57 @@
+{
+  "items": {
+    "REV-O1-S10-S10-B01-A_vs_C-math_focus": {
+      "reason": "证据短语只是标题“一个有趣的数学类比”，未包含秘书问题、最优停止或 explore-exploit 结构性矛盾的具体表达，不能单独支持该方向边界。",
+      "supported": false
+    },
+    "REV-O1-S10-S10-B06-B_vs_C-nonmath_breadth": {
+      "reason": "该短语直接引出认知失调理论，且正文明确说不可逆决定后会同时持有“我选了A”和“B也许更好”的矛盾认知并产生心理不适，支持该边界。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B02-A_vs_B-math_focus": {
+      "reason": "证据只给出理性版本的单位时间成本比较公式 Cr/Tr vs Cn/Tn，未包含方向边界要求的“含情感变量”部分，因此边界被夸大。",
+      "supported": false
+    },
+    "REV-O1-S2-S2-B05-A_vs_C-math_focus": {
+      "reason": "证据中的不等式明确把维修成本、换新时的情感损失、新品成本和新品额外效用放进同一数学关系，正好达到方向边界。",
+      "supported": true
+    },
+    "REV-O1-S8-S8-B02-A_vs_B-nonmath_breadth": {
+      "reason": "该小节标题就是“个性化错觉”，正文紧接着说明“专门为你推荐”会让人觉得系统理解你，并制造亲密关系错觉与信任，符合方向边界。",
+      "supported": true
+    },
+    "REV-O1-S8-S8-B04-A_vs_B-nonmath_breadth": {
+      "reason": "该小节标题直接指向“身份建构的外包”，正文明确说算法持续定义品味并被内化为自我认知，质疑推荐系统等于某种程度质疑自我，支持该边界。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B01-B_vs_C-nonmath_breadth": {
+      "reason": "该证据短语只是小节标题“沉没成本的纠缠”，但正文明确解释已投入时间和精力会让人既不甘心继续又舍不得放弃，能支持所述方向。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B02-A_vs_C-nonmath_breadth": {
+      "reason": "证据短语来自“社会比较”这一行，正文明确说社交媒体时代不断看到别人选择的“精彩结果”会放大自己的后悔感，符合方向边界。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B06-A_vs_C-nonmath_breadth": {
+      "reason": "证据短语本身就明确陈述：重要选择结果不可预知时，前扣带皮层和杏仁核会持续发出焦虑信号，直接支持该边界。",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B01-B_vs_C-nonmath_breadth": {
+      "reason": "证据短语是“丢弃的愧疚感”条目标题，且该条正文明确解释扔掉还能修的东西会觉得浪费、心里过意不去，支持方向边界。",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B05-A_vs_B-math_focus": {
+      "reason": "证据中的不等式明确使用维修成本、情感损失、新品成本和额外效用构建“修/不修”的判别公式，完全符合该数学边界。",
+      "supported": true
+    },
+    "REV-O2-S8-S8-B03-A_vs_B-nonmath_breadth": {
+      "reason": "该小节标题直接是“第三人效应”的自我欺骗，正文说明很多人因自认知道算法在影响自己就以为不会受影响，反而降低警惕，支持该边界。",
+      "supported": true
+    },
+    "REV-O2-S8-S8-B04-A_vs_C-math_focus": {
+      "reason": "证据短语明确把正反馈回路理解为“动力系统的吸引子”，上下文还给出循环示意并说明偏好被强化、行为收敛，符合方向边界。",
+      "supported": true
+    }
+  },
+  "slot": "O3"
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "items": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "math_focus": {"enum": ["A", "B", "相当", "无法判断"]},
+          "nonmath_breadth": {"enum": ["A", "B", "相当", "无法判断"]},
+          "reason": {"minLength": 1, "type": "string"},
+          "task_id": {"pattern": "^T[1-6]$", "type": "string"}
+        },
+        "required": ["task_id", "math_focus", "nonmath_breadth", "reason"],
+        "type": "object"
+      },
+      "maxItems": 6,
+      "minItems": 6,
+      "type": "array"
+    },
+    "slot": {"pattern": "^[MO][123]$", "type": "string"}
+  },
+  "required": ["slot", "items"],
+  "type": "object"
+}

@@ -1,0 +1,1696 @@
+{
+  "blocks": [
+    {
+      "answers": {
+        "A": {
+          "directions": [
+            {
+              "definition": "旧物承载回忆和情感丢弃如失去老朋友",
+              "evidence": "### 1. **情感依恋（Emotional Attachment）**",
+              "local_id": "d1",
+              "name": "情感依恋",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "因过去投入的金钱而不舍得放弃",
+              "evidence": "### 2. **沉没成本谬误（Sunk Cost Fallacy）**",
+              "local_id": "d2",
+              "name": "沉没成本谬误",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "高估自己拥有之物的价值",
+              "evidence": "### 3. **禀赋效应（Endowment Effect）**",
+              "local_id": "d3",
+              "name": "禀赋效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "用惯的东西换新需重新适应",
+              "evidence": "### 4. **习惯与适应**",
+              "local_id": "d4",
+              "name": "习惯与转换成本",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "比较维修费与新品价格做理性判断",
+              "evidence": "### 1. **理性的成本-收益分析**",
+              "local_id": "d5",
+              "name": "理性成本收益分析",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "担心修好后可靠性仍然低",
+              "evidence": "### 2. **对未来故障的担忧**",
+              "local_id": "d6",
+              "name": "未来故障担忧",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "借机换更好的新产品",
+              "evidence": "### 3. **新鲜感与升级欲望**",
+              "local_id": "d7",
+              "name": "新鲜感与升级欲望",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "修好再坏导致双重损失的厌恶",
+              "evidence": "### 4. **损失厌恶的反向作用**",
+              "local_id": "d8",
+              "name": "二次损失恐惧",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "B": {
+          "directions": [
+            {
+              "definition": "修理成本与新品价格的理性对比",
+              "evidence": "| 考虑因素 | 倾向修 | 倾向不修 |",
+              "local_id": "d1",
+              "name": "经济成本比较",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧物承载记忆和感情不舍放弃",
+              "evidence": "- **🫶 感情依附**：",
+              "local_id": "d2",
+              "name": "情感依附",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "用顺手的东西换新需适应",
+              "evidence": "- **😌 习惯与熟悉感**：",
+              "local_id": "d3",
+              "name": "习惯与熟悉感",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "觉得扔掉能修的东西是浪费",
+              "evidence": "- **😔 丢弃的愧疚感**：",
+              "local_id": "d4",
+              "name": "丢弃愧疚感",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧物连接过去时光修好如留住岁月",
+              "evidence": "- **✨ 怀旧心理**：",
+              "local_id": "d5",
+              "name": "怀旧心理",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "物尽其用的文化传统影响",
+              "evidence": "- **节俭观念**：",
+              "local_id": "d6",
+              "name": "节俭观念",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "减少消费和垃圾的现代意识",
+              "evidence": "- **环保意识**：",
+              "local_id": "d7",
+              "name": "环保意识",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "社会鼓励推陈出新拥抱新品",
+              "evidence": "- **消费主义的拉力**：",
+              "local_id": "d8",
+              "name": "消费主义拉力",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "C": {
+          "directions": [
+            {
+              "definition": "已投入的时间金钱感情使人不舍放弃",
+              "evidence": "### 1. 沉没成本效应（Sunk Cost Fallacy）",
+              "local_id": "d1",
+              "name": "沉没成本效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "对拥有物赋予高于客观的主观价值",
+              "evidence": "### 2. 禀赋效应（Endowment Effect）",
+              "local_id": "d2",
+              "name": "禀赋效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "修好旧物维护记忆的连续性",
+              "evidence": "### 3. 情感依恋与记忆",
+              "local_id": "d3",
+              "name": "情感依恋与记忆",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "倾向维持现状避免不确定性和适应成本",
+              "evidence": "### 4. 现状偏见（Status Quo Bias）",
+              "local_id": "d4",
+              "name": "现状偏见",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "用数学公式比较修与换的期望效用",
+              "evidence": "$$E[\\text{修}] = -C_{\\text{修}} + p \\cdot V_{\\text{继续使用}} \\quad \\text{vs.} \\quad E[\\text{换}] = -C_{\\text{新}} + V_{\\text{新品}}$$",
+              "local_id": "d5",
+              "name": "期望效用计算",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "一次故障引发对整体老化的担忧",
+              "evidence": "### 2. \"破窗效应\"式的担忧",
+              "local_id": "d6",
+              "name": "连锁不信任",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "损坏提供正当理由追求本想要的升级",
+              "evidence": "### 3. 新鲜感与升级欲望",
+              "local_id": "d7",
+              "name": "心理许可与升级",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "决策是经济与情感变量的多目标优化问题",
+              "evidence": "这个决策问题本身就是**多目标优化**——效用函数里既有经济变量，",
+              "local_id": "d8",
+              "name": "多目标优化框架",
+              "occurrence": 1,
+              "tag": "数学"
+            }
+          ],
+          "identity_evidence": "作为数学系的同学，",
+          "identity_explicit": true
+        }
+      },
+      "block_id": "S2-B01",
+      "comparisons": {
+        "A_vs_B": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "两者均无数学公式或形式化模型"
+          },
+          "nonmath_breadth": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "A有8条非数学方向B也有8条覆盖面相当"
+          }
+        },
+        "A_vs_C": {
+          "math_focus": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "用数学公式比较修与换的期望效用",
+              "evidence": "$$E[\\text{修}] = -C_{\\text{修}} + p \\cdot V_{\\text{继续使用}} \\quad \\text{vs.} \\quad E[\\text{换}] = -C_{\\text{新}} + V_{\\text{新品}}$$",
+              "local_id": "d5",
+              "name": "期望效用计算",
+              "occurrence": 1
+            },
+            "reason": "C有期望效用公式和多目标优化框架A无任何数学"
+          },
+          "nonmath_breadth": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "修好再坏导致双重损失的厌恶",
+              "evidence": "### 4. **损失厌恶的反向作用**",
+              "local_id": "d8",
+              "name": "二次损失恐惧",
+              "occurrence": 1
+            },
+            "reason": "A有8条非数学方向C有6条A覆盖更广"
+          }
+        },
+        "B_vs_C": {
+          "math_focus": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "用数学公式比较修与换的期望效用",
+              "evidence": "$$E[\\text{修}] = -C_{\\text{修}} + p \\cdot V_{\\text{继续使用}} \\quad \\text{vs.} \\quad E[\\text{换}] = -C_{\\text{新}} + V_{\\text{新品}}$$",
+              "local_id": "d5",
+              "name": "期望效用计算",
+              "occurrence": 1
+            },
+            "reason": "C有期望效用公式和多目标优化B无数学"
+          },
+          "nonmath_breadth": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "觉得扔掉能修的东西是浪费",
+              "evidence": "- **😔 丢弃的愧疚感**：",
+              "local_id": "d4",
+              "name": "丢弃愧疚感",
+              "occurrence": 1
+            },
+            "reason": "B有8条非数学方向含愧疚怀旧环保消费主义等C有6条"
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "A": {
+          "directions": [
+            {
+              "definition": "比较修理费与新品价格的理性计算",
+              "evidence": "- **维修成本 vs. 替换成本**：",
+              "local_id": "d1",
+              "name": "维修vs替换成本",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧物承载特定回忆与陪伴",
+              "evidence": "- **感情寄托**：",
+              "local_id": "d2",
+              "name": "情感寄托",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "用顺手的默契感难以替代",
+              "evidence": "- **习惯与熟悉感**：",
+              "local_id": "d3",
+              "name": "习惯与熟悉感",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "对旧物产生类老朋友感情觉得扔是背叛",
+              "evidence": "- **拟人化倾向**：",
+              "local_id": "d4",
+              "name": "拟人化倾向",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "能用就别浪费的价值观",
+              "evidence": "- **节俭观念**：",
+              "local_id": "d5",
+              "name": "节俭观念",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "减少浪费和电子垃圾",
+              "evidence": "- **环保意识**：",
+              "local_id": "d6",
+              "name": "环保意识",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "现代社会鼓励推陈出新",
+              "evidence": "- **消费主义影响**：",
+              "local_id": "d7",
+              "name": "消费主义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "能否找到维修人员和配件",
+              "evidence": "- **修理是否方便？",
+              "local_id": "d8",
+              "name": "维修可及性",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "他人对使用旧物的正负看法",
+              "evidence": "- **他人看法**：",
+              "local_id": "d9",
+              "name": "社会评价",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "B": {
+          "directions": [
+            {
+              "definition": "旧物是关系与经历的象征不舍放弃",
+              "evidence": "### 1. 情感依附（Emotional Attachment）",
+              "local_id": "d1",
+              "name": "情感依附",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "因过去花费而不舍丢弃",
+              "evidence": "### 2. 沉没成本心理（Sunk Cost Bias）",
+              "local_id": "d2",
+              "name": "沉没成本偏误",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "高估已拥有物品的价值",
+              "evidence": "### 3. 禀赋效应（Endowment Effect）",
+              "local_id": "d3",
+              "name": "禀赋效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧物习惯已成换新有不确定性",
+              "evidence": "### 4. 习惯与确定性偏好",
+              "local_id": "d4",
+              "name": "习惯与确定性偏好",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "修理成本接近重置成本时倾向换新",
+              "evidence": "### 1. 理性的成本-收益分析",
+              "local_id": "d5",
+              "name": "理性成本收益",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "损坏成为换新的正当理由",
+              "evidence": "### 2. 对\"新\"的渴望（Novelty Seeking）",
+              "local_id": "d6",
+              "name": "新鲜感渴望",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "担心修后再坏的二次损失",
+              "evidence": "### 3. 损失厌恶的反面——\"止损\"心理",
+              "local_id": "d7",
+              "name": "止损心理",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "用数学公式比较修与换的单位时间成本含情感变量",
+              "evidence": "$$\\frac{C_r}{T_r} \\quad \\text{vs} \\quad \\frac{C_n}{T_n}$$",
+              "local_id": "d8",
+              "name": "单位时间成本模型",
+              "occurrence": 1,
+              "tag": "数学"
+            }
+          ],
+          "identity_evidence": "作为数学系的同学，",
+          "identity_explicit": true
+        },
+        "C": {
+          "directions": [
+            {
+              "definition": "比较修理费与新品价格",
+              "evidence": "## 一、理性层面的考量（\"算账\"）",
+              "local_id": "d1",
+              "name": "修理vs替换成本",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "因已投入而不舍放弃的非理性倾向",
+              "evidence": "> 经济学中有一个重要概念叫 **\"沉没成本谬误\"（Sunk Cost Fallacy）**：",
+              "local_id": "d2",
+              "name": "沉没成本谬误",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧物承载回忆意义远超物品本身",
+              "evidence": "- **情感依附（Emotional Attachment）**：",
+              "local_id": "d3",
+              "name": "情感依附",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "高估已拥有东西的价值",
+              "evidence": "- **禀赋效应（Endowment Effect）**：",
+              "local_id": "d4",
+              "name": "禀赋效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "换新需重新适应产生不安全感",
+              "evidence": "- **习惯与熟悉感**：",
+              "local_id": "d5",
+              "name": "习惯与熟悉感",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "能修就不换的文化美德",
+              "evidence": "- **节俭观念**：",
+              "local_id": "d6",
+              "name": "节俭观念",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "用完即弃对环境的影响",
+              "evidence": "- **环保意识**：",
+              "local_id": "d7",
+              "name": "环保意识",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "继续用旧物被视为寒酸的社会压力",
+              "evidence": "- **面子与社会比较**：",
+              "local_id": "d8",
+              "name": "社会面子压力",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "情感先做决定再用理性找理由的心理机制",
+              "evidence": "这在行为经济学中被称为 **\"情感启发式\"（Affect Heuristic）** 和 **\"动机性推理\"（Motivated Reasoning）**。",
+              "local_id": "d9",
+              "name": "情感启发式与动机性推理",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        }
+      },
+      "block_id": "S2-B02",
+      "comparisons": {
+        "A_vs_B": {
+          "math_focus": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "用数学公式比较修与换的单位时间成本含情感变量",
+              "evidence": "$$\\frac{C_r}{T_r} \\quad \\text{vs} \\quad \\frac{C_n}{T_n}$$",
+              "local_id": "d8",
+              "name": "单位时间成本模型",
+              "occurrence": 1
+            },
+            "reason": "B有单位时间成本的数学公式模型A无任何数学"
+          },
+          "nonmath_breadth": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "对旧物产生类老朋友感情觉得扔是背叛",
+              "evidence": "- **拟人化倾向**：",
+              "local_id": "d4",
+              "name": "拟人化倾向",
+              "occurrence": 1
+            },
+            "reason": "A有9条非数学方向含拟人化维修可及性社会评价等B有7条"
+          }
+        },
+        "A_vs_C": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "两者均无数学公式或形式化模型"
+          },
+          "nonmath_breadth": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "A有9条非数学方向C有9条覆盖面相当"
+          }
+        },
+        "B_vs_C": {
+          "math_focus": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "用数学公式比较修与换的单位时间成本含情感变量",
+              "evidence": "$$\\frac{C_r}{T_r} \\quad \\text{vs} \\quad \\frac{C_n}{T_n}$$",
+              "local_id": "d8",
+              "name": "单位时间成本模型",
+              "occurrence": 1
+            },
+            "reason": "B有单位时间成本数学模型C无数学"
+          },
+          "nonmath_breadth": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "情感先做决定再用理性找理由的心理机制",
+              "evidence": "这在行为经济学中被称为 **\"情感启发式\"（Affect Heuristic）** 和 **\"动机性推理\"（Motivated Reasoning）**。",
+              "local_id": "d9",
+              "name": "情感启发式与动机性推理",
+              "occurrence": 1
+            },
+            "reason": "C有9条非数学方向含情感启发式等独特机制B有7条"
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "A": {
+          "directions": [
+            {
+              "definition": "人们因过去已投入的时间和金钱而倾向于修理旧物",
+              "evidence": "### 1. 沉没成本效应（Sunk Cost Fallacy）",
+              "local_id": "d1",
+              "name": "沉没成本效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "人们对自己拥有的东西赋予更高主观价值",
+              "evidence": "### 2. 禀赋效应（Endowment Effect）",
+              "local_id": "d2",
+              "name": "禀赋效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧物承载记忆和情感意义，超越功能价值",
+              "evidence": "### 3. 情感依附（Emotional Attachment）",
+              "local_id": "d3",
+              "name": "情感依附",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "失去旧物的痛苦约为同等收益快感的两倍",
+              "evidence": "### 4. 损失厌恶（Loss Aversion）",
+              "local_id": "d4",
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "比较修理成本与更换成本及修后预期寿命",
+              "evidence": "### 1. 理性的成本-收益分析",
+              "local_id": "d5",
+              "name": "理性成本收益分析",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "损坏提供心理许可证让人无愧疚地购买新品",
+              "evidence": "旧物的损坏反而提供了一个**心理上的\"许可证\"**（licensing effect），",
+              "local_id": "d6",
+              "name": "许可证效应与新鲜感",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "损坏成为打破现状偏见的催化剂",
+              "evidence": "很多时候人们因为**现状偏见（Status Quo Bias）** 一直将就着用，",
+              "local_id": "d7",
+              "name": "现状偏见打破",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "用情感权重、经济权重、社会权重的加权公式描述实际决策",
+              "evidence": "实际决策 ≈ 情感权重 × 依附程度 + 经济权重 × (修理费/新品价) + 社会权重 × 他人看法",
+              "local_id": "d8",
+              "name": "加权决策公式",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "假设从零开始只有修理费来剔除认知偏误的决策建议",
+              "evidence": "## 四、一个更理性的思考框架",
+              "local_id": "d9",
+              "name": "反事实思想实验框架",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "B": {
+          "directions": [
+            {
+              "definition": "比较修理费用与购买新品费用的理性考量",
+              "evidence": "- **修理成本 vs 替换成本**：",
+              "local_id": "d1",
+              "name": "修理成本vs替换成本",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧物承载回忆和感情使人不舍丢弃",
+              "evidence": "- **情感依恋（Emotional Attachment）**：",
+              "local_id": "d2",
+              "name": "情感依恋",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "高估自己拥有之物的价值",
+              "evidence": "- **禀赋效应（Endowment Effect）**：",
+              "local_id": "d3",
+              "name": "禀赋效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "因过去投入而倾向继续修理",
+              "evidence": "- **沉没成本谬误（Sunk Cost Fallacy）**：",
+              "local_id": "d4",
+              "name": "沉没成本谬误",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "失去旧物的痛苦大于获得新物的快乐",
+              "evidence": "- **损失厌恶（Loss Aversion）**：",
+              "local_id": "d5",
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "能修就修不浪费的传统文化价值观",
+              "evidence": "- **节俭文化**：",
+              "local_id": "d6",
+              "name": "节俭文化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "从可持续发展角度倾向修复",
+              "evidence": "- **环保意识**：",
+              "local_id": "d7",
+              "name": "环保意识",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧的不去新的不来的消费心态推动换新",
+              "evidence": "- **消费主义影响**：",
+              "local_id": "d8",
+              "name": "消费主义影响",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "C": {
+          "directions": [
+            {
+              "definition": "理性比较修理费与新品价格",
+              "evidence": "- **修理成本 vs 换新成本**：",
+              "local_id": "d1",
+              "name": "修理成本vs换新成本",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧物承载回忆使人不舍丢弃",
+              "evidence": "- **感情寄托**：",
+              "local_id": "d2",
+              "name": "情感寄托",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧物用顺手换新需重新适应产生抵触",
+              "evidence": "- **习惯与熟悉感**：",
+              "local_id": "d3",
+              "name": "习惯与熟悉感",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "因过去花费而倾向修理",
+              "evidence": "- **沉没成本效应**：",
+              "local_id": "d4",
+              "name": "沉没成本效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "高估自己拥有之物的价值",
+              "evidence": "- **禀赋效应**：",
+              "local_id": "d5",
+              "name": "禀赋效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "丢掉旧物的失去感强于获得新物的满足感",
+              "evidence": "- **损失厌恶**：",
+              "local_id": "d6",
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        }
+      },
+      "block_id": "S2-B03",
+      "comparisons": {
+        "A_vs_B": {
+          "math_focus": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "用情感权重、经济权重、社会权重的加权公式描述实际决策",
+              "evidence": "实际决策 ≈ 情感权重 × 依附程度 + 经济权重 × (修理费/新品价) + 社会权重 × 他人看法",
+              "local_id": "d8",
+              "name": "加权决策公式",
+              "occurrence": 1
+            },
+            "reason": "A提供了加权决策公式(情感权重×依附程度+经济权重×修理费/新品价+社会权重×他人看法)，B无数学公式"
+          },
+          "nonmath_breadth": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "A有许可证效应、现状偏见打破等独特方向；B有节俭文化、环保意识、消费主义等社会文化方向，覆盖广度相当"
+          }
+        },
+        "A_vs_C": {
+          "math_focus": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "用情感权重、经济权重、社会权重的加权公式描述实际决策",
+              "evidence": "实际决策 ≈ 情感权重 × 依附程度 + 经济权重 × (修理费/新品价) + 社会权重 × 他人看法",
+              "local_id": "d8",
+              "name": "加权决策公式",
+              "occurrence": 1
+            },
+            "reason": "A有加权决策公式，C无任何数学化表达"
+          },
+          "nonmath_breadth": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "损坏提供心理许可证让人无愧疚地购买新品",
+              "evidence": "旧物的损坏反而提供了一个**心理上的\"许可证\"**（licensing effect），",
+              "local_id": "d6",
+              "name": "许可证效应与新鲜感",
+              "occurrence": 1
+            },
+            "reason": "A涵盖许可证效应、现状偏见打破、反事实思想实验等C缺少的独特非数学路径"
+          }
+        },
+        "B_vs_C": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "两者均无数学化表达"
+          },
+          "nonmath_breadth": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "能修就修不浪费的传统文化价值观",
+              "evidence": "- **节俭文化**：",
+              "local_id": "d6",
+              "name": "节俭文化",
+              "occurrence": 1
+            },
+            "reason": "B额外覆盖节俭文化、环保意识、消费主义等社会文化方向，C缺少这些"
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "A": {
+          "directions": [
+            {
+              "definition": "比较修理费用与购买新品费用的理性经济考量",
+              "evidence": "- **修理成本 vs. 替换成本**：",
+              "local_id": "d1",
+              "name": "修理成本vs替换成本",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "因过去投入而不舍放弃倾向修理",
+              "evidence": "> 这里有一个经典的思维陷阱——**沉没成本效应**：",
+              "local_id": "d2",
+              "name": "沉没成本效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧物承载记忆和感情，情感价值超越市场价值",
+              "evidence": "- **感情依附**：",
+              "local_id": "d3",
+              "name": "情感依附",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧物用顺手换新需重新适应",
+              "evidence": "- **习惯与熟悉感**：",
+              "local_id": "d4",
+              "name": "习惯与熟悉感",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "信奉能修就不换，丢弃是浪费的道德观",
+              "evidence": "- **物尽其用的价值观**：",
+              "local_id": "d5",
+              "name": "物尽其用价值观",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧物代表过去时光，修好是挽留记忆",
+              "evidence": "- **怀旧心理**：",
+              "local_id": "d6",
+              "name": "怀旧心理",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "B": {
+          "directions": [
+            {
+              "definition": "比较修理成本与重新购买成本及预期寿命",
+              "evidence": "## 一、理性层面（经济分析）",
+              "local_id": "d1",
+              "name": "理性成本分析",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "因过去投入而倾向修理的非理性倾向",
+              "evidence": "### 1. 沉没成本谬误（Sunk Cost Fallacy）",
+              "local_id": "d2",
+              "name": "沉没成本谬误",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "高估自己拥有之物的价值",
+              "evidence": "### 2. 禀赋效应（Endowment Effect）",
+              "local_id": "d3",
+              "name": "禀赋效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "倾向维持现状抗拒改变即便改变更优",
+              "evidence": "### 3. 现状偏好（Status Quo Bias）",
+              "local_id": "d4",
+              "name": "现状偏好",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧物承载记忆与情感推动修理",
+              "evidence": "### 4. 情感依恋（Emotional Attachment）",
+              "local_id": "d5",
+              "name": "情感依恋",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "丢弃被感知为损失，敏感度约为收益两倍",
+              "evidence": "### 5. 损失厌恶（Loss Aversion）",
+              "local_id": "d6",
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "提出忽略过去、量化情感、反转测试三步决策方法",
+              "evidence": "## 四、一个更理性的决策框架",
+              "local_id": "d7",
+              "name": "理性决策框架",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "C": {
+          "directions": [
+            {
+              "definition": "比较修理成本与替换成本的经济计算",
+              "evidence": "## 一、理性层面（经济计算）",
+              "local_id": "d1",
+              "name": "理性成本收益",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "因过去投入而不愿放弃",
+              "evidence": "### 1. 🧠 沉没成本效应（Sunk Cost Fallacy）",
+              "local_id": "d2",
+              "name": "沉没成本效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧物承载记忆故事和情感不只是物品",
+              "evidence": "### 2. ❤️ 情感依恋（Emotional Attachment）",
+              "local_id": "d3",
+              "name": "情感依恋",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "高估自己已拥有之物的价值",
+              "evidence": "### 3. 🤲 禀赋效应（Endowment Effect）",
+              "local_id": "d4",
+              "name": "禀赋效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "失去旧物的痛苦大于获得新物的快乐",
+              "evidence": "### 4. 😟 损失厌恶（Loss Aversion）",
+              "local_id": "d5",
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧物代表熟悉和确定性新东西意味不确定性",
+              "evidence": "### 5. 🌱 习惯与安全感",
+              "local_id": "d6",
+              "name": "习惯与安全感",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "节俭文化、环保理念与消费主义的文化拉锯",
+              "evidence": "## 三、社会与文化层面",
+              "local_id": "d7",
+              "name": "社会文化因素",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        }
+      },
+      "block_id": "S2-B04",
+      "comparisons": {
+        "A_vs_B": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "两者均无数学公式或量化模型"
+          },
+          "nonmath_breadth": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "倾向维持现状抗拒改变即便改变更优",
+              "evidence": "### 3. 现状偏好（Status Quo Bias）",
+              "local_id": "d4",
+              "name": "现状偏好",
+              "occurrence": 1
+            },
+            "reason": "B额外覆盖禀赋效应、现状偏好、损失厌恶及三步理性决策框架，比A多出独特路径"
+          }
+        },
+        "A_vs_C": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "两者均无数学化表达"
+          },
+          "nonmath_breadth": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "节俭文化、环保理念与消费主义的文化拉锯",
+              "evidence": "## 三、社会与文化层面",
+              "local_id": "d7",
+              "name": "社会文化因素",
+              "occurrence": 1
+            },
+            "reason": "C额外覆盖禀赋效应、损失厌恶、社会文化因素等A缺少的方向"
+          }
+        },
+        "B_vs_C": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "两者均无数学化表达"
+          },
+          "nonmath_breadth": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "B有现状偏好和理性决策框架，C有社会文化因素，覆盖广度相当"
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "A": {
+          "directions": [
+            {
+              "definition": "将修与不修视为决策论中的期望效用比较问题",
+              "evidence": "这本质上是一个**期望效用比较**问题。",
+              "local_id": "d1",
+              "name": "期望效用比较",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "用数学不等式表达修理成本、情感损失与新品成本及额外效用的关系",
+              "evidence": "\\text{修} \\iff \\underbrace{C_{\\text{repair}}}_{\\text{维修成本}} + \\underbrace{V_{\\text{emotional}}^{(\\text{loss if replaced})}}_{\\text{换新的情感损失}} < \\underbrace{C_{\\text{new}}}_{\\text{新品成本}} - \\underbrace{\\Delta U}_{\\text{新品额外效用}}",
+              "local_id": "d2",
+              "name": "决策不等式公式",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "人们因过去投入而不愿放弃旧物，即使不应影响当下决策",
+              "evidence": "### 1. 沉没成本谬误（Sunk Cost Fallacy）",
+              "local_id": "d3",
+              "name": "沉没成本谬误",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "高估自己拥有之物的价值",
+              "evidence": "### 2. 禀赋效应（Endowment Effect）",
+              "local_id": "d4",
+              "name": "禀赋效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "丢掉旧物的失去感比获得新物的快乐更强烈",
+              "evidence": "### 3. 损失厌恶（Loss Aversion）",
+              "local_id": "d5",
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧物承载记忆和情感，难以量化",
+              "evidence": "### 4. 情感依附（Emotional Attachment）",
+              "local_id": "d6",
+              "name": "情感依附",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "倾向于维持现状，放大换新的麻烦感",
+              "evidence": "### 5. 现状偏见（Status Quo Bias）",
+              "local_id": "d7",
+              "name": "现状偏见",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": "作为数学系学生，",
+          "identity_explicit": true
+        },
+        "B": {
+          "directions": [
+            {
+              "definition": "比较修理成本与替换成本、修后寿命、新品升级",
+              "evidence": "- **修理成本 vs. 替换成本**：",
+              "local_id": "d1",
+              "name": "经济计算",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧物承载回忆使人不舍得丢弃",
+              "evidence": "- **感情寄托**：",
+              "local_id": "d2",
+              "name": "感情寄托",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧物用顺手换新需重新适应",
+              "evidence": "- **习惯与熟悉感**：",
+              "local_id": "d3",
+              "name": "习惯与熟悉感",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "因过去投入而不愿放弃",
+              "evidence": "| **沉没成本谬误** | \"我都用了这么多年了，",
+              "local_id": "d4",
+              "name": "沉没成本谬误",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "高估自己拥有之物的价值",
+              "evidence": "| **禀赋效应** | 人们会高估自己拥有之物的价值，",
+              "local_id": "d5",
+              "name": "禀赋效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "丢掉旧物的失去感强于获得新物的快乐",
+              "evidence": "| **损失厌恶** | 丢掉旧物带来的\"失去感\"，",
+              "local_id": "d6",
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "倾向维持现状不愿改变",
+              "evidence": "| **现状偏见** | 倾向于维持现状，",
+              "local_id": "d7",
+              "name": "现状偏见",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "按念旧、务实、环保、尝新等人格分类描述典型反应",
+              "evidence": "- 🧓 **念旧的人**：",
+              "local_id": "d8",
+              "name": "不同人格类型反应",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "C": {
+          "directions": [
+            {
+              "definition": "比较维修费用、更换费用及修后寿命",
+              "evidence": "- **维修成本 vs. 更换成本**：",
+              "local_id": "d1",
+              "name": "成本收益分析",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧物承载特殊记忆和情感",
+              "evidence": "- **感情寄托**：",
+              "local_id": "d2",
+              "name": "情感寄托",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "长期使用形成深度习惯",
+              "evidence": "- **习惯与熟悉感**：",
+              "local_id": "d3",
+              "name": "习惯与熟悉感",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "高估自己拥有之物价值",
+              "evidence": "- **\"禀赋效应\"**：",
+              "local_id": "d4",
+              "name": "禀赋效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "能修就不换的勤俭价值观",
+              "evidence": "- **节俭观念**：",
+              "local_id": "d5",
+              "name": "节俭观念",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "减少浪费和电子垃圾的理念",
+              "evidence": "- **环保意识**：",
+              "local_id": "d6",
+              "name": "环保意识",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧物坏了作为升级换代的借口",
+              "evidence": "- **追新心理**：",
+              "local_id": "d7",
+              "name": "追新心理",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "产品设计不鼓励维修客观逼人换新",
+              "evidence": "- **维修是否方便？",
+              "local_id": "d8",
+              "name": "维修便利性",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "周围人对使用旧物的看法影响决策",
+              "evidence": "- **周围人的看法**：",
+              "local_id": "d9",
+              "name": "社会评价",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "从失落到犹豫到情感浮现到摇摆到最终决定的过程",
+              "evidence": "## 常见的心理过程（典型内心独白）",
+              "local_id": "d10",
+              "name": "心理决策时间线",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        }
+      },
+      "block_id": "S2-B05",
+      "comparisons": {
+        "A_vs_B": {
+          "math_focus": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "用数学不等式表达修理成本、情感损失与新品成本及额外效用的关系",
+              "evidence": "\\text{修} \\iff \\underbrace{C_{\\text{repair}}}_{\\text{维修成本}} + \\underbrace{V_{\\text{emotional}}^{(\\text{loss if replaced})}}_{\\text{换新的情感损失}} < \\underbrace{C_{\\text{new}}}_{\\text{新品成本}} - \\underbrace{\\Delta U}_{\\text{新品额外效用}}",
+              "local_id": "d2",
+              "name": "决策不等式公式",
+              "occurrence": 1
+            },
+            "reason": "A有决策论期望效用框架和数学不等式公式，B无任何数学形式化"
+          },
+          "nonmath_breadth": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "按念旧、务实、环保、尝新等人格分类描述典型反应",
+              "evidence": "- 🧓 **念旧的人**：",
+              "local_id": "d8",
+              "name": "不同人格类型反应",
+              "occurrence": 1
+            },
+            "reason": "B额外涵盖不同人格类型的典型反应分类，A的非数学路径较少"
+          }
+        },
+        "A_vs_C": {
+          "math_focus": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "用数学不等式表达修理成本、情感损失与新品成本及额外效用的关系",
+              "evidence": "\\text{修} \\iff \\underbrace{C_{\\text{repair}}}_{\\text{维修成本}} + \\underbrace{V_{\\text{emotional}}^{(\\text{loss if replaced})}}_{\\text{换新的情感损失}} < \\underbrace{C_{\\text{new}}}_{\\text{新品成本}} - \\underbrace{\\Delta U}_{\\text{新品额外效用}}",
+              "local_id": "d2",
+              "name": "决策不等式公式",
+              "occurrence": 1
+            },
+            "reason": "A有决策论和数学公式，C无数学内容"
+          },
+          "nonmath_breadth": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "产品设计不鼓励维修客观逼人换新",
+              "evidence": "- **维修是否方便？",
+              "local_id": "d8",
+              "name": "维修便利性",
+              "occurrence": 1
+            },
+            "reason": "C覆盖了维修便利性、社会评价、节俭观念、环保、追新、心理时间线等更多实质不同的非数学路径"
+          }
+        },
+        "B_vs_C": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "B和C都没有数学形式化内容"
+          },
+          "nonmath_breadth": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "周围人对使用旧物的看法影响决策",
+              "evidence": "- **周围人的看法**：",
+              "local_id": "d9",
+              "name": "社会评价",
+              "occurrence": 1
+            },
+            "reason": "C覆盖了社会评价、维修便利性、心理时间线等B未涉及的独立路径，广度更大"
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "A": {
+          "directions": [
+            {
+              "definition": "旧物承载回忆和情感，扔掉如丢掉记忆",
+              "evidence": "### 1. 情感依附（Sentimental Attachment）",
+              "local_id": "d1",
+              "name": "情感依附",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "因过去投入而不愿放弃",
+              "evidence": "### 2. 沉没成本心理（Sunk Cost）",
+              "local_id": "d2",
+              "name": "沉没成本心理",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "高估自己拥有之物的价值",
+              "evidence": "### 3. 禀赋效应（Endowment Effect）",
+              "local_id": "d3",
+              "name": "禀赋效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧物使用方式融入日常习惯",
+              "evidence": "### 4. 习惯与熟悉感",
+              "local_id": "d4",
+              "name": "习惯与熟悉感",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "能修就修不要浪费的理念驱动",
+              "evidence": "### 5. 环保或节俭观念",
+              "local_id": "d5",
+              "name": "环保节俭观念",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "修理成本接近替换成本时倾向换新",
+              "evidence": "### 1. 经济理性",
+              "local_id": "d6",
+              "name": "经济理性",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧物损坏成为升级换代的正当理由",
+              "evidence": "### 2. 对新事物的期待",
+              "local_id": "d7",
+              "name": "新事物期待",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "对旧物修后可靠性的不信任",
+              "evidence": "### 3. 担心修好后再坏",
+              "local_id": "d8",
+              "name": "修后再坏担忧",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "修理的便利性不如直接购买",
+              "evidence": "### 4. 时间和精力成本",
+              "local_id": "d9",
+              "name": "时间精力成本",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "最终决策取决于旧物是否具有不可替代性",
+              "evidence": "## 三、最终决策往往取决于一个关键因素",
+              "local_id": "d10",
+              "name": "不可替代性框架",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "B": {
+          "directions": [
+            {
+              "definition": "旧物承载记忆和情感成为生活一部分",
+              "evidence": "### 1. 情感依恋（Emotional Attachment）",
+              "local_id": "d1",
+              "name": "情感依恋",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "高估已拥有之物的价值",
+              "evidence": "### 2. 禀赋效应（Endowment Effect）",
+              "local_id": "d2",
+              "name": "禀赋效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "不舍得过去投入白费",
+              "evidence": "### 3. 沉没成本心理（Sunk Cost Fallacy）",
+              "local_id": "d3",
+              "name": "沉没成本心理",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧物顺手熟悉新物有不确定性",
+              "evidence": "### 4. 习惯与确定性偏好",
+              "local_id": "d4",
+              "name": "习惯与确定性偏好",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "修理费用与买新费用的比较",
+              "evidence": "### 1. 理性的成本-收益分析",
+              "local_id": "d5",
+              "name": "成本收益分析",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "担心修好后又坏变成无底洞",
+              "evidence": "### 2. 损失规避的另一面",
+              "local_id": "d6",
+              "name": "损失规避与反复投入",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧物坏了成为合理换新借口",
+              "evidence": "### 3. 新鲜感与升级欲望",
+              "local_id": "d7",
+              "name": "新鲜感与升级欲望",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "修理渠道少而买新越来越方便",
+              "evidence": "### 4. 现实便利性",
+              "local_id": "d8",
+              "name": "现实便利性",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "用金粉修补碎裂陶器体现破碎与修复的美学价值",
+              "evidence": "> 日本有一种传统工艺叫 **\"金缮\"（Kintsugi）**——用金粉修补碎裂的陶器，",
+              "local_id": "d9",
+              "name": "金缮文化哲学",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "C": {
+          "directions": [
+            {
+              "definition": "修理费用与新品费用及修后寿命的比较",
+              "evidence": "最直接的思考是**成本-收益分析**：",
+              "local_id": "d1",
+              "name": "成本收益分析",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "把已花掉的钱和时间算进当下决策",
+              "evidence": "### 1. 沉没成本谬误（Sunk Cost Fallacy）",
+              "local_id": "d2",
+              "name": "沉没成本谬误",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "因为是自己的就赋予高于市场价值的主观估价",
+              "evidence": "### 2. 禀赋效应（Endowment Effect）",
+              "local_id": "d3",
+              "name": "禀赋效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "修物品是在维护一段关系或时光",
+              "evidence": "### 3. 情感依附（Emotional Attachment）",
+              "local_id": "d4",
+              "name": "情感依附",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "失去的痛苦约为获得快乐的两倍",
+              "evidence": "### 4. 损失厌恶（Loss Aversion）",
+              "local_id": "d5",
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "偏好维持现状对改变有天然抵触",
+              "evidence": "### 5. 现状偏见（Status Quo Bias）",
+              "local_id": "d6",
+              "name": "现状偏见",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "能修就修不要浪费的代际观念",
+              "evidence": "- **节俭文化**：",
+              "local_id": "d7",
+              "name": "节俭文化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧的不去新的不来的消费理念",
+              "evidence": "- **消费主义文化**：",
+              "local_id": "d8",
+              "name": "消费主义文化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "可持续理念推动修复而非丢弃",
+              "evidence": "- **环保意识**：",
+              "local_id": "d9",
+              "name": "环保意识",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "用数学公式将决策建模为经济、情感、习惯、损失感的加权优化",
+              "evidence": "你可以把这个决策想象成一个**多目标优化问题**：",
+              "local_id": "d10",
+              "name": "多目标优化公式",
+              "occurrence": 1,
+              "tag": "数学"
+            }
+          ],
+          "identity_evidence": "作为数学系的同学，",
+          "identity_explicit": true
+        }
+      },
+      "block_id": "S2-B06",
+      "comparisons": {
+        "A_vs_B": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "A和B都没有数学形式化内容"
+          },
+          "nonmath_breadth": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "A有不可替代性框架和时间精力成本等，B有金缮文化哲学和损失规避反复投入，广度相当"
+          }
+        },
+        "A_vs_C": {
+          "math_focus": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "用数学公式将决策建模为经济、情感、习惯、损失感的加权优化",
+              "evidence": "你可以把这个决策想象成一个**多目标优化问题**：",
+              "local_id": "d10",
+              "name": "多目标优化公式",
+              "occurrence": 1
+            },
+            "reason": "C有多目标优化数学公式，A无任何数学形式化"
+          },
+          "nonmath_breadth": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "A和C都覆盖了约9-10条实质不同的非数学路径，广度相当"
+          }
+        },
+        "B_vs_C": {
+          "math_focus": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "用数学公式将决策建模为经济、情感、习惯、损失感的加权优化",
+              "evidence": "你可以把这个决策想象成一个**多目标优化问题**：",
+              "local_id": "d10",
+              "name": "多目标优化公式",
+              "occurrence": 1
+            },
+            "reason": "C有多目标优化公式，B无数学内容"
+          },
+          "nonmath_breadth": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "B有金缮文化独特视角，C有消费主义文化和损失厌恶等，整体非数学广度相当"
+          }
+        }
+      }
+    }
+  ],
+  "method": "open",
+  "question": "S2",
+  "slot": "O1"
+}

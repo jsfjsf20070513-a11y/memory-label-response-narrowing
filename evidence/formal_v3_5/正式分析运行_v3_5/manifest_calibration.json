@@ -1,0 +1,8 @@
+{
+  "files": {
+    "03_calibration_report.json": "f9fc88545b7e1e48256cf79b787b37e38349b1279a09fb39220dea7e56e12535",
+    "manifest_generation.json": "89fd425e6a9dfe6320936288f15079495ca8cd77a2d351c2efbc56b0630e8925",
+    "source_v34_attestation.json": "f71751f4792ef3b4a6a81180d753fc942b7d406cd3b6beedb9730a0d31cc93c0"
+  },
+  "stage": "calibration"
+}

@@ -1,0 +1,125 @@
+{
+  "items": {
+    "REV-O1-S10-S10-B01-A_vs_C-math_focus": {
+      "reason": "第三部分用秘书问题和explore-exploit困境类比现实决策的结构性矛盾，与边界吻合。",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B01-A_vs_C-nonmath_breadth": {
+      "reason": "第三部分讨论神经科学视角，指出前额叶加工容量有限、后悔激活脑区与疼痛重叠，与边界吻合。",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B02-A_vs_B-math_focus": {
+      "reason": "该小节讨论不可公度性并类比Pareto前沿，说明无统一比较尺度无绝对优劣，与边界一致。",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B03-A_vs_C-nonmath_breadth": {
+      "reason": "该小节讨论偏好不确定性，人不完全清楚自己想要什么，选项越相似决策越难，与边界一致。",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B04-A_vs_C-nonmath_breadth": {
+      "reason": "该小节明确讨论峰终定律与享乐适应，指出新鲜感褪去后只记得纠结和平淡，与边界吻合。",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B06-B_vs_C-math_focus": {
+      "reason": "证据短语指出C(n,2)组合增长的认知负荷，配合Miller定律工作记忆限制，与边界吻合。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B02-A_vs_B-nonmath_breadth": {
+      "reason": "该条讨论拟人化倾向，对旧物产生老朋友般感情觉得扔是背叛，与边界一致。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B05-A_vs_C-nonmath_breadth": {
+      "reason": "该条指出现代产品设计不鼓励维修（找不到配件、没有维修点），客观逼人换新，与边界吻合。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B06-B_vs_C-math_focus": {
+      "reason": "证据短语所在段落用加权效用函数将决策建模为经济、情感、习惯、损失感的多目标优化，与边界一致。",
+      "supported": true
+    },
+    "REV-O1-S8-S8-B01-A_vs_B-math_focus": {
+      "reason": "证据短语所在段落将偏好建模为向量经算子迭代，分析压缩映射和噪声衰减，与边界吻合。",
+      "supported": true
+    },
+    "REV-O1-S8-S8-B02-A_vs_C-nonmath_breadth": {
+      "reason": "该小节说明算法持续进化而人脑硬件不变，形成不对称博弈，与边界吻合。",
+      "supported": true
+    },
+    "REV-O1-S8-S8-B04-B_vs_C-nonmath_breadth": {
+      "reason": "该小节说明算法持续定义品味被内化为自我认知，质疑系统等于质疑自我，与边界吻合。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B01-A_vs_B-nonmath_breadth": {
+      "reason": "第三部分从进化心理学说明犹豫避免鲁莽、后悔促进学习的适应价值，与边界一致。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B02-A_vs_B-math_focus": {
+      "reason": "证据短语所在段落将不可公度性类比为多目标优化Pareto前沿，与边界吻合。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B02-A_vs_B-nonmath_breadth": {
+      "reason": "该小节讨论自我叙事断裂，选择导致身份分叉，后悔是对未实现自我的哀悼，与边界吻合。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B03-B_vs_C-math_focus": {
+      "reason": "第二部分用后悔厌恶修正效用模型公式解释选项越多比较基准越高导致满意度下降，与边界一致。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B05-A_vs_B-nonmath_breadth": {
+      "reason": "该小节说明某些选择被赋予身份定义意义，压力因此倍增，与边界一致。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B05-A_vs_C-math_focus": {
+      "reason": "回答中秘书问题段落明确用最优停止模型说明最优策略成功率仅约36.8%，后悔具有概率必然性，与边界一致。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B06-A_vs_B-nonmath_breadth": {
+      "reason": "该小节讨论沉没成本与自我质疑，结果不如预期后反刍自身判断是否错误，与边界一致。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B06-A_vs_C-nonmath_breadth": {
+      "reason": "该小节明确讨论不确定性下的焦虑，指出重要选择结果不可预知，前扣带皮层和杏仁核持续发出焦虑信号导致反复权衡，与边界一致。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B06-B_vs_C-math_focus": {
+      "reason": "第二部分用前景理论公式说明失去痛苦约为获得的2.25倍，即便客观最优主观仍可能净负面，与边界一致。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B01-A_vs_C-math_focus": {
+      "reason": "结尾段落明确将决策描述为包含经济变量与情感变量权重的多目标优化问题，与边界一致。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B02-B_vs_C-math_focus": {
+      "reason": "第三部分用Cr/Tr vs Cn/Tn的单位时间成本公式并加入情感价值Vs，与边界完全一致。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B03-A_vs_C-math_focus": {
+      "reason": "第三部分用情感权重、经济权重和社会权重的混合公式描述实际决策，与边界一致。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B04-B_vs_C-math_focus": {
+      "reason": "第四部分提出量化情感价值、有意识地为情感买单，并用反转测试辅助，与边界吻合。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B05-A_vs_B-nonmath_breadth": {
+      "reason": "第四部分列举念旧、务实、环保、尝新四种人群的不同决策路径，与边界吻合。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B06-A_vs_B-nonmath_breadth": {
+      "reason": "第四部分引用金缮工艺，阐述修复不仅是恢复功能更是对过去时光的珍视和延续，与边界吻合。",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B01-A_vs_B-nonmath_breadth": {
+      "reason": "证据短语出自注意力经济段落，紧接着说明平台目标是最大化停留时间，投入技术与资本，个体意志力不对称，与边界吻合。",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B02-A_vs_C-nonmath_breadth": {
+      "reason": "该小节讨论社交嵌入，推荐内容与公共话题重叠带来社交压力，不跟随可能脱节，与边界吻合。",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B04-B_vs_C-nonmath_breadth": {
+      "reason": "该小节说明算法持续定义品味后个体把算法判断内化为自我认同，与边界吻合。",
+      "supported": true
+    }
+  },
+  "slot": "O2"
+}

@@ -1,0 +1,109 @@
+{
+  "items": {
+    "REV-O2-S10-S10-B01-A_vs_C-math_focus": {
+      "reason": "原文详述了秘书问题的37%规则和explore-exploit困境，并指出现实更复杂。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B02-A_vs_B-nonmath_breadth": {
+      "reason": "原文讨论了萨特和克尔凯郭尔的存在主义观点，自由本身是焦虑来源，后悔指向自我责任。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B05-A_vs_B-math_focus": {
+      "reason": "原文明确用C(n,2)说明选项增多时两两比较组合爆炸导致认知负荷剧增。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B05-A_vs_B-nonmath_breadth": {
+      "reason": "原文明确说重大选择被赋予身份定义意义，每个决定像在定义自我，压力倍增。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B06-B_vs_C-math_focus": {
+      "reason": "原文给出了前景理论v(x)公式及λ≈2.25，说明净主观感受为负。",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B02-B_vs_C-math_focus": {
+      "reason": "原文给出了Cr/Tr vs Cn/Tn的单位时间成本比较公式，并加入情感价值变量Vs。",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B03-A_vs_B-math_focus": {
+      "reason": "原文给出了情感权重×依附程度+经济权重×(修理费/新品价)+社会权重×他人看法的综合公式。",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B03-B_vs_C-nonmath_breadth": {
+      "reason": "原文明确提到节俭文化中能修就修不浪费是美德。",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B06-A_vs_C-math_focus": {
+      "reason": "原文给出了加权经济、情感、习惯、损失感的效用函数优化模型。",
+      "supported": true
+    },
+    "REV-O2-S8-S8-B01-A_vs_B-math_focus": {
+      "reason": "原文用向量x_t、算子T、压缩映射、噪声ε_t和吸引子basin形式化了偏好演化。",
+      "supported": true
+    },
+    "REV-O2-S8-S8-B01-A_vs_B-nonmath_breadth": {
+      "reason": "原文描述了第三人效应：人倾向认为别人比自己更易受媒体影响，降低自身警惕。",
+      "supported": true
+    },
+    "REV-O2-S8-S8-B04-A_vs_C-math_focus": {
+      "reason": "文中将正反馈回路明确类比为动力系统吸引子，并描述了偏好空间收窄的收敛行为。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B01-A_vs_C-nonmath_breadth": {
+      "reason": "该节详细讨论了前额叶皮层、杏仁核、腹侧纹状体及疼痛脑区激活，与边界吻合。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B02-B_vs_C-nonmath_breadth": {
+      "reason": "原文用身份分叉解释后悔是对未曾存在的自我的哀悼，与边界吻合。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B03-A_vs_C-math_focus": {
+      "reason": "原文将多属性选择表述为R^d上向量的偏序比较，说明不可全序排序。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B04-A_vs_B-nonmath_breadth": {
+      "reason": "原文说明决策后持续接触已选项缺点而只看到未选项优点，造成系统性后悔偏差。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B05-A_vs_C-math_focus": {
+      "reason": "原文用秘书问题说明最优策略成功率仅约36.8%，后悔具有概率必然性。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B05-B_vs_C-nonmath_breadth": {
+      "reason": "原文明确讨论了自我认同焦虑，选择被赋予身份定义意义，决策压力被放大。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B02-A_vs_B-nonmath_breadth": {
+      "reason": "该节列出修好继续用、买新替换、买新但旧的不扔、改变用途四种结局，涵盖了中间处理路径。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B02-B_vs_C-nonmath_breadth": {
+      "reason": "该节讨论了情感先做决定再用理性找理由的机制，引用了情感启发式和动机性推理。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B03-A_vs_C-math_focus": {
+      "reason": "该节给出了情感权重、经济权重和社会权重的混合公式，与边界吻合。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B06-B_vs_C-math_focus": {
+      "reason": "该节给出了含经济、情感、习惯与损失感加权的多目标优化公式，与边界一致。",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B01-B_vs_C-math_focus": {
+      "reason": "原文用x_t向量、算子T、压缩映射、噪声和吸引子basin形式化了偏好向固定点收敛。",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B02-B_vs_C-nonmath_breadth": {
+      "reason": "原文指出算法由大量工程师持续优化而人脑基本是十万年前硬件，形成不对称博弈。",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B03-A_vs_B-math_focus": {
+      "reason": "原文用d_t和a_t形式化了依赖度与预测精度相互提升的正反馈回路。",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B04-A_vs_B-math_focus": {
+      "reason": "该节用二维框架区分认知投入与推荐依赖程度，主张右上象限为理想状态。",
+      "supported": true
+    }
+  },
+  "slot": "O1"
+}

@@ -1,0 +1,1288 @@
+{
+  "blocks": [
+    {
+      "answers": {
+        "A": {
+          "directions": [
+            {
+              "definition": "以推荐替用户筛选选项、降低搜索比较与决策负担为核心，不以内容本身是否准确命中需求为唯一原因。",
+              "evidence": "推荐系统本质上充当了一个**认知外包工具**——它替你完成了搜索、比较、筛选的过程。",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S8-D1",
+              "name": "认知省力",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以推荐流作为默认入口、而主动搜索或拒绝需要额外动作为核心，不等同于系统改变了可见选项范围。",
+              "evidence": "推荐系统推送的内容就是一种\"默认选项\"——你不需要主动搜索，",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S8-D4",
+              "name": "默认摩擦",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以反复、快速的奖励节律促成习惯和停留为核心，不要求内容具有长期实用价值。",
+              "evidence": "推荐系统的核心逻辑类似于**老虎机**：",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S8-D2",
+              "name": "即时奖励",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以推荐内容确实符合用户需求、兴趣或任务为核心，不要求它以快速奖励的节律出现。",
+              "evidence": "推荐系统倾向于推送**你已经喜欢的、认同的内容**，",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S8-D3",
+              "name": "匹配有用",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以反复暴露改变什么内容可见、可想和可选为核心，不等同于仅降低主动选择的操作成本。",
+              "evidence": "但实际上你的选择空间已经被预先框定了。",
+              "from_menu": true,
+              "local_id": "d5",
+              "menu_id": "S8-D6",
+              "name": "选择环境",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以群体话题、他人行为和对错过的担心推动依赖，不以个人匹配准确度为必要原因。",
+              "evidence": "当周围所有人都在用推荐系统（抖音、B站、小红书），",
+              "from_menu": true,
+              "local_id": "d6",
+              "menu_id": "S8-D5",
+              "name": "社会趋同",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "指出即使意识到自己受影响，这种认知也不足以转化为抵抗或免疫该影响的行为能力。",
+              "evidence": "> **知道自己被影响 ≠ 能够消除这种影响。",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "知而不免疫",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "强调使用越多、系统越了解、离开成本越高的自我强化锁定过程。",
+              "evidence": "你就越依赖它——这形成了一个**正反馈循环**。",
+              "from_menu": false,
+              "local_id": "d8",
+              "menu_id": null,
+              "name": "路径锁定",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "B": {
+          "directions": [
+            {
+              "definition": "以推荐替用户筛选选项、降低搜索比较与决策负担为核心，不以内容本身是否准确命中需求为唯一原因。",
+              "evidence": "推荐系统承担了**筛选、排序、过滤**的认知劳动。",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S8-D1",
+              "name": "认知省力",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以反复、快速的奖励节律促成习惯和停留为核心，不要求内容具有长期实用价值。",
+              "evidence": "推荐系统提供的是**即时的、高确定性的满足**（点开就有多巴胺）。",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S8-D2",
+              "name": "即时奖励",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "以推荐内容确实符合用户需求、兴趣或任务为核心，不要求它以快速奖励的节律出现。",
+              "evidence": "系统对你偏好的估计 $\\hat{\\theta}_t$ 越来越逼近你的真实偏好 $\\theta$（甚至开始**塑造** $\\theta$ 本身）。",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S8-D3",
+              "name": "匹配有用",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "指出意识到系统存在并不会消除其在快速直觉层面对行为的影响。",
+              "evidence": "### 3. 元认知错觉（Metacognitive Illusion）",
+              "from_menu": false,
+              "local_id": "d4",
+              "menu_id": null,
+              "name": "知而不免疫",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "强调使用越多、推荐越准、离开成本越高的正反馈锁定过程。",
+              "evidence": "### 5. 正反馈循环（Positive Feedback Loop）",
+              "from_menu": false,
+              "local_id": "d5",
+              "menu_id": null,
+              "name": "路径锁定",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "强调偏好在与系统交互中被共同建构，而非预先固定。",
+              "evidence": "### 6. 偏好内生性（Endogenous Preference）",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "偏好建构",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "C": {
+          "directions": [
+            {
+              "definition": "以推荐替用户筛选选项、降低搜索比较与决策负担为核心，不以内容本身是否准确命中需求为唯一原因。",
+              "evidence": "推荐系统充当了\"认知外包\"——它帮你缩小选择范围，",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S8-D1",
+              "name": "认知省力",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以推荐内容确实符合用户需求、兴趣或任务为核心，不要求它以快速奖励的节律出现。",
+              "evidence": "推荐系统给出的内容通常**确实还不错**——你点开一个推荐视频，",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S8-D3",
+              "name": "匹配有用",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以反复暴露改变什么内容可见、可想和可选为核心，不等同于仅降低主动选择的操作成本。",
+              "evidence": "### 3. 曝光效应（Mere Exposure Effect）",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S8-D6",
+              "name": "选择环境",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以反复、快速的奖励节律促成习惯和停留为核心，不要求内容具有长期实用价值。",
+              "evidence": "推荐流中偶尔出现的\"意外惊喜\"（一个你从没想到但特别喜欢的内容）制造了类似老虎机的**间歇性强化**。",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S8-D2",
+              "name": "即时奖励",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "指出意识到被影响与具备抵抗这种影响的行为控制能力是两回事。",
+              "evidence": "> **元认知（知道自己被影响）和行为控制是两个独立的系统。",
+              "from_menu": false,
+              "local_id": "d5",
+              "menu_id": null,
+              "name": "知而不免疫",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "讨论自由选择在被预先塑造的偏好和选项中发生，从而出现自主性悖论。",
+              "evidence": "### 9. 自主性悖论",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "自主性悖论",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        }
+      },
+      "block_id": "S8-B01",
+      "comparisons": {
+        "A_vs_B": {
+          "math_focus": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "以反复、快速的奖励节律促成习惯和停留为核心，不要求内容具有长期实用价值。",
+              "evidence": "推荐系统提供的是**即时的、高确定性的满足**（点开就有多巴胺）。",
+              "local_id": "d2",
+              "name": "即时奖励",
+              "occurrence": 1
+            },
+            "reason": "B把双曲贴现和偏好估计等数量化框架放进核心解释，数学组织重心明显更强。"
+          },
+          "nonmath_breadth": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "以群体话题、他人行为和对错过的担心推动依赖，不以个人匹配准确度为必要原因。",
+              "evidence": "当周围所有人都在用推荐系统（抖音、B站、小红书），",
+              "local_id": "d6",
+              "name": "社会趋同",
+              "occurrence": 1
+            },
+            "reason": "A覆盖认知省力、默认入口、即时奖励、匹配有用、选择环境、社会趋同等更多不同的非数学路径。"
+          }
+        },
+        "A_vs_C": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "A和C都没有把数量化、计算或形式模型作为主要组织重心。"
+          },
+          "nonmath_breadth": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "以群体话题、他人行为和对错过的担心推动依赖，不以个人匹配准确度为必要原因。",
+              "evidence": "当周围所有人都在用推荐系统（抖音、B站、小红书），",
+              "local_id": "d6",
+              "name": "社会趋同",
+              "occurrence": 1
+            },
+            "reason": "A除省力、奖励、匹配和环境外，还明确加入默认入口与社会趋同，非数学路径更宽。"
+          }
+        },
+        "B_vs_C": {
+          "math_focus": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "以反复、快速的奖励节律促成习惯和停留为核心，不要求内容具有长期实用价值。",
+              "evidence": "推荐系统提供的是**即时的、高确定性的满足**（点开就有多巴胺）。",
+              "local_id": "d2",
+              "name": "即时奖励",
+              "occurrence": 1
+            },
+            "reason": "B以双曲贴现、动力系统和偏好向量模型来组织解释，数学重心强于C。"
+          },
+          "nonmath_breadth": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "讨论自由选择在被预先塑造的偏好和选项中发生，从而出现自主性悖论。",
+              "evidence": "### 9. 自主性悖论",
+              "local_id": "d6",
+              "name": "自主性悖论",
+              "occurrence": 1
+            },
+            "reason": "C在非数学上除省力、匹配、环境和奖励外，还展开知而不免疫与自主性悖论两条路径，比B更宽。"
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "A": {
+          "directions": [
+            {
+              "definition": "以推荐替用户筛选选项、降低搜索比较与决策负担为核心，不以内容本身是否准确命中需求为唯一原因。",
+              "evidence": "推荐系统本质上是一个**外部认知假肢**——把筛选工作交给算法，",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S8-D1",
+              "name": "认知省力",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以反复、快速的奖励节律促成习惯和停留为核心，不要求内容具有长期实用价值。",
+              "evidence": "推荐流中偶尔出现一条极度契合你兴趣的内容，",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S8-D2",
+              "name": "即时奖励",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以反复暴露改变什么内容可见、可想和可选为核心，不等同于仅降低主动选择的操作成本。",
+              "evidence": "推荐系统恰恰深度介入了这个建构过程：",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S8-D6",
+              "name": "选择环境",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以用户将“什么值得看”的判断逐渐交给系统为核心，不以系统实际匹配表现作为唯一理由。",
+              "evidence": "### 9. 信息不对称下的理性委托",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S8-D7",
+              "name": "权威转移",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "指出意识到推荐系统在影响自己，并不能转化为对该影响的行为免疫。",
+              "evidence": "### 4. 偏见盲点（Bias Blind Spot）",
+              "from_menu": false,
+              "local_id": "d5",
+              "menu_id": null,
+              "name": "知而不免疫",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "强调长期依赖后独立发现内容的能力与信心被削弱，从而形成依赖。",
+              "evidence": "### 8. 认识论上的习得性无助（Epistemic Learned Helplessness）",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "能力退化锁定",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "B": {
+          "directions": [
+            {
+              "definition": "以推荐替用户筛选选项、降低搜索比较与决策负担为核心，不以内容本身是否准确命中需求为唯一原因。",
+              "evidence": "推荐系统充当了一个\"外部认知假肢\"——帮你筛选、排序、决策，",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S8-D1",
+              "name": "认知省力",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以推荐内容确实符合用户需求、兴趣或任务为核心，不要求它以快速奖励的节律出现。",
+              "evidence": "推荐系统给的内容大多数时候确实**还不错**——这就足够了。",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S8-D3",
+              "name": "匹配有用",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以推荐流作为默认入口、而主动搜索或拒绝需要额外动作为核心，不等同于系统改变了可见选项范围。",
+              "evidence": "推荐系统呈现的内容就是\"默认选项\"——打开App，",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S8-D4",
+              "name": "默认摩擦",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以反复、快速的奖励节律促成习惯和停留为核心，不要求内容具有长期实用价值。",
+              "evidence": "推荐流中偶尔出现特别打动你的内容，",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S8-D2",
+              "name": "即时奖励",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以用户将“什么值得看”的判断逐渐交给系统为核心，不以系统实际匹配表现作为唯一理由。",
+              "evidence": "\"这是专门为你推荐的\"这种叙事，",
+              "from_menu": true,
+              "local_id": "d5",
+              "menu_id": "S8-D7",
+              "name": "权威转移",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以用户从推荐中形成对“我是谁”的理解，并反过来按该自我理解继续选择为核心。",
+              "evidence": "而在于**重新定义了你是什么样的人**。",
+              "from_menu": true,
+              "local_id": "d6",
+              "menu_id": "S8-D8",
+              "name": "身份回路",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "指出抽象层面知道受算法影响，并不意味着每次点击时都能识别并阻止这种影响。",
+              "evidence": "### 1. 元认知失效",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "知而不免疫",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "C": {
+          "directions": [
+            {
+              "definition": "以推荐替用户筛选选项、降低搜索比较与决策负担为核心，不以内容本身是否准确命中需求为唯一原因。",
+              "evidence": "推荐系统把选择从\"在一百万个里挑一个\"简化为\"在五个里挑一个\"，",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S8-D1",
+              "name": "认知省力",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以推荐内容确实符合用户需求、兴趣或任务为核心，不要求它以快速奖励的节律出现。",
+              "evidence": "推荐系统恰好提供了一个\"足够好\"的选项，",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S8-D3",
+              "name": "匹配有用",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以反复、快速的奖励节律促成习惯和停留为核心，不要求内容具有长期实用价值。",
+              "evidence": "### 1. 即时满足的强化循环",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S8-D2",
+              "name": "即时奖励",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以用户从推荐中形成对“我是谁”的理解，并反过来按该自我理解继续选择为核心。",
+              "evidence": "制造出一种**\"我确实就是这样的人\"的身份认同感**。",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S8-D8",
+              "name": "身份回路",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以反复暴露改变什么内容可见、可想和可选为核心，不等同于仅降低主动选择的操作成本。",
+              "evidence": "被反复推荐某一类内容后，",
+              "from_menu": true,
+              "local_id": "d5",
+              "menu_id": "S8-D6",
+              "name": "选择环境",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以推荐流作为默认入口、而主动搜索或拒绝需要额外动作为核心，不等同于系统改变了可见选项范围。",
+              "evidence": "许多平台有意弱化\"主动搜索\"\"分类浏览\"等功能，",
+              "from_menu": true,
+              "local_id": "d6",
+              "menu_id": "S8-D4",
+              "name": "默认摩擦",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以群体话题、他人行为和对错过的担心推动依赖，不以个人匹配准确度为必要原因。",
+              "evidence": "\"算法推荐给你的\"和\"大家都在看的\"经常重叠，",
+              "from_menu": true,
+              "local_id": "d7",
+              "menu_id": "S8-D5",
+              "name": "社会趋同",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "指出意识到偏见或操纵的存在，并不能消除其对后续点击行为的影响。",
+              "evidence": "人类有一种**元认知错觉**：",
+              "from_menu": false,
+              "local_id": "d8",
+              "menu_id": null,
+              "name": "知而不免疫",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        }
+      },
+      "block_id": "S8-B02",
+      "comparisons": {
+        "A_vs_B": {
+          "math_focus": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "以用户将“什么值得看”的判断逐渐交给系统为核心，不以系统实际匹配表现作为唯一理由。",
+              "evidence": "### 9. 信息不对称下的理性委托",
+              "local_id": "d4",
+              "name": "权威转移",
+              "occurrence": 1
+            },
+            "reason": "A把委托代理的目标函数和可行域投影等形式化表达放进核心论证，数学重心强于B。"
+          },
+          "nonmath_breadth": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "以用户从推荐中形成对“我是谁”的理解，并反过来按该自我理解继续选择为核心。",
+              "evidence": "而在于**重新定义了你是什么样的人**。",
+              "local_id": "d6",
+              "name": "身份回路",
+              "occurrence": 1
+            },
+            "reason": "B在非数学上覆盖省力、匹配有用、默认入口、即时奖励、权威转移、身份回路和知而不免疫，路径比A更多。"
+          }
+        },
+        "A_vs_C": {
+          "math_focus": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "以用户将“什么值得看”的判断逐渐交给系统为核心，不以系统实际匹配表现作为唯一理由。",
+              "evidence": "### 9. 信息不对称下的理性委托",
+              "local_id": "d4",
+              "name": "权威转移",
+              "occurrence": 1
+            },
+            "reason": "A使用目标函数、优化和投影等形式化框架组织解释，C基本以非数学叙述展开。"
+          },
+          "nonmath_breadth": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "以群体话题、他人行为和对错过的担心推动依赖，不以个人匹配准确度为必要原因。",
+              "evidence": "\"算法推荐给你的\"和\"大家都在看的\"经常重叠，",
+              "local_id": "d7",
+              "name": "社会趋同",
+              "occurrence": 1
+            },
+            "reason": "C同时覆盖省力、匹配、即时奖励、身份回路、选择环境、默认摩擦、社会趋同和知而不免疫，非数学路径最宽。"
+          }
+        },
+        "B_vs_C": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "B和C都主要以非数学叙述组织，没有明显更强的数量化或形式模型重心。"
+          },
+          "nonmath_breadth": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "B与C都覆盖七条以上实质不同的非数学解释路径，广度相近。"
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "A": {
+          "directions": [
+            {
+              "definition": "以推荐替用户筛选选项、降低搜索比较与决策负担为核心，不以内容本身是否准确命中需求为唯一原因。",
+              "evidence": "推荐系统本质上是一个**认知外包工具**——它替你完成了\"筛选\"这一高耗能的认知任务。",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S8-D1",
+              "name": "认知省力",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以反复、快速的奖励节律促成习惯和停留为核心，不要求内容具有长期实用价值。",
+              "evidence": "推荐系统提供的是**高密度、低延迟的多巴胺刺激**。",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S8-D2",
+              "name": "即时奖励",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以推荐内容确实符合用户需求、兴趣或任务为核心，不要求它以快速奖励的节律出现。",
+              "evidence": "当算法推出一条\"我正想看的\"内容时，",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S8-D3",
+              "name": "匹配有用",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以用户从推荐中形成对“我是谁”的理解，并反过来按该自我理解继续选择为核心。",
+              "evidence": "这不断**确认你的品味、观点和身份认同**。",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S8-D8",
+              "name": "身份回路",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以推荐流作为默认入口、而主动搜索或拒绝需要额外动作为核心，不等同于系统改变了可见选项范围。",
+              "evidence": "推荐系统已经不是一个可选功能，",
+              "from_menu": true,
+              "local_id": "d5",
+              "menu_id": "S8-D4",
+              "name": "默认摩擦",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "知道被影响并不等于能在行为上持续抵抗，因觉察与执行控制分离且后者成本更高。",
+              "evidence": "心理学上有一个概念叫 **\"知行差距\"（knowledge-behavior gap）**：",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "知行差距",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "长期依赖推荐会削弱主动搜索与探索能力，从而形成自我强化的依赖。",
+              "evidence": "### 8. 主动搜索能力的退化",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "探索能力退化",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "B": {
+          "directions": [
+            {
+              "definition": "以推荐替用户筛选选项、降低搜索比较与决策负担为核心，不以内容本身是否准确命中需求为唯一原因。",
+              "evidence": "推荐系统替你完成了搜索和初筛，",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S8-D1",
+              "name": "认知省力",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以反复、快速的奖励节律促成习惯和停留为核心，不要求内容具有长期实用价值。",
+              "evidence": "推荐系统提供的是**即时的、确定性的满足**（此刻就有好内容看），",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S8-D2",
+              "name": "即时奖励",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以推荐内容确实符合用户需求、兴趣或任务为核心，不要求它以快速奖励的节律出现。",
+              "evidence": "被推荐的内容天然具有更高的\"加工流畅性\"——它容易理解、符合你的口味、几乎不需要适应成本。",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S8-D3",
+              "name": "匹配有用",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以群体话题、他人行为和对错过的担心推动依赖，不以个人匹配准确度为必要原因。",
+              "evidence": "当周围所有人都在同一个范式中运作时，",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S8-D5",
+              "name": "社会趋同",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以反复暴露改变什么内容可见、可想和可选为核心，不等同于仅降低主动选择的操作成本。",
+              "evidence": "> 推荐系统像一个不断收缩的**邻域**。",
+              "from_menu": true,
+              "local_id": "d5",
+              "menu_id": "S8-D6",
+              "name": "选择环境",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "依赖越强就积累越多数据、推荐越准、退出成本越高，形成锁定。",
+              "evidence": "> 设你对推荐系统的依赖度为 $d_t$，",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "正反馈锁定",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "知道自己被影响只是元认知觉察，无法直接克服行为惯性。",
+              "evidence": "**1. 元认知的局限性**",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "元认知局限",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "交互上保留点击和滑动的选择感，使被操控在体验层面被掩盖。",
+              "evidence": "**3. 自主性幻觉（Illusion of Agency）**",
+              "from_menu": false,
+              "local_id": "d8",
+              "menu_id": null,
+              "name": "自主性幻觉",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": "作为数学系的学生，",
+          "identity_explicit": true
+        },
+        "C": {
+          "directions": [
+            {
+              "definition": "以推荐替用户筛选选项、降低搜索比较与决策负担为核心，不以内容本身是否准确命中需求为唯一原因。",
+              "evidence": "推荐系统本质上是一个**外包的决策代理**，",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S8-D1",
+              "name": "认知省力",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以推荐内容确实符合用户需求、兴趣或任务为核心，不要求它以快速奖励的节律出现。",
+              "evidence": "推荐系统给出的内容通常\"足够好\"，",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S8-D3",
+              "name": "匹配有用",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以反复、快速的奖励节律促成习惯和停留为核心，不要求内容具有长期实用价值。",
+              "evidence": "### 3. 即时反馈回路（Dopamine Loop）",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S8-D2",
+              "name": "即时奖励",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以用户从推荐中形成对“我是谁”的理解，并反过来按该自我理解继续选择为核心。",
+              "evidence": "它持续**验证你的既有身份认同**——你喜欢摇滚，",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S8-D8",
+              "name": "身份回路",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以用户将“什么值得看”的判断逐渐交给系统为核心，不以系统实际匹配表现作为唯一理由。",
+              "evidence": "- 如果你长期使用推荐系统，",
+              "from_menu": true,
+              "local_id": "d5",
+              "menu_id": "S8-D7",
+              "name": "权威转移",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以推荐流作为默认入口、而主动搜索或拒绝需要额外动作为核心，不等同于系统改变了可见选项范围。",
+              "evidence": "- 推荐系统不只是\"一个可选工具\"，",
+              "from_menu": true,
+              "local_id": "d6",
+              "menu_id": "S8-D4",
+              "name": "默认摩擦",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以反复暴露改变什么内容可见、可想和可选为核心，不等同于仅降低主动选择的操作成本。",
+              "evidence": "信息过载 → 认知疲劳 → 依赖推荐 → 偏好被塑造",
+              "from_menu": true,
+              "local_id": "d7",
+              "menu_id": "S8-D6",
+              "name": "选择环境",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "知道被影响不等于能抵抗，因为反思性控制难以持续压过快速直觉系统。",
+              "evidence": "> **元认知意识（metacognitive awareness）≠ 行为改变。",
+              "from_menu": false,
+              "local_id": "d8",
+              "menu_id": null,
+              "name": "知行鸿沟",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "系统通过预设选项与动线维持自由选择的感觉，但实际选择空间已被设计。",
+              "evidence": "### 7. 自主性幻觉（Illusion of Autonomy）",
+              "from_menu": false,
+              "local_id": "d9",
+              "menu_id": null,
+              "name": "自主性幻觉",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "平台的优化目标是停留时长和点击率，因此会持续增强用户离不开它的能力。",
+              "evidence": "- 推荐系统的目标函数通常是**最大化用户停留时长/点击率**，",
+              "from_menu": false,
+              "local_id": "d10",
+              "menu_id": null,
+              "name": "平台激励驱动依赖",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        }
+      },
+      "block_id": "S8-B03",
+      "comparisons": {
+        "A_vs_B": {
+          "math_focus": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "以反复暴露改变什么内容可见、可想和可选为核心，不等同于仅降低主动选择的操作成本。",
+              "evidence": "> 推荐系统像一个不断收缩的**邻域**。",
+              "local_id": "d5",
+              "name": "选择环境",
+              "occurrence": 1
+            },
+            "reason": "B用邻域收缩的形式化类比来组织选择空间收窄，数学组织重心明显强于A。"
+          },
+          "nonmath_breadth": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "以群体话题、他人行为和对错过的担心推动依赖，不以个人匹配准确度为必要原因。",
+              "evidence": "当周围所有人都在同一个范式中运作时，",
+              "local_id": "d4",
+              "name": "社会趋同",
+              "occurrence": 1
+            },
+            "reason": "B除省力、奖励和匹配外，还明确覆盖社会趋同、元认知局限与自主性幻觉，非数学路径更宽。"
+          }
+        },
+        "A_vs_C": {
+          "math_focus": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "以反复暴露改变什么内容可见、可想和可选为核心，不等同于仅降低主动选择的操作成本。",
+              "evidence": "信息过载 → 认知疲劳 → 依赖推荐 → 偏好被塑造",
+              "local_id": "d7",
+              "name": "选择环境",
+              "occurrence": 1
+            },
+            "reason": "C用正反馈循环图式来组织依赖加深与选择空间收窄，数量化/形式化重心强于A。"
+          },
+          "nonmath_breadth": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "以用户从推荐中形成对“我是谁”的理解，并反过来按该自我理解继续选择为核心。",
+              "evidence": "它持续**验证你的既有身份认同**——你喜欢摇滚，",
+              "local_id": "d4",
+              "name": "身份回路",
+              "occurrence": 1
+            },
+            "reason": "C同时覆盖身份回路、权威转移、默认基础设施、自主性幻觉与平台激励，非数学解释路径多于A。"
+          }
+        },
+        "B_vs_C": {
+          "math_focus": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "以反复暴露改变什么内容可见、可想和可选为核心，不等同于仅降低主动选择的操作成本。",
+              "evidence": "> 推荐系统像一个不断收缩的**邻域**。",
+              "local_id": "d5",
+              "name": "选择环境",
+              "occurrence": 1
+            },
+            "reason": "B的邻域与局部/全局最优类比比C的循环图更集中地以数学结构组织论证。"
+          },
+          "nonmath_breadth": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "以用户从推荐中形成对“我是谁”的理解，并反过来按该自我理解继续选择为核心。",
+              "evidence": "它持续**验证你的既有身份认同**——你喜欢摇滚，",
+              "local_id": "d4",
+              "name": "身份回路",
+              "occurrence": 1
+            },
+            "reason": "C在B已有的省力、奖励与选择环境之外，还明确展开身份回路、权威转移、默认基础设施和平台激励，非数学覆盖更广。"
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "A": {
+          "directions": [
+            {
+              "definition": "以推荐替用户筛选选项、降低搜索比较与决策负担为核心，不以内容本身是否准确命中需求为唯一原因。",
+              "evidence": "** 推荐系统帮你把选项从 10000 缩减到 10，",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S8-D1",
+              "name": "认知省力",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以推荐内容确实符合用户需求、兴趣或任务为核心，不要求它以快速奖励的节律出现。",
+              "evidence": "推荐系统给出的内容通常确实\"还不错\"，",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S8-D3",
+              "name": "匹配有用",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以反复、快速的奖励节律促成习惯和停留为核心，不要求内容具有长期实用价值。",
+              "evidence": "推荐系统每次都给你**即时的、确定的满足感**（这首歌确实好听！",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S8-D2",
+              "name": "即时奖励",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以推荐流作为默认入口、而主动搜索或拒绝需要额外动作为核心，不等同于系统改变了可见选项范围。",
+              "evidence": "| **默认选项** | 自动播放下一个，",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S8-D4",
+              "name": "默认摩擦",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以反复暴露改变什么内容可见、可想和可选为核心，不等同于仅降低主动选择的操作成本。",
+              "evidence": "推荐系统会将你封闭在一个越来越窄的信息环境中。",
+              "from_menu": true,
+              "local_id": "d5",
+              "menu_id": "S8-D6",
+              "name": "选择环境",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以用户将“什么值得看”的判断逐渐交给系统为核心，不以系统实际匹配表现作为唯一理由。",
+              "evidence": "每次你接受推荐而不是主动搜索，",
+              "from_menu": true,
+              "local_id": "d6",
+              "menu_id": "S8-D7",
+              "name": "权威转移",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "知道被影响属于理性觉察，但依赖推荐是行为习惯，二者运行在不同心理通道。",
+              "evidence": "### 1. 元认知失调（Metacognitive Dissonance）",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "知行分离",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "推荐系统以触发-行动-奖赏-投入的循环结构持续强化依赖。",
+              "evidence": "```",
+              "from_menu": false,
+              "local_id": "d8",
+              "menu_id": null,
+              "name": "上瘾循环",
+              "occurrence": 1,
+              "tag": "数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "B": {
+          "directions": [
+            {
+              "definition": "以推荐替用户筛选选项、降低搜索比较与决策负担为核心，不以内容本身是否准确命中需求为唯一原因。",
+              "evidence": "推荐系统本质上充当了一个**认知外包工具**，",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S8-D1",
+              "name": "认知省力",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以反复、快速的奖励节律促成习惯和停留为核心，不要求内容具有长期实用价值。",
+              "evidence": "### 7. 可变奖赏机制（Variable Reward）",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S8-D2",
+              "name": "即时奖励",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以推荐流作为默认入口、而主动搜索或拒绝需要额外动作为核心，不等同于系统改变了可见选项范围。",
+              "evidence": "### 8. 无限滚动与无摩擦设计",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S8-D4",
+              "name": "默认摩擦",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以反复暴露改变什么内容可见、可想和可选为核心，不等同于仅降低主动选择的操作成本。",
+              "evidence": "> - 替代方案太少（整个信息环境都被推荐系统重塑了）",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S8-D6",
+              "name": "选择环境",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以用户从推荐中形成对“我是谁”的理解，并反过来按该自我理解继续选择为核心。",
+              "evidence": "### 11. 身份建构的外包",
+              "from_menu": true,
+              "local_id": "d5",
+              "menu_id": "S8-D8",
+              "name": "身份回路",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "即使知道被影响，这种知识仍停留在抽象理性层面，难以压过具体即时快感。",
+              "evidence": "### 6. 元认知失败",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "元认知失败",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "个性化界面制造“为你定制”的独特体验感，但本质上只是统计分类后的投喂。",
+              "evidence": "### 9. 个性化幻觉",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "个性化幻觉",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "C": {
+          "directions": [
+            {
+              "definition": "以推荐替用户筛选选项、降低搜索比较与决策负担为核心，不以内容本身是否准确命中需求为唯一原因。",
+              "evidence": "推荐系统本质上是一种**认知外包**——把筛选成本从你的大脑转移到算法上。",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S8-D1",
+              "name": "认知省力",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以推荐内容确实符合用户需求、兴趣或任务为核心，不要求它以快速奖励的节律出现。",
+              "evidence": "推荐系统恰恰以极低成本提供了一个\"足够好\"的选项，",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S8-D3",
+              "name": "匹配有用",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以反复、快速的奖励节律促成习惯和停留为核心，不要求内容具有长期实用价值。",
+              "evidence": "- **变比率强化**（variable ratio reinforcement）：",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S8-D2",
+              "name": "即时奖励",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以反复暴露改变什么内容可见、可想和可选为核心，不等同于仅降低主动选择的操作成本。",
+              "evidence": "偏好被不断强化，",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S8-D6",
+              "name": "选择环境",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "以用户将“什么值得看”的判断逐渐交给系统为核心，不以系统实际匹配表现作为唯一理由。",
+              "evidence": "这种交互设计维持了一种**虚假的自主感**：",
+              "from_menu": true,
+              "local_id": "d5",
+              "menu_id": "S8-D7",
+              "name": "权威转移",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "人会把偏差归于别人而非自己，因此主观上仍觉得点开的都是真正想看的。",
+              "evidence": "### 1. 认知偏差盲点（Bias Blind Spot）",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "偏差盲点",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "知道定理不等于会在证明中用好它；同理，知道被影响不等于能在每次决策中持续抵抗。",
+              "evidence": "### 3. 元认知的局限",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "元认知资源限制",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "长期依赖推荐后，主动搜索内容和辨认自身偏好的能力会退化，离开系统后反而无所适从。",
+              "evidence": "## 四、技能退化：",
+              "from_menu": false,
+              "local_id": "d8",
+              "menu_id": null,
+              "name": "探索能力退化",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        }
+      },
+      "block_id": "S8-B04",
+      "comparisons": {
+        "A_vs_B": {
+          "math_focus": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "推荐系统以触发-行动-奖赏-投入的循环结构持续强化依赖。",
+              "evidence": "```",
+              "local_id": "d8",
+              "name": "上瘾循环",
+              "occurrence": 1
+            },
+            "reason": "A用触发-行动-奖赏-投入的循环模型组织依赖形成，数学/形式化重心强于B。"
+          },
+          "nonmath_breadth": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "以用户将“什么值得看”的判断逐渐交给系统为核心，不以系统实际匹配表现作为唯一理由。",
+              "evidence": "每次你接受推荐而不是主动搜索，",
+              "local_id": "d6",
+              "name": "权威转移",
+              "occurrence": 1
+            },
+            "reason": "A除省力、奖励和默认摩擦外，还明确展开选择环境与权威转移，非数学路径多于B。"
+          }
+        },
+        "A_vs_C": {
+          "math_focus": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "以反复暴露改变什么内容可见、可想和可选为核心，不等同于仅降低主动选择的操作成本。",
+              "evidence": "偏好被不断强化，",
+              "local_id": "d4",
+              "name": "选择环境",
+              "occurrence": 1
+            },
+            "reason": "C直接用动力系统吸引子和正反馈结构来组织依赖机制，数学重心强于A的循环示意。"
+          },
+          "nonmath_breadth": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "以用户将“什么值得看”的判断逐渐交给系统为核心，不以系统实际匹配表现作为唯一理由。",
+              "evidence": "每次你接受推荐而不是主动搜索，",
+              "local_id": "d6",
+              "name": "权威转移",
+              "occurrence": 1
+            },
+            "reason": "A明确覆盖默认摩擦、选择环境和权威转移三条C未同时展开的非数学路径，因此更宽。"
+          }
+        },
+        "B_vs_C": {
+          "math_focus": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "以反复暴露改变什么内容可见、可想和可选为核心，不等同于仅降低主动选择的操作成本。",
+              "evidence": "偏好被不断强化，",
+              "local_id": "d4",
+              "name": "选择环境",
+              "occurrence": 1
+            },
+            "reason": "C以动力系统和正反馈回路作为中心组织框架，B基本没有数量化或形式模型。"
+          },
+          "nonmath_breadth": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "长期依赖推荐后，主动搜索内容和辨认自身偏好的能力会退化，离开系统后反而无所适从。",
+              "evidence": "## 四、技能退化：",
+              "local_id": "d8",
+              "name": "探索能力退化",
+              "occurrence": 1
+            },
+            "reason": "C在B已有的省力与奖励之外，还补入权威转移、偏差盲点和探索能力退化，非数学解释路径更丰富。"
+          }
+        }
+      }
+    }
+  ],
+  "method": "menu",
+  "question": "S8",
+  "slot": "M3"
+}

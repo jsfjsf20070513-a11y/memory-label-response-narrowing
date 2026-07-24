@@ -1,0 +1,2036 @@
+{
+  "blocks": [
+    {
+      "answers": {
+        "A": {
+          "directions": [
+            {
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "### 1. 选择悖论（The Paradox of Choice）",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S10-D1",
+              "name": "选项过载",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以不同选项分别满足不能通约的价值为核心，不把决定简化为单一标准排序。",
+              "evidence": "### 2. 多维度下的不可比性（Pareto 最优的困境）",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S10-D3",
+              "name": "价值冲突",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "以决定后想象未选路径可能更好导致后悔为核心，不等同于决定前对后果未知的犹豫。",
+              "evidence": "### 2. 反事实思维（Counterfactual Thinking）",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S10-D7",
+              "name": "反事实想象",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以追求唯一最优而不接受足够合适导致犹豫为核心，不以价值之间无法比较为必要前提。",
+              "evidence": "### 4. 最大化者 vs. 满足者（Maximizer vs. Satisficer）",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S10-D4",
+              "name": "完美最大化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以放弃选项被大脑编码为损失、且损失痛感约为收获快感两倍为核心",
+              "evidence": "### 1. 损失厌恶（Loss Aversion）",
+              "from_menu": false,
+              "local_id": "d5",
+              "menu_id": null,
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以被放弃的最佳替代选项价值构成持续心理负担为核心",
+              "evidence": "### 3. 机会成本的幽灵",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "机会成本",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定前无法知道不同路径的实际结果为核心，不等同于仅有太多选项。",
+              "evidence": "## 三、一个有趣的数学类比：",
+              "from_menu": true,
+              "local_id": "d7",
+              "menu_id": "S10-D2",
+              "name": "后果不确定",
+              "occurrence": 1,
+              "tag": "数学"
+            }
+          ],
+          "identity_evidence": "作为数学系学生你会很熟悉：",
+          "identity_explicit": true
+        },
+        "B": {
+          "directions": [
+            {
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "### 1. 选择过载（Choice Overload）",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S10-D1",
+              "name": "选项过载",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以放弃选项被大脑编码为损失、且损失痛感约为收获快感两倍为核心",
+              "evidence": "### 2. 损失厌恶（Loss Aversion）",
+              "from_menu": false,
+              "local_id": "d2",
+              "menu_id": null,
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定前无法知道不同路径的实际结果为核心，不等同于仅有太多选项。",
+              "evidence": "### 3. 不确定性下的焦虑",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S10-D2",
+              "name": "后果不确定",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以不同选项分别满足不能通约的价值为核心，不把决定简化为单一标准排序。",
+              "evidence": "### 4. 可比较性困难",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S10-D3",
+              "name": "价值冲突",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定后想象未选路径可能更好导致后悔为核心，不等同于决定前对后果未知的犹豫。",
+              "evidence": "### 1. 反事实思维（Counterfactual Thinking）",
+              "from_menu": true,
+              "local_id": "d5",
+              "menu_id": "S10-D7",
+              "name": "反事实想象",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以追求唯一最优而不接受足够合适导致犹豫为核心，不以价值之间无法比较为必要前提。",
+              "evidence": "### 2. 最大化者 vs. 满足者（Maximizer vs. Satisficer）",
+              "from_menu": true,
+              "local_id": "d6",
+              "menu_id": "S10-D4",
+              "name": "完美最大化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决策后现实反馈与选择不一致产生心理不适和自我质疑为核心",
+              "evidence": "### 3. 认知失调（Cognitive Dissonance）",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "认知失调",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以对经历的记忆受峰值和结尾时刻主导导致选择性放大负面体验为核心",
+              "evidence": "### 4. 峰终定律与记忆偏差",
+              "from_menu": false,
+              "local_id": "d8",
+              "menu_id": null,
+              "name": "峰终定律与记忆偏差",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以已投入时间精力导致不愿放弃当前选项又不甘继续为核心",
+              "evidence": "### 5. 沉没成本的纠缠",
+              "from_menu": false,
+              "local_id": "d9",
+              "menu_id": null,
+              "name": "沉没成本",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以犹豫和后悔在远古环境中具有生存适应价值但在现代选择过载中失调为核心",
+              "evidence": "从进化心理学看，",
+              "from_menu": false,
+              "local_id": "d10",
+              "menu_id": null,
+              "name": "进化视角",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "C": {
+          "directions": [
+            {
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "### 1. 选择过载（Choice Overload）",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S10-D1",
+              "name": "选项过载",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以放弃选项被大脑编码为损失、且损失痛感约为收获快感两倍为核心",
+              "evidence": "### 2. 损失厌恶（Loss Aversion）",
+              "from_menu": false,
+              "local_id": "d2",
+              "menu_id": null,
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以不同选项分别满足不能通约的价值为核心，不把决定简化为单一标准排序。",
+              "evidence": "### 3. 评估困难（Incommensurability）",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S10-D3",
+              "name": "价值冲突",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定后想象未选路径可能更好导致后悔为核心，不等同于决定前对后果未知的犹豫。",
+              "evidence": "### 1. 反事实思维（Counterfactual Thinking）",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S10-D7",
+              "name": "反事实想象",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以选择后享乐适应使兴奋消退而对未选选项持续美化产生落差为核心",
+              "evidence": "### 2. 适应性偏差（Hedonic Adaptation）",
+              "from_menu": false,
+              "local_id": "d5",
+              "menu_id": null,
+              "name": "适应性偏差",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以追求唯一最优而不接受足够合适导致犹豫为核心，不以价值之间无法比较为必要前提。",
+              "evidence": "### 3. 最大化者 vs 满足者（Maximizer vs. Satisficer）",
+              "from_menu": true,
+              "local_id": "d6",
+              "menu_id": "S10-D4",
+              "name": "完美最大化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决策后被放弃选项优点与所选选项缺点之间的矛盾产生心理不适为核心",
+              "evidence": "### 4. 认知失调（Cognitive Dissonance）",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "认知失调",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以前额叶皮层、杏仁核等脑区加工机制解释犹豫与后悔的神经基础为核心",
+              "evidence": "## 三、神经科学视角",
+              "from_menu": false,
+              "local_id": "d8",
+              "menu_id": null,
+              "name": "神经科学视角",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        }
+      },
+      "block_id": "S10-B01",
+      "comparisons": {
+        "A_vs_B": {
+          "math_focus": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "以不同选项分别满足不能通约的价值为核心，不把决定简化为单一标准排序。",
+              "evidence": "### 2. 多维度下的不可比性（Pareto 最优的困境）",
+              "local_id": "d2",
+              "name": "价值冲突",
+              "occurrence": 1
+            },
+            "reason": "A用Pareto不可比性和秘书问题两个数学方向组织论证，B无数学方向"
+          },
+          "nonmath_breadth": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "以犹豫和后悔在远古环境中具有生存适应价值但在现代选择过载中失调为核心",
+              "evidence": "从进化心理学看，",
+              "local_id": "d10",
+              "name": "进化视角",
+              "occurrence": 1
+            },
+            "reason": "B覆盖10条非数学方向（含认知失调、峰终定律、沉没成本、进化视角等），A仅5条"
+          }
+        },
+        "A_vs_C": {
+          "math_focus": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "以不同选项分别满足不能通约的价值为核心，不把决定简化为单一标准排序。",
+              "evidence": "### 2. 多维度下的不可比性（Pareto 最优的困境）",
+              "local_id": "d2",
+              "name": "价值冲突",
+              "occurrence": 1
+            },
+            "reason": "A有Pareto和秘书问题两个数学方向，C无数学方向"
+          },
+          "nonmath_breadth": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "以前额叶皮层、杏仁核等脑区加工机制解释犹豫与后悔的神经基础为核心",
+              "evidence": "## 三、神经科学视角",
+              "local_id": "d8",
+              "name": "神经科学视角",
+              "occurrence": 1
+            },
+            "reason": "C覆盖8条非数学方向（含适应性偏差、认知失调、神经科学等），A仅5条"
+          }
+        },
+        "B_vs_C": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "B和C均无数学标签方向"
+          },
+          "nonmath_breadth": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "以对经历的记忆受峰值和结尾时刻主导导致选择性放大负面体验为核心",
+              "evidence": "### 4. 峰终定律与记忆偏差",
+              "local_id": "d8",
+              "name": "峰终定律与记忆偏差",
+              "occurrence": 1
+            },
+            "reason": "B覆盖10条非数学方向，C覆盖8条；B额外有峰终定律、沉没成本等"
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "A": {
+          "directions": [
+            {
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "### 1. 选择过载（Choice Overload）",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S10-D1",
+              "name": "选项过载",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以放弃选项被大脑编码为损失、且损失痛感约为收获快感两倍为核心",
+              "evidence": "### 2. 损失厌恶（Loss Aversion）",
+              "from_menu": false,
+              "local_id": "d2",
+              "menu_id": null,
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定前无法知道不同路径的实际结果为核心，不等同于仅有太多选项。",
+              "evidence": "### 3. 不确定性下的焦虑",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S10-D2",
+              "name": "后果不确定",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定后想象未选路径可能更好导致后悔为核心，不等同于决定前对后果未知的犹豫。",
+              "evidence": "### 1. 反事实思维（Counterfactual Thinking）",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S10-D7",
+              "name": "反事实想象",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以追求唯一最优而不接受足够合适导致犹豫为核心，不以价值之间无法比较为必要前提。",
+              "evidence": "### 2. 满足者 vs. 最大化者（Satisficer vs. Maximizer）",
+              "from_menu": true,
+              "local_id": "d5",
+              "menu_id": "S10-D4",
+              "name": "完美最大化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以高估选择结果对长期幸福的影响并因享乐适应产生落差为核心",
+              "evidence": "### 3. 适应性偏差与聚焦错觉",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "适应性偏差",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决策后遇到与选择不一致的信息产生心理不适为核心",
+              "evidence": "### 4. 认知失调（Cognitive Dissonance）",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "认知失调",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以他人的评价、期待或可见选择改变“好决定”的标准为核心，不假定选择必然被当作自我身份证明。",
+              "evidence": "| **社会比较** | 社交媒体时代，",
+              "from_menu": true,
+              "local_id": "d8",
+              "menu_id": "S10-D6",
+              "name": "社会比较",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以已投入时间精力导致不愿放弃当前选项又不甘继续为核心",
+              "evidence": "| **沉没成本** | 已经投入的时间和精力让我们不愿轻易放弃当前选项，",
+              "from_menu": false,
+              "local_id": "d9",
+              "menu_id": null,
+              "name": "沉没成本",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以犹豫和后悔在远古环境中具有生存适应价值但在现代选择过载中失调为核心",
+              "evidence": "| **进化层面** | 在资源稀缺的远古环境中，",
+              "from_menu": false,
+              "local_id": "d10",
+              "menu_id": null,
+              "name": "进化视角",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "B": {
+          "directions": [
+            {
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "### 1. 选择悖论（The Paradox of Choice）",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S10-D1",
+              "name": "选项过载",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以被放弃的最佳替代选项价值随选项增多而膨胀构成心理负担为核心",
+              "evidence": "### 2. 机会成本的无限膨胀",
+              "from_menu": false,
+              "local_id": "d2",
+              "menu_id": null,
+              "name": "机会成本",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以不同选项分别满足不能通约的价值为核心，不把决定简化为单一标准排序。",
+              "evidence": "### 3. 不可公度性（Incommensurability）",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S10-D3",
+              "name": "价值冲突",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以放弃选项被大脑编码为损失、且损失痛感约为收获快感两倍为核心",
+              "evidence": "### 1. 损失厌恶（Loss Aversion）",
+              "from_menu": false,
+              "local_id": "d4",
+              "menu_id": null,
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定后想象未选路径可能更好导致后悔为核心，不等同于决定前对后果未知的犹豫。",
+              "evidence": "### 2. 反事实思维（Counterfactual Thinking）",
+              "from_menu": true,
+              "local_id": "d5",
+              "menu_id": "S10-D7",
+              "name": "反事实想象",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以系统性高估未来事件对情绪的影响持续时间并因享乐适应产生落差为核心",
+              "evidence": "### 3. 适应性偏差（Impact Bias）",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "适应性偏差",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以追求唯一最优而不接受足够合适导致犹豫为核心，不以价值之间无法比较为必要前提。",
+              "evidence": "### 4. 最大化者 vs. 满足者（Maximizer vs. Satisficer）",
+              "from_menu": true,
+              "local_id": "d7",
+              "menu_id": "S10-D4",
+              "name": "完美最大化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以选择被用来证明“自己是什么样的人”而承担过多自我意义为核心，不以他人的标准为必要来源。",
+              "evidence": "### 自我叙事的断裂",
+              "from_menu": true,
+              "local_id": "d8",
+              "menu_id": "S10-D5",
+              "name": "身份投射",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定难撤回、后果由自己承担所带来的延迟与事后自责为核心，不以未选选项的想象为必要来源。",
+              "evidence": "### 自由的重负",
+              "from_menu": true,
+              "local_id": "d9",
+              "menu_id": "S10-D8",
+              "name": "责任压力",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": "> 作为数学系学生你可能会联想到：",
+          "identity_explicit": true
+        },
+        "C": {
+          "directions": [
+            {
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "### 1. 选择过载（Choice Overload）",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S10-D1",
+              "name": "选项过载",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以放弃选项被大脑编码为损失、且损失痛感约为收获快感两倍为核心",
+              "evidence": "### 2. 损失厌恶（Loss Aversion）",
+              "from_menu": false,
+              "local_id": "d2",
+              "menu_id": null,
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定前无法知道不同路径的实际结果为核心，不等同于仅有太多选项。",
+              "evidence": "### 3. 不确定性下的焦虑",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S10-D2",
+              "name": "后果不确定",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定后想象未选路径可能更好导致后悔为核心，不等同于决定前对后果未知的犹豫。",
+              "evidence": "### 1. 反事实思维（Counterfactual Thinking）",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S10-D7",
+              "name": "反事实想象",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以追求唯一最优而不接受足够合适导致犹豫为核心，不以价值之间无法比较为必要前提。",
+              "evidence": "### 2. 最大化者 vs. 满足者（Maximizer vs. Satisficer）",
+              "from_menu": true,
+              "local_id": "d5",
+              "menu_id": "S10-D4",
+              "name": "完美最大化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以高估选择结果对长期幸福的影响并因享乐适应产生落差为核心",
+              "evidence": "### 3. 适应性偏差（Adaptation Bias）",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "适应性偏差",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决策后持续接触未选选项的正面信息不断触发反事实思维和后悔为核心",
+              "evidence": "### 4. 信息的持续涌入",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "信息持续涌入",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以犹豫和后悔在远古环境中具有生存适应价值但在现代选择过载中失调为核心",
+              "evidence": "## 三、进化视角：",
+              "from_menu": false,
+              "local_id": "d8",
+              "menu_id": null,
+              "name": "进化视角",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        }
+      },
+      "block_id": "S10-B02",
+      "comparisons": {
+        "A_vs_B": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "A和B均无数学标签方向"
+          },
+          "nonmath_breadth": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "以他人的评价、期待或可见选择改变“好决定”的标准为核心，不假定选择必然被当作自我身份证明。",
+              "evidence": "| **社会比较** | 社交媒体时代，",
+              "local_id": "d8",
+              "name": "社会比较",
+              "occurrence": 1
+            },
+            "reason": "A覆盖10条非数学方向（含D6社会比较、沉没成本、进化视角等），B为9条"
+          }
+        },
+        "A_vs_C": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "A和C均无数学标签方向"
+          },
+          "nonmath_breadth": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "以他人的评价、期待或可见选择改变“好决定”的标准为核心，不假定选择必然被当作自我身份证明。",
+              "evidence": "| **社会比较** | 社交媒体时代，",
+              "local_id": "d8",
+              "name": "社会比较",
+              "occurrence": 1
+            },
+            "reason": "A覆盖10条非数学方向，C为8条；A额外有D6社会比较、沉没成本等"
+          }
+        },
+        "B_vs_C": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "B和C均无数学标签方向"
+          },
+          "nonmath_breadth": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "以选择被用来证明“自己是什么样的人”而承担过多自我意义为核心，不以他人的标准为必要来源。",
+              "evidence": "### 自我叙事的断裂",
+              "local_id": "d8",
+              "name": "身份投射",
+              "occurrence": 1
+            },
+            "reason": "B覆盖9条非数学方向（含D5身份投射、D8责任压力），C为8条"
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "A": {
+          "directions": [
+            {
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "### 1. 选择过载（Choice Overload）",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S10-D1",
+              "name": "选项过载",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "对失去的痛苦感受远大于获得的快乐，导致放弃选项被体验为损失从而增加决策痛苦",
+              "evidence": "### 2. 损失厌恶（Loss Aversion）",
+              "from_menu": false,
+              "local_id": "d2",
+              "menu_id": null,
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以不同选项分别满足不能通约的价值为核心，不把决定简化为单一标准排序。",
+              "evidence": "### 4. 评估困难（Preference Uncertainty）",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S10-D3",
+              "name": "价值冲突",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定后想象未选路径可能更好导致后悔为核心，不等同于决定前对后果未知的犹豫。",
+              "evidence": "### 1. 反事实思维（Counterfactual Thinking）",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S10-D7",
+              "name": "反事实想象",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "选择带来的满足感随时间消退，未选项在记忆中被美化",
+              "evidence": "### 2. 适应性偏差（Hedonic Adaptation）",
+              "from_menu": false,
+              "local_id": "d5",
+              "menu_id": null,
+              "name": "享乐适应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以追求唯一最优而不接受足够合适导致犹豫为核心，不以价值之间无法比较为必要前提。",
+              "evidence": "### 3. 最大化者 vs. 满足者（Maximizer vs. Satisficer）",
+              "from_menu": true,
+              "local_id": "d6",
+              "menu_id": "S10-D4",
+              "name": "完美最大化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "决策后对已选项缺点和未选项优点的察觉与正确选择信念产生冲突引发不适",
+              "evidence": "### 4. 认知失调（Cognitive Dissonance）",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "认知失调",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定难撤回、后果由自己承担所带来的延迟与事后自责为核心，不以未选选项的想象为必要来源。",
+              "evidence": "### 5. 沉没成本与责任感",
+              "from_menu": true,
+              "local_id": "d8",
+              "menu_id": "S10-D8",
+              "name": "责任压力",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "B": {
+          "directions": [
+            {
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "### 1. 选择过载（Choice Overload）",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S10-D1",
+              "name": "选项过载",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "对失去的痛苦感受远大于获得的快乐，导致放弃选项被体验为损失从而增加决策痛苦",
+              "evidence": "### 2. 损失厌恶（Loss Aversion）",
+              "from_menu": false,
+              "local_id": "d2",
+              "menu_id": null,
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以不同选项分别满足不能通约的价值为核心，不把决定简化为单一标准排序。",
+              "evidence": "### 3. 选项之间的可比性困难",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S10-D3",
+              "name": "价值冲突",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以追求唯一最优而不接受足够合适导致犹豫为核心，不以价值之间无法比较为必要前提。",
+              "evidence": "### 4. 最大化倾向（Maximizing）",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S10-D4",
+              "name": "完美最大化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定后想象未选路径可能更好导致后悔为核心，不等同于决定前对后果未知的犹豫。",
+              "evidence": "### 1. 反事实思维（Counterfactual Thinking）",
+              "from_menu": true,
+              "local_id": "d5",
+              "menu_id": "S10-D7",
+              "name": "反事实想象",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "决策后对已选项缺点和未选项优点的察觉与正确选择信念产生冲突引发不适",
+              "evidence": "### 2. 认知失调（Cognitive Dissonance）",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "认知失调",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "选择带来的满足感随时间消退，未选项在记忆中被美化",
+              "evidence": "### 3. 适应性偏差（Hedonic Adaptation）",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "享乐适应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定难撤回、后果由自己承担所带来的延迟与事后自责为核心，不以未选选项的想象为必要来源。",
+              "evidence": "### 4. 沉没成本与机会成本的纠缠",
+              "from_menu": true,
+              "local_id": "d8",
+              "menu_id": "S10-D8",
+              "name": "责任压力",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定前无法知道不同路径的实际结果为核心，不等同于仅有太多选项。",
+              "evidence": "### 5. 信息的不对称与延迟反馈",
+              "from_menu": true,
+              "local_id": "d9",
+              "menu_id": "S10-D2",
+              "name": "后果不确定",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "C": {
+          "directions": [
+            {
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "就多了 $n-1$ 次两两比较（比较的复杂度为 $O(n^2)$），",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S10-D1",
+              "name": "选项过载",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "以不同选项分别满足不能通约的价值为核心，不把决定简化为单一标准排序。",
+              "evidence": "**多维向量之间通常只有偏序（partial order），",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S10-D3",
+              "name": "价值冲突",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "对失去的痛苦感受远大于获得的快乐，导致放弃选项被体验为损失从而增加决策痛苦",
+              "evidence": "$$v(x) \\approx \\begin{cases} x^\\alpha,",
+              "from_menu": false,
+              "local_id": "d3",
+              "menu_id": null,
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "决策者不仅最大化期望效用还最小化预期后悔，选项越多预期后悔越大",
+              "evidence": "$$U_{\\text{modified}}(a_i) = \\mathbb{E}[u(a_i)] - \\rho \\cdot \\mathbb{E}\\!\\Big[\\max_{j \\neq i}\\big(u(a_j) - u(a_i)\\big)^+\\Big]$$",
+              "from_menu": false,
+              "local_id": "d4",
+              "menu_id": null,
+              "name": "后悔厌恶",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "以决定后想象未选路径可能更好导致后悔为核心，不等同于决定前对后果未知的犹豫。",
+              "evidence": "### 5. 反事实思维（Counterfactual Thinking）",
+              "from_menu": true,
+              "local_id": "d5",
+              "menu_id": "S10-D7",
+              "name": "反事实想象",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以追求唯一最优而不接受足够合适导致犹豫为核心，不以价值之间无法比较为必要前提。",
+              "evidence": "### 6. 最大化者 vs. 满足者（Maximizer vs. Satisficer）",
+              "from_menu": true,
+              "local_id": "d6",
+              "menu_id": "S10-D4",
+              "name": "完美最大化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定前无法知道不同路径的实际结果为核心，不等同于仅有太多选项。",
+              "evidence": "最优策略下选中最佳候选者的概率趋近于 $1/e \\approx 36.8\\%$。",
+              "from_menu": true,
+              "local_id": "d7",
+              "menu_id": "S10-D2",
+              "name": "后果不确定",
+              "occurrence": 1,
+              "tag": "数学"
+            }
+          ],
+          "identity_evidence": "作为数学系学生，",
+          "identity_explicit": true
+        }
+      },
+      "block_id": "S10-B03",
+      "comparisons": {
+        "A_vs_B": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "A和B均以纯文字叙述各机制，无公式或形式化建模，数学组织重心相当"
+          },
+          "nonmath_breadth": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "以决定前无法知道不同路径的实际结果为核心，不等同于仅有太多选项。",
+              "evidence": "### 5. 信息的不对称与延迟反馈",
+              "local_id": "d9",
+              "name": "后果不确定",
+              "occurrence": 1
+            },
+            "reason": "B额外覆盖了D2（后果不确定/延迟反馈）这一非数学方向，A缺少该路径"
+          }
+        },
+        "A_vs_C": {
+          "math_focus": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "就多了 $n-1$ 次两两比较（比较的复杂度为 $O(n^2)$），",
+              "local_id": "d1",
+              "name": "选项过载",
+              "occurrence": 1
+            },
+            "reason": "C用偏序集、前景理论公式、后悔厌恶公式和秘书问题数学推导组织多个方向，A全为非数学"
+          },
+          "nonmath_breadth": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "### 1. 选择过载（Choice Overload）",
+              "local_id": "d1",
+              "name": "选项过载",
+              "occurrence": 1
+            },
+            "reason": "A有8个非数学方向（含享乐适应、认知失调、D8等），C仅2个非数学方向"
+          }
+        },
+        "B_vs_C": {
+          "math_focus": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "就多了 $n-1$ 次两两比较（比较的复杂度为 $O(n^2)$），",
+              "local_id": "d1",
+              "name": "选项过载",
+              "occurrence": 1
+            },
+            "reason": "C有5个数学标签方向含公式和形式化模型，B全为非数学"
+          },
+          "nonmath_breadth": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "### 1. 选择过载（Choice Overload）",
+              "local_id": "d1",
+              "name": "选项过载",
+              "occurrence": 1
+            },
+            "reason": "B有9个非数学方向覆盖损失厌恶、D3、D2、D8、认知失调等，C仅2个非数学方向"
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "A": {
+          "directions": [
+            {
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "你需要做的**两两比较**从 $\\binom{2}{2}=1$ 增长到 $\\binom{20}{2}=190$。",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S10-D1",
+              "name": "选项过载",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "对失去的痛苦感受远大于获得的快乐，导致放弃选项被体验为损失从而增加决策痛苦",
+              "evidence": "$$U(\\text{损失}) \\approx -2 \\cdot U(\\text{等量收益})$$",
+              "from_menu": false,
+              "local_id": "d2",
+              "menu_id": null,
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "以决定后想象未选路径可能更好导致后悔为核心，不等同于决定前对后果未知的犹豫。",
+              "evidence": "你观察到的是 $X_{\\text{chosen}}$ 的一个**实现值**，",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S10-D7",
+              "name": "反事实想象",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "决策前后的偏好和评价标准发生变化，导致即使当时最优的选择事后也可能被认为是错误的",
+              "evidence": "- 决策前你用的效用函数 $U_1$ 和决策后用来评价的效用函数 $U_2$ 往往不是同一个。",
+              "from_menu": false,
+              "local_id": "d4",
+              "menu_id": null,
+              "name": "效用函数不稳定",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "以追求唯一最优而不接受足够合适导致犹豫为核心，不以价值之间无法比较为必要前提。",
+              "evidence": "## 五、最大化者 vs. 满足者",
+              "from_menu": true,
+              "local_id": "d5",
+              "menu_id": "S10-D4",
+              "name": "完美最大化",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": "作为数学系的学生，",
+          "identity_explicit": true
+        },
+        "B": {
+          "directions": [
+            {
+              "definition": "对失去的痛苦感受远大于获得的快乐，导致放弃选项被体验为损失从而增加决策痛苦",
+              "evidence": "### 1. 损失厌恶（Loss Aversion）",
+              "from_menu": false,
+              "local_id": "d1",
+              "menu_id": null,
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "### 2. 选择过载（Choice Overload）",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S10-D1",
+              "name": "选项过载",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定前无法知道不同路径的实际结果为核心，不等同于仅有太多选项。",
+              "evidence": "### 3. 不确定性下的焦虑",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S10-D2",
+              "name": "后果不确定",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以追求唯一最优而不接受足够合适导致犹豫为核心，不以价值之间无法比较为必要前提。",
+              "evidence": "### 4. 最大化倾向 vs. 满足化倾向",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S10-D4",
+              "name": "完美最大化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定后想象未选路径可能更好导致后悔为核心，不等同于决定前对后果未知的犹豫。",
+              "evidence": "### 1. 反事实思维（Counterfactual Thinking）",
+              "from_menu": true,
+              "local_id": "d5",
+              "menu_id": "S10-D7",
+              "name": "反事实想象",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "决策后对已选项缺点和未选项优点的察觉与正确选择信念产生冲突引发不适",
+              "evidence": "### 2. 选择后失调（Post-Decision Dissonance）",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "认知失调",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "选择带来的满足感随时间消退，未选项在记忆中被美化",
+              "evidence": "### 3. 适应性偏差（Hedonic Adaptation）",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "享乐适应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定难撤回、后果由自己承担所带来的延迟与事后自责为核心，不以未选选项的想象为必要来源。",
+              "evidence": "### 5. 自我归因",
+              "from_menu": true,
+              "local_id": "d8",
+              "menu_id": "S10-D8",
+              "name": "责任压力",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "C": {
+          "directions": [
+            {
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "### 1. 选择超载（Choice Overload）",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S10-D1",
+              "name": "选项过载",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以不同选项分别满足不能通约的价值为核心，不把决定简化为单一标准排序。",
+              "evidence": "### 2. 选项间的\"不可通约性\"",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S10-D3",
+              "name": "价值冲突",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "对失去的痛苦感受远大于获得的快乐，导致放弃选项被体验为损失从而增加决策痛苦",
+              "evidence": "### 3. 损失厌恶（Loss Aversion）",
+              "from_menu": false,
+              "local_id": "d3",
+              "menu_id": null,
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定后想象未选路径可能更好导致后悔为核心，不等同于决定前对后果未知的犹豫。",
+              "evidence": "### 1. 反事实思维（Counterfactual Thinking）",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S10-D7",
+              "name": "反事实想象",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "决策后对已选项缺点和未选项优点的察觉与正确选择信念产生冲突引发不适",
+              "evidence": "### 2. 认知失调（Cognitive Dissonance）",
+              "from_menu": false,
+              "local_id": "d5",
+              "menu_id": null,
+              "name": "认知失调",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以追求唯一最优而不接受足够合适导致犹豫为核心，不以价值之间无法比较为必要前提。",
+              "evidence": "### 3. 最大化者 vs. 满足者（Maximizer vs. Satisficer）",
+              "from_menu": true,
+              "local_id": "d6",
+              "menu_id": "S10-D4",
+              "name": "完美最大化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "选择带来的满足感随时间消退，未选项在记忆中被美化",
+              "evidence": "### 4. 峰终定律与适应效应",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "享乐适应",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        }
+      },
+      "block_id": "S10-B04",
+      "comparisons": {
+        "A_vs_B": {
+          "math_focus": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "你需要做的**两两比较**从 $\\binom{2}{2}=1$ 增长到 $\\binom{20}{2}=190$。",
+              "local_id": "d1",
+              "name": "选项过载",
+              "occurrence": 1
+            },
+            "reason": "A用组合数公式、前景理论公式、期望上界与实现值对比、效用函数U1/U2形式化组织四个方向，B全为非数学"
+          },
+          "nonmath_breadth": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "对失去的痛苦感受远大于获得的快乐，导致放弃选项被体验为损失从而增加决策痛苦",
+              "evidence": "### 1. 损失厌恶（Loss Aversion）",
+              "local_id": "d1",
+              "name": "损失厌恶",
+              "occurrence": 1
+            },
+            "reason": "B有8个非数学方向覆盖D1、D2、D4、D7、D8、损失厌恶、认知失调、享乐适应，A仅1个非数学方向"
+          }
+        },
+        "A_vs_C": {
+          "math_focus": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "你需要做的**两两比较**从 $\\binom{2}{2}=1$ 增长到 $\\binom{20}{2}=190$。",
+              "local_id": "d1",
+              "name": "选项过载",
+              "occurrence": 1
+            },
+            "reason": "A有4个数学方向含公式和形式化建模，C全为非数学"
+          },
+          "nonmath_breadth": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "### 1. 选择超载（Choice Overload）",
+              "local_id": "d1",
+              "name": "选项过载",
+              "occurrence": 1
+            },
+            "reason": "C有7个非数学方向覆盖D1、D3、D7、D4、损失厌恶、认知失调、享乐适应，A仅1个非数学方向"
+          }
+        },
+        "B_vs_C": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "B和C均无数学标签方向，数学组织重心相当"
+          },
+          "nonmath_breadth": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "以决定前无法知道不同路径的实际结果为核心，不等同于仅有太多选项。",
+              "evidence": "### 3. 不确定性下的焦虑",
+              "local_id": "d3",
+              "name": "后果不确定",
+              "occurrence": 1
+            },
+            "reason": "B有8个非数学方向含D2和D8，C有7个非数学方向含D3但缺D2和D8，B覆盖更广"
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "A": {
+          "directions": [
+            {
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "逐一比较的认知负荷呈指数级增长（你作为数学系学生可以想象：",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S10-D1",
+              "name": "选项过载",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "以不同选项分别满足不能通约的价值为核心，不把决定简化为单一标准排序。",
+              "evidence": "很多真实选择涉及**多个维度且无法化约为单一效用函数**。",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S10-D3",
+              "name": "价值冲突",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "以决定后想象未选路径可能更好导致后悔为核心，不等同于决定前对后果未知的犹豫。",
+              "evidence": "人类大脑天然会构造\"如果我当初选了 B 会怎样\"的虚拟情境。",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S10-D7",
+              "name": "反事实想象",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以追求唯一最优而不接受足够合适导致犹豫为核心，不以价值之间无法比较为必要前提。",
+              "evidence": "- **最大化者**追求\"做出最优选择\"，",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S10-D4",
+              "name": "完美最大化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以选择意味着放弃其他选项的潜在收益且失去的痛苦远大于获得的快乐为核心解释犹豫与后悔",
+              "evidence": "$$V(x) \\approx \\begin{cases} x^\\alpha,",
+              "from_menu": false,
+              "local_id": "d5",
+              "menu_id": null,
+              "name": "损失厌恶与机会成本",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "以选后满足感快速消退而未选选项在想象中保持吸引力的不对称比较为核心",
+              "evidence": "### 4. 适应性偏差与峰终定律",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "享乐适应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以犹豫和后悔在远古环境中具有生存优势但在现代选项爆炸环境中过度激活为核心",
+              "evidence": "在资源匮乏的远古环境中，",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "进化心理学",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以秘书问题等数学模型说明即使最优策略成功概率也远低于直觉预期为核心",
+              "evidence": "你可能知道**秘书问题（Secretary Problem）**：",
+              "from_menu": false,
+              "local_id": "d8",
+              "menu_id": null,
+              "name": "最优停止问题",
+              "occurrence": 1,
+              "tag": "数学"
+            }
+          ],
+          "identity_evidence": "逐一比较的认知负荷呈指数级增长（你作为数学系学生可以想象：",
+          "identity_explicit": true
+        },
+        "B": {
+          "directions": [
+            {
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "### 1. 选择超载（Choice Overload）",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S10-D1",
+              "name": "选项过载",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定前无法知道不同路径的实际结果为核心，不等同于仅有太多选项。",
+              "evidence": "我们无法完全预知每个选择的未来结果。",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S10-D2",
+              "name": "后果不确定",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以不同选项分别满足不能通约的价值为核心，不把决定简化为单一标准排序。",
+              "evidence": "### 3. 评估维度冲突",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S10-D3",
+              "name": "价值冲突",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定后想象未选路径可能更好导致后悔为核心，不等同于决定前对后果未知的犹豫。",
+              "evidence": "### 1. 反事实思维（Counterfactual Thinking）",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S10-D7",
+              "name": "反事实想象",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以追求唯一最优而不接受足够合适导致犹豫为核心，不以价值之间无法比较为必要前提。",
+              "evidence": "- **最大化者（Maximizer）**：",
+              "from_menu": true,
+              "local_id": "d5",
+              "menu_id": "S10-D4",
+              "name": "完美最大化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以选择被用来证明“自己是什么样的人”而承担过多自我意义为核心，不以他人的标准为必要来源。",
+              "evidence": "很多选择（职业、伴侣、城市）被我们赋予了**身份定义**的意义——\"我选的代表我是谁\"。",
+              "from_menu": true,
+              "local_id": "d6",
+              "menu_id": "S10-D5",
+              "name": "身份投射",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定难撤回、后果由自己承担所带来的延迟与事后自责为核心，不以未选选项的想象为必要来源。",
+              "evidence": "### 5. 沉没成本与自我归因",
+              "from_menu": true,
+              "local_id": "d7",
+              "menu_id": "S10-D8",
+              "name": "责任压力",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以失去的痛苦约为获得快乐两倍的不对称性解释选择中的回避与犹豫",
+              "evidence": "每一次选择都意味着放弃其他选项。",
+              "from_menu": false,
+              "local_id": "d8",
+              "menu_id": null,
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以选后满足感快速消退而未选选项保持想象吸引力为核心",
+              "evidence": "### 2. 适应性偏差（Hedonic Adaptation）",
+              "from_menu": false,
+              "local_id": "d9",
+              "menu_id": null,
+              "name": "享乐适应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以犹豫和后悔在远古环境中有生存价值但现代选项爆炸导致过载为核心",
+              "evidence": "### 进化视角",
+              "from_menu": false,
+              "local_id": "d10",
+              "menu_id": null,
+              "name": "进化心理学",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决策后现实反馈与预期不符产生心理不适和自我合理化为核心",
+              "evidence": "### 4. 认知失调（Cognitive Dissonance）",
+              "from_menu": false,
+              "local_id": "d11",
+              "menu_id": null,
+              "name": "认知失调",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "C": {
+          "directions": [
+            {
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "大脑就需要多进行一轮比较和评估，",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S10-D1",
+              "name": "选项过载",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "以决定后想象未选路径可能更好导致后悔为核心，不等同于决定前对后果未知的犹豫。",
+              "evidence": "- **上行反事实**（想象更好的结果）→ 产生后悔",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S10-D7",
+              "name": "反事实想象",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以追求唯一最优而不接受足够合适导致犹豫为核心，不以价值之间无法比较为必要前提。",
+              "evidence": "### 2. 最大化者 vs. 满足者（Maximizer vs. Satisficer）",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S10-D4",
+              "name": "完美最大化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以前景理论的损失-收益不对称性和放弃选项的机会成本解释犹豫",
+              "evidence": "潜在的\"损失感\"越强，",
+              "from_menu": false,
+              "local_id": "d4",
+              "menu_id": null,
+              "name": "损失厌恶与机会成本",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "以决策后发现所选方案缺点或未选方案优点产生心理不协调为核心",
+              "evidence": "### 3. 认知失调（Cognitive Dissonance）",
+              "from_menu": false,
+              "local_id": "d5",
+              "menu_id": null,
+              "name": "认知失调",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以高估选择对未来幸福的影响并逐渐心理适应为核心",
+              "evidence": "### 4. 适应性偏差（Impact Bias）",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "享乐适应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以犹豫和后悔具有适应性价值但现代选项过多导致机制过载为核心",
+              "evidence": "从进化心理学角度看，",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "进化心理学",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        }
+      },
+      "block_id": "S10-B05",
+      "comparisons": {
+        "A_vs_B": {
+          "math_focus": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "逐一比较的认知负荷呈指数级增长（你作为数学系学生可以想象：",
+              "local_id": "d1",
+              "name": "选项过载",
+              "occurrence": 1
+            },
+            "reason": "A有4个数学标签方向（选项过载C(n,2)、价值冲突偏序/全序、前景理论公式、秘书问题），B无数学方向"
+          },
+          "nonmath_breadth": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "以决定前无法知道不同路径的实际结果为核心，不等同于仅有太多选项。",
+              "evidence": "我们无法完全预知每个选择的未来结果。",
+              "local_id": "d2",
+              "name": "后果不确定",
+              "occurrence": 1
+            },
+            "reason": "B覆盖11个非数学方向含D2、D5、D8、认知失调等A缺少的路径，A仅4个非数学方向"
+          }
+        },
+        "A_vs_C": {
+          "math_focus": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "以秘书问题等数学模型说明即使最优策略成功概率也远低于直觉预期为核心",
+              "evidence": "你可能知道**秘书问题（Secretary Problem）**：",
+              "local_id": "d8",
+              "name": "最优停止问题",
+              "occurrence": 1
+            },
+            "reason": "A有4个数学方向（含偏序全序、秘书问题），C有2个数学方向，A数学组织更丰富"
+          },
+          "nonmath_breadth": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "以决策后发现所选方案缺点或未选方案优点产生心理不协调为核心",
+              "evidence": "### 3. 认知失调（Cognitive Dissonance）",
+              "local_id": "d5",
+              "name": "认知失调",
+              "occurrence": 1
+            },
+            "reason": "C有5个非数学方向含认知失调，A有4个非数学方向，C略多一条实质不同路径"
+          }
+        },
+        "B_vs_C": {
+          "math_focus": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "大脑就需要多进行一轮比较和评估，",
+              "local_id": "d1",
+              "name": "选项过载",
+              "occurrence": 1
+            },
+            "reason": "C有2个数学方向（选项过载C(n,2)、前景理论公式），B无数学方向"
+          },
+          "nonmath_breadth": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "以选择被用来证明“自己是什么样的人”而承担过多自我意义为核心，不以他人的标准为必要来源。",
+              "evidence": "很多选择（职业、伴侣、城市）被我们赋予了**身份定义**的意义——\"我选的代表我是谁\"。",
+              "local_id": "d6",
+              "name": "身份投射",
+              "occurrence": 1
+            },
+            "reason": "B有11个非数学方向含D2、D3、D5、D8等C缺少的多条路径，C仅5个非数学方向"
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "A": {
+          "directions": [
+            {
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "### 1. 选择过载（Choice Overload）",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S10-D1",
+              "name": "选项过载",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定前无法知道不同路径的实际结果为核心，不等同于仅有太多选项。",
+              "evidence": "### 3. 不确定性下的焦虑",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S10-D2",
+              "name": "后果不确定",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以不同选项分别满足不能通约的价值为核心，不把决定简化为单一标准排序。",
+              "evidence": "### 4. 价值维度的不可通约性",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S10-D3",
+              "name": "价值冲突",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定后想象未选路径可能更好导致后悔为核心，不等同于决定前对后果未知的犹豫。",
+              "evidence": "### 1. 反事实思维（Counterfactual Thinking）",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S10-D7",
+              "name": "反事实想象",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以追求唯一最优而不接受足够合适导致犹豫为核心，不以价值之间无法比较为必要前提。",
+              "evidence": "### 4. 最大化者 vs. 满足者",
+              "from_menu": true,
+              "local_id": "d5",
+              "menu_id": "S10-D4",
+              "name": "完美最大化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定难撤回、后果由自己承担所带来的延迟与事后自责为核心，不以未选选项的想象为必要来源。",
+              "evidence": "### 3. 沉没成本与自我质疑",
+              "from_menu": true,
+              "local_id": "d6",
+              "menu_id": "S10-D8",
+              "name": "责任压力",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以失去的痛苦约为获得快乐两倍的不对称性解释选择中的回避与犹豫",
+              "evidence": "### 2. 损失厌恶（Loss Aversion）",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以选后新鲜感快速消退而未选选项永远保持想象中最佳状态为核心",
+              "evidence": "### 2. 享乐适应（Hedonic Adaptation）",
+              "from_menu": false,
+              "local_id": "d8",
+              "menu_id": null,
+              "name": "享乐适应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以犹豫和后悔在远古环境中有生存价值但现代大脑硬件未升级为核心",
+              "evidence": "## 三、进化视角：",
+              "from_menu": false,
+              "local_id": "d9",
+              "menu_id": null,
+              "name": "进化心理学",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "B": {
+          "directions": [
+            {
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "### 1. 选择过载（Choice Overload）",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S10-D1",
+              "name": "选项过载",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以决定后想象未选路径可能更好导致后悔为核心，不等同于决定前对后果未知的犹豫。",
+              "evidence": "### 1. 反事实思维（Counterfactual Thinking）",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S10-D7",
+              "name": "反事实想象",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以追求唯一最优而不接受足够合适导致犹豫为核心，不以价值之间无法比较为必要前提。",
+              "evidence": "### 3. 最大化者 vs. 满足者（Maximizer vs. Satisficer）",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S10-D4",
+              "name": "完美最大化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以失去的痛苦大于获得的快乐及放弃选项的想象价值解释犹豫",
+              "evidence": "### 2. 损失厌恶（Loss Aversion）",
+              "from_menu": false,
+              "local_id": "d4",
+              "menu_id": null,
+              "name": "损失厌恶与机会成本",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以选后满足感迅速衰退而后悔感可被反复激活为核心",
+              "evidence": "### 2. 适应性偏差（Hedonic Adaptation）",
+              "from_menu": false,
+              "local_id": "d5",
+              "menu_id": null,
+              "name": "享乐适应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以做出不可逆决定后持有矛盾认知产生心理不适为核心",
+              "evidence": "### 4. 确认后失调（Post-Decision Dissonance）",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "认知失调",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以犹豫后悔为选项稀少环境设计的适应机制在现代过载为核心",
+              "evidence": "从进化心理学看，",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "进化心理学",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "C": {
+          "directions": [
+            {
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "- 比较的**认知负荷**呈组合爆炸式增长（$n$ 个选项就有 $\\binom{n}{2}$ 对需要比较）。",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S10-D1",
+              "name": "选项过载",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "以不同选项分别满足不能通约的价值为核心，不把决定简化为单一标准排序。",
+              "evidence": "2. **不可公度性（Incommensurability）。",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S10-D3",
+              "name": "价值冲突",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "以决定后想象未选路径可能更好导致后悔为核心，不等同于决定前对后果未知的犹豫。",
+              "evidence": "## 三、反事实思维（Counterfactual Thinking）",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S10-D7",
+              "name": "反事实想象",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以追求唯一最优而不接受足够合适导致犹豫为核心，不以价值之间无法比较为必要前提。",
+              "evidence": "Herbert Simon 区分了两种决策策略：",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S10-D4",
+              "name": "完美最大化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以前景理论价值函数的损失-收益不对称性解释选择痛苦",
+              "evidence": "$$v(x) \\approx \\begin{cases} x^\\alpha,",
+              "from_menu": false,
+              "local_id": "d5",
+              "menu_id": null,
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "以决后认知张力及自我调节机制无法充分启动导致后悔持续为核心",
+              "evidence": "## 五、决策后失调（Post-Decision Dissonance）",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "认知失调",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以偏好在决策过程中被构建而非预先给定为核心说明决策过程改变想法",
+              "evidence": "1. **偏好本身不是预先给定的。",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "偏好构建",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以现在与未来的效用函数不同（双曲贴现vs指数贴现）说明决策者与承受者本质不同",
+              "evidence": "3. **时间不一致性。",
+              "from_menu": false,
+              "local_id": "d8",
+              "menu_id": null,
+              "name": "时间不一致性",
+              "occurrence": 1,
+              "tag": "数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        }
+      },
+      "block_id": "S10-B06",
+      "comparisons": {
+        "A_vs_B": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "A和B均无数学标签方向，全部为非数学组织"
+          },
+          "nonmath_breadth": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "以决定前无法知道不同路径的实际结果为核心，不等同于仅有太多选项。",
+              "evidence": "### 3. 不确定性下的焦虑",
+              "local_id": "d2",
+              "name": "后果不确定",
+              "occurrence": 1
+            },
+            "reason": "A覆盖9个非数学方向含D2、D3、D8等B缺少的路径，B仅7个非数学方向"
+          }
+        },
+        "A_vs_C": {
+          "math_focus": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "- 比较的**认知负荷**呈组合爆炸式增长（$n$ 个选项就有 $\\binom{n}{2}$ 对需要比较）。",
+              "local_id": "d1",
+              "name": "选项过载",
+              "occurrence": 1
+            },
+            "reason": "C有4个数学方向（选项过载C(n,2)、不可公度性偏序、前景理论公式、时间不一致性），A无数学方向"
+          },
+          "nonmath_breadth": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "以决定前无法知道不同路径的实际结果为核心，不等同于仅有太多选项。",
+              "evidence": "### 3. 不确定性下的焦虑",
+              "local_id": "d2",
+              "name": "后果不确定",
+              "occurrence": 1
+            },
+            "reason": "A有9个非数学方向含D2、D8、享乐适应、进化心理学等C缺少的路径，C仅4个非数学方向"
+          }
+        },
+        "B_vs_C": {
+          "math_focus": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "以前景理论价值函数的损失-收益不对称性解释选择痛苦",
+              "evidence": "$$v(x) \\approx \\begin{cases} x^\\alpha,",
+              "local_id": "d5",
+              "name": "损失厌恶",
+              "occurrence": 1
+            },
+            "reason": "C有4个数学方向，B无数学方向"
+          },
+          "nonmath_breadth": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "以选项数量和比较负担增加导致难以形成稳定判断为核心，不假定每个选项后果必然不确定。",
+              "evidence": "### 1. 选择过载（Choice Overload）",
+              "local_id": "d1",
+              "name": "选项过载",
+              "occurrence": 1
+            },
+            "reason": "B有7个非数学方向含D1、享乐适应、进化心理学等C缺少的路径，C仅4个非数学方向"
+          }
+        }
+      }
+    }
+  ],
+  "method": "menu",
+  "question": "S10",
+  "slot": "M1"
+}

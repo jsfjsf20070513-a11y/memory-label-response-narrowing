@@ -1,0 +1,421 @@
+{
+  "checks": [
+    {
+      "account": "math_focus",
+      "expected": "相当",
+      "method": "menu",
+      "ok": true,
+      "result": {
+        "minority_flag": false,
+        "result": "相当",
+        "status": "equal",
+        "votes": {
+          "M1": "相当",
+          "M2": "相当",
+          "M3": "相当"
+        }
+      },
+      "task_id": "T1"
+    },
+    {
+      "account": "nonmath_breadth",
+      "expected": "相当",
+      "method": "menu",
+      "ok": true,
+      "result": {
+        "minority_flag": false,
+        "result": "相当",
+        "status": "equal",
+        "votes": {
+          "M1": "相当",
+          "M2": "相当",
+          "M3": "相当"
+        }
+      },
+      "task_id": "T1"
+    },
+    {
+      "account": "math_focus",
+      "expected": "相当",
+      "method": "menu",
+      "ok": true,
+      "result": {
+        "minority_flag": false,
+        "result": "相当",
+        "status": "equal",
+        "votes": {
+          "M1": "相当",
+          "M2": "相当",
+          "M3": "相当"
+        }
+      },
+      "task_id": "T2"
+    },
+    {
+      "account": "nonmath_breadth",
+      "expected": "相当",
+      "method": "menu",
+      "ok": true,
+      "result": {
+        "minority_flag": false,
+        "result": "相当",
+        "status": "equal",
+        "votes": {
+          "M1": "相当",
+          "M2": "相当",
+          "M3": "相当"
+        }
+      },
+      "task_id": "T2"
+    },
+    {
+      "account": "math_focus",
+      "expected": "无法判断",
+      "method": "menu",
+      "ok": true,
+      "result": {
+        "minority_flag": false,
+        "result": "无法判断",
+        "status": "measurement_failure",
+        "votes": {
+          "M1": "无法判断",
+          "M2": "无法判断",
+          "M3": "无法判断"
+        }
+      },
+      "task_id": "T3"
+    },
+    {
+      "account": "nonmath_breadth",
+      "expected": "无法判断",
+      "method": "menu",
+      "ok": true,
+      "result": {
+        "minority_flag": false,
+        "result": "无法判断",
+        "status": "measurement_failure",
+        "votes": {
+          "M1": "无法判断",
+          "M2": "无法判断",
+          "M3": "无法判断"
+        }
+      },
+      "task_id": "T3"
+    },
+    {
+      "account": "math_focus",
+      "expected": "无法判断",
+      "method": "menu",
+      "ok": true,
+      "result": {
+        "minority_flag": false,
+        "result": "无法判断",
+        "status": "measurement_failure",
+        "votes": {
+          "M1": "无法判断",
+          "M2": "无法判断",
+          "M3": "无法判断"
+        }
+      },
+      "task_id": "T4"
+    },
+    {
+      "account": "nonmath_breadth",
+      "expected": "无法判断",
+      "method": "menu",
+      "ok": true,
+      "result": {
+        "minority_flag": false,
+        "result": "无法判断",
+        "status": "measurement_failure",
+        "votes": {
+          "M1": "无法判断",
+          "M2": "无法判断",
+          "M3": "无法判断"
+        }
+      },
+      "task_id": "T4"
+    },
+    {
+      "account": "math_focus",
+      "expected": "A",
+      "method": "menu",
+      "ok": true,
+      "result": {
+        "minority_flag": false,
+        "result": "A",
+        "status": "direction",
+        "votes": {
+          "M1": "A",
+          "M2": "A",
+          "M3": "A"
+        }
+      },
+      "task_id": "T5"
+    },
+    {
+      "account": "nonmath_breadth",
+      "expected": "B",
+      "method": "menu",
+      "ok": true,
+      "result": {
+        "minority_flag": false,
+        "result": "B",
+        "status": "direction",
+        "votes": {
+          "M1": "B",
+          "M2": "B",
+          "M3": "B"
+        }
+      },
+      "task_id": "T5"
+    },
+    {
+      "account": "math_focus",
+      "expected": "B",
+      "method": "menu",
+      "ok": true,
+      "result": {
+        "minority_flag": false,
+        "result": "B",
+        "status": "direction",
+        "votes": {
+          "M1": "B",
+          "M2": "B",
+          "M3": "B"
+        }
+      },
+      "task_id": "T6"
+    },
+    {
+      "account": "nonmath_breadth",
+      "expected": "A",
+      "method": "menu",
+      "ok": true,
+      "result": {
+        "minority_flag": false,
+        "result": "A",
+        "status": "direction",
+        "votes": {
+          "M1": "A",
+          "M2": "A",
+          "M3": "A"
+        }
+      },
+      "task_id": "T6"
+    },
+    {
+      "account": "math_focus",
+      "expected": "相当",
+      "method": "open",
+      "ok": true,
+      "result": {
+        "minority_flag": false,
+        "result": "相当",
+        "status": "equal",
+        "votes": {
+          "O1": "相当",
+          "O2": "相当",
+          "O3": "相当"
+        }
+      },
+      "task_id": "T1"
+    },
+    {
+      "account": "nonmath_breadth",
+      "expected": "相当",
+      "method": "open",
+      "ok": true,
+      "result": {
+        "minority_flag": false,
+        "result": "相当",
+        "status": "equal",
+        "votes": {
+          "O1": "相当",
+          "O2": "相当",
+          "O3": "相当"
+        }
+      },
+      "task_id": "T1"
+    },
+    {
+      "account": "math_focus",
+      "expected": "相当",
+      "method": "open",
+      "ok": true,
+      "result": {
+        "minority_flag": false,
+        "result": "相当",
+        "status": "equal",
+        "votes": {
+          "O1": "相当",
+          "O2": "相当",
+          "O3": "相当"
+        }
+      },
+      "task_id": "T2"
+    },
+    {
+      "account": "nonmath_breadth",
+      "expected": "相当",
+      "method": "open",
+      "ok": true,
+      "result": {
+        "minority_flag": false,
+        "result": "相当",
+        "status": "equal",
+        "votes": {
+          "O1": "相当",
+          "O2": "相当",
+          "O3": "相当"
+        }
+      },
+      "task_id": "T2"
+    },
+    {
+      "account": "math_focus",
+      "expected": "无法判断",
+      "method": "open",
+      "ok": true,
+      "result": {
+        "minority_flag": false,
+        "result": "无法判断",
+        "status": "measurement_failure",
+        "votes": {
+          "O1": "无法判断",
+          "O2": "无法判断",
+          "O3": "无法判断"
+        }
+      },
+      "task_id": "T3"
+    },
+    {
+      "account": "nonmath_breadth",
+      "expected": "无法判断",
+      "method": "open",
+      "ok": true,
+      "result": {
+        "minority_flag": false,
+        "result": "无法判断",
+        "status": "measurement_failure",
+        "votes": {
+          "O1": "无法判断",
+          "O2": "无法判断",
+          "O3": "无法判断"
+        }
+      },
+      "task_id": "T3"
+    },
+    {
+      "account": "math_focus",
+      "expected": "无法判断",
+      "method": "open",
+      "ok": true,
+      "result": {
+        "minority_flag": false,
+        "result": "无法判断",
+        "status": "measurement_failure",
+        "votes": {
+          "O1": "无法判断",
+          "O2": "无法判断",
+          "O3": "无法判断"
+        }
+      },
+      "task_id": "T4"
+    },
+    {
+      "account": "nonmath_breadth",
+      "expected": "无法判断",
+      "method": "open",
+      "ok": true,
+      "result": {
+        "minority_flag": false,
+        "result": "无法判断",
+        "status": "measurement_failure",
+        "votes": {
+          "O1": "无法判断",
+          "O2": "无法判断",
+          "O3": "无法判断"
+        }
+      },
+      "task_id": "T4"
+    },
+    {
+      "account": "math_focus",
+      "expected": "A",
+      "method": "open",
+      "ok": true,
+      "result": {
+        "minority_flag": false,
+        "result": "A",
+        "status": "direction",
+        "votes": {
+          "O1": "A",
+          "O2": "A",
+          "O3": "A"
+        }
+      },
+      "task_id": "T5"
+    },
+    {
+      "account": "nonmath_breadth",
+      "expected": "B",
+      "method": "open",
+      "ok": true,
+      "result": {
+        "minority_flag": false,
+        "result": "B",
+        "status": "direction",
+        "votes": {
+          "O1": "B",
+          "O2": "B",
+          "O3": "B"
+        }
+      },
+      "task_id": "T5"
+    },
+    {
+      "account": "math_focus",
+      "expected": "B",
+      "method": "open",
+      "ok": true,
+      "result": {
+        "minority_flag": false,
+        "result": "B",
+        "status": "direction",
+        "votes": {
+          "O1": "B",
+          "O2": "B",
+          "O3": "B"
+        }
+      },
+      "task_id": "T6"
+    },
+    {
+      "account": "nonmath_breadth",
+      "expected": "A",
+      "method": "open",
+      "ok": true,
+      "result": {
+        "minority_flag": false,
+        "result": "A",
+        "status": "direction",
+        "votes": {
+          "O1": "A",
+          "O2": "A",
+          "O3": "A"
+        }
+      },
+      "task_id": "T6"
+    }
+  ],
+  "per_slot_used_cannot": {
+    "M1": true,
+    "M2": true,
+    "M3": true,
+    "O1": true,
+    "O2": true,
+    "O3": true
+  },
+  "status": "PASS"
+}

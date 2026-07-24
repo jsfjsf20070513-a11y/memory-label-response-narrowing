@@ -1,0 +1,125 @@
+{
+  "items": {
+    "REV-O1-S10-S10-B01-A_vs_B-math_focus": {
+      "reason": "证据短语所在小节明确讨论“多维度下的不可比性（Pareto 最优的困境）”，并说明A、B在不同维度互有优劣、无严格支配关系，符合用多目标/严格支配框架解释犹豫。",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B01-A_vs_C-nonmath_breadth": {
+      "reason": "证据短语只是章节标题“神经科学视角”，但该回答正文中该节确实具体写到前额叶皮层加工容量有限，以及后悔激活脑区与疼痛重叠，达到该方向边界。",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B04-A_vs_B-math_focus": {
+      "reason": "证据直接给出公式 U(损失)≈-2·U(等量收益)，明确是在用效用形式化损失厌恶，满足方向边界。",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B05-A_vs_B-nonmath_breadth": {
+      "reason": "引文明确说很多选择被赋予“我选的代表我是谁”的身份定义意义，决定像在定义自我，正支持自我认同焦虑这一方向。",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B06-B_vs_C-math_focus": {
+      "reason": "证据明确写出比较负荷按 n 选 2 组合增长，并同段配合 Miller 定律讨论工作记忆限制，符合该数学化边界。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B03-A_vs_B-math_focus": {
+      "reason": "证据直接给出“实际决策≈情感权重×依附程度+经济权重×(修理费/新品价)+社会权重×他人看法”的加权式，正是所述方向边界。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B03-A_vs_C-math_focus": {
+      "reason": "证据就是一个用情感、经济、社会权重描述实际决策的加权公式，和方向边界完全一致。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B03-A_vs_C-nonmath_breadth": {
+      "reason": "证据明确说旧物损坏提供心理上的“许可证”，让人能无愧疚购买新品，正支持许可证效应与新鲜感方向。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B04-A_vs_C-nonmath_breadth": {
+      "reason": "证据短语所指章节明确列出社会与文化层面的拉扯，并展开“节俭是美德/环保、可持续”与“消费主义、推陈出新”的对照，符合方向边界。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B05-A_vs_B-math_focus": {
+      "reason": "证据直接给出一个不等式，把维修成本、情感损失、新品成本和额外效用放在同一比较式中，完全符合该边界。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B05-A_vs_C-nonmath_breadth": {
+      "reason": "证据对应的条目明确说很多产品设计上不鼓励维修，如找不到配件、没有维修点，客观逼人换新，支持该方向。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B05-B_vs_C-nonmath_breadth": {
+      "reason": "证据明确提出“周围人的看法”，并说明有人觉得寒酸、有人欣赏惜物，直接支持社会评价影响决策。",
+      "supported": true
+    },
+    "REV-O1-S8-S8-B03-A_vs_B-math_focus": {
+      "reason": "证据后文确实形式化设定了 d_t 和 a_t，并说明依赖增加带来精度上升、精度上升又推动依赖上升，是所述正反馈形式模型。",
+      "supported": true
+    },
+    "REV-O1-S8-S8-B03-A_vs_B-nonmath_breadth": {
+      "reason": "证据所指条目明确说“第三人效应”的自我欺骗：认为自己知道算法影响就不会受影响，实际上会降低警惕，符合边界。",
+      "supported": true
+    },
+    "REV-O1-S8-S8-B04-A_vs_C-math_focus": {
+      "reason": "证据所在段将该循环明确理解为“动力系统的吸引子”，并写出正反馈、路径依赖等特性，达到方向边界。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B03-A_vs_C-nonmath_breadth": {
+      "reason": "证据标题对应的小节正文明确说主动选择失败时会产生“是我选错了”的自我归因，并且比被动接受更痛苦，支持该边界。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B04-A_vs_B-nonmath_breadth": {
+      "reason": "证据所指小节明确说重要选择结果无法提前验证，大脑会反复模拟未来场景，导致“无限循环的思虑（rumination）”，符合边界。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B04-B_vs_C-nonmath_breadth": {
+      "reason": "证据短语只是标题“自我归因”，但该标题下正文明确写到结果不理想时，人会归咎自己的决策能力，内归因加剧后悔感，支持该方向。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B06-A_vs_B-nonmath_breadth": {
+      "reason": "证据明确说重要选择结果不可预知，大脑讨厌不确定性，前扣带皮层和杏仁核会持续发出焦虑信号，完全符合方向边界。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B06-B_vs_C-math_focus": {
+      "reason": "证据给出前景理论价值函数 v(x) 的分段形式及 λ≈2.25，并用它解释主观净感受可能为负，符合边界。",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B02-A_vs_B-math_focus": {
+      "reason": "证据只给出了理性部分的单位时间成本比较公式 Cr/Tr vs Cn/Tn；虽然后文另有加入 Vs 的扩展式，但该证据本身未包含情感价值变量，因此不足以支持“加入情感价值变量”的完整边界。",
+      "supported": false
+    },
+    "REV-O2-S2-S2-B02-A_vs_C-nonmath_breadth": {
+      "reason": "证据短语对应条目明确写到对旧物产生类似“老朋友”的感情，扔掉像一种“背叛”，直接支持拟人化倾向方向。",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B02-B_vs_C-nonmath_breadth": {
+      "reason": "证据明确说这类现象可称为情感启发式与动机性推理，即情感先做决定、理性再找理由，正符合方向边界。",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B03-B_vs_C-nonmath_breadth": {
+      "reason": "证据所在条目明确说在中国传统观念等文化中，“能修就修、不浪费”是一种美德，符合节俭文化方向。",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B05-A_vs_B-nonmath_breadth": {
+      "reason": "证据标题下正文确实按念旧、务实、环保、尝新等不同类型列出典型反应，支持按人群差异分类反应这一方向。",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B05-B_vs_C-nonmath_breadth": {
+      "reason": "证据所指章节下明确写到很多产品设计上不鼓励维修、客观逼人换新，属于维修便利性与社会现实方向。",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B06-A_vs_B-nonmath_breadth": {
+      "reason": "证据所指部分明确提出“最终决策往往取决于一个关键因素”，并按是否有特殊纪念意义、是否独一无二等不可替代性来区分修与不修，符合边界。",
+      "supported": true
+    },
+    "REV-O2-S8-S8-B01-A_vs_B-math_focus": {
+      "reason": "证据只开头提出“如果把你的偏好状态看作一个向量 x_t∈R^n”，而完整模型后续还需算子 T、不动点/吸引子与噪声衰减等内容；但该连续证据短语本身不足以表达完整边界要求。",
+      "supported": false
+    },
+    "REV-O2-S8-S8-B01-A_vs_B-nonmath_breadth": {
+      "reason": "证据标题对应条目正文明确解释第三人效应：人倾向认为别人比自己更容易受媒体影响，从而低估自身受影响程度并降低警惕，符合边界。",
+      "supported": true
+    },
+    "REV-O2-S8-S8-B03-A_vs_B-math_focus": {
+      "reason": "证据短语后文确实形式化定义了 d_t 和 a_t，并说明二者构成依赖与精度的正反馈回路，支持该方向边界。",
+      "supported": true
+    }
+  },
+  "slot": "O3"
+}

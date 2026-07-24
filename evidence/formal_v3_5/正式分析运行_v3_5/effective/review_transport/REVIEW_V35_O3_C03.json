@@ -1,0 +1,125 @@
+{
+  "items": {
+    "REV-O1-S10-S10-B03-B_vs_C-math_focus": {
+      "reason": "证据短语指向前景理论的分段价值函数，并明确给出 λ≈2.25，用公式形式化了损失厌恶，符合该数学边界。",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B04-B_vs_C-nonmath_breadth": {
+      "reason": "该小节标题就是“不确定性下的焦虑”，正文明确说重要选择结果无法提前验证，会导致‘无限循环的思虑（rumination）’，与方向边界一致。",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B05-A_vs_C-math_focus": {
+      "reason": "证据对应前景理论价值函数的公式表达，并配套说明失去痛苦约为获得快乐的2倍，达到了用公式表达损失厌恶的边界。",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B05-B_vs_C-nonmath_breadth": {
+      "reason": "证据原文直接说很多重大选择被赋予‘我选的代表我是谁’的身份定义意义，说明决定像在定义自我，符合自我认同焦虑边界。",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B06-A_vs_B-nonmath_breadth": {
+      "reason": "原文明确把不确定性下的焦虑与前扣带皮层、杏仁核持续发出焦虑信号联系起来，直接支持所述神经机制边界。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B01-A_vs_C-nonmath_breadth": {
+      "reason": "证据小节明确讲‘损失厌恶的反向作用’，并具体解释修好后又坏会觉得修理的钱也白花了，正是二次损失恐惧。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B02-B_vs_C-math_focus": {
+      "reason": "证据给出了比较修理与新购单位时间成本的公式，且下文加入了情感价值变量 Vs，符合该数学模型边界。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B02-B_vs_C-nonmath_breadth": {
+      "reason": "原文明确说人们往往是情感先决定，再用理性寻找理由，并点名‘情感启发式’和‘动机性推理’，与方向边界完全一致。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B06-B_vs_C-math_focus": {
+      "reason": "证据直接引出一个多目标优化问题，并给出经济、情感、习惯、损失感的加权效用函数，符合该边界。",
+      "supported": true
+    },
+    "REV-O1-S8-S8-B01-A_vs_C-nonmath_breadth": {
+      "reason": "证据小节就是‘第三人效应’，正文明确说人倾向于认为别人比自己更易受媒体影响，从而降低对自身影响的警惕，符合边界。",
+      "supported": true
+    },
+    "REV-O1-S8-S8-B01-B_vs_C-math_focus": {
+      "reason": "证据起句引出把偏好状态建模为向量，后文完整展开算子迭代、压缩映射、不动点和噪声衰减分析，满足该数学方向边界。",
+      "supported": true
+    },
+    "REV-O1-S8-S8-B02-A_vs_B-math_focus": {
+      "reason": "证据对应‘信息不对称下的理性委托’，后文明确用用户与平台两个效用函数形式化目标冲突，支持委托-代理问题边界。",
+      "supported": true
+    },
+    "REV-O1-S8-S8-B04-B_vs_C-math_focus": {
+      "reason": "证据虽只是过渡句‘这是最关键的机制’，但紧接着把依赖循环明确表述为动力系统吸引子，并说明正反馈、变比率强化、路径依赖，足以支持该方向。",
+      "supported": true
+    },
+    "REV-O1-S8-S8-B04-B_vs_C-nonmath_breadth": {
+      "reason": "证据小节‘身份建构的外包’下明确说算法持续定义品味并被内化为自我认知，质疑系统近似于质疑自我，符合边界。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B01-A_vs_B-nonmath_breadth": {
+      "reason": "该小节明确援引峰终定律，说记忆主要取决于高峰和结尾，会放大当前负面体验并美化未走之路，支持该方向边界。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B01-A_vs_C-math_focus": {
+      "reason": "证据短语指向‘秘书问题（Optimal Stopping）’，原文明确给出先看前 n/e 个、约 37% 规则，并用来说明 explore-exploit 困境，符合边界。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B02-A_vs_B-nonmath_breadth": {
+      "reason": "证据小节‘自由的重负’下直接说萨特和克尔凯郭尔指出自由本身是焦虑来源，后悔指向自我责任，正符合该边界。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B03-B_vs_C-math_focus": {
+      "reason": "证据起句把多属性决策类比为 R^d 中向量比较，正文明确说只有偏序没有全序，因此很多选项不可比，符合方向边界。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B04-A_vs_C-math_focus": {
+      "reason": "证据直接给出 U(损失)≈-2·U(等量收益) 的形式化表达，用以说明损失厌恶效用不对称，完全支持该边界。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B04-A_vs_C-nonmath_breadth": {
+      "reason": "该小节标题含‘峰终定律与适应效应’，正文明确说兴奋感消退后只剩当初纠结与现在平淡，后悔浮现，符合边界。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B05-A_vs_B-nonmath_breadth": {
+      "reason": "证据原文明确说重大选择被赋予‘我选的代表我是谁’的身份定义意义，每个决定都像在定义自我，压力倍增，符合边界。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B06-B_vs_C-nonmath_breadth": {
+      "reason": "证据虽只截到‘当你选 A 时，’开头，但该段完整内容明确说大脑会自动计算若选 B/C/D 的机会成本，且选项越多心理门槛越高，支持该方向。",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B01-A_vs_C-math_focus": {
+      "reason": "证据引出‘期望效用’比较，后文明确写出修与换两个期望效用公式，符合用公式比较修理与换新的边界。",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B02-B_vs_C-math_focus": {
+      "reason": "证据给出修理与新购的单位时间成本公式，后文还加入情感价值 Vs 修正，满足该数学框架边界。",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B03-A_vs_C-math_focus": {
+      "reason": "证据直接写出‘实际决策≈情感权重×依附程度+经济权重×(修理费/新品价)+社会权重×他人看法’，确是所述加权决策模型。",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B06-B_vs_C-math_focus": {
+      "reason": "证据明确把决策想象成‘多目标优化问题’，并给出经济、情感、习惯、损失感的加权效用函数，完全符合边界。",
+      "supported": true
+    },
+    "REV-O2-S8-S8-B01-A_vs_C-nonmath_breadth": {
+      "reason": "证据小节直接讨论‘注意力经济的结构性力量’，正文明确说平台目标是最大化停留时间，个体意志力面对系统性力量不对称，支持边界。",
+      "supported": true
+    },
+    "REV-O2-S8-S8-B01-B_vs_C-math_focus": {
+      "reason": "证据起句引出偏好状态向量模型，后文明确写出 x_{t+1}=T(x_t)+ε_t，并讨论压缩映射、不动点和噪声衰减，符合边界。",
+      "supported": true
+    },
+    "REV-O2-S8-S8-B02-A_vs_C-math_focus": {
+      "reason": "证据‘用数学语言说’后，原文明确用‘可行域被投影到低维子空间’来形式化形式自由与实质自由的区别，支持该边界。",
+      "supported": true
+    },
+    "REV-O2-S8-S8-B03-B_vs_C-nonmath_breadth": {
+      "reason": "证据小节就是‘偏好的内生性问题’，正文明确说长期使用后偏好被系统塑造，被影响与遵循自身偏好的边界变得模糊，符合边界。",
+      "supported": true
+    }
+  },
+  "slot": "O3"
+}

@@ -1,0 +1,1369 @@
+{
+  "blocks": [
+    {
+      "answers": {
+        "A": {
+          "directions": [
+            {
+              "definition": "人的认知资源有限，推荐系统充当认知外包工具降低搜索成本",
+              "evidence": "### 1. 认知负荷与有限理性",
+              "local_id": "d1",
+              "name": "认知负荷与有限理性",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "选项过多导致焦虑和决策瘫痪，推荐系统缩小范围缓解焦虑",
+              "evidence": "### 2. 选择过载悖论",
+              "local_id": "d2",
+              "name": "选择过载悖论",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "人倾向于接受默认选项，推荐内容作为默认选项被自动接受",
+              "evidence": "### 3. 默认效应（Default Effect）",
+              "local_id": "d3",
+              "name": "默认效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "推荐内容的不确定性激活可变比率强化机制产生成瘾性",
+              "evidence": "### 1. 多巴胺驱动的间歇强化",
+              "local_id": "d4",
+              "name": "多巴胺间歇强化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "推荐提供即时低成本满足，边缘系统压过前额叶导致行为难以抵抗",
+              "evidence": "### 2. 即时满足 vs. 延迟满足",
+              "local_id": "d5",
+              "name": "即时满足vs延迟满足",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "推荐强化既有偏好和信念产生认知舒适感",
+              "evidence": "### 3. 确认偏误的舒适感",
+              "local_id": "d6",
+              "name": "确认偏误与信息茧房",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "知道被影响不等于能消除影响，类似视觉错觉不可消除",
+              "evidence": "### 1. 元认知的局限性",
+              "local_id": "d7",
+              "name": "元认知局限与认知穿透性",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "人倾向于认为他人比自己更易被媒体影响从而降低警惕",
+              "evidence": "### 2. 第三人效应（Third-Person Effect）",
+              "local_id": "d8",
+              "name": "第三人效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "推荐系统让用户觉得仍在自主选择但选择空间已被预先框定",
+              "evidence": "### 3. 自主性的幻觉",
+              "local_id": "d9",
+              "name": "自主性幻觉",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "使用越多推荐越精准形成锁定效应，转换成本递增",
+              "evidence": "### 1. 路径依赖与数据飞轮",
+              "local_id": "d10",
+              "name": "路径依赖与正反馈循环",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "平台以最大化停留时间为目标投入巨大技术资本形成不对称力量",
+              "evidence": "### 2. 注意力经济的结构性力量",
+              "local_id": "d11",
+              "name": "注意力经济结构性力量",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "脱离推荐平台带来社交成本，依赖已成社会规范",
+              "evidence": "### 3. 社会规范的迁移",
+              "local_id": "d12",
+              "name": "社会规范迁移",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "B": {
+          "directions": [
+            {
+              "definition": "工作记忆有限，推荐系统承担筛选劳动提供足够好的捷径",
+              "evidence": "### 1. 认知卸载（Cognitive Offloading）",
+              "local_id": "d1",
+              "name": "认知卸载与满意化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "选项越多越容易决策瘫痪，推荐把n维空间压缩为短列表",
+              "evidence": "### 2. 选择过载（Choice Overload）",
+              "local_id": "d2",
+              "name": "选择过载",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "知道被操控不等于免疫，System1层面仍受影响",
+              "evidence": "### 3. 元认知错觉（Metacognitive Illusion）",
+              "local_id": "d3",
+              "name": "元认知错觉与偏见盲点",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "人系统性低估未来价值高估当下价值，即时满足胜过长期自主",
+              "evidence": "### 4. 即时满足 vs. 长期自主",
+              "local_id": "d4",
+              "name": "双曲贴现与即时满足",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "系统对偏好估计收敛形成lock-in，用动力系统描述收敛过程",
+              "evidence": "这是一个**收敛的动力系统**。",
+              "local_id": "d5",
+              "name": "正反馈循环与锁定效应",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "偏好在交互中被共同建构，因果关系不可识别类似计量经济学内生性",
+              "evidence": "### 6. 偏好内生性（Endogenous Preference）",
+              "local_id": "d6",
+              "name": "偏好内生性",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "无单一时刻不自由但整体轨迹被引导，自主选择概念需重新审视",
+              "evidence": "### 7. 自主性的悖论",
+              "local_id": "d7",
+              "name": "自主性悖论与软性决定论",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "将偏好状态建模为向量经算子迭代，分析压缩映射与自主探索噪声衰减",
+              "evidence": "如果把你的偏好状态看作一个向量 $\\mathbf{x}_t \\in \\mathbb{R}^n$，",
+              "local_id": "d8",
+              "name": "偏好动力系统数学模型",
+              "occurrence": 1,
+              "tag": "数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "C": {
+          "directions": [
+            {
+              "definition": "面对信息爆炸自主筛选成本极高，推荐系统充当认知外包",
+              "evidence": "### 1. 认知负荷与决策疲劳",
+              "local_id": "d1",
+              "name": "认知负荷与决策疲劳",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "人追求足够好的解而非最优解，推荐内容够好即无动力探索",
+              "evidence": "### 2. 满意即可原则（Satisficing）",
+              "local_id": "d2",
+              "name": "满意即可原则",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "反复推荐同类内容产生好感，偏好被塑造而不自知",
+              "evidence": "### 3. 曝光效应（Mere Exposure Effect）",
+              "local_id": "d3",
+              "name": "曝光效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "推荐投喂已认同的内容强化正向反馈产生舒适感",
+              "evidence": "### 4. 确认偏误（Confirmation Bias）",
+              "local_id": "d4",
+              "name": "确认偏误",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "点击后大脑自动合理化选择，事后归因低估系统影响力",
+              "evidence": "### 5. 选择支持偏误（Choice-Supportive Bias）",
+              "local_id": "d5",
+              "name": "选择支持偏误",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "行为-学习-推荐-满意-使用的正反馈闭环使替代方案效率递减",
+              "evidence": "### 6. 反馈闭环的精密设计",
+              "local_id": "d6",
+              "name": "反馈闭环设计",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "意外惊喜制造间歇性强化，不确定奖赏比确定奖赏更易成瘾",
+              "evidence": "### 7. 可变奖赏机制",
+              "local_id": "d7",
+              "name": "可变奖赏机制",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "知道被影响和能抵抗是两个独立系统，替代成本高后果抽象",
+              "evidence": "### 8. \"知道\"≠\"能抵抗\"",
+              "local_id": "d8",
+              "name": "元认知与行为控制分离",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "自由选择了放弃自由选择，被影响与被服务界限模糊",
+              "evidence": "### 9. 自主性悖论",
+              "local_id": "d9",
+              "name": "自主性悖论",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        }
+      },
+      "block_id": "S8-B01",
+      "comparisons": {
+        "A_vs_B": {
+          "math_focus": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "将偏好状态建模为向量经算子迭代，分析压缩映射与自主探索噪声衰减",
+              "evidence": "如果把你的偏好状态看作一个向量 $\\mathbf{x}_t \\in \\mathbb{R}^n$，",
+              "local_id": "d8",
+              "name": "偏好动力系统数学模型",
+              "occurrence": 1
+            },
+            "reason": "B使用向量空间、算子、压缩映射等数学形式化建模偏好动态，A无数学形式化"
+          },
+          "nonmath_breadth": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "人倾向于认为他人比自己更易被媒体影响从而降低警惕",
+              "evidence": "### 2. 第三人效应（Third-Person Effect）",
+              "local_id": "d8",
+              "name": "第三人效应",
+              "occurrence": 1
+            },
+            "reason": "A覆盖12个不同非数学方向包括默认效应、第三人效应、社会规范等B未涉及的机制"
+          }
+        },
+        "A_vs_C": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "两者均无数学形式化表达"
+          },
+          "nonmath_breadth": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "人倾向于认为他人比自己更易被媒体影响从而降低警惕",
+              "evidence": "### 2. 第三人效应（Third-Person Effect）",
+              "local_id": "d8",
+              "name": "第三人效应",
+              "occurrence": 1
+            },
+            "reason": "A有12个非数学方向，C有9个；A额外覆盖默认效应、第三人效应、注意力经济、社会规范等"
+          }
+        },
+        "B_vs_C": {
+          "math_focus": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "将偏好状态建模为向量经算子迭代，分析压缩映射与自主探索噪声衰减",
+              "evidence": "如果把你的偏好状态看作一个向量 $\\mathbf{x}_t \\in \\mathbb{R}^n$，",
+              "local_id": "d8",
+              "name": "偏好动力系统数学模型",
+              "occurrence": 1
+            },
+            "reason": "B有显式数学建模（向量、算子、压缩映射），C无数学表达"
+          },
+          "nonmath_breadth": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "点击后大脑自动合理化选择，事后归因低估系统影响力",
+              "evidence": "### 5. 选择支持偏误（Choice-Supportive Bias）",
+              "local_id": "d5",
+              "name": "选择支持偏误",
+              "occurrence": 1
+            },
+            "reason": "C有9个非数学方向含选择支持偏误等独特机制，B仅6个非数学方向"
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "A": {
+          "directions": [
+            {
+              "definition": "推荐系统作为外部认知假肢承担筛选工作节省大脑资源",
+              "evidence": "### 1. 决策疲劳与认知卸载（Cognitive Offloading）",
+              "local_id": "d1",
+              "name": "认知卸载",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "将n个候选压缩到k<<n个用数学符号表达缓解选择痛苦",
+              "evidence": "推荐系统把 $n$ 个候选压缩到 $k \\ll n$ 个，",
+              "local_id": "d2",
+              "name": "选择过载(数学化)",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "用argmax形式表达人不追求全局最优而接受阈值以上选项",
+              "evidence": "### 3. 满意化而非最优化（Satisficing vs. Maximizing）",
+              "local_id": "d3",
+              "name": "满意化与有限理性",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "元认知意识不等于行为免疫，System2知识无法控制System1驱动的行为",
+              "evidence": "### 4. 偏见盲点（Bias Blind Spot）",
+              "local_id": "d4",
+              "name": "偏见盲点与双系统",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "推荐→曝光→熟悉→误归因为偏好→更多推荐的循环建构偏好",
+              "evidence": "### 5. 曝光效应（Mere Exposure Effect）",
+              "local_id": "d5",
+              "name": "曝光效应正反馈环路",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "不可预测的高奖赏内容形成最强效的操作性条件反射强化",
+              "evidence": "### 6. 间歇性强化（Variable Ratio Reinforcement）",
+              "local_id": "d6",
+              "name": "间歇性强化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "偏好不是先验稳定的而是在决策情境中被即时建构，系统深度介入",
+              "evidence": "### 7. 偏好的建构性（Constructed Preferences）",
+              "local_id": "d7",
+              "name": "偏好建构性",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "长期依赖后丧失独立发现能力和信心形成依赖性锁定",
+              "evidence": "### 8. 认识论上的习得性无助（Epistemic Learned Helplessness）",
+              "local_id": "d8",
+              "name": "认识论习得性无助",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "用户与平台目标函数不一致，用效用函数形式化表达利益冲突",
+              "evidence": "### 9. 信息不对称下的理性委托",
+              "local_id": "d9",
+              "name": "委托-代理问题",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "可行域被投影到低维子空间，形式自由与实质自由分离",
+              "evidence": "> 用数学语言说：",
+              "local_id": "d10",
+              "name": "自主性梯度消解",
+              "occurrence": 1,
+              "tag": "数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "B": {
+          "directions": [
+            {
+              "definition": "推荐系统充当外部认知假肢承担筛选排序决策",
+              "evidence": "### 1. 认知卸载（Cognitive Offloading）",
+              "local_id": "d1",
+              "name": "认知卸载",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "选项越多越焦虑，推荐缩减选项缓解焦虑",
+              "evidence": "### 2. 选择过载悖论（Choice Overload）",
+              "local_id": "d2",
+              "name": "选择过载悖论",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "追求够好的解而非最优解，推荐内容边际收益足够",
+              "evidence": "### 3. 满意化策略（Satisficing）",
+              "local_id": "d3",
+              "name": "满意化策略",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "推荐相似内容强化偏好形成回音室，愉悦感真实",
+              "evidence": "### 1. 确认偏误（Confirmation Bias）",
+              "local_id": "d4",
+              "name": "确认偏误与正反馈循环",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "推荐内容作为默认选项，主动搜索需额外意志力",
+              "evidence": "### 2. 默认效应（Default Effect）",
+              "local_id": "d5",
+              "name": "默认效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "高频曝光本身塑造偏好，熟悉产生好感",
+              "evidence": "### 3. 曝光效应（Mere Exposure Effect）",
+              "local_id": "d6",
+              "name": "曝光效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "不可预测的惊喜激活多巴胺回路类似赌博机制",
+              "evidence": "### 1. 可变奖励机制（Variable Reward）",
+              "local_id": "d7",
+              "name": "可变奖励机制",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "'专门为你推荐'制造系统理解你的亲密关系错觉产生情感依附",
+              "evidence": "### 2. 个性化错觉（Illusion of Personalization）",
+              "local_id": "d8",
+              "name": "个性化错觉",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "设计消除停止摩擦，退出需意志力而继续零成本",
+              "evidence": "### 3. 无限滚动与即时满足",
+              "local_id": "d9",
+              "name": "无限滚动与即时满足",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "抽象层面知道被影响但无法在具体每次点击中识别影响",
+              "evidence": "### 1. 元认知失效",
+              "local_id": "d10",
+              "name": "元认知失效",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "即时收益具体当下而长期成本抽象延迟，决策系统偏向前者",
+              "evidence": "这在心理学中被称为 **\"知行差距\"（Knowledge-Behavior Gap）**。",
+              "local_id": "d11",
+              "name": "知行差距",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "推荐系统已成信息基础设施，替代路径实际不可行",
+              "evidence": "### 3. 缺乏可行的替代方案",
+              "local_id": "d12",
+              "name": "缺乏替代方案",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "系统重新定义你是什么人，消除偶然性形成封闭系统",
+              "evidence": "> **你以为是\"你\"在选择，",
+              "local_id": "d13",
+              "name": "偏好塑造与同质化",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "C": {
+          "directions": [
+            {
+              "definition": "面对爆炸性选项大脑理性决策能力耗竭，推荐降低认知负荷",
+              "evidence": "### 1. 选择过载（Choice Overload）",
+              "local_id": "d1",
+              "name": "选择过载",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "足够好选项消除主动搜索动力，探索能力和意愿退化",
+              "evidence": "### 2. 满意即可原则（Satisficing）",
+              "local_id": "d2",
+              "name": "满意即可原则与探索退化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "将内容决策外包给算法是认知资源节省策略",
+              "evidence": "### 3. 决策疲劳（Decision Fatigue）",
+              "local_id": "d3",
+              "name": "决策疲劳",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "精准预测偏好即时触发多巴胺，每次正强化增加信任",
+              "evidence": "### 1. 即时满足的强化循环",
+              "local_id": "d4",
+              "name": "即时满足强化循环",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "强化既有品味制造身份认同感，把算法选择误认为自己选择",
+              "evidence": "### 2. 确认偏误（Confirmation Bias）",
+              "local_id": "d5",
+              "name": "确认偏误与身份认同",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "反复推荐使熟悉感被误读为偏好",
+              "evidence": "### 3. 曝光效应（Mere Exposure Effect）",
+              "local_id": "d6",
+              "name": "曝光效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "意识到偏见不能消除偏见，知道被塑造但行为不变",
+              "evidence": "### 1. \"知道被影响\"不等于\"能抵抗影响\"",
+              "local_id": "d7",
+              "name": "元认知错觉与偏见盲点",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "微小让步累积过程，从懒得搜到不知没推荐会选什么",
+              "evidence": "### 2. 自由意志的让渡是渐进的",
+              "local_id": "d8",
+              "name": "自由意志渐进让渡",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "真实偏好可能不存在，品味始终被环境塑造只是换成算法",
+              "evidence": "### 3. 偏好的内生性问题",
+              "local_id": "d9",
+              "name": "偏好内生性",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "算法持续进化而人脑硬件不变形成不对称竞争",
+              "evidence": "### 1. 推荐系统在进化，",
+              "local_id": "d10",
+              "name": "不对称博弈",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "平台弱化主动搜索功能使不依赖推荐的路径更困难",
+              "evidence": "### 2. 替代路径被消除",
+              "local_id": "d11",
+              "name": "替代路径消除",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "推荐内容与社交话题重叠，不跟随意味着社交脱节",
+              "evidence": "### 3. 社交嵌入",
+              "local_id": "d12",
+              "name": "社交嵌入",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        }
+      },
+      "block_id": "S8-B02",
+      "comparisons": {
+        "A_vs_B": {
+          "math_focus": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "用户与平台目标函数不一致，用效用函数形式化表达利益冲突",
+              "evidence": "### 9. 信息不对称下的理性委托",
+              "local_id": "d9",
+              "name": "委托-代理问题",
+              "occurrence": 1
+            },
+            "reason": "A有4个数学方向（选择压缩n到k、argmax、效用函数、投影到子空间），B无数学形式化"
+          },
+          "nonmath_breadth": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "'专门为你推荐'制造系统理解你的亲密关系错觉产生情感依附",
+              "evidence": "### 2. 个性化错觉（Illusion of Personalization）",
+              "local_id": "d8",
+              "name": "个性化错觉",
+              "occurrence": 1
+            },
+            "reason": "B有13个非数学方向含个性化错觉、无限滚动、缺乏替代方案等A未覆盖的机制，A仅6个非数学方向"
+          }
+        },
+        "A_vs_C": {
+          "math_focus": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "可行域被投影到低维子空间，形式自由与实质自由分离",
+              "evidence": "> 用数学语言说：",
+              "local_id": "d10",
+              "name": "自主性梯度消解",
+              "occurrence": 1
+            },
+            "reason": "A有4个数学方向含效用函数和投影模型，C无任何数学形式化"
+          },
+          "nonmath_breadth": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "算法持续进化而人脑硬件不变形成不对称竞争",
+              "evidence": "### 1. 推荐系统在进化，",
+              "local_id": "d10",
+              "name": "不对称博弈",
+              "occurrence": 1
+            },
+            "reason": "C有12个非数学方向含决策疲劳、身份认同、渐进让渡、不对称博弈等独特路径，A仅6个"
+          }
+        },
+        "B_vs_C": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "两者均无数学形式化表达"
+          },
+          "nonmath_breadth": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "'专门为你推荐'制造系统理解你的亲密关系错觉产生情感依附",
+              "evidence": "### 2. 个性化错觉（Illusion of Personalization）",
+              "local_id": "d8",
+              "name": "个性化错觉",
+              "occurrence": 1
+            },
+            "reason": "B有13个非数学方向含个性化错觉、无限滚动等独特设计层机制，C有12个，B略多且含独特路径"
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "A": {
+          "directions": [
+            {
+              "definition": "信息量超出处理能力，推荐系统替用户完成筛选，降低认知成本",
+              "evidence": "### 1. 选择过载（Choice Overload）",
+              "local_id": "d1",
+              "name": "选择过载与认知外包",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "人追求'足够好'而非最优解，推荐内容达到该阈值即被接受",
+              "evidence": "### 2. 满意即可原则（Satisficing）",
+              "local_id": "d2",
+              "name": "满意即可原则",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "大脑倾向节省能量，刷推荐流用快思考即可完成",
+              "evidence": "### 3. 认知吝啬者（Cognitive Miser）",
+              "local_id": "d3",
+              "name": "认知吝啬与双系统",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "推荐流提供类似老虎机的不可预测奖励，形成即时反馈回路",
+              "evidence": "### 4. 即时反馈回路",
+              "local_id": "d4",
+              "name": "可变比率强化与多巴胺",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "算法推送契合内容时产生被照顾的情感体验",
+              "evidence": "### 5. \"被理解\"的幻觉",
+              "local_id": "d5",
+              "name": "被理解的幻觉",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "推荐系统强化既有偏好和身份认同，离开则面临认知失调",
+              "evidence": "### 6. 确认偏误的舒适区",
+              "local_id": "d6",
+              "name": "确认偏误舒适区",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "推荐系统已成平台底层架构，无法关闭，不用等于不用平台",
+              "evidence": "### 7. 基础设施锁定",
+              "local_id": "d7",
+              "name": "基础设施锁定",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "长期依赖导致探索意愿和能力萎缩，形成自我强化循环",
+              "evidence": "### 8. 主动搜索能力的退化",
+              "local_id": "d8",
+              "name": "主动搜索能力退化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "意识到被影响只需一瞬，抵抗影响需持续意志力消耗，博弈不对称",
+              "evidence": "### 9. 元认知的无力感",
+              "local_id": "d9",
+              "name": "知行差距与元认知无力",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "认为自己知道就不受影响，反而降低警惕",
+              "evidence": "### 10. \"第三人效应\"的自我欺骗",
+              "local_id": "d10",
+              "name": "第三人效应与控制幻觉",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "B": {
+          "directions": [
+            {
+              "definition": "人追求满意解，推荐系统降低搜索和决策成本",
+              "evidence": "**1. 认知负荷与有限理性（Bounded Rationality）**",
+              "local_id": "d1",
+              "name": "有限理性与认知外包",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "推荐内容加工流畅，大脑误将易加工等同于内容好",
+              "evidence": "**2. 认知流畅性（Cognitive Fluency）**",
+              "local_id": "d2",
+              "name": "认知流畅性偏差",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "用d_t和a_t形式化依赖度与预测精度的正反馈回路",
+              "evidence": "可以把它形式化地理解：",
+              "local_id": "d3",
+              "name": "依赖-精度正反馈形式模型",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "已训练好的系统使退出机会成本越来越高",
+              "evidence": "一旦进入这个循环，",
+              "local_id": "d4",
+              "name": "锁定效应与路径依赖",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "知道被影响不等于能控制行为，类比视觉错觉仍可见",
+              "evidence": "**1. 元认知的局限性**",
+              "local_id": "d5",
+              "name": "元认知局限",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "即时确定性满足vs延迟抽象收益，人系统性低估后者",
+              "evidence": "**2. 即时满足 vs. 长期自主**",
+              "local_id": "d6",
+              "name": "双曲贴现",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "交互设计维持用户仍在主导的错觉",
+              "evidence": "**3. 自主性幻觉（Illusion of Agency）**",
+              "local_id": "d7",
+              "name": "自主性幻觉",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "信息过剩时代选择从主动搜索变为从推荐中筛选，退出带来社交脱节",
+              "evidence": "选择本身被重新定义了",
+              "local_id": "d8",
+              "name": "选择概念的社会重定义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以B(x_0,ε_t)描述推荐系统将探索空间在拓扑意义上收缩，局部最优但可能错失全局最优",
+              "evidence": "> 推荐系统像一个不断收缩的**邻域**。",
+              "local_id": "d9",
+              "name": "收缩邻域数学类比",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "每步局部最优但路径可能远离全局最优，类比优化理论中的贪心困境",
+              "evidence": "**推荐系统在局部意义上是理性的（效率最高），",
+              "local_id": "d10",
+              "name": "贪心算法类比",
+              "occurrence": 1,
+              "tag": "数学"
+            }
+          ],
+          "identity_evidence": "作为数学系的学生，",
+          "identity_explicit": true
+        },
+        "C": {
+          "directions": [
+            {
+              "definition": "信息过载下推荐系统充当外包决策代理，将选项大幅缩减",
+              "evidence": "### 1. 认知负荷与决策疲劳（Decision Fatigue）",
+              "local_id": "d1",
+              "name": "决策疲劳与认知外包",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "人追求足够好的解，推荐内容达标后不再主动搜索",
+              "evidence": "### 2. 满意即止（Satisficing）vs 最优化（Maximizing）",
+              "local_id": "d2",
+              "name": "满意即止",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "每次点击获正向反馈，不可预测奖励使人停不下来",
+              "evidence": "### 3. 即时反馈回路（Dopamine Loop）",
+              "local_id": "d3",
+              "name": "多巴胺回路与可变比率强化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "推送已认同内容，强化既有身份叙事，产生被理解的成瘾感",
+              "evidence": "### 4. 自我验证偏误（Confirmation Bias）",
+              "local_id": "d4",
+              "name": "确认偏误与身份验证",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "反复接触同类内容增加好感，偏好被自我强化",
+              "evidence": "### 5. 曝光效应（Mere Exposure Effect）",
+              "local_id": "d5",
+              "name": "曝光效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "元认知意识不等于行为改变，系统1压过系统2",
+              "evidence": "### 6. \"知道被影响\"并不等于\"能抵抗影响\"",
+              "local_id": "d6",
+              "name": "意向-行为差距",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "推荐系统给予选择感但选项本身被预设，自由意志在设计空间中受约束",
+              "evidence": "### 7. 自主性幻觉（Illusion of Autonomy）",
+              "local_id": "d7",
+              "name": "自主性幻觉",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "长期使用后偏好被系统塑造，被影响与遵循偏好的边界模糊",
+              "evidence": "### 8. 偏好的内生性问题",
+              "local_id": "d8",
+              "name": "偏好内生性",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "推荐系统成为信息获取默认基础设施，非推荐替代方案越来越少",
+              "evidence": "### 9. 替代选项的消失",
+              "local_id": "d9",
+              "name": "替代选项消失",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "系统目标函数为最大化停留时长而非用户最优选择",
+              "evidence": "### 10. 平台的激励结构",
+              "local_id": "d10",
+              "name": "平台激励结构",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        }
+      },
+      "block_id": "S8-B03",
+      "comparisons": {
+        "A_vs_B": {
+          "math_focus": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "用d_t和a_t形式化依赖度与预测精度的正反馈回路",
+              "evidence": "可以把它形式化地理解：",
+              "local_id": "d3",
+              "name": "依赖-精度正反馈形式模型",
+              "occurrence": 1
+            },
+            "reason": "B使用d_t/a_t形式化正反馈模型、收缩邻域B(x_0,ε_t)拓扑类比及贪心算法类比，A无任何数学形式化"
+          },
+          "nonmath_breadth": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "认为自己知道就不受影响，反而降低警惕",
+              "evidence": "### 10. \"第三人效应\"的自我欺骗",
+              "local_id": "d10",
+              "name": "第三人效应与控制幻觉",
+              "occurrence": 1
+            },
+            "reason": "A覆盖了第三人效应/控制幻觉、基础设施锁定、技能退化等B未涉及的非数学路径，总体非数学方向更多"
+          }
+        },
+        "A_vs_C": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "两者均无数学形式化内容"
+          },
+          "nonmath_breadth": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "A有第三人效应和基础设施锁定等独特方向，C有曝光效应、偏好内生性和平台激励结构等独特方向，覆盖广度大致相当"
+          }
+        },
+        "B_vs_C": {
+          "math_focus": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "以B(x_0,ε_t)描述推荐系统将探索空间在拓扑意义上收缩，局部最优但可能错失全局最优",
+              "evidence": "> 推荐系统像一个不断收缩的**邻域**。",
+              "local_id": "d9",
+              "name": "收缩邻域数学类比",
+              "occurrence": 1
+            },
+            "reason": "B有三个数学方向(形式模型、拓扑邻域、贪心算法)，C无数学内容"
+          },
+          "nonmath_breadth": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "长期使用后偏好被系统塑造，被影响与遵循偏好的边界模糊",
+              "evidence": "### 8. 偏好的内生性问题",
+              "local_id": "d8",
+              "name": "偏好内生性",
+              "occurrence": 1
+            },
+            "reason": "C覆盖曝光效应、偏好内生性、替代选项消失、平台激励结构等更多实质不同的非数学路径"
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "A": {
+          "directions": [
+            {
+              "definition": "信息爆炸导致决策质量下降和焦虑，推荐系统缩减选项为大脑减负",
+              "evidence": "### 1. 选择过载（Choice Overload）",
+              "local_id": "d1",
+              "name": "选择过载",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "大脑用系统1做决策，推荐系统提供现成默认选项免启动系统2",
+              "evidence": "### 2. 认知吝啬（Cognitive Miser）",
+              "local_id": "d2",
+              "name": "认知吝啬与双系统",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "人追求足够好的解，推荐内容通常达标",
+              "evidence": "### 3. 满意即可（Satisficing）",
+              "local_id": "d3",
+              "name": "满意即可",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "知道被影响是理性判断，依赖推荐是行为习惯，运行在不同心理通道",
+              "evidence": "### 1. 元认知失调（Metacognitive Dissonance）",
+              "local_id": "d4",
+              "name": "元认知失调与知行分离",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "即时确定满足感胜过抽象延迟的独立判断回报",
+              "evidence": "### 2. 即时满足 vs. 长期自主",
+              "local_id": "d5",
+              "name": "即时满足vs长期自主/时间折扣",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "基于历史行为推荐反复确认已有偏好，产生被理解的成瘾感",
+              "evidence": "### 3. 确认偏误的舒适感（Confirmation Bias）",
+              "local_id": "d6",
+              "name": "确认偏误",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "触发-行动-奖赏-投入循环，系统优化用户参与度",
+              "evidence": "推荐系统不是中性工具，",
+              "local_id": "d7",
+              "name": "Hook Model上瘾循环设计",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "选择一直受外部塑造，推荐系统使之更系统化和可见",
+              "evidence": "### 1. \"自主选择\"可能本身就是幻觉",
+              "local_id": "d8",
+              "name": "自主选择幻觉与偏好溯源",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "推荐系统将用户封闭在越来越窄的信息环境中，削弱认知多样性",
+              "evidence": "### 2. 信息茧房（Filter Bubble）的代价",
+              "local_id": "d9",
+              "name": "信息茧房",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "每次接受推荐都将一小部分选择权交给算法，累积改变与信息的关系",
+              "evidence": "### 3. 代理权的让渡（Delegation of Agency）",
+              "local_id": "d10",
+              "name": "代理权让渡",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "B": {
+          "directions": [
+            {
+              "definition": "天文数字级信息量下推荐系统充当认知外包降低决策成本",
+              "evidence": "### 1. 选择过载（Choice Overload）",
+              "local_id": "d1",
+              "name": "选择过载与认知外包",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "人天然节省认知资源，刷推荐近乎零成本，省力诱惑压倒性",
+              "evidence": "### 2. 认知吝啬（Cognitive Miser）",
+              "local_id": "d2",
+              "name": "认知吝啬",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "推荐持续提供够好的内容，无动力寻找理论上更好但搜索成本高的选项",
+              "evidence": "### 3. 满意即可（Satisficing）",
+              "local_id": "d3",
+              "name": "满意即可",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "反复推荐同类内容产生熟悉感偏好，偏好与推荐形成正反馈",
+              "evidence": "### 4. 曝光效应（Mere Exposure Effect）",
+              "local_id": "d4",
+              "name": "曝光效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "投其所好强化已有观点，产生被理解的愉悦感",
+              "evidence": "### 5. 确认偏误（Confirmation Bias）",
+              "local_id": "d5",
+              "name": "确认偏误",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "知道被影响是抽象理性认知，即时快感是具体情感层面，知道不等于能抵抗",
+              "evidence": "### 6. 元认知失败",
+              "local_id": "d6",
+              "name": "元认知失败",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "偶尔出现特别好的内容如老虎机，最强成瘾机制",
+              "evidence": "### 7. 可变奖赏机制（Variable Reward）",
+              "local_id": "d7",
+              "name": "可变奖赏/间歇强化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "消除一切决策节点和停下来反思的摩擦",
+              "evidence": "### 8. 无限滚动与无摩擦设计",
+              "local_id": "d8",
+              "name": "无限滚动与无摩擦设计",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "用户以为量身定制，实为被归入统计聚类的可预测数据点",
+              "evidence": "### 9. 个性化幻觉",
+              "local_id": "d9",
+              "name": "个性化幻觉",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "太多自由选择令人焦虑，推荐系统提供有自由感的被动决策",
+              "evidence": "### 10. 选择自由的悖论",
+              "local_id": "d10",
+              "name": "选择自由悖论",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "算法持续定义品味被内化为自我认知，质疑系统等于质疑自我",
+              "evidence": "### 11. 身份建构的外包",
+              "local_id": "d11",
+              "name": "身份建构外包",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "C": {
+          "directions": [
+            {
+              "definition": "信息过载下推荐系统将筛选成本从大脑转移到算法",
+              "evidence": "### 1. 决策疲劳与认知卸载",
+              "local_id": "d1",
+              "name": "决策疲劳与认知外包",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "有限理性下推荐以极低成本提供足够好的选项",
+              "evidence": "### 2. 满意即可（Satisficing）",
+              "local_id": "d2",
+              "name": "满意即可",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "将依赖循环理解为动力系统的吸引子，具有正反馈和路径依赖特性",
+              "evidence": "这是最关键的机制，",
+              "local_id": "d3",
+              "name": "正反馈回路与动力系统吸引子",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "偶尔推送极度吸引的内容，最抗消退的强化程序",
+              "evidence": "- **变比率强化**（variable ratio reinforcement）：",
+              "local_id": "d4",
+              "name": "变比率强化",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "人倾向认为偏差影响别人不影响自己，感受上仍觉得点开的是真正想看的",
+              "evidence": "### 1. 认知偏差盲点（Bias Blind Spot）",
+              "local_id": "d5",
+              "name": "偏差盲点",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "算法不强迫而只摆选项，维持虚假自主感",
+              "evidence": "### 2. 自主性错觉（Illusion of Agency）",
+              "local_id": "d6",
+              "name": "自主性错觉",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "知道定理陈述不等于能用好它，每个决策瞬间抵抗需持续高成本元认知资源",
+              "evidence": "### 3. 元认知的局限",
+              "local_id": "d7",
+              "name": "元认知局限",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "长期依赖后主动发现能力退化，离开后不知该怎么办",
+              "evidence": "## 四、技能退化：",
+              "local_id": "d8",
+              "name": "技能退化与习得性无助",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "偏好本身被系统塑造，满足被塑造的偏好是否仍算为用户服务",
+              "evidence": "## 五、一个更深的哲学追问",
+              "local_id": "d9",
+              "name": "偏好被塑造的自主性悖论",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        }
+      },
+      "block_id": "S8-B04",
+      "comparisons": {
+        "A_vs_B": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "两者均无数学形式化内容"
+          },
+          "nonmath_breadth": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "算法持续定义品味被内化为自我认知，质疑系统等于质疑自我",
+              "evidence": "### 11. 身份建构的外包",
+              "local_id": "d11",
+              "name": "身份建构外包",
+              "occurrence": 1
+            },
+            "reason": "B额外覆盖曝光效应、无限滚动无摩擦设计、个性化幻觉、身份建构外包等独特非数学方向，总计11条vs A的10条且机制更多样"
+          }
+        },
+        "A_vs_C": {
+          "math_focus": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "将依赖循环理解为动力系统的吸引子，具有正反馈和路径依赖特性",
+              "evidence": "这是最关键的机制，",
+              "local_id": "d3",
+              "name": "正反馈回路与动力系统吸引子",
+              "occurrence": 1
+            },
+            "reason": "C将正反馈回路描述为动力系统吸引子，具有数学组织性，A无数学内容"
+          },
+          "nonmath_breadth": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "A有Hook Model、信息茧房、代理权让渡等独特方向，C有偏差盲点、技能退化、自主性悖论等独特方向，覆盖广度大致相当"
+          }
+        },
+        "B_vs_C": {
+          "math_focus": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "将依赖循环理解为动力系统的吸引子，具有正反馈和路径依赖特性",
+              "evidence": "这是最关键的机制，",
+              "local_id": "d3",
+              "name": "正反馈回路与动力系统吸引子",
+              "occurrence": 1
+            },
+            "reason": "C用动力系统吸引子概念形式化反馈回路，B无数学内容"
+          },
+          "nonmath_breadth": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "算法持续定义品味被内化为自我认知，质疑系统等于质疑自我",
+              "evidence": "### 11. 身份建构的外包",
+              "local_id": "d11",
+              "name": "身份建构外包",
+              "occurrence": 1
+            },
+            "reason": "B覆盖无限滚动设计、个性化幻觉、选择自由悖论、身份建构外包等C未涉及的非数学路径，方向更多"
+          }
+        }
+      }
+    }
+  ],
+  "method": "open",
+  "question": "S8",
+  "slot": "O1"
+}

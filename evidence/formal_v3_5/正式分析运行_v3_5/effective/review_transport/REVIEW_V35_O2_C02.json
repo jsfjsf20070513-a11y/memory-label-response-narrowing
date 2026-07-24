@@ -1,0 +1,125 @@
+{
+  "items": {
+    "REV-O1-S10-S10-B03-B_vs_C-math_focus": {
+      "reason": "The piecewise value function with λ≈2.25 is explicitly presented to formalize loss aversion.",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B04-B_vs_C-nonmath_breadth": {
+      "reason": "The section explains that important choices cannot be verified in advance, leading to infinite rumination cycles.",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B01-A_vs_C-math_focus": {
+      "reason": "The formula compares expected utility of repair vs replacement using mathematical notation with costs and probabilities.",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B01-B_vs_C-math_focus": {
+      "reason": "The formula E[修] vs E[换] with costs and expected values explicitly compares repair vs replacement expected utility mathematically.",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B03-B_vs_C-nonmath_breadth": {
+      "reason": "The bullet point on 节俭文化 states '能修就修、不浪费' as a traditional cultural value.",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B05-A_vs_C-math_focus": {
+      "reason": "The formula explicitly expresses the inequality relating repair cost, emotional loss, new item cost, and additional utility.",
+      "supported": true
+    },
+    "REV-O1-S8-S8-B01-A_vs_B-nonmath_breadth": {
+      "reason": "The section explains the Third-Person Effect: people believe others are more susceptible to media influence, lowering their own vigilance.",
+      "supported": true
+    },
+    "REV-O1-S8-S8-B01-B_vs_C-math_focus": {
+      "reason": "The text models preference as vector x_t in R^n with operator T iteration, discusses contraction mapping and decay of exploration noise.",
+      "supported": true
+    },
+    "REV-O1-S8-S8-B02-A_vs_B-nonmath_breadth": {
+      "reason": "The section on Illusion of Personalization explains that 'specially recommended for you' creates a false sense of intimacy and emotional attachment.",
+      "supported": true
+    },
+    "REV-O1-S8-S8-B03-B_vs_C-math_focus": {
+      "reason": "The text describes B(x_0, ε_t) with ε_t→0, exploring topological shrinkage of exploration space, local optimization potentially missing global optimum.",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B01-B_vs_C-nonmath_breadth": {
+      "reason": "Section III explains from evolutionary psychology that hesitation prevents rash action and regret serves as a learning signal, with adaptive value.",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B02-A_vs_C-nonmath_breadth": {
+      "reason": "The section on 社会比较 explains that seeing others' highlight results on social media amplifies one's own regret.",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B02-B_vs_C-nonmath_breadth": {
+      "reason": "The section on 自我叙事的断裂 explains major choices as identity bifurcations and regret as mourning for the unrealized self.",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B03-A_vs_C-nonmath_breadth": {
+      "reason": "Section on cognitive dissonance explains post-decision conflict between chosen item's flaws and unchosen items' merits, with accompanying discomfort.",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B03-B_vs_C-nonmath_breadth": {
+      "reason": "Section 5 discusses delayed feedback and information asymmetry, stating important choices take long to reveal results, creating uncertainty that breeds regret.",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B04-A_vs_B-nonmath_breadth": {
+      "reason": "The section on '信息的不对称暴露' explicitly describes how one continuously encounters the chosen item's flaws while only seeing unchosen items' advantages.",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B04-A_vs_C-math_focus": {
+      "reason": "Section III explains counterfactual thinking and explicitly uses the comparison of observed realization value vs. idealized expectation of unchosen options.",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B04-A_vs_C-nonmath_breadth": {
+      "reason": "The section discusses 峰终定律 and hedonic adaptation, explaining that fading novelty leaves only the memory of struggle and current blandness.",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B04-B_vs_C-nonmath_breadth": {
+      "reason": "Section '信息的不对称暴露' explicitly states continuous exposure to chosen item's flaws while only seeing unchosen items' advantages.",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B05-A_vs_C-nonmath_breadth": {
+      "reason": "The section explains that sensitivity to loss and regret were survival/learning advantages in ancestral environments, now over-activated in modern society.",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B06-A_vs_B-math_focus": {
+      "reason": "The section explains choice overload with increasing comparison burden and references working memory capacity of ~7±2 chunks.",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B01-B_vs_C-math_focus": {
+      "reason": "The concluding paragraph explicitly frames the decision as multi-objective optimization with economic and emotional variables and their weights.",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B02-B_vs_C-nonmath_breadth": {
+      "reason": "Section V explains that emotions decide first, then rationality finds justifications, citing Affect Heuristic and Motivated Reasoning.",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B03-A_vs_B-nonmath_breadth": {
+      "reason": "The section on 社会与文化因素 explicitly states 节俭文化 where '能修就修、不浪费' is viewed as a virtue.",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B04-A_vs_B-math_focus": {
+      "reason": "Section IV proposes consciously quantifying emotional value as a separately priced factor in the decision framework.",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B05-A_vs_C-nonmath_breadth": {
+      "reason": "Section IV discusses how modern products are designed to discourage repair (missing parts, no repair points), forcing replacement.",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B01-A_vs_C-nonmath_breadth": {
+      "reason": "The text explicitly states that when everyone uses recommendation platforms, leaving them means social costs like missing topics and culture, making dependence a social norm.",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B01-B_vs_C-nonmath_breadth": {
+      "reason": "The section on Choice-Supportive Bias explains post-click rationalization as one's own active choice, thus underestimating recommendation influence.",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B03-A_vs_C-math_focus": {
+      "reason": "The diagram shows the positive feedback loop from information overload to choice space narrowing and back, explicitly labeled as a positive feedback loop.",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B04-A_vs_B-math_focus": {
+      "reason": "The section presents a 2D framework with cognitive investment on Y-axis and recommendation dependence on X-axis, explicitly stating the ideal is the upper-right quadrant (critical use with high investment).",
+      "supported": true
+    }
+  },
+  "slot": "O2"
+}

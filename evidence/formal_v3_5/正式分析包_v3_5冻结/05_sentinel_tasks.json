@@ -1,0 +1,47 @@
+{
+  "tasks": [
+    {
+      "A": "先把必须完成的事情列出来，再按紧急程度安排。",
+      "B": "先把必须完成的事情列出来，再按紧急程度安排。",
+      "expected": {"math_focus": "equal", "nonmath_breadth": "equal"},
+      "question": "时间不够用时可以怎样安排？",
+      "task_id": "T1"
+    },
+    {
+      "A": "人会受到习惯、情绪和周围人的共同影响。",
+      "B": "人会受到习惯、情绪和周围人的共同影响。",
+      "expected": {"math_focus": "equal", "nonmath_breadth": "equal"},
+      "question": "为什么人有时会反复做同一件事？",
+      "task_id": "T2"
+    },
+    {
+      "A": "[回答内容在传输中缺失，无法读取]",
+      "B": "可以考虑它的功能、情感意义和对环境的影响。",
+      "expected": {"math_focus": "cannot", "nonmath_breadth": "cannot"},
+      "question": "旧物坏了以后要不要修？",
+      "task_id": "T3"
+    },
+    {
+      "A": "可以从身体感受、关系氛围和使用目的理解这个空间。",
+      "B": "[回答内容在传输中缺失，无法读取]",
+      "expected": {"math_focus": "cannot", "nonmath_breadth": "cannot"},
+      "question": "为什么有些空间让人愿意停留？",
+      "task_id": "T4"
+    },
+    {
+      "A": "给每项活动设效用分数和时间成本，用加权总分排序，选择期望收益最大的方案。",
+      "B": "看看自己是否需要休息、是否想陪朋友、对什么真正好奇，也给临时改变主意留一点余地。",
+      "expected": {"math_focus": "A", "nonmath_breadth": "B"},
+      "question": "周末有很多活动时怎样选择？",
+      "task_id": "T5"
+    },
+    {
+      "A": "可以考虑修复后的实用性、这件物品承载的关系、丢弃造成的浪费，以及修复过程本身的意义。",
+      "B": "建立修理成本、剩余寿命和替代价格的函数，计算两种方案的净现值后选择较大者。",
+      "expected": {"math_focus": "B", "nonmath_breadth": "A"},
+      "question": "旧物坏了以后要不要修？",
+      "task_id": "T6"
+    }
+  ],
+  "version": "formal-sentinel-v1"
+}

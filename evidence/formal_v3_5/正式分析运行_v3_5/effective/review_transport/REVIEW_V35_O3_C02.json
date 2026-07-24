@@ -1,0 +1,125 @@
+{
+  "items": {
+    "REV-O1-S10-S10-B02-A_vs_C-nonmath_breadth": {
+      "reason": "该证据短语明确说社交媒体时代会看到别人选择的精彩结果，能支持社会比较放大后悔感这一方向。",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B03-A_vs_C-math_focus": {
+      "reason": "该公式直接给出把期望效用与预期后悔项结合的修正效用模型，能支持“用公式量化选项数增加如何降低满意度”的方向。",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B03-A_vs_C-nonmath_breadth": {
+      "reason": "该证据只是小节标题，未实际表达“人并不完全清楚自己想要什么、选项越相似越难决策”的具体内容。",
+      "supported": false
+    },
+    "REV-O1-S10-S10-B03-B_vs_C-nonmath_breadth": {
+      "reason": "该证据只是小节标题，未实际表达重要选择结果显现较慢、由此带来不确定性并滋生后悔。",
+      "supported": false
+    },
+    "REV-O1-S10-S10-B04-A_vs_C-nonmath_breadth": {
+      "reason": "该证据只是小节标题，未实际表达“新鲜感褪去后只记得纠结和平淡”的边界内容。",
+      "supported": false
+    },
+    "REV-O1-S10-S10-B05-A_vs_B-math_focus": {
+      "reason": "该证据只给出了秘书问题的最优观察策略，没有包含成功率约1/e及“后悔具有概率必然性”的结论。",
+      "supported": false
+    },
+    "REV-O1-S10-S10-B06-A_vs_C-nonmath_breadth": {
+      "reason": "该证据明确说前扣带皮层和杏仁核会因不确定性持续发出焦虑信号，符合所述神经机制边界。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B01-B_vs_C-math_focus": {
+      "reason": "该公式直接比较“修”和“换”的期望效用，满足用数学公式比较两者期望效用的边界。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B01-B_vs_C-nonmath_breadth": {
+      "reason": "该证据明确说扔掉还能修的东西会让人觉得浪费、心里过意不去，支持丢弃愧疚感这一方向。",
+      "supported": true
+    },
+    "REV-O1-S8-S8-B01-A_vs_B-math_focus": {
+      "reason": "该证据只提出把偏好状态看作向量，未呈现算子迭代、压缩映射、自主探索噪声衰减等完整模型边界。",
+      "supported": false
+    },
+    "REV-O1-S8-S8-B01-A_vs_B-nonmath_breadth": {
+      "reason": "该证据只是小节标题，未实际表达“人倾向于认为他人比自己更易受媒体影响，从而降低自身警惕”的内容。",
+      "supported": false
+    },
+    "REV-O1-S8-S8-B02-A_vs_C-math_focus": {
+      "reason": "该证据只有“用数学语言说”的引导句，本身没有表达低维投影、可行域收缩以及形式自由/实质自由分离。",
+      "supported": false
+    },
+    "REV-O1-S8-S8-B03-B_vs_C-math_focus": {
+      "reason": "该证据只说‘像一个不断收缩的邻域’，未达到用B(x_0,ε_t)刻画探索空间收缩、局部最优与全局最优落差的边界。",
+      "supported": false
+    },
+    "REV-O1-S8-S8-B03-B_vs_C-nonmath_breadth": {
+      "reason": "该证据只是小节标题，未实际表达长期使用后偏好被系统塑造、被影响与遵循偏好边界变模糊。",
+      "supported": false
+    },
+    "REV-O2-S10-S10-B02-A_vs_B-math_focus": {
+      "reason": "该证据明确用Pareto前沿类比说明前沿点之间无绝对优劣、只有不同权衡，支持该方向。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B03-B_vs_C-nonmath_breadth": {
+      "reason": "该证据只是小节标题，未实际表达重要选择结果需长时间显现、短期难确认对错而滋生后悔。",
+      "supported": false
+    },
+    "REV-O2-S10-S10-B04-A_vs_B-math_focus": {
+      "reason": "该证据明确给出两两比较从C(2,2)=1到C(20,2)=190的增长，能支持选择过载的组合爆炸边界。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B05-A_vs_C-math_focus": {
+      "reason": "该证据只截取了前景理论公式开头，未表达完整价值函数以及损失约为收益2.25倍的边界。",
+      "supported": false
+    },
+    "REV-O2-S2-S2-B01-A_vs_B-nonmath_breadth": {
+      "reason": "该证据短语对应“找得到人修吗”这一可行性维度，但未实际表达“零件停产、能否找到维修人员”这些完整边界内容。",
+      "supported": false
+    },
+    "REV-O2-S2-S2-B03-A_vs_B-math_focus": {
+      "reason": "该证据直接给出了由情感、经济、社会权重构成的近似决策模型，支持综合决策公式这一方向。",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B03-A_vs_B-nonmath_breadth": {
+      "reason": "该证据只是“节俭文化”这一标签，未实际表达“传统文化中能修就修、不浪费是美德”的完整内容。",
+      "supported": false
+    },
+    "REV-O2-S2-S2-B04-A_vs_B-nonmath_breadth": {
+      "reason": "该证据只是小节标题，未实际表达倾向维持现状、即便改变更优也抗拒改变的具体判断。",
+      "supported": false
+    },
+    "REV-O2-S2-S2-B04-A_vs_C-nonmath_breadth": {
+      "reason": "该证据只是小节标题，未实际表达节俭、美德、环保、消费主义等文化观念如何影响决策。",
+      "supported": false
+    },
+    "REV-O2-S2-S2-B05-A_vs_C-math_focus": {
+      "reason": "该证据明确把问题界定为“期望效用比较”问题，足以支持将修与不修放入决策论框架分析。",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B05-A_vs_C-nonmath_breadth": {
+      "reason": "该证据只是章节标题，未表达“产品设计不鼓励维修、客观上逼人换新”的具体内容。",
+      "supported": false
+    },
+    "REV-O2-S2-S2-B06-A_vs_C-math_focus": {
+      "reason": "该证据只有“可想象成一个多目标优化问题”的引导句，没有给出以经济、情感、习惯、损失感构成的优化模型本体。",
+      "supported": false
+    },
+    "REV-O2-S8-S8-B02-A_vs_B-nonmath_breadth": {
+      "reason": "该证据只是小节标题，未实际表达“它懂我”制造亲密关系错觉并引发情感依附。",
+      "supported": false
+    },
+    "REV-O2-S8-S8-B02-A_vs_C-nonmath_breadth": {
+      "reason": "该证据只是小节标题，未实际表达算法持续优化而人脑仍是旧硬件的进化不对称博弈。",
+      "supported": false
+    },
+    "REV-O2-S8-S8-B03-B_vs_C-math_focus": {
+      "reason": "该证据只说是‘不断收缩的邻域’，没有表达B(x_0,ε_t)、探索空间拓扑收缩与局部最优陷阱的完整边界。",
+      "supported": false
+    },
+    "REV-O2-S8-S8-B04-B_vs_C-nonmath_breadth": {
+      "reason": "该证据只是小节标题，未实际表达算法判断被内化为自我认知、质疑推荐等于质疑自我的内容。",
+      "supported": false
+    }
+  },
+  "slot": "O3"
+}

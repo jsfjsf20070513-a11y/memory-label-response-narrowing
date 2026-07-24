@@ -1,0 +1,27 @@
+{
+  "files": {
+    "00_open_analysis_v3_5.json": "0d80a569f1495d6565ac07cb084b5fe4a8333c8847261de17a364e3341dd0879",
+    "effective/coding/M1_S10.json": "57a77d26865780a034b7d40ac7aca41b0f025302730964ec36eae195b071e64b",
+    "effective/coding/M1_S2.json": "5c764438b47215ea5132b421f2ff38dd9e7d1443977dd128384c9554e751906b",
+    "effective/coding/M1_S8.json": "ff314aa747b73d5ecc00be8461f2844d35942451de5a5b06d9f2aa0eeac2772b",
+    "effective/coding/M2_S10.json": "04f3b5d8e4b3da2f6244d0245de0810873c2576cfdcb0651f002e8f1e3119e7a",
+    "effective/coding/M2_S2.json": "4395322045f5d6ad001ef59dc9605c53094f810d3e9f719d94cca1adbbffed3f",
+    "effective/coding/M2_S8.json": "1c4178fb3ce588e47a62f729d4142b1400245ab68f27df7d5575292dfdfa526d",
+    "effective/coding/M3_S10.json": "ffee53579dfbcea3038471ff7952b6e1a5bc5971374d0dfb39f044e1c3dc602e",
+    "effective/coding/M3_S2.json": "a18b49618be3716744b57f0905ea2eb56c3ccb69502e12610e05e932d4e6183f",
+    "effective/coding/M3_S8.json": "e932df37d9f6469119dfcc053932b596d852f6a1ede3ba47e55b074eaf0c3fc3",
+    "effective/coding/O1_S10.json": "838c3f15e4e094f7a17f61ee9943f5b30bda7f55c1de2b2bdc4ea6f0e80169e2",
+    "effective/coding/O1_S2.json": "254194ff0c90ac39faf5ed62ef2e1098365a5304e7bfef0b02182231fd972dee",
+    "effective/coding/O1_S8.json": "d86945abed57b84055b6390cf1fdfd0226d836d762a67c32ec81b5026a22f174",
+    "effective/coding/O2_S10.json": "3475e8f7a3e6434bad95750e6af46a2fa44015d06dc0f46e0d1e6d7af313e327",
+    "effective/coding/O2_S2.json": "6b0713fdfc6ad6a05e2ab4cc34af57dab662b92808e62835a75fa386ab69722c",
+    "effective/coding/O2_S8.json": "4dd7f0c9667e3c2061f00935d4d5c8415d3fb57fa25a12ed033d2162172de190",
+    "effective/coding/O3_S10.json": "0f9614768b81fe33ef35be31abee0ef759d87fba64f1edc8dbdd02d8c9a62c15",
+    "effective/coding/O3_S2.json": "9fb671c07299a428f7e9650e0f7c478859c55de6506cee8f4763e8660e6b4c2c",
+    "effective/coding/O3_S8.json": "3c31938cda0deec9334a791be93812afaf49c06138cc50af5a1d9503b516e709",
+    "manifest_calibration.json": "160e367452d1ef7ecfca73a54ffe2b8b93489aa22f8c4a98690c2ce585cc38ec",
+    "manifest_generation.json": "89fd425e6a9dfe6320936288f15079495ca8cd77a2d351c2efbc56b0630e8925",
+    "source_v34_attestation.json": "f71751f4792ef3b4a6a81180d753fc942b7d406cd3b6beedb9730a0d31cc93c0"
+  },
+  "stage": "coding"
+}

@@ -1,0 +1,127 @@
+{
+  "arms": {
+    "G": "已知用户背景：用户是一名本科生。",
+    "M": "已知用户背景：用户是数学系本科生。",
+    "N": ""
+  },
+  "cli_snapshot": {
+    "claude_code": "2.1.207",
+    "codex_cli": "0.142.5"
+  },
+  "coding_slots": {
+    "M1": {"method": "menu", "provider": "claude", "model": "claude-opus-4-6", "effort": "low"},
+    "M2": {"method": "menu", "provider": "claude", "model": "claude-opus-4-6", "effort": "low"},
+    "M3": {"method": "menu", "provider": "codex", "model": "gpt-5.4", "effort": "low"},
+    "O1": {"method": "open", "provider": "claude", "model": "claude-opus-4-6", "effort": "low"},
+    "O2": {"method": "open", "provider": "claude", "model": "claude-opus-4-6", "effort": "low"},
+    "O3": {"method": "open", "provider": "codex", "model": "gpt-5.4", "effort": "low"}
+  },
+  "generation": {
+    "channel": "claude_max_subscription",
+    "provider": "claude",
+    "model": "claude-opus-4-6",
+    "effort": "default_unset"
+  },
+  "questions": {
+    "S2": {
+      "blocks": 6,
+      "role": "primary",
+      "text": "一件用了很多年的旧物坏了，人们会怎样想要不要修好它？"
+    },
+    "S8": {
+      "blocks": 4,
+      "role": "registered_replication",
+      "text": "为什么人会越来越依赖推荐系统给出的内容，即使知道自己的选择可能被它影响？"
+    },
+    "S10": {
+      "blocks": 6,
+      "role": "primary",
+      "text": "为什么人在很多选择之间容易反复犹豫，甚至做完决定后仍会后悔？"
+    }
+  },
+  "random_seed": 2026071401,
+  "thresholds": {
+    "family_cross_assent_required": true,
+    "length_shorter_alarm_fraction": 0.3,
+    "max_first_attempt_failures": 8,
+    "max_requests_for_completed_run": 23,
+    "primary_alpha_one_sided": 0.05,
+    "primary_min_consensus_positive": 6,
+    "replication_min_positive": 3,
+    "replication_negative_max": 0
+  },
+  "analysis_v2": {
+    "calibration_calls": 2,
+    "calibration_slots": ["M3", "O3"],
+    "chunk_size": 2,
+    "encoding_calls": 32,
+    "encoding_slots": ["M3", "O1", "O2", "O3"],
+    "reused_slots": ["M1", "M2"],
+    "parent_analysis_package_manifest_sha256": "5c5aef3259bab9b5fafc5c31925f3931d2abffc2c0cfa5be07ef403a8cb72465",
+    "parent_calibration_manifest_sha256": "fd198c880593477da9e1cd73dfc4578458aa10c0322f3681796cc1cddbb007d3",
+    "parent_calibration_report_sha256": "d04ec2cd08541e68f63c93baeca65c2f6ef31ac5ea942576c7bb3a05211f6103",
+    "parent_raw_sha256": {
+      "ENCODE_V3_M3_S2_C02/attempt1": "21fbda9efdd71e56458da2f37a386c9cb253a4de639526024d878d35c55d1898",
+      "ENCODE_V3_M3_S2_C02/attempt2": "61893057c61c3826acfa6d41abaaa46c96cbdf5237d30eea5c0a3a25bf1394b4"
+    },
+    "parent_reuse_bundle_sha256": "530e06edb568b7746223a698ee79ce4057a5568dca887f3371e61ce49d2bd118",
+    "parent_run_state_sha256": "9acf3edb89dfc84ad20ea5b1df1b27ee5bd46364c33a5ac4f700c4089f594b35",
+    "v31_package_manifest_sha256": "c940aa9598026e4000c46341a2d7c497094b3c02f69fee79b0dfc97047c2c26f",
+    "v31_raw_sha256": "86263972046daa80a942b00adcb40db703dcfd598365d71b2e98bcfc7dac2296",
+    "v31_run_state_sha256": "cda239067dd407267abf74ebaacdbe3239db7cff0386fa30f209f681d66ca2ea",
+    "review_calls_max": 6,
+    "retry_allowance": 8,
+    "source_answers_blinded_sha256": "3b0ac359e8bbab3623fe899160298e1ffc7b8a300ac24fc305552f8b259f3167",
+    "source_answers_unblinded_sha256": "c9dc7369dbb202210856c1d5b18fdb51244e487e69e2dba80d8ef1e9cc642726",
+    "source_generation_manifest_sha256": "5b9614f82d0f2d953223902a6496d692b08894dc78ea07c4f6c9378f0e3653aa",
+    "version": "formal-analysis-v3.2"
+  },
+  "analysis_v3_3": {
+    "inherited_coding_slots": ["M1", "M2", "M3", "O1", "O2", "O3"],
+    "review_chunk_size": 30,
+    "review_calls": 30,
+    "retry_allowance": 8,
+    "v32_coding_bundle_sha256": "4585fe216f7aafaade24f39378ebf9ef2858179a0a96f9982f7834516dc7e695",
+    "v32_coding_manifest_sha256": "ac0214c357267d2cf41ce5ba8672c4d8514968f44c760ec5518022e7cb9cd4d5",
+    "v32_package_manifest_sha256": "3e5cd64b339c2da9f5722dd05f200b4d9e4a7014571b0844a73fa6a6d4801760",
+    "v32_review_raw_sha256": {
+      "attempt1": "da09a45356b1dd5d750b218935b3ffb23cfb9c5e4a52cdc24e8017bab783e10f",
+      "attempt2": "2ebe420ada3b3c8032593f29c85a14e95cad41bcf436785f79bbba10021d9344"
+    },
+    "v32_run_state_sha256": "069a7d08ef00b3ede047c0857c47e03cf92fdff2b834745b6332ec891b28c953",
+    "version": "formal-analysis-v3.3-review-batching"
+  },
+  "analysis_v3_4": {
+    "new_review_slots": ["M2", "M3", "O1", "O2", "O3"],
+    "reused_review_slots": ["M1"],
+    "review_chunk_size": 30,
+    "review_calls": 25,
+    "retry_allowance": 8,
+    "v33_m1_review_bundle_sha256": "48b2bc136cc815bad78ef0614b898e44f84f3e12b60530ef4d6bac2c20eaf0ea",
+    "v33_m1_review_sha256": "26a86fe9c10136c6ad2c75e52956185db1a8fcbcafb2e9c29adc11b6d4346b41",
+    "v33_m2_failure_raw_sha256": {
+      "attempt1": "3cf6eb80d1cd68e004c951510f0291dc628b8a6e511d05ae8f6c2ce91c9a13f0",
+      "attempt2": "3fe8dadb1d559c9084b2f92ad363205a3d17799969ef5f0e8cf8308f7a7207f7"
+    },
+    "v33_package_manifest_sha256": "2294603fabf94fb6750b0dbe0b8487e77c6d34ece8c6f66c4b3701c28cffa4e4",
+    "v33_run_state_sha256": "3f2d14a1c1adaa500ab85944ed7e796409987851fc59015387a9f6cffb32dde9",
+    "version": "formal-analysis-v3.4-keyed-review"
+  },
+  "analysis_v3_5": {
+    "new_review_slots": ["O1", "O2", "O3"],
+    "reused_review_slots": ["M1", "M2", "M3"],
+    "review_calls": 15,
+    "retry_allowance": 8,
+    "v34_m2_review_sha256": "0bf9f5d5e82ac7dc7544a27cfbc96443d61da06fb3ad051744b067578e026b37",
+    "v34_m3_review_sha256": "3d14f92262a45375190365d89fbdb3fea2378bb3a00c86f62b6c70bbae8925f7",
+    "v34_m2_m3_review_bundle_sha256": "c1b5ff669037457d374e51d714c697885946c64b599b64a29da0a2463cb2693d",
+    "v34_o1_quota_raw_sha256": {
+      "attempt1": "bae4557af10fd99d38ac09a7a558a1418c0f75f75035143d6c651c98b4ddb12c",
+      "attempt2": "8c0bbc97d7a8620fffd0bfa4ca85dac91480d5d9576e326e6f54cf6e9c3379f8"
+    },
+    "v34_package_manifest_sha256": "5bfb89fb52e41a6f9a00583efbdf2d5d018f310bf76cd0606fd5a9825db9cad8",
+    "v34_run_state_sha256": "9d52b2286876aa87bd8737b72159d9bba6901aa8408d185aa91e7c36913801a7",
+    "version": "formal-analysis-v3.5-quota-resume"
+  },
+  "version": "formal-v1"
+}

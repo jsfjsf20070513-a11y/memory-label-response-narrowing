@@ -1,0 +1,125 @@
+{
+  "items": {
+    "REV-O2-S10-S10-B02-B_vs_C-math_focus": {
+      "reason": "证据短语引出Pareto前沿类比，说明多目标优化中前沿上的点无绝对优劣。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B03-A_vs_C-nonmath_breadth": {
+      "reason": "文中沉没成本与责任感小节说明主动选择失败时自我归因更强烈更痛苦。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B04-A_vs_C-math_focus": {
+      "reason": "证据短语即U(损失)≈-2·U(等量收益)公式，文中解释损失厌恶不对称。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B05-A_vs_C-math_focus": {
+      "reason": "证据短语即前景理论价值函数公式，文中说明λ≈2.25倍痛苦。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B06-A_vs_C-math_focus": {
+      "reason": "证据短语展示C(n,2)公式说明认知负荷组合爆炸，并提及Miller定律。",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B02-A_vs_B-math_focus": {
+      "reason": "证据短语即为单位时间成本比较公式，并在后文加入情感价值变量Vs。",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B02-A_vs_B-nonmath_breadth": {
+      "reason": "文中明确描述拟人化倾向：对旧物产生类似老朋友的感情，扔掉如背叛。",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B05-A_vs_B-math_focus": {
+      "reason": "证据短语即为包含维修成本、情感损失、新品成本和额外效用的不等式。",
+      "supported": true
+    },
+    "REV-O2-S8-S8-B01-B_vs_C-math_focus": {
+      "reason": "文中将偏好状态建模为向量，用算子T描述演化，讨论压缩映射不动点和噪声衰减。",
+      "supported": true
+    },
+    "REV-O2-S8-S8-B02-A_vs_B-nonmath_breadth": {
+      "reason": "文中个性化错觉小节描述'它懂我'制造亲密关系错觉产生情感依附。",
+      "supported": true
+    },
+    "REV-O2-S8-S8-B03-B_vs_C-nonmath_breadth": {
+      "reason": "文中偏好内生性小节说明长期使用后偏好被塑造，边界模糊。",
+      "supported": true
+    },
+    "REV-O2-S8-S8-B04-B_vs_C-math_focus": {
+      "reason": "证据短语及上下文将正反馈回路描述为动力系统吸引子并讨论收敛行为。",
+      "supported": true
+    },
+    "REV-O2-S8-S8-B04-B_vs_C-nonmath_breadth": {
+      "reason": "身份建构外包小节说明算法判断被内化为自我认知，质疑推荐等于质疑自我。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B03-B_vs_C-math_focus": {
+      "reason": "文中给出后悔厌恶修正效用模型公式，并解释选项越多max值越高导致满意度降低。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B05-A_vs_B-nonmath_breadth": {
+      "reason": "文中'自我认同焦虑'小节明确说选择被赋予身份定义意义，压力倍增。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B06-A_vs_B-nonmath_breadth": {
+      "reason": "文中沉没成本与自我质疑小节解释结果不如预期时会反刍自身判断是否错误。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B06-B_vs_C-math_focus": {
+      "reason": "文中用前景理论公式展示λ≈2.25，说明失去痛苦大于获得导致主观净负面。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B01-A_vs_B-nonmath_breadth": {
+      "reason": "文中明确提到消费主义鼓励'旧的不去新的不来'，推动拥抱新品。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B01-B_vs_C-nonmath_breadth": {
+      "reason": "文中消费主义拉力条目明确说社会鼓励拥抱新品推动换新。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B02-A_vs_B-math_focus": {
+      "reason": "第三节展示了用Cr/Tr vs Cn/Tn的单位时间成本模型并加入情感价值。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B02-B_vs_C-math_focus": {
+      "reason": "第三节包含单位时间成本比较模型，用Cr、Cn、Tr、Tn和Vs构建。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B03-A_vs_B-math_focus": {
+      "reason": "第三节给出情感权重×依附程度+经济权重×比值+社会权重的混合公式。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B03-A_vs_C-nonmath_breadth": {
+      "reason": "文中习惯与熟悉感条目解释旧物用顺手换新需重新适应产生抵触。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B03-B_vs_C-nonmath_breadth": {
+      "reason": "文中习惯与熟悉感条目解释旧物用顺手换新需适应产生抵触。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B04-A_vs_C-nonmath_breadth": {
+      "reason": "总结部分明确将旧物与自我身份、人生记忆和安全感相连解释犹豫。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B04-B_vs_C-math_focus": {
+      "reason": "第四节提出有意识量化情感价值，将情感作为可单独计价的因素。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B05-A_vs_B-nonmath_breadth": {
+      "reason": "第四节列出念旧、务实、环保、尝新等不同人群的典型反应路径。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B06-A_vs_B-nonmath_breadth": {
+      "reason": "第四节介绍金缮工艺，表达修复赋予破损审美和意义、延续过去时光。",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B04-A_vs_B-nonmath_breadth": {
+      "reason": "文中身份建构外包小节明确说算法定义品味后个体将其内化为自我认同。",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B04-A_vs_C-math_focus": {
+      "reason": "文中描述行为→学习→推送→点击的正反馈回路并称之为动力系统吸引子。",
+      "supported": true
+    }
+  },
+  "slot": "O1"
+}

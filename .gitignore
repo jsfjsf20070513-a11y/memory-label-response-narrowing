@@ -1,0 +1,28 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+*.log
+*.tmp
+*.bak
+*~
+.venv/
+venv/
+.env
+.env.*
+
+# 恢复包、原始会话与大型附件不入库
+*.tgz
+*.tar
+*.zip
+*.jsonl
+*.pdf
+raw_chat_export/
+recovery/
+tmp/
+
+# 人类盲判在关账前保持私有
+**/管理员私有*/
+**/*盲化映射*
+**/*盲判结果*.csv
+private/
+private-data/

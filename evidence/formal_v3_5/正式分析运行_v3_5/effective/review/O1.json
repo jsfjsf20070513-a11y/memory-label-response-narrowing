@@ -1,0 +1,735 @@
+{
+  "items": [
+    {
+      "reason": "该节详细介绍了秘书问题、最优停止策略和explore-exploit困境，与边界声明一致。",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B01-A_vs_C-math_focus"
+    },
+    {
+      "reason": "证据处明确将不可公度性类比为多目标优化中的Pareto前沿。",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B02-A_vs_B-math_focus"
+    },
+    {
+      "reason": "该节讨论了峰终定律与记忆偏差，内容与边界一致。",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B01-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "回答中包含含情感项的修/换不等式，并讨论了区分真实情感价值与偏误放大。",
+      "supported": true,
+      "task_id": "REV-O3-S2-S2-B05-A_vs_C-math_focus"
+    },
+    {
+      "reason": "证据处仅在表格中提及断舍离作为倾向替换的文化影响之一，未展开解释，不足以支持'以断舍离文化解释人们偏向替换与放下旧物'的边界。",
+      "supported": false,
+      "task_id": "REV-O3-S2-S2-B04-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "该节用反事实思维解释后悔，并以实现值与理想化期望上界的比较说明信息不对称。",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B04-A_vs_C-math_focus"
+    },
+    {
+      "reason": "第四节明确提到产品设计不鼓励维修、找不到配件和维修点，客观逼人换新。",
+      "supported": true,
+      "task_id": "REV-O3-S2-S2-B05-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据处用进化心理学解释对失去的敏感和后悔机制是生存优势，在现代被过度激活。",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B05-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据处明确提到节俭文化：能修就修不浪费是美德。",
+      "supported": true,
+      "task_id": "REV-O2-S2-S2-B03-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "该节详细讨论了Pareto不可比性，多维度评估下无唯一最优解。",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B01-A_vs_B-math_focus"
+    },
+    {
+      "reason": "第四节明确提到维修不便、配件和维修点缺失等现实条件。",
+      "supported": true,
+      "task_id": "REV-O3-S2-S2-B05-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该节按念旧、务实、环保、尝新等不同人格分类了典型反应。",
+      "supported": true,
+      "task_id": "REV-O2-S2-S2-B05-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "第三节明确列出节俭美德、环保理念与消费主义等文化观念。",
+      "supported": true,
+      "task_id": "REV-O2-S2-S2-B04-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该节讨论了沉没成本导致既不甘心继续又舍不得放弃的纠结。",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B01-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "第四节提到产品设计不鼓励维修，客观逼人换新。",
+      "supported": true,
+      "task_id": "REV-O2-S2-S2-B05-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "回答中包含从信息过载到选择空间收窄的正反馈循环图式。",
+      "supported": true,
+      "task_id": "REV-O3-S8-S8-B03-A_vs_C-math_focus"
+    },
+    {
+      "reason": "证据处明确说算法持续优化而大脑是十万年前硬件，不对称博弈。",
+      "supported": true,
+      "task_id": "REV-O2-S8-S8-B02-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据处仅在表格中简短提及断舍离，未展开解释其如何让人偏向替换与放下旧物。",
+      "supported": false,
+      "task_id": "REV-O3-S2-S2-B04-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该节依据纪念意义、独特性和可替代性列表说明修还是换的决策。",
+      "supported": true,
+      "task_id": "REV-O3-S2-S2-B06-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该节用进化视角解释犹豫和后悔是远古环境的适应机制。",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B06-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据处提到秘书问题和最优停止，说明最优选择成功率仅约36.8%，后悔具有概率必然性。",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B05-A_vs_B-math_focus"
+    },
+    {
+      "reason": "证据处明确描述对旧物产生类似老朋友的感情，扔掉如背叛。",
+      "supported": true,
+      "task_id": "REV-O2-S2-S2-B02-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据处给出了含后悔敏感系数ρ的修正期望效用公式。",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B03-A_vs_C-math_focus"
+    },
+    {
+      "reason": "证据处明确提到前扣带皮层和杏仁核在不确定性下持续发出焦虑信号。",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B06-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该节明确描述现状偏好：倾向维持现状抗拒改变即便改变更优。",
+      "supported": true,
+      "task_id": "REV-O2-S2-S2-B04-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "该节讨论不确定性焦虑，重要选择结果不可预知导致反复权衡。",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B06-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据处明确描述推荐内容与公共话题重叠带来社交压力和群体脱节风险。",
+      "supported": true,
+      "task_id": "REV-O3-S8-S8-B02-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据处明确描述损坏提供心理许可证让人无愧疚地购买新品。",
+      "supported": true,
+      "task_id": "REV-O2-S2-S2-B03-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "第四节给出含经济、情感、习惯与损失感的多目标优化公式。",
+      "supported": true,
+      "task_id": "REV-O3-S2-S2-B06-A_vs_C-math_focus"
+    },
+    {
+      "reason": "证据处给出了修理与换新的期望效用比较公式。",
+      "supported": true,
+      "task_id": "REV-O2-S2-S2-B01-B_vs_C-math_focus"
+    },
+    {
+      "reason": "The section explicitly discusses cognitive dissonance after decision-making, emphasizing the conflict between chosen item's defects and unchosen items' merits.",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B03-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The text explicitly states C(2,2)=1 growing to C(20,2)=190 and describes cognitive burden as combinatorial explosion.",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B04-A_vs_B-math_focus"
+    },
+    {
+      "reason": "The section covers prefrontal cortex limitations, amygdala/ventral striatum in emotional evaluation, and fMRI evidence that regret activates pain-related brain regions.",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B01-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "Section 10 discusses formal/substantive freedom distinction and uses R^n projection to low-dimensional subspace as mathematical framing of autonomy compression.",
+      "supported": true,
+      "task_id": "REV-O3-S8-S8-B02-A_vs_C-math_focus"
+    },
+    {
+      "reason": "The section explains recommender systems as platform infrastructure with no opt-out, supporting the claimed boundary.",
+      "supported": true,
+      "task_id": "REV-O3-S8-S8-B03-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "The quoted passage and surrounding text use the R^n to low-dimensional subspace projection metaphor to explain formal vs substantive freedom.",
+      "supported": true,
+      "task_id": "REV-O2-S8-S8-B02-A_vs_C-math_focus"
+    },
+    {
+      "reason": "The closing paragraph explicitly frames the decision as multi-objective optimization with economic and emotional variables and weights.",
+      "supported": true,
+      "task_id": "REV-O3-S2-S2-B01-A_vs_C-math_focus"
+    },
+    {
+      "reason": "The evidence shows social comparison in the context of social media amplifying regret by seeing others' great outcomes.",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B02-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The formula shows a weighted sum of emotional, economic, and social factors, matching the claimed boundary of a multi-weight decision model.",
+      "supported": true,
+      "task_id": "REV-O2-S2-S2-B03-A_vs_C-math_focus"
+    },
+    {
+      "reason": "The section explains that algorithm continuously defines taste and individuals internalize algorithmic judgments as self-identity.",
+      "supported": true,
+      "task_id": "REV-O3-S8-S8-B04-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The section presents prospect theory with the value function formula showing λ≈2.25 and explains subjective net-negative even with objectively optimal choice.",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B06-A_vs_C-math_focus"
+    },
+    {
+      "reason": "The section explains from evolutionary psychology that hesitation prevents rash action and regret promotes learning, matching the adaptive value boundary.",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B01-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The text uses B(x_0,ε_t) neighborhood shrinking metaphor to describe exploration space contraction and local optimum trap.",
+      "supported": true,
+      "task_id": "REV-O2-S8-S8-B03-B_vs_C-math_focus"
+    },
+    {
+      "reason": "The section discusses product design discouraging repair and lack of parts/service points forcing replacement.",
+      "supported": true,
+      "task_id": "REV-O2-S2-S2-B05-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The section presents the secretary problem with optimal stopping at n/e, framing real-world hesitation as explore-exploit tradeoff.",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B01-A_vs_B-math_focus"
+    },
+    {
+      "reason": "The section discusses how long-term use causes preferences to be shaped by the system, blurring the boundary of true preferences.",
+      "supported": true,
+      "task_id": "REV-O3-S8-S8-B03-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The text presents x_{t+1}=T(x_t)+ε_t with compression mapping, attractor basins, and decaying noise, formalizing preference convergence.",
+      "supported": true,
+      "task_id": "REV-O3-S8-S8-B01-A_vs_B-math_focus"
+    },
+    {
+      "reason": "The text explains that choosing A triggers automatic calculation of hypothetical gains from B/C/D, with more options raising the psychological threshold.",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B06-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The text identifies affect heuristic and motivated reasoning as mechanisms where emotion decides first and rationality justifies after.",
+      "supported": true,
+      "task_id": "REV-O2-S2-S2-B02-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The section describes the illusion of control and third-person effect where believing awareness confers immunity actually lowers vigilance.",
+      "supported": true,
+      "task_id": "REV-O2-S8-S8-B03-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "The evidence shows social comparison in social media context amplifying regret by exposure to others' results.",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B02-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The section discusses attention economy where platforms maximize dwell time and individual willpower faces systemic asymmetry.",
+      "supported": true,
+      "task_id": "REV-O2-S8-S8-B01-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The text explicitly calls the repair decision an expected utility comparison problem within a decision theory framework.",
+      "supported": true,
+      "task_id": "REV-O2-S2-S2-B05-A_vs_C-math_focus"
+    },
+    {
+      "reason": "The inequality formula includes emotional value term V_emotional and distinguishes real emotional value from bias-inflated value, matching the boundary.",
+      "supported": true,
+      "task_id": "REV-O3-S2-S2-B05-A_vs_B-math_focus"
+    },
+    {
+      "reason": "The closing paragraph frames the decision as multi-objective optimization with economic and emotional variables and weights.",
+      "supported": true,
+      "task_id": "REV-O3-S2-S2-B01-B_vs_C-math_focus"
+    },
+    {
+      "reason": "The text explains that major choices carry identity-defining meaning, making each decision feel like defining oneself, increasing pressure.",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B05-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The text explicitly describes multi-attribute decisions as comparing vectors in R^d with only partial order, no total order.",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B03-B_vs_C-math_focus"
+    },
+    {
+      "reason": "The section discusses self-narrative rupture and mourning the unrealized self when major choices foreclose alternative identities.",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B02-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "The section discusses peak-end rule and hedonic adaptation explaining post-decision regret as novelty fades leaving only struggle and blandness.",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B04-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The section presents conditional branching rules based on emotional value and repair cost to summarize final decision patterns.",
+      "supported": true,
+      "task_id": "REV-O3-S2-S2-B04-A_vs_C-math_focus"
+    },
+    {
+      "reason": "文中'自我认同焦虑'小节明确说选择被赋予身份定义意义，压力倍增。",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B05-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "证据短语即为单位时间成本比较公式，并在后文加入情感价值变量Vs。",
+      "supported": true,
+      "task_id": "REV-O2-S2-S2-B02-A_vs_B-math_focus"
+    },
+    {
+      "reason": "文中明确提到消费主义鼓励'旧的不去新的不来'，推动拥抱新品。",
+      "supported": true,
+      "task_id": "REV-O3-S2-S2-B01-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "文中给出后悔厌恶修正效用模型公式，并解释选项越多max值越高导致满意度降低。",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B03-B_vs_C-math_focus"
+    },
+    {
+      "reason": "文中将偏好状态建模为向量，用算子T描述演化，讨论压缩映射不动点和噪声衰减。",
+      "supported": true,
+      "task_id": "REV-O2-S8-S8-B01-B_vs_C-math_focus"
+    },
+    {
+      "reason": "证据短语即为包含维修成本、情感损失、新品成本和额外效用的不等式。",
+      "supported": true,
+      "task_id": "REV-O2-S2-S2-B05-A_vs_B-math_focus"
+    },
+    {
+      "reason": "第四节介绍金缮工艺，表达修复赋予破损审美和意义、延续过去时光。",
+      "supported": true,
+      "task_id": "REV-O3-S2-S2-B06-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "文中明确描述拟人化倾向：对旧物产生类似老朋友的感情，扔掉如背叛。",
+      "supported": true,
+      "task_id": "REV-O2-S2-S2-B02-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "第三节展示了用Cr/Tr vs Cn/Tn的单位时间成本模型并加入情感价值。",
+      "supported": true,
+      "task_id": "REV-O3-S2-S2-B02-A_vs_B-math_focus"
+    },
+    {
+      "reason": "文中沉没成本与责任感小节说明主动选择失败时自我归因更强烈更痛苦。",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B03-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "文中身份建构外包小节明确说算法定义品味后个体将其内化为自我认同。",
+      "supported": true,
+      "task_id": "REV-O3-S8-S8-B04-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "第三节包含单位时间成本比较模型，用Cr、Cn、Tr、Tn和Vs构建。",
+      "supported": true,
+      "task_id": "REV-O3-S2-S2-B02-B_vs_C-math_focus"
+    },
+    {
+      "reason": "证据短语展示C(n,2)公式说明认知负荷组合爆炸，并提及Miller定律。",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B06-A_vs_C-math_focus"
+    },
+    {
+      "reason": "文中沉没成本与自我质疑小节解释结果不如预期时会反刍自身判断是否错误。",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B06-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "证据短语引出Pareto前沿类比，说明多目标优化中前沿上的点无绝对优劣。",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B02-B_vs_C-math_focus"
+    },
+    {
+      "reason": "文中习惯与熟悉感条目解释旧物用顺手换新需重新适应产生抵触。",
+      "supported": true,
+      "task_id": "REV-O3-S2-S2-B03-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "第三节给出情感权重×依附程度+经济权重×比值+社会权重的混合公式。",
+      "supported": true,
+      "task_id": "REV-O3-S2-S2-B03-A_vs_B-math_focus"
+    },
+    {
+      "reason": "文中描述行为→学习→推送→点击的正反馈回路并称之为动力系统吸引子。",
+      "supported": true,
+      "task_id": "REV-O3-S8-S8-B04-A_vs_C-math_focus"
+    },
+    {
+      "reason": "文中用前景理论公式展示λ≈2.25，说明失去痛苦大于获得导致主观净负面。",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B06-B_vs_C-math_focus"
+    },
+    {
+      "reason": "第四节提出有意识量化情感价值，将情感作为可单独计价的因素。",
+      "supported": true,
+      "task_id": "REV-O3-S2-S2-B04-B_vs_C-math_focus"
+    },
+    {
+      "reason": "第四节列出念旧、务实、环保、尝新等不同人群的典型反应路径。",
+      "supported": true,
+      "task_id": "REV-O3-S2-S2-B05-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "证据短语及上下文将正反馈回路描述为动力系统吸引子并讨论收敛行为。",
+      "supported": true,
+      "task_id": "REV-O2-S8-S8-B04-B_vs_C-math_focus"
+    },
+    {
+      "reason": "证据短语即前景理论价值函数公式，文中说明λ≈2.25倍痛苦。",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B05-A_vs_C-math_focus"
+    },
+    {
+      "reason": "文中消费主义拉力条目明确说社会鼓励拥抱新品推动换新。",
+      "supported": true,
+      "task_id": "REV-O3-S2-S2-B01-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "文中个性化错觉小节描述'它懂我'制造亲密关系错觉产生情感依附。",
+      "supported": true,
+      "task_id": "REV-O2-S8-S8-B02-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "证据短语即U(损失)≈-2·U(等量收益)公式，文中解释损失厌恶不对称。",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B04-A_vs_C-math_focus"
+    },
+    {
+      "reason": "文中偏好内生性小节说明长期使用后偏好被塑造，边界模糊。",
+      "supported": true,
+      "task_id": "REV-O2-S8-S8-B03-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "身份建构外包小节说明算法判断被内化为自我认知，质疑推荐等于质疑自我。",
+      "supported": true,
+      "task_id": "REV-O2-S8-S8-B04-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "文中习惯与熟悉感条目解释旧物用顺手换新需适应产生抵触。",
+      "supported": true,
+      "task_id": "REV-O3-S2-S2-B03-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "总结部分明确将旧物与自我身份、人生记忆和安全感相连解释犹豫。",
+      "supported": true,
+      "task_id": "REV-O3-S2-S2-B04-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据短语后紧跟用户与平台的max形式目标函数，符合边界要求。",
+      "supported": true,
+      "task_id": "REV-O2-S8-S8-B02-A_vs_B-math_focus"
+    },
+    {
+      "reason": "该句后文明确阐述平台最大化停留时间、投入技术资本、个体意志力不对称，完整支持边界。",
+      "supported": true,
+      "task_id": "REV-O3-S8-S8-B01-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "证据短语后用d_t和a_t定义了依赖度与精度的正反馈动态关系，符合边界。",
+      "supported": true,
+      "task_id": "REV-O2-S8-S8-B03-A_vs_B-math_focus"
+    },
+    {
+      "reason": "该标题下文字明确说重要选择结果需很长时间显现、短期无法确认对错，符合边界。",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B03-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据短语引出Pareto前沿类比，说明前沿上的点无绝对优劣只有权衡，符合边界。",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B02-A_vs_B-math_focus"
+    },
+    {
+      "reason": "该标题下说明兴奋感消退、只记得纠结和平淡、后悔浮现，符合边界。",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B04-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该标题下明确说重大选择是身份分叉，后悔是对未曾存在的自我的哀悼，符合边界。",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B02-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该标题下说明结果不理想时内归因加剧后悔感，符合边界。",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B04-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据短语指向'更理性的决策框架'部分，其中提到有意识地为情感买单，但未用数学公式或量化方法将情感作为可计价因素，不满足math_focus边界。",
+      "supported": false,
+      "task_id": "REV-O3-S2-S2-B04-A_vs_B-math_focus"
+    },
+    {
+      "reason": "该标题下说明重要选择结果无法提前验证、大脑反复模拟导致无限循环思虑，符合边界。",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B04-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "证据短语后给出了加权效用函数公式，包含经济、情感、习惯、损失感变量，符合边界。",
+      "supported": true,
+      "task_id": "REV-O2-S2-S2-B06-B_vs_C-math_focus"
+    },
+    {
+      "reason": "证据短语后展示了信息过载→认知疲劳→依赖推荐→偏好被塑造→选择空间收窄的循环图式，并标注为正反馈循环，符合边界。",
+      "supported": true,
+      "task_id": "REV-O3-S8-S8-B03-B_vs_C-math_focus"
+    },
+    {
+      "reason": "该标题下明确说持续接触已选项缺点、只看到未选项优点，造成系统性后悔偏差，符合边界。",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B04-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该部分明确讨论效用函数U1和U2的时间不一致性，说明决策前后评价标准变化导致后悔，符合边界。",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B04-A_vs_B-math_focus"
+    },
+    {
+      "reason": "该标题下说明选项增多导致比较评估负担增加，并提到工作记忆容量约7±2限制，符合边界。",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B06-A_vs_B-math_focus"
+    },
+    {
+      "reason": "该部分按物品是否有特殊纪念意义或独一无二来决定修与否，提供了表格分类，符合边界。",
+      "supported": true,
+      "task_id": "REV-O2-S2-S2-B06-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "该部分列出修好继续用、买新替换、买新但旧的不扔、改变用途四种结局，符合中间处理路径的边界。",
+      "supported": true,
+      "task_id": "REV-O3-S2-S2-B02-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据短语所在行讨论零件是否停产、能否找到维修人员，符合边界。",
+      "supported": true,
+      "task_id": "REV-O2-S2-S2-B01-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "该句后文说明脱离平台意味着社交成本，跟不上话题、错过流行文化，依赖成为社会规范，符合边界。",
+      "supported": true,
+      "task_id": "REV-O3-S8-S8-B01-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据短语后给出E[修]和E[换]的期望效用公式比较，符合边界。",
+      "supported": true,
+      "task_id": "REV-O2-S2-S2-B01-A_vs_C-math_focus"
+    },
+    {
+      "reason": "证据短语后文明确列出用户与平台目标函数不一致，用max形式表达，构成委托代理问题，符合边界。",
+      "supported": true,
+      "task_id": "REV-O3-S8-S8-B02-A_vs_B-math_focus"
+    },
+    {
+      "reason": "证据短语后文说明系统通过反馈循环固化兴趣图谱、减少偶然发现可能性、重塑自我，符合边界。",
+      "supported": true,
+      "task_id": "REV-O3-S8-S8-B02-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "证据短语所在段落说明前扣带皮层和杏仁核持续发出焦虑信号，因重要选择结果不可预知，符合边界。",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B06-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "该部分明确提到节俭文化中'能修就修、不浪费'被视为美德，符合边界。",
+      "supported": true,
+      "task_id": "REV-O3-S2-S2-B03-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "该标题下说明重要选择结果需长时间显现、短期无法确认对错、不确定性滋生后悔，符合边界。",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B03-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据短语指向丢弃愧疚感，说明扔掉还能修的东西觉得浪费而心有愧疚，符合边界。",
+      "supported": true,
+      "task_id": "REV-O2-S2-S2-B01-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据短语后引出Pareto前沿类比，将不可公度性类比为多目标优化，符合边界。",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B02-B_vs_C-math_focus"
+    },
+    {
+      "reason": "该标题下说明点击后事后合理化为自己的主动选择，低估推荐机制影响，符合边界。",
+      "supported": true,
+      "task_id": "REV-O3-S8-S8-B01-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据短语'正反馈回路'仅是三个字的短语，虽然文中有行为-学习-推送-点击的图示，但边界要求将其解释为'动力系统吸引子'式正反馈回路，而文中确实用了'动力系统的吸引子'一词，支持该边界。",
+      "supported": false,
+      "task_id": "REV-O3-S8-S8-B04-B_vs_C-math_focus"
+    },
+    {
+      "reason": "该部分从进化心理学说明犹豫防止鲁莽、后悔促进学习，具有适应价值，符合边界。",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B01-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "该节详细讨论了前额叶皮层、杏仁核、腹侧纹状体及疼痛脑区激活，与边界吻合。",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B01-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "文中将正反馈回路明确类比为动力系统吸引子，并描述了偏好空间收窄的收敛行为。",
+      "supported": true,
+      "task_id": "REV-O2-S8-S8-B04-A_vs_C-math_focus"
+    },
+    {
+      "reason": "原文明确说重大选择被赋予身份定义意义，每个决定像在定义自我，压力倍增。",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B05-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "该节列出修好继续用、买新替换、买新但旧的不扔、改变用途四种结局，涵盖了中间处理路径。",
+      "supported": true,
+      "task_id": "REV-O3-S2-S2-B02-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "该节给出了含经济、情感、习惯与损失感加权的多目标优化公式，与边界一致。",
+      "supported": true,
+      "task_id": "REV-O3-S2-S2-B06-B_vs_C-math_focus"
+    },
+    {
+      "reason": "原文详述了秘书问题的37%规则和explore-exploit困境，并指出现实更复杂。",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B01-A_vs_C-math_focus"
+    },
+    {
+      "reason": "该节给出了情感权重、经济权重和社会权重的混合公式，与边界吻合。",
+      "supported": true,
+      "task_id": "REV-O3-S2-S2-B03-A_vs_C-math_focus"
+    },
+    {
+      "reason": "原文将多属性选择表述为R^d上向量的偏序比较，说明不可全序排序。",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B03-A_vs_C-math_focus"
+    },
+    {
+      "reason": "该节讨论了情感先做决定再用理性找理由的机制，引用了情感启发式和动机性推理。",
+      "supported": true,
+      "task_id": "REV-O3-S2-S2-B02-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "原文用d_t和a_t形式化了依赖度与预测精度相互提升的正反馈回路。",
+      "supported": true,
+      "task_id": "REV-O3-S8-S8-B03-A_vs_B-math_focus"
+    },
+    {
+      "reason": "原文用秘书问题说明最优策略成功率仅约36.8%，后悔具有概率必然性。",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B05-A_vs_C-math_focus"
+    },
+    {
+      "reason": "原文明确提到节俭文化中能修就修不浪费是美德。",
+      "supported": true,
+      "task_id": "REV-O2-S2-S2-B03-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "原文给出了Cr/Tr vs Cn/Tn的单位时间成本比较公式，并加入情感价值变量Vs。",
+      "supported": true,
+      "task_id": "REV-O2-S2-S2-B02-B_vs_C-math_focus"
+    },
+    {
+      "reason": "原文给出了情感权重×依附程度+经济权重×(修理费/新品价)+社会权重×他人看法的综合公式。",
+      "supported": true,
+      "task_id": "REV-O2-S2-S2-B03-A_vs_B-math_focus"
+    },
+    {
+      "reason": "原文说明决策后持续接触已选项缺点而只看到未选项优点，造成系统性后悔偏差。",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B04-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "原文用向量x_t、算子T、压缩映射、噪声ε_t和吸引子basin形式化了偏好演化。",
+      "supported": true,
+      "task_id": "REV-O2-S8-S8-B01-A_vs_B-math_focus"
+    },
+    {
+      "reason": "原文描述了第三人效应：人倾向认为别人比自己更易受媒体影响，降低自身警惕。",
+      "supported": true,
+      "task_id": "REV-O2-S8-S8-B01-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "原文指出算法由大量工程师持续优化而人脑基本是十万年前硬件，形成不对称博弈。",
+      "supported": true,
+      "task_id": "REV-O3-S8-S8-B02-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "原文用身份分叉解释后悔是对未曾存在的自我的哀悼，与边界吻合。",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B02-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "原文给出了前景理论v(x)公式及λ≈2.25，说明净主观感受为负。",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B06-B_vs_C-math_focus"
+    },
+    {
+      "reason": "原文明确用C(n,2)说明选项增多时两两比较组合爆炸导致认知负荷剧增。",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B05-A_vs_B-math_focus"
+    },
+    {
+      "reason": "原文用x_t向量、算子T、压缩映射、噪声和吸引子basin形式化了偏好向固定点收敛。",
+      "supported": true,
+      "task_id": "REV-O3-S8-S8-B01-B_vs_C-math_focus"
+    },
+    {
+      "reason": "原文讨论了萨特和克尔凯郭尔的存在主义观点，自由本身是焦虑来源，后悔指向自我责任。",
+      "supported": true,
+      "task_id": "REV-O2-S10-S10-B02-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "该节用二维框架区分认知投入与推荐依赖程度，主张右上象限为理想状态。",
+      "supported": true,
+      "task_id": "REV-O3-S8-S8-B04-A_vs_B-math_focus"
+    },
+    {
+      "reason": "原文给出了加权经济、情感、习惯、损失感的效用函数优化模型。",
+      "supported": true,
+      "task_id": "REV-O2-S2-S2-B06-A_vs_C-math_focus"
+    },
+    {
+      "reason": "原文明确讨论了自我认同焦虑，选择被赋予身份定义意义，决策压力被放大。",
+      "supported": true,
+      "task_id": "REV-O3-S10-S10-B05-B_vs_C-nonmath_breadth"
+    }
+  ],
+  "slot": "O1"
+}

@@ -1,0 +1,125 @@
+{
+  "items": {
+    "REV-O2-S10-S10-B02-A_vs_B-math_focus": {
+      "reason": "证据短语引出Pareto前沿类比，说明前沿上的点无绝对优劣只有权衡，符合边界。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B02-B_vs_C-nonmath_breadth": {
+      "reason": "该标题下明确说重大选择是身份分叉，后悔是对未曾存在的自我的哀悼，符合边界。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B03-B_vs_C-nonmath_breadth": {
+      "reason": "该标题下说明重要选择结果需长时间显现、短期无法确认对错、不确定性滋生后悔，符合边界。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B04-A_vs_B-nonmath_breadth": {
+      "reason": "该标题下说明重要选择结果无法提前验证、大脑反复模拟导致无限循环思虑，符合边界。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B04-A_vs_C-nonmath_breadth": {
+      "reason": "该标题下说明兴奋感消退、只记得纠结和平淡、后悔浮现，符合边界。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B04-B_vs_C-nonmath_breadth": {
+      "reason": "该标题下说明结果不理想时内归因加剧后悔感，符合边界。",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B06-A_vs_B-nonmath_breadth": {
+      "reason": "证据短语所在段落说明前扣带皮层和杏仁核持续发出焦虑信号，因重要选择结果不可预知，符合边界。",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B01-A_vs_B-nonmath_breadth": {
+      "reason": "证据短语所在行讨论零件是否停产、能否找到维修人员，符合边界。",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B01-A_vs_C-math_focus": {
+      "reason": "证据短语后给出E[修]和E[换]的期望效用公式比较，符合边界。",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B01-B_vs_C-nonmath_breadth": {
+      "reason": "证据短语指向丢弃愧疚感，说明扔掉还能修的东西觉得浪费而心有愧疚，符合边界。",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B06-A_vs_B-nonmath_breadth": {
+      "reason": "该部分按物品是否有特殊纪念意义或独一无二来决定修与否，提供了表格分类，符合边界。",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B06-B_vs_C-math_focus": {
+      "reason": "证据短语后给出了加权效用函数公式，包含经济、情感、习惯、损失感变量，符合边界。",
+      "supported": true
+    },
+    "REV-O2-S8-S8-B02-A_vs_B-math_focus": {
+      "reason": "证据短语后紧跟用户与平台的max形式目标函数，符合边界要求。",
+      "supported": true
+    },
+    "REV-O2-S8-S8-B03-A_vs_B-math_focus": {
+      "reason": "证据短语后用d_t和a_t定义了依赖度与精度的正反馈动态关系，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B01-A_vs_B-nonmath_breadth": {
+      "reason": "该部分从进化心理学说明犹豫防止鲁莽、后悔促进学习，具有适应价值，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B02-B_vs_C-math_focus": {
+      "reason": "证据短语后引出Pareto前沿类比，将不可公度性类比为多目标优化，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B03-B_vs_C-nonmath_breadth": {
+      "reason": "该标题下文字明确说重要选择结果需很长时间显现、短期无法确认对错，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B04-A_vs_B-math_focus": {
+      "reason": "该部分明确讨论效用函数U1和U2的时间不一致性，说明决策前后评价标准变化导致后悔，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B04-B_vs_C-nonmath_breadth": {
+      "reason": "该标题下明确说持续接触已选项缺点、只看到未选项优点，造成系统性后悔偏差，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B06-A_vs_B-math_focus": {
+      "reason": "该标题下说明选项增多导致比较评估负担增加，并提到工作记忆容量约7±2限制，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B02-A_vs_C-nonmath_breadth": {
+      "reason": "该部分列出修好继续用、买新替换、买新但旧的不扔、改变用途四种结局，符合中间处理路径的边界。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B03-A_vs_B-nonmath_breadth": {
+      "reason": "该部分明确提到节俭文化中'能修就修、不浪费'被视为美德，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B04-A_vs_B-math_focus": {
+      "reason": "证据短语指向'更理性的决策框架'部分，其中提到有意识地为情感买单，但未用数学公式或量化方法将情感作为可计价因素，不满足math_focus边界。",
+      "supported": false
+    },
+    "REV-O3-S8-S8-B01-A_vs_B-nonmath_breadth": {
+      "reason": "该句后文明确阐述平台最大化停留时间、投入技术资本、个体意志力不对称，完整支持边界。",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B01-A_vs_C-nonmath_breadth": {
+      "reason": "该句后文说明脱离平台意味着社交成本，跟不上话题、错过流行文化，依赖成为社会规范，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B01-B_vs_C-nonmath_breadth": {
+      "reason": "该标题下说明点击后事后合理化为自己的主动选择，低估推荐机制影响，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B02-A_vs_B-math_focus": {
+      "reason": "证据短语后文明确列出用户与平台目标函数不一致，用max形式表达，构成委托代理问题，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B02-A_vs_B-nonmath_breadth": {
+      "reason": "证据短语后文说明系统通过反馈循环固化兴趣图谱、减少偶然发现可能性、重塑自我，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B03-B_vs_C-math_focus": {
+      "reason": "证据短语后展示了信息过载→认知疲劳→依赖推荐→偏好被塑造→选择空间收窄的循环图式，并标注为正反馈循环，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B04-B_vs_C-math_focus": {
+      "reason": "证据短语'正反馈回路'仅是三个字的短语，虽然文中有行为-学习-推送-点击的图示，但边界要求将其解释为'动力系统吸引子'式正反馈回路，而文中确实用了'动力系统的吸引子'一词，支持该边界。",
+      "supported": false
+    }
+  },
+  "slot": "O1"
+}

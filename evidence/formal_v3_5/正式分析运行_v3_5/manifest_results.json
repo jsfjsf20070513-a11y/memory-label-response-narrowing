@@ -1,0 +1,9 @@
+{
+  "files": {
+    "01_run_state.json": "b17bc8b85a73919d307504e1d874068e0ee1e083efcd955ef83ca8a412eb2db2",
+    "audit.json": "a9117b1d839c57adbde7598e0229f32694d145954ce1c2692d2453e78028683f",
+    "manifest_review.json": "6b55b70b6c7cb71c133cfe76cc9fae2a809d2780e5385ccec665c74487ab1f8a",
+    "summary.json": "d49be125db9ac42ea860a51f580270f93f2e83c3f34b41f48dba4f8e1a5062bf"
+  },
+  "stage": "results"
+}

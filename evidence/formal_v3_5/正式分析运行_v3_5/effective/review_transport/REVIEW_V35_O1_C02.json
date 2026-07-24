@@ -1,0 +1,125 @@
+{
+  "items": {
+    "REV-O2-S10-S10-B01-A_vs_C-nonmath_breadth": {
+      "reason": "The section covers prefrontal cortex limitations, amygdala/ventral striatum in emotional evaluation, and fMRI evidence that regret activates pain-related brain regions.",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B02-A_vs_C-nonmath_breadth": {
+      "reason": "The evidence shows social comparison in social media context amplifying regret by exposure to others' results.",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B03-B_vs_C-math_focus": {
+      "reason": "The text explicitly describes multi-attribute decisions as comparing vectors in R^d with only partial order, no total order.",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B04-A_vs_B-math_focus": {
+      "reason": "The text explicitly states C(2,2)=1 growing to C(20,2)=190 and describes cognitive burden as combinatorial explosion.",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B05-B_vs_C-nonmath_breadth": {
+      "reason": "The text explains that major choices carry identity-defining meaning, making each decision feel like defining oneself, increasing pressure.",
+      "supported": true
+    },
+    "REV-O2-S10-S10-B06-B_vs_C-nonmath_breadth": {
+      "reason": "The text explains that choosing A triggers automatic calculation of hypothetical gains from B/C/D, with more options raising the psychological threshold.",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B02-B_vs_C-nonmath_breadth": {
+      "reason": "The text identifies affect heuristic and motivated reasoning as mechanisms where emotion decides first and rationality justifies after.",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B03-A_vs_C-math_focus": {
+      "reason": "The formula shows a weighted sum of emotional, economic, and social factors, matching the claimed boundary of a multi-weight decision model.",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B05-A_vs_C-math_focus": {
+      "reason": "The text explicitly calls the repair decision an expected utility comparison problem within a decision theory framework.",
+      "supported": true
+    },
+    "REV-O2-S2-S2-B05-B_vs_C-nonmath_breadth": {
+      "reason": "The section discusses product design discouraging repair and lack of parts/service points forcing replacement.",
+      "supported": true
+    },
+    "REV-O2-S8-S8-B01-A_vs_C-nonmath_breadth": {
+      "reason": "The section discusses attention economy where platforms maximize dwell time and individual willpower faces systemic asymmetry.",
+      "supported": true
+    },
+    "REV-O2-S8-S8-B02-A_vs_C-math_focus": {
+      "reason": "The quoted passage and surrounding text use the R^n to low-dimensional subspace projection metaphor to explain formal vs substantive freedom.",
+      "supported": true
+    },
+    "REV-O2-S8-S8-B03-A_vs_B-nonmath_breadth": {
+      "reason": "The section describes the illusion of control and third-person effect where believing awareness confers immunity actually lowers vigilance.",
+      "supported": true
+    },
+    "REV-O2-S8-S8-B03-B_vs_C-math_focus": {
+      "reason": "The text uses B(x_0,ε_t) neighborhood shrinking metaphor to describe exploration space contraction and local optimum trap.",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B01-A_vs_B-math_focus": {
+      "reason": "The section presents the secretary problem with optimal stopping at n/e, framing real-world hesitation as explore-exploit tradeoff.",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B01-B_vs_C-nonmath_breadth": {
+      "reason": "The section explains from evolutionary psychology that hesitation prevents rash action and regret promotes learning, matching the adaptive value boundary.",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B02-A_vs_B-nonmath_breadth": {
+      "reason": "The section discusses self-narrative rupture and mourning the unrealized self when major choices foreclose alternative identities.",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B02-A_vs_C-nonmath_breadth": {
+      "reason": "The evidence shows social comparison in the context of social media amplifying regret by seeing others' great outcomes.",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B03-A_vs_C-nonmath_breadth": {
+      "reason": "The section explicitly discusses cognitive dissonance after decision-making, emphasizing the conflict between chosen item's defects and unchosen items' merits.",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B04-A_vs_C-nonmath_breadth": {
+      "reason": "The section discusses peak-end rule and hedonic adaptation explaining post-decision regret as novelty fades leaving only struggle and blandness.",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B06-A_vs_C-math_focus": {
+      "reason": "The section presents prospect theory with the value function formula showing λ≈2.25 and explains subjective net-negative even with objectively optimal choice.",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B01-A_vs_C-math_focus": {
+      "reason": "The closing paragraph explicitly frames the decision as multi-objective optimization with economic and emotional variables and weights.",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B01-B_vs_C-math_focus": {
+      "reason": "The closing paragraph frames the decision as multi-objective optimization with economic and emotional variables and weights.",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B04-A_vs_C-math_focus": {
+      "reason": "The section presents conditional branching rules based on emotional value and repair cost to summarize final decision patterns.",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B05-A_vs_B-math_focus": {
+      "reason": "The inequality formula includes emotional value term V_emotional and distinguishes real emotional value from bias-inflated value, matching the boundary.",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B01-A_vs_B-math_focus": {
+      "reason": "The text presents x_{t+1}=T(x_t)+ε_t with compression mapping, attractor basins, and decaying noise, formalizing preference convergence.",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B02-A_vs_C-math_focus": {
+      "reason": "Section 10 discusses formal/substantive freedom distinction and uses R^n projection to low-dimensional subspace as mathematical framing of autonomy compression.",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B03-A_vs_B-nonmath_breadth": {
+      "reason": "The section explains recommender systems as platform infrastructure with no opt-out, supporting the claimed boundary.",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B03-B_vs_C-nonmath_breadth": {
+      "reason": "The section discusses how long-term use causes preferences to be shaped by the system, blurring the boundary of true preferences.",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B04-B_vs_C-nonmath_breadth": {
+      "reason": "The section explains that algorithm continuously defines taste and individuals internalize algorithmic judgments as self-identity.",
+      "supported": true
+    }
+  },
+  "slot": "O1"
+}

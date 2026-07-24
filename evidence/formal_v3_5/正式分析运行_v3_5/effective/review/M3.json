@@ -1,0 +1,670 @@
+{
+  "items": [
+    {
+      "reason": "该小节标题对应的正文明确说“记忆主要取决于高峰时刻和结尾”，并进一步说会“选择性地放大这个负面体验”，符合该方向边界。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B01-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据明确说“逐一比较”的负荷随选项数增加而上升，并用组合比较作类比，核心是选项多与比较负担重导致难决断，支持选项过载。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B05-A_vs_B-math_focus"
+    },
+    {
+      "reason": "证据“你的偏好本身已经被系统塑造了”直接表达长期使用后偏好被系统塑造，边界模糊的核心命题，支持偏好内生性。",
+      "supported": true,
+      "task_id": "REV-M2-S8-S8-B03-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "同一证据明确是选项数量增加导致比较负担增加的形式化说明，完全符合“选项过载”的边界。",
+      "supported": true,
+      "task_id": "REV-M2-S10-S10-B04-A_vs_C-math_focus"
+    },
+    {
+      "reason": "证据只是在表格中提到“找得到人修吗/零件停产、无人会修”，重点是维修渠道与零件可得性，不是物品修复后能否继续完成原用途本身。",
+      "supported": false,
+      "task_id": "REV-M1-S2-S2-B01-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据标题就是“多维度下的不可比性”，正文说明多个维度下没有严格支配关系、无法给出唯一最优解，符合价值冲突。",
+      "supported": true,
+      "task_id": "REV-M2-S10-S10-B01-A_vs_B-math_focus"
+    },
+    {
+      "reason": "证据标题直接对应“认知失调”，且正文说明决定后现实反馈不如预期会产生“我的选择”与“我的体验”之间的矛盾，支持该方向。",
+      "supported": true,
+      "task_id": "REV-M2-S10-S10-B01-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "证据用两两比较数从1到190来说明随选项增加比较负担爆炸式上升，直接支持选项过载。",
+      "supported": true,
+      "task_id": "REV-M2-S10-S10-B04-A_vs_B-math_focus"
+    },
+    {
+      "reason": "证据说“当周围所有人都在用推荐系统…”，并指出脱离会有社交成本、跟不上话题，符合群体话题和错过担忧推动依赖。",
+      "supported": true,
+      "task_id": "REV-M2-S8-S8-B01-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "证据明确说平台目标函数是“最大化用户停留时长/点击率”，且正文补充这意味着系统在持续优化让你离不开它，直接支持该方向。",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B03-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据来自“社会比较”一行，明确指社交媒体时代看到别人选择的精彩结果，会改变自己对选择好坏的感受，支持社会比较。",
+      "supported": true,
+      "task_id": "REV-M2-S10-S10-B02-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该效用式把经济、情感、习惯、损失感都纳入权衡，确实包含成本与后续使用价值比较，可支持以成本/寿命/便利性为核心的方向。",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B06-B_vs_C-math_focus"
+    },
+    {
+      "reason": "证据短语就是“不确定性下的焦虑”小节标题，且正文说明很多选择结果无法提前验证，会反复模拟未来场景，直接对应后果不确定。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B04-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据是“认知失调”小节标题，正文明确写出做出决定后发现所选缺点或未选优点会产生不协调感，符合该方向边界。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B05-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据直接表述“多进行一轮比较和评估”，说明选项增多带来比较负担和认知消耗，足以支持选项过载。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B05-B_vs_C-math_focus"
+    },
+    {
+      "reason": "证据讲“有特殊纪念意义…无论多贵都倾向于修”，核心是个人纪念意义，不是家庭、关系或传承中的共同归属。",
+      "supported": false,
+      "task_id": "REV-M1-S2-S2-B06-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "同一证据明确在“社会比较”层面解释后悔感来源，核心是他人呈现出的结果影响自己对决定好坏的评估，支持该方向。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B02-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据虽只截到“长期满足感”，但其所在句与后续内容明确对比用户与平台目标函数，并指出监督不足，支持委托代理问题。",
+      "supported": true,
+      "task_id": "REV-M2-S8-S8-B02-A_vs_B-math_focus"
+    },
+    {
+      "reason": "证据说“很多产品设计上不鼓励维修（找不到配件、没有维修点）”，强调维修条件与渠道受限，这与能否恢复功能并继续原用途直接相关，支持实用可行。",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B05-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据是“不确定性下的焦虑”小节标题，正文明确说很多重要选择结果不可预知，因此反复权衡，符合后果不确定。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B06-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该期望效用式直接比较修与换的成本和继续使用价值，并显式提到修后寿命不确定，符合成本时间方向。",
+      "supported": true,
+      "task_id": "REV-M2-S2-S2-B01-B_vs_C-math_focus"
+    },
+    {
+      "reason": "证据讲“独一无二/绝版物件更倾向修复”，核心是可替代性或稀缺性，不是设计、材料、做工或修复行为本身的审美价值。",
+      "supported": false,
+      "task_id": "REV-M2-S2-S2-B04-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "金缮例子明确把修复行为本身视为一种美学与价值表达，“破损成为美的一部分”，符合工艺审美方向。",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B06-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据说“算法推荐给你的”和“大家都在看的”经常重叠，并带来与社交话题脱节的压力，支持社会趋同。",
+      "supported": true,
+      "task_id": "REV-M2-S8-S8-B02-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据“修理是否方便”只指维修渠道与条件是否具备，关联的是现实可修复性与继续使用可能，不主要是成本或等待，支持实用可行。",
+      "supported": true,
+      "task_id": "REV-M2-S2-S2-B02-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "证据指向“社会比较”一行，正文明确说看到别人选择的“精彩结果”会放大自己的后悔感，属于他人的可见选择影响判断标准。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B02-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "证据明确把很多重大选择赋予“我选的代表我是谁”的意义，核心正是选择承载过多自我定义，支持身份投射。",
+      "supported": true,
+      "task_id": "REV-M2-S10-S10-B05-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据直接写出“委托人和代理人的目标函数不一致”，随后给出用户与平台不同目标，并说用户几乎没有监督手段，完全符合委托代理冲突。",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B02-A_vs_B-math_focus"
+    },
+    {
+      "reason": "证据明确说推荐内容是“默认选项”，打开 App 首页已排好，主动搜索需要额外动作，完全符合默认摩擦。",
+      "supported": true,
+      "task_id": "REV-M2-S8-S8-B02-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "“推荐系统恰好提供了一个‘足够好’的选项”明确在说推荐内容对用户当前需求足够有用，支持匹配有用，而不依赖快奖赏节律。",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B02-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "短语明确把“环保意识”对应到“修好减少浪费”，直接支持环境责任方向。",
+      "supported": true,
+      "task_id": "REV-M2-S2-S2-B01-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "短语直接点出“选择过载”，与“选项数量和比较负担增加导致难以判断”的方向一致。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B03-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "短语“找得到人修吗”讨论维修渠道、零件和是否可修，属于物品能否被恢复并继续使用的现实可行性。",
+      "supported": true,
+      "task_id": "REV-M2-S2-S2-B01-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "短语只是“认知失调”标题，但该概念在此回答中对应决定后因所选缺点与未选优点而产生不协调感，符合该方向。",
+      "supported": true,
+      "task_id": "REV-M2-S10-S10-B05-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "短语明确说选项增加会带来更多两两比较和更高比较复杂度，正是比较负担随选项数上升而增加。",
+      "supported": true,
+      "task_id": "REV-M2-S10-S10-B03-A_vs_C-math_focus"
+    },
+    {
+      "reason": "短语明确说“多个维度且无法化约为单一效用函数”，正是不同选项满足不可通约价值、不能简化成单一排序。",
+      "supported": true,
+      "task_id": "REV-M2-S10-S10-B05-A_vs_C-math_focus"
+    },
+    {
+      "reason": "短语以金缮为例强调修复行为本身让破损成为美的一部分，核心就是修复工艺与审美价值。",
+      "supported": true,
+      "task_id": "REV-M2-S2-S2-B06-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "短语仅是“适应性偏差”标题，但该概念在此回答中对应选择后兴奋消退并持续美化未选项，符合享乐适应方向。",
+      "supported": true,
+      "task_id": "REV-M2-S10-S10-B01-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据短语只说“从进化心理学看”，未表达“远古环境中的适应价值”以及“现代选择过载下失调”这两个边界要点。",
+      "supported": false,
+      "task_id": "REV-M1-S10-S10-B01-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "短语“维修是否方便”主要指维修过程便利性，未直接说明物品恢复功能并继续完成原用途，边界不足。",
+      "supported": false,
+      "task_id": "REV-M2-S2-S2-B05-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "短语明确说选项数量增加不会线性提升满意度，所在段落就是选项增多带来比较负担和决策困难，符合选项过载。",
+      "supported": true,
+      "task_id": "REV-M2-S10-S10-B06-A_vs_C-math_focus"
+    },
+    {
+      "reason": "短语举“长辈的遗物、定情信物”为例，明确指向物品在家庭或关系中的共同意义，不只是单人记忆。",
+      "supported": true,
+      "task_id": "REV-M2-S2-S2-B06-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该公式直接比较修与换的成本、继续使用价值和新品价值，属于围绕金钱与后续寿命的修换比较。",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B01-B_vs_C-math_focus"
+    },
+    {
+      "reason": "该不等式直接以维修成本、新品成本和新品额外效用来比较修与换，属于成本/收益导向的修换框架。",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B05-A_vs_C-math_focus"
+    },
+    {
+      "reason": "短语明确说“选项越多”，且该段在完整回答中就是比较负荷上升导致难决策，符合选项过载边界。",
+      "supported": true,
+      "task_id": "REV-M2-S10-S10-B05-A_vs_B-math_focus"
+    },
+    {
+      "reason": "短语直接标出“选择超载”，与“选项数量和比较负担增加导致难以形成稳定判断”的方向一致。",
+      "supported": true,
+      "task_id": "REV-M2-S10-S10-B04-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "短语明确说选择被赋予“我选的代表我是谁”的意义，正是把选择用于证明自我、承载过多自我意义。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B05-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该式比较修理与新购的单位寿命成本，直接对应金钱与后续寿命的比较框架。",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B02-A_vs_B-math_focus"
+    },
+    {
+      "reason": "短语只给出依赖度与精度的反馈模型，表达的是锁定/正反馈，不是“推荐流为默认入口、主动拒绝需额外动作”的默认摩擦。",
+      "supported": false,
+      "task_id": "REV-M2-S8-S8-B03-B_vs_C-math_focus"
+    },
+    {
+      "reason": "短语“修理是否方便”更偏向维修过程是否省事，未直接表达恢复原用途这一功能性可行边界，证据不足。",
+      "supported": false,
+      "task_id": "REV-M2-S2-S2-B02-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "短语明确把“环保意识”对应到“修好减少浪费”，直接落在资源浪费与环境后果这一边界上。",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B01-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "短语明确说选择承载“我选的代表我是谁”的身份意义，正符合身份投射边界。",
+      "supported": true,
+      "task_id": "REV-M2-S10-S10-B05-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "短语只有“能修就修”，未明确指向资源浪费、垃圾或环境后果，也可能只是节俭口号，环境责任边界证据不足。",
+      "supported": false,
+      "task_id": "REV-M1-S2-S2-B05-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "短语仅是“沉没成本的纠缠”标题，没有表达“已投入时间精力导致既不甘继续又舍不得放弃”的具体纠结结构，边界不足。",
+      "supported": false,
+      "task_id": "REV-M2-S10-S10-B01-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该公式直接比较修与换的成本和继续使用价值，属于以金钱与后续寿命为核心的修换比较。",
+      "supported": true,
+      "task_id": "REV-M2-S2-S2-B01-A_vs_C-math_focus"
+    },
+    {
+      "reason": "短语直接点出“默认效应”，而完整回答该段说明推荐流是默认入口、主动搜索需额外动作，符合默认摩擦边界。",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B02-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "证据短语就是“$$”，本身不表达任何成本、寿命或便利性含义，不能支持该方向。",
+      "supported": false,
+      "task_id": "REV-M2-S2-S2-B05-A_vs_C-math_focus"
+    },
+    {
+      "reason": "短语明确说选项增加会带来更多两两比较和更高比较复杂度，直接支持选项过载方向。",
+      "supported": true,
+      "task_id": "REV-M2-S10-S10-B03-B_vs_C-math_focus"
+    },
+    {
+      "reason": "短语只有“能修就修”，未明确提到浪费、垃圾或环境后果，不能充分支撑环境责任方向。",
+      "supported": false,
+      "task_id": "REV-M2-S2-S2-B05-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "短语“找得到人修吗”讨论的是维修渠道和零件可得性，属于修复能否实现的现实可行性。",
+      "supported": true,
+      "task_id": "REV-M2-S2-S2-B01-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据虽只是一行变量定义，但所在框架随后明确以修理成本、新购成本和寿命比较为核心，足以支持成本时间方向。",
+      "supported": true,
+      "task_id": "REV-M2-S2-S2-B02-B_vs_C-math_focus"
+    },
+    {
+      "reason": "原文明确把“多维度下的不可比性”表述为不同维度之间没有严格支配关系，不能化约成单一排序，符合价值冲突边界。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B01-A_vs_B-math_focus"
+    },
+    {
+      "reason": "“不确定性下的焦虑”明确指出职业、伴侣、城市等选择的结果无法提前验证，正是决定前后果未知。",
+      "supported": true,
+      "task_id": "REV-M2-S10-S10-B04-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "“算法推荐给你的”和“大家都在看的”重叠，并进一步说明不跟随会与社交话题脱节，直接支持社会趋同。",
+      "supported": true,
+      "task_id": "REV-M2-S8-S8-B02-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该公式主要呈现情感、经济、社会三类权重，其中经济项仅到“修理费/新品价”，没有把后续寿命、时间或便利性比较作为核心，边界不足。",
+      "supported": false,
+      "task_id": "REV-M2-S2-S2-B03-A_vs_B-math_focus"
+    },
+    {
+      "reason": "给出的证据是前景理论价值函数的数学表达，直接体现损失与收益的不对称性，符合损失厌恶边界。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B06-B_vs_C-math_focus"
+    },
+    {
+      "reason": "“自我叙事的断裂”一节把选择描述为身份分叉与对未成之我的哀悼，核心正是选择承载过多自我意义，符合身份投射。",
+      "supported": true,
+      "task_id": "REV-M2-S10-S10-B02-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "原文把用户行为与系统学习表述为“收敛的动力系统”，并说明估计逼近乃至塑造真实偏好、离开成本上升，完全符合正反馈锁定。",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B01-A_vs_B-math_focus"
+    },
+    {
+      "reason": "该段直接说很多重要选择的结果需要很长时间才能显现、短期内无法确认对错，核心就是决定前后果不确定。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B03-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "关于$d_t$与$a_t$的设定是在说明依赖与精度的正反馈锁定，不是在说明推荐流是默认入口、拒绝它需额外动作，因此不支持默认摩擦。",
+      "supported": false,
+      "task_id": "REV-M2-S8-S8-B03-A_vs_B-math_focus"
+    },
+    {
+      "reason": "证据式子直接比较维修成本、新品成本和新品额外效用，处在修与换的未来成本收益比较框架内，足以支持成本时间方向。",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B05-A_vs_B-math_focus"
+    },
+    {
+      "reason": "同一证据明确描述用户行为与系统学习形成收敛动力系统，估计逼近并塑造真实偏好，完全支持该方向。",
+      "supported": true,
+      "task_id": "REV-M2-S8-S8-B01-B_vs_C-math_focus"
+    },
+    {
+      "reason": "原文点名“秘书问题”，并进一步给出最优策略与成功率约1/e，用数学模型说明最优停止困境，满足该边界。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B05-A_vs_C-math_focus"
+    },
+    {
+      "reason": "同一表述明确说明系统估计随交互收敛到真实偏好并开始塑造偏好，正是正反馈锁定边界。",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B01-B_vs_C-math_focus"
+    },
+    {
+      "reason": "证据明确说推荐内容“确实还不错”，即推荐结果能满足用户兴趣和需要，符合匹配有用方向。",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B01-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "“不确定性下的焦虑”这一节明确说明很多选择的结果不可预知，决定前无法知道不同路径实际结果，符合后果不确定。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B06-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "“我点开是因为我想看”是在为单次点击做事后合理化，未表达用户据此形成‘我是谁’并反过来持续按该自我理解选择的闭环。",
+      "supported": false,
+      "task_id": "REV-M2-S8-S8-B01-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据短语只有“损失厌恶”标题，没有表达“失去的痛苦约为获得快乐两倍并因此加重选择负担”的关键内容，证据不够。",
+      "supported": false,
+      "task_id": "REV-M2-S10-S10-B06-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该式子只把“修理费/新品价”作为经济权重的一部分，没有把后续寿命、时间或便利性比较作为核心展开，达不到成本时间边界的最低要求。",
+      "supported": false,
+      "task_id": "REV-M1-S2-S2-B03-A_vs_C-math_focus"
+    },
+    {
+      "reason": "表格里“个人崇尚节俭、环保”只是众多倾向之一，没有把资源浪费与环境后果作为决策核心，不能充分支持环境责任方向。",
+      "supported": false,
+      "task_id": "REV-M2-S2-S2-B03-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "同一证据明确把困难归因于选项数量增加与比较负担暴涨，支持选项过载，不要求后果不确定。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B04-A_vs_C-math_focus"
+    },
+    {
+      "reason": "原文用选项数增加导致两两比较次数爆炸来解释认知负担上升，正是选项过载边界。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B04-A_vs_B-math_focus"
+    },
+    {
+      "reason": "证据短语只有“选择过载”这一节标题，本身没有表达“选项数量与比较负担增加导致难以稳定判断”的具体语义，证据不足。",
+      "supported": false,
+      "task_id": "REV-M1-S10-S10-B06-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该效用式是多目标优化总框架，包含经济、情感、习惯与损失感，但没有把修理与替换的时间、寿命、便利性比较作为核心，证据过泛。",
+      "supported": false,
+      "task_id": "REV-M1-S2-S2-B06-A_vs_C-math_focus"
+    },
+    {
+      "reason": "证据短语只是“一个有趣的数学类比”这一标题，本身并未表达决定前无法知道不同路径实际结果，不能支持后果不确定。",
+      "supported": false,
+      "task_id": "REV-M2-S10-S10-B01-A_vs_C-math_focus"
+    },
+    {
+      "reason": "证据短语只是“沉没成本与自我质疑”标题，既未突出决定难撤回，也未把责任自担导致的延迟与事后自责作为核心，支持不足。",
+      "supported": false,
+      "task_id": "REV-M2-S10-S10-B06-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该句把用户可行选择域被投影到低维子空间、形式自由与实质自由分离说得非常明确，正是自主性侵蚀边界。",
+      "supported": true,
+      "task_id": "REV-M2-S8-S8-B02-A_vs_C-math_focus"
+    },
+    {
+      "reason": "“修理是否方便”直接触及维修可不可行、能否找到维修与配件，属于实用可行层面的证据，而非成本比较。",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B02-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "“收敛的动力系统”连同上下文直接说明行为数据让系统更准、依赖更深、偏好被塑造，符合正反馈锁定。",
+      "supported": true,
+      "task_id": "REV-M2-S8-S8-B01-A_vs_B-math_focus"
+    },
+    {
+      "reason": "原文在该处把修理成本、新购成本、修后寿命、新物寿命都形式化列出，并比较单位时间成本，完全符合成本时间边界。",
+      "supported": true,
+      "task_id": "REV-M2-S2-S2-B02-A_vs_B-math_focus"
+    },
+    {
+      "reason": "证据短语明确说选项一多就增加两两比较次数和比较复杂度，直接支持‘选项数量与比较负担增加导致难判断’这一边界。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B03-A_vs_C-math_focus"
+    },
+    {
+      "reason": "证据句明确把比较负荷随选项数按组合数增长来表述，直接支持选项过载。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B06-A_vs_C-math_focus"
+    },
+    {
+      "reason": "仅有“环保意识”这个短语本身太泛，只是一个标签，没有连续表达资源浪费或环境后果如何影响修/换/丢决策，证据边界不足。",
+      "supported": false,
+      "task_id": "REV-M1-S2-S2-B02-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "“价值维度的不可通约性”明确说不同价值维度无法用统一标尺衡量，不能简化成单一排序，正是价值冲突。",
+      "supported": true,
+      "task_id": "REV-M2-S10-S10-B06-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "“现在越来越多人从可持续发展的角度出发”直接说明有人因可持续/环保考虑而倾向修复，属于资源浪费与环境后果导向。",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B03-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "原句直接说无法完全预知不同选择的未来结果，核心就是决定前后果不确定，而不是单说选项太多。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B05-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "表格中“个人崇尚节俭、环保”只是把环保列为一种价值观倾向，没有展开修复、替换、丢弃的环境后果，证据较弱但仍在说明因环保而倾向修，达到最低边界。",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B03-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该式子把实际决策表示为情感、经济、社会等权重混合，其中含有修理费/新品价这一成本项，涉及成本，但并非以时间、寿命、便利性比较为核心，证据不够聚焦该边界。",
+      "supported": false,
+      "task_id": "REV-M1-S2-S2-B03-A_vs_B-math_focus"
+    },
+    {
+      "reason": "这个效用函数虽然含经济项，但核心是把经济、情感、习惯、损失感一起加权，不是专门比较修与换的成本、时间、寿命、便利性，证据不够贴边。",
+      "supported": false,
+      "task_id": "REV-M2-S2-S2-B06-A_vs_C-math_focus"
+    },
+    {
+      "reason": "该小节标题就是“损失厌恶”，正文还解释了放弃其他选项会被编码为损失并增加痛苦，正中该方向边界。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B04-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "公式直接比较修理成本/寿命与买新成本/寿命，正是围绕金钱与后续寿命的比较。",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B02-B_vs_C-math_focus"
+    },
+    {
+      "reason": "“选择过载效应”这一节明确讲选项过多带来更多比较评估、认知资源耗尽和决策困难，符合选项过载。",
+      "supported": true,
+      "task_id": "REV-M2-S10-S10-B05-B_vs_C-math_focus"
+    },
+    {
+      "reason": "“选择过载”这一节就是在说选项越多越难决策、认知资源耗竭、决策瘫痪，符合选项过载边界。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B03-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该小节明确说人倾向于觉得偏差影响别人不影响自己，即使承认系统在影响自己也觉得点击是自己真想要的，完全符合偏差盲点。",
+      "supported": true,
+      "task_id": "REV-M2-S8-S8-B04-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "“自我叙事的断裂”明确把重大选择说成身份分叉、另一个可能的‘你’不再存在，直接是在讲选择承载过多自我意义。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B02-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "“主动探索能力和意愿会萎缩”直接表达长期依赖后搜索与探索能力退化，并且文中将其放在依赖循环里。",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B03-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "以依赖度 d_t 和精度 a_t 的相互提升来形式化正反馈，并明确说有路径依赖和锁定效应，完全符合该方向。",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B03-B_vs_C-math_focus"
+    },
+    {
+      "reason": "“你的偏好本身已经被系统塑造了”直接表达偏好被长期使用推荐系统内生塑造，导致真实偏好边界模糊。",
+      "supported": true,
+      "task_id": "REV-M2-S8-S8-B03-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "同一段对偏差盲点的定义和展开都非常直接，充分支持该方向边界。",
+      "supported": true,
+      "task_id": "REV-M2-S8-S8-B04-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "“找得到人修吗”谈的是维修渠道、零件、是否有人会修，核心是维修在现实中是否可实施并恢复用途，符合实用可行。",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B01-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "原文明确说委托人与平台代理人的目标函数不一致，并点出用户几乎无监督手段，正对应委托代理冲突。",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B02-A_vs_C-math_focus"
+    },
+    {
+      "reason": "“维修是否方便”讲的是维修可达性与现实可实施性，关系到物品能否被修复继续使用，符合实用可行。",
+      "supported": true,
+      "task_id": "REV-M2-S2-S2-B05-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "“找不到配件、没有维修点”强调的是维修条件与可操作性，不是成本或等待，而是能否实际完成修复并继续使用。",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B05-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "“选项之间的可比性困难”明确在说不同维度各有优劣、缺乏统一标准，属于不能通约的价值冲突。",
+      "supported": true,
+      "task_id": "REV-M2-S10-S10-B03-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "“接受默认选项”明确指出推荐流作为默认入口，而改变默认需要额外动作与认知努力，正是默认摩擦。",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B01-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "证据短语只有“$$”，并未表达任何具体比较内容，无法支持成本时间方向。",
+      "supported": false,
+      "task_id": "REV-M2-S2-S2-B05-A_vs_B-math_focus"
+    },
+    {
+      "reason": "该式子是情感、经济、社会多权重混合模型，不是以修理与替换的金钱、时间、寿命、便利性比较为核心，因此不足以支撑成本时间边界。",
+      "supported": false,
+      "task_id": "REV-M2-S2-S2-B03-A_vs_C-math_focus"
+    },
+    {
+      "reason": "原句直接声称选项数量增加会带来决策瘫痪和满意度下降，是典型的选项过载表述。",
+      "supported": true,
+      "task_id": "REV-M2-S10-S10-B06-B_vs_C-math_focus"
+    },
+    {
+      "reason": "该节直接以损失厌恶为题，并说明选择意味着放弃其他选项、失去被过度敏感地体验，符合边界。",
+      "supported": true,
+      "task_id": "REV-M2-S10-S10-B04-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "同样是多目标总效用函数，说明决策受多种权重影响，不足以单独支撑成本时间这一更窄边界。",
+      "supported": false,
+      "task_id": "REV-M2-S2-S2-B06-B_vs_C-math_focus"
+    },
+    {
+      "reason": "该句说明推荐提供“足够好”的选项，本身就在表达推荐内容对用户来说是可用、可接受、能满足其需求下限的，因此达到“匹配有用”的最低证据要求。",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B02-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该短语只说明推荐系统提供“足够好”的选项，强调 satisficing，并未表达这些内容是否确实匹配用户需求、兴趣或任务，只是说人会因此停止继续搜索。",
+      "supported": false,
+      "task_id": "REV-M1-S10-S10-B01-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该短语标题就是“选择超载”，对应正文中选项越多、比较计算量越大、难以决断的解释，能支持以选项数量和比较负担为核心的方向。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B04-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该短语明确说“从可持续发展的角度出发”，并置于倾向修复而非丢弃的语境中，核心就是环境与资源后果，而非个人情感，能支持环境责任方向。",
+      "supported": true,
+      "task_id": "REV-M2-S2-S2-B03-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "证据只有“环保意识”这一标签，本身未展开资源浪费、修复延寿或环境后果；虽然完整回答其他位置有相关说明，但该连续原文本身不足以达到该方向的最低证据要求。",
+      "supported": false,
+      "task_id": "REV-M2-S2-S2-B02-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该证据后续紧接着定义了依赖度与预测精度相互提升的循环，并明确称其为正反馈回路、路径依赖和锁定效应，直接支持该方向。",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B03-A_vs_B-math_focus"
+    },
+    {
+      "reason": "该短语标题就是“评估困难（Preference Uncertainty）”，对应正文明确说人并不完全清楚自己真正想要什么，因此难以排序，直接支持偏好模糊。",
+      "supported": true,
+      "task_id": "REV-M2-S10-S10-B03-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该证据只说物品“独一无二、绝版”会更倾向修复，核心是稀缺性/不可替代性，并未指向设计、材料、做工或修复行为本身的审美与工艺价值。",
+      "supported": false,
+      "task_id": "REV-M2-S2-S2-B04-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "该短语明确指出平台目标函数是最大化停留时长和点击率，后文还说明系统持续优化“让你离不开它”的能力，正符合平台激励设计边界。",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B03-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "“修理是否方便”只是在谈维修渠道、配件可得性等操作便利，并未以恢复原用途和继续完成功能为核心展开，且方向边界要求不主要讨论成本与等待；该证据过于间接。",
+      "supported": false,
+      "task_id": "REV-M1-S2-S2-B02-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "该证据直接说明选项一多就会增加两两比较次数和比较复杂度，从而提升认知负担，正符合“选项数量和比较负担增加导致难以形成稳定判断”的边界。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B03-B_vs_C-math_focus"
+    },
+    {
+      "reason": "该证据短语所在小节明确讨论“多维度下的不可比性”，并用 Pareto 不可比说明不同选项在不能通约的维度上各有优势，直接支持价值冲突这一边界。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B01-A_vs_C-math_focus"
+    },
+    {
+      "reason": "该公式直接比较修理与替换的成本、修后继续使用价值及不确定寿命，核心就是金钱、后续寿命与效用比较，符合成本时间边界。",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B01-A_vs_C-math_focus"
+    }
+  ],
+  "slot": "M3"
+}

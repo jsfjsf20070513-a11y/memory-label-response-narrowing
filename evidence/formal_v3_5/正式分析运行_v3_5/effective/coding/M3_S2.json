@@ -1,0 +1,1735 @@
+{
+  "blocks": [
+    {
+      "answers": {
+        "A": {
+          "directions": [
+            {
+              "definition": "以旧物承载的个人记忆、情感、习惯或自我连续为核心，不计入家庭或关系共同拥有的意义。",
+              "evidence": "- 旧物承载着回忆和情感，",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S2-D3",
+              "name": "个人情感与自我意义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以修理与替换所需的金钱、时间、后续寿命和便利性比较为核心，不等同于仅判断能否修好。",
+              "evidence": "### 1. **理性的成本-收益分析**",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S2-D2",
+              "name": "成本时间",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以修复、替换和丢弃的资源浪费与环境后果为核心，不以个人情感为主要依据。",
+              "evidence": "| 环保意识 | 修好减少浪费 | — |",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S2-D4",
+              "name": "环境责任",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以物品能否恢复功能并继续完成原用途为核心，不主要讨论修理的成本与等待。",
+              "evidence": "| 物品可替代性 | 难以替代（绝版、手工等） | 容易买到同款或更好的 |",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S2-D1",
+              "name": "实用可行",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以物品在家庭、关系或传承中的共同归属为核心，不等同于一个人的记忆或身份联结。",
+              "evidence": "- 如果是**爷爷留下来的那把椅子**，",
+              "from_menu": true,
+              "local_id": "d5",
+              "menu_id": "S2-D6",
+              "name": "共同意义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以追求新产品带来的新鲜感、技术迭代或升级机会为核心理由。",
+              "evidence": "### 3. **新鲜感与升级欲望**",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "升级新鲜感",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "B": {
+          "directions": [
+            {
+              "definition": "以修理与替换所需的金钱、时间、后续寿命和便利性比较为核心，不等同于仅判断能否修好。",
+              "evidence": "| **修理成本 vs 买新成本** | 修理费远低于新品价格 | 修理费接近甚至超过买新的 |",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S2-D2",
+              "name": "成本时间",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以物品在家庭、关系或传承中的共同归属为核心，不等同于一个人的记忆或身份联结。",
+              "evidence": "用了很多年的东西承载了记忆和感情（比如外婆留下的缝纫机、陪伴多年的手表），",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S2-D6",
+              "name": "共同意义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以旧物承载的个人记忆、情感、习惯或自我连续为核心，不计入家庭或关系共同拥有的意义。",
+              "evidence": "- **😌 习惯与熟悉感**：",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S2-D3",
+              "name": "个人情感与自我意义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以物品能否恢复功能并继续完成原用途为核心，不主要讨论修理的成本与等待。",
+              "evidence": "** | 容易找到维修渠道/零件 | 零件停产、无人会修 |",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S2-D1",
+              "name": "实用可行",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以修复、替换和丢弃的资源浪费与环境后果为核心，不以个人情感为主要依据。",
+              "evidence": "- **环保意识**：",
+              "from_menu": true,
+              "local_id": "d5",
+              "menu_id": "S2-D4",
+              "name": "环境责任",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以节俭、物尽其用等一般性价值观为核心理由，不以环境后果或个人情感为主。",
+              "evidence": "- **节俭观念**：",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "节俭价值观",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以消费主义或社会鼓励拥抱新品的规范性拉力为核心理由。",
+              "evidence": "- **消费主义的拉力**：",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "消费主义拉力",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "C": {
+          "directions": [
+            {
+              "definition": "以旧物承载的个人记忆、情感、习惯或自我连续为核心，不计入家庭或关系共同拥有的意义。",
+              "evidence": "人们会把过去在这件物品上花费的时间、金钱、感情当作\"不能浪费\"的投入，",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S2-D3",
+              "name": "个人情感与自我意义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以修理与替换所需的金钱、时间、后续寿命和便利性比较为核心，不等同于仅判断能否修好。",
+              "evidence": "### 1. 理性经济计算",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S2-D2",
+              "name": "成本时间",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "以物品能否恢复功能并继续完成原用途为核心，不主要讨论修理的成本与等待。",
+              "evidence": "| 物品越独特/不可替代 | 越倾向修 |",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S2-D1",
+              "name": "实用可行",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以物品在家庭、关系或传承中的共同归属为核心，不等同于一个人的记忆或身份联结。",
+              "evidence": "| 有\"仪式感\"的物品（如传家宝） | 几乎一定修 |",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S2-D6",
+              "name": "共同意义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以追求更好更新产品的新鲜感或升级机会为核心理由。",
+              "evidence": "### 3. 新鲜感与升级欲望",
+              "from_menu": false,
+              "local_id": "d5",
+              "menu_id": null,
+              "name": "升级新鲜感",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以旧物整体老化、一次故障触发对其他部位连锁不信任为核心理由。",
+              "evidence": "### 2. \"破窗效应\"式的担忧",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "整体老化担忧",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "把是否修复组织为多目标优化或期望效用框架，强调变量权重与形式化权衡。",
+              "evidence": "这个决策问题本身就是**多目标优化**——效用函数里既有经济变量，",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "形式化决策建模",
+              "occurrence": 1,
+              "tag": "数学"
+            }
+          ],
+          "identity_evidence": "作为数学系的同学，",
+          "identity_explicit": true
+        }
+      },
+      "block_id": "S2-B01",
+      "comparisons": {
+        "A_vs_B": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "A与B都没有以数量化、公式或形式模型来组织论证的数学方向。"
+          },
+          "nonmath_breadth": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "以节俭、物尽其用等一般性价值观为核心理由，不以环境后果或个人情感为主。",
+              "evidence": "- **节俭观念**：",
+              "local_id": "d6",
+              "name": "节俭价值观",
+              "occurrence": 1
+            },
+            "reason": "B比A多出节俭价值观与消费主义拉力两类非数学解释路径，覆盖更广。"
+          }
+        },
+        "A_vs_C": {
+          "math_focus": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "把是否修复组织为多目标优化或期望效用框架，强调变量权重与形式化权衡。",
+              "evidence": "这个决策问题本身就是**多目标优化**——效用函数里既有经济变量，",
+              "local_id": "d7",
+              "name": "形式化决策建模",
+              "occurrence": 1
+            },
+            "reason": "C明确把决策写成期望效用和多目标优化框架，数学组织重心强于A。"
+          },
+          "nonmath_breadth": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "以修复、替换和丢弃的资源浪费与环境后果为核心，不以个人情感为主要依据。",
+              "evidence": "| 环保意识 | 修好减少浪费 | — |",
+              "local_id": "d3",
+              "name": "环境责任",
+              "occurrence": 1
+            },
+            "reason": "A比C多覆盖环境责任这一路径，非数学方向更宽。"
+          }
+        },
+        "B_vs_C": {
+          "math_focus": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "把是否修复组织为多目标优化或期望效用框架，强调变量权重与形式化权衡。",
+              "evidence": "这个决策问题本身就是**多目标优化**——效用函数里既有经济变量，",
+              "local_id": "d7",
+              "name": "形式化决策建模",
+              "occurrence": 1
+            },
+            "reason": "C使用显式公式和优化框架，数学组织明显强于B。"
+          },
+          "nonmath_breadth": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "以修复、替换和丢弃的资源浪费与环境后果为核心，不以个人情感为主要依据。",
+              "evidence": "- **环保意识**：",
+              "local_id": "d5",
+              "name": "环境责任",
+              "occurrence": 1
+            },
+            "reason": "B除成本、情感、共同意义外，还覆盖环境责任、节俭价值观与消费主义拉力，非数学路径多于C。"
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "A": {
+          "directions": [
+            {
+              "definition": "以修理与替换所需的金钱、时间、后续寿命和便利性比较为核心，不等同于仅判断能否修好。",
+              "evidence": "- **维修成本 vs. 替换成本**：",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S2-D2",
+              "name": "成本时间",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以旧物承载的个人记忆、情感、习惯或自我连续为核心，不计入家庭或关系共同拥有的意义。",
+              "evidence": "- **感情寄托**：",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S2-D3",
+              "name": "个人情感与自我意义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以修复、替换和丢弃的资源浪费与环境后果为核心，不以个人情感为主要依据。",
+              "evidence": "- **环保意识**：",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S2-D4",
+              "name": "环境责任",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以物品能否恢复功能并继续完成原用途为核心，不主要讨论修理的成本与等待。",
+              "evidence": "- **修理是否方便？",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S2-D1",
+              "name": "实用可行",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以物品在家庭、关系或传承中的共同归属为核心，不等同于一个人的记忆或身份联结。",
+              "evidence": "承载着特定的回忆（比如奶奶留下的缝纫机、陪自己度过大学时光的台灯）。",
+              "from_menu": true,
+              "local_id": "d5",
+              "menu_id": "S2-D6",
+              "name": "共同意义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以物品的设计、材料、做工或修复行为本身的价值为核心，不以实用功能或个人回忆为必要条件。",
+              "evidence": "也有人觉得这是\"有品味\"或\"念旧\"。",
+              "from_menu": true,
+              "local_id": "d6",
+              "menu_id": "S2-D5",
+              "name": "工艺审美",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以节俭、反浪费等一般价值观为核心理由，不以环境后果为主。",
+              "evidence": "- **节俭观念**：",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "节俭价值观",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以消费主义或推陈出新的社会规范为核心理由。",
+              "evidence": "- **消费主义影响**：",
+              "from_menu": false,
+              "local_id": "d8",
+              "menu_id": null,
+              "name": "消费主义拉力",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以他人评价、面子或社会比较为核心理由。",
+              "evidence": "- **他人看法**：",
+              "from_menu": false,
+              "local_id": "d9",
+              "menu_id": null,
+              "name": "社会评价压力",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以买新后保留旧物、暂不丢弃的中间处理路径为核心。",
+              "evidence": "| 📦 **买了新的，",
+              "from_menu": false,
+              "local_id": "d10",
+              "menu_id": null,
+              "name": "暂存旧物",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以修好后改变用途、转为备用或装饰的处理路径为核心。",
+              "evidence": "| 🪡 **修好后改变用途** | \"不当主力用了，",
+              "from_menu": false,
+              "local_id": "d11",
+              "menu_id": null,
+              "name": "修后改作他用",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "B": {
+          "directions": [
+            {
+              "definition": "以物品在家庭、关系或传承中的共同归属为核心，不等同于一个人的记忆或身份联结。",
+              "evidence": "### 1. 情感依附（Emotional Attachment）",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S2-D6",
+              "name": "共同意义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以旧物承载的个人记忆、情感、习惯或自我连续为核心，不计入家庭或关系共同拥有的意义。",
+              "evidence": "### 2. 沉没成本心理（Sunk Cost Bias）",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S2-D3",
+              "name": "个人情感与自我意义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以修理与替换所需的金钱、时间、后续寿命和便利性比较为核心，不等同于仅判断能否修好。",
+              "evidence": "### 1. 理性的成本-收益分析",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S2-D2",
+              "name": "成本时间",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以追求新产品的新鲜感或升级机会为核心理由。",
+              "evidence": "### 2. 对\"新\"的渴望（Novelty Seeking）",
+              "from_menu": false,
+              "local_id": "d4",
+              "menu_id": null,
+              "name": "升级新鲜感",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以避免修后再次损坏、强调及时止损为核心理由。",
+              "evidence": "### 3. 损失厌恶的反面——\"止损\"心理",
+              "from_menu": false,
+              "local_id": "d5",
+              "menu_id": null,
+              "name": "止损担忧",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "把是否修复组织为显式变量、单位时间成本和主观价值的形式化比较框架。",
+              "evidence": "设：",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "形式化决策建模",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "以节俭或物尽其用的价值观为核心理由。",
+              "evidence": "| \"物尽其用\"的价值观 | \"该换就换\"的价值观 |",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "节俭价值观",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": "作为数学系的同学，",
+          "identity_explicit": true
+        },
+        "C": {
+          "directions": [
+            {
+              "definition": "以修理与替换所需的金钱、时间、后续寿命和便利性比较为核心，不等同于仅判断能否修好。",
+              "evidence": "- **修理成本 vs. 替换成本**：",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S2-D2",
+              "name": "成本时间",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以旧物承载的个人记忆、情感、习惯或自我连续为核心，不计入家庭或关系共同拥有的意义。",
+              "evidence": "- **情感依附（Emotional Attachment）**：",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S2-D3",
+              "name": "个人情感与自我意义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以修复、替换和丢弃的资源浪费与环境后果为核心，不以个人情感为主要依据。",
+              "evidence": "- **环保意识**：",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S2-D4",
+              "name": "环境责任",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以节俭、浪费负罪感等一般价值观为核心理由，不以环境后果为主。",
+              "evidence": "- **节俭观念**：",
+              "from_menu": false,
+              "local_id": "d4",
+              "menu_id": null,
+              "name": "节俭价值观",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以面子、寒酸感或社会比较压力为核心理由。",
+              "evidence": "- **面子与社会比较**：",
+              "from_menu": false,
+              "local_id": "d5",
+              "menu_id": null,
+              "name": "社会评价压力",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以追求升级换代或新品机会为核心理由。",
+              "evidence": "花了这么多钱了 | 想借机\"升级换代\" |",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "升级新鲜感",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以情感先行、理性事后辩护的心理机制解释决策过程为核心。",
+              "evidence": "心理学家发现，",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "情感先行的动机性推理",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        }
+      },
+      "block_id": "S2-B02",
+      "comparisons": {
+        "A_vs_B": {
+          "math_focus": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "把是否修复组织为显式变量、单位时间成本和主观价值的形式化比较框架。",
+              "evidence": "设：",
+              "local_id": "d6",
+              "name": "形式化决策建模",
+              "occurrence": 1
+            },
+            "reason": "B给出显式变量与单位时间成本公式，数学组织强于A。"
+          },
+          "nonmath_breadth": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "以节俭、反浪费等一般价值观为核心理由，不以环境后果为主。",
+              "evidence": "- **节俭观念**：",
+              "local_id": "d7",
+              "name": "节俭价值观",
+              "occurrence": 1
+            },
+            "reason": "A除成本、情感、共同意义外，还覆盖环境、实用可行、工艺审美及多种菜单外路径，非数学覆盖明显更广。"
+          }
+        },
+        "A_vs_C": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "A与C都没有把数量化或形式模型作为主要组织方式。"
+          },
+          "nonmath_breadth": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "以物品的设计、材料、做工或修复行为本身的价值为核心，不以实用功能或个人回忆为必要条件。",
+              "evidence": "也有人觉得这是\"有品味\"或\"念旧\"。",
+              "local_id": "d6",
+              "name": "工艺审美",
+              "occurrence": 1
+            },
+            "reason": "A比C多出实用可行、共同意义、工艺审美以及两种额外处理路径，非数学方向更多。"
+          }
+        },
+        "B_vs_C": {
+          "math_focus": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "把是否修复组织为显式变量、单位时间成本和主观价值的形式化比较框架。",
+              "evidence": "设：",
+              "local_id": "d6",
+              "name": "形式化决策建模",
+              "occurrence": 1
+            },
+            "reason": "B使用显式公式和变量框架，数学组织重心强于C。"
+          },
+          "nonmath_breadth": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "以情感先行、理性事后辩护的心理机制解释决策过程为核心。",
+              "evidence": "心理学家发现，",
+              "local_id": "d7",
+              "name": "情感先行的动机性推理",
+              "occurrence": 1
+            },
+            "reason": "C除成本、情感、环境外，还覆盖节俭、社会评价、升级新鲜感和情感先行的推理机制，非数学路径多于B。"
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "A": {
+          "directions": [
+            {
+              "definition": "以旧物承载的个人记忆、情感、习惯或自我连续为核心，不计入家庭或关系共同拥有的意义。",
+              "evidence": "### 3. 情感依附（Emotional Attachment）",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S2-D3",
+              "name": "个人情感与自我意义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以修理与替换所需的金钱、时间、后续寿命和便利性比较为核心，不等同于仅判断能否修好。",
+              "evidence": "### 1. 理性的成本-收益分析",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S2-D2",
+              "name": "成本时间",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "因为过去已经投入时间或金钱，就把这些不可收回的投入继续算进当前是否修理的判断。",
+              "evidence": "### 1. 沉没成本效应（Sunk Cost Fallacy）",
+              "from_menu": false,
+              "local_id": "d3",
+              "menu_id": null,
+              "name": "沉没成本偏误",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "因为物品属于自己而主观高估其价值，超过市场或客观评估。",
+              "evidence": "### 2. 禀赋效应（Endowment Effect）",
+              "from_menu": false,
+              "local_id": "d4",
+              "menu_id": null,
+              "name": "禀赋效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "把丢弃旧物感受到的损失看得比获得新物的收益更重，因此更想保留或修复。",
+              "evidence": "### 4. 损失厌恶（Loss Aversion）",
+              "from_menu": false,
+              "local_id": "d5",
+              "menu_id": null,
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "把损坏视为更换和升级的正当契机，因此顺势转向新品。",
+              "evidence": "### 2. 新鲜感与升级欲望",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "升级与换新许可",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "旧物损坏打破原先将就维持的状态，促使人借机改变现状。",
+              "evidence": "### 3. 现状打破的契机",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "现状打破契机",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "把他人的看法或社会评价纳入是否修理的判断。",
+              "evidence": "实际决策 ≈ 情感权重 × 依附程度 + 经济权重 × (修理费/新品价) + 社会权重 × 他人看法",
+              "from_menu": false,
+              "local_id": "d8",
+              "menu_id": null,
+              "name": "社会评价权重",
+              "occurrence": 1,
+              "tag": "数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "B": {
+          "directions": [
+            {
+              "definition": "以修理与替换所需的金钱、时间、后续寿命和便利性比较为核心，不等同于仅判断能否修好。",
+              "evidence": "- **修理成本 vs 替换成本**：",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S2-D2",
+              "name": "成本时间",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以物品能否恢复功能并继续完成原用途为核心，不主要讨论修理的成本与等待。",
+              "evidence": "- **功能评估**：",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S2-D1",
+              "name": "实用可行",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以旧物承载的个人记忆、情感、习惯或自我连续为核心，不计入家庭或关系共同拥有的意义。",
+              "evidence": "- **情感依恋（Emotional Attachment）**：",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S2-D3",
+              "name": "个人情感与自我意义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以修复、替换和丢弃的资源浪费与环境后果为核心，不以个人情感为主要依据。",
+              "evidence": "- **环保意识**：",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S2-D4",
+              "name": "环境责任",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "因为物品属于自己而主观高估其价值，从而更倾向保留旧物。",
+              "evidence": "- **禀赋效应（Endowment Effect）**：",
+              "from_menu": false,
+              "local_id": "d5",
+              "menu_id": null,
+              "name": "禀赋效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "因为过去投入过时间或金钱，就继续偏向修理，不愿放弃旧物。",
+              "evidence": "- **沉没成本谬误（Sunk Cost Fallacy）**：",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "沉没成本偏误",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "把失去旧物的痛苦看得大于得到新物的快乐，因此偏向保住它。",
+              "evidence": "- **损失厌恶（Loss Aversion）**：",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "受节俭传统或消费主义等社会文化观念影响来决定修还是换。",
+              "evidence": "## 🔄 社会与文化因素",
+              "from_menu": false,
+              "local_id": "d8",
+              "menu_id": null,
+              "name": "社会文化规范",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "C": {
+          "directions": [
+            {
+              "definition": "以修理与替换所需的金钱、时间、后续寿命和便利性比较为核心，不等同于仅判断能否修好。",
+              "evidence": "- **修理成本 vs 换新成本**：",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S2-D2",
+              "name": "成本时间",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以物品能否恢复功能并继续完成原用途为核心，不主要讨论修理的成本与等待。",
+              "evidence": "- **修好后还能用多久？",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S2-D1",
+              "name": "实用可行",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以旧物承载的个人记忆、情感、习惯或自我连续为核心，不计入家庭或关系共同拥有的意义。",
+              "evidence": "- **感情寄托**：",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S2-D3",
+              "name": "个人情感与自我意义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以修复、替换和丢弃的资源浪费与环境后果为核心，不以个人情感为主要依据。",
+              "evidence": "| 个人崇尚节俭、环保 | 有更好的替代品且价格合理 |",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S2-D4",
+              "name": "环境责任",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "因为旧物用顺手、换新需要重新适应，所以出于熟悉感而偏向保留旧物。",
+              "evidence": "- **习惯与熟悉感**：",
+              "from_menu": false,
+              "local_id": "d5",
+              "menu_id": null,
+              "name": "习惯与适应成本",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "把丢弃仍可使用的东西视为浪费，从惜物角度偏向修理。",
+              "evidence": "- **\"扔掉可惜\"的心理**：",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "惜物观念",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "因为过去投入过较高购置成本，就继续把这些已发生投入算进当前修理决策。",
+              "evidence": "- **沉没成本效应**：",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "沉没成本偏误",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "因为物品属于自己而高估其价值，认为旧物比新的更值得保留。",
+              "evidence": "- **禀赋效应**：",
+              "from_menu": false,
+              "local_id": "d8",
+              "menu_id": null,
+              "name": "禀赋效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "把丢弃旧物的失去感看得重于获得新物的满足感，因此偏向保留。",
+              "evidence": "- **损失厌恶**：",
+              "from_menu": false,
+              "local_id": "d9",
+              "menu_id": null,
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        }
+      },
+      "block_id": "S2-B03",
+      "comparisons": {
+        "A_vs_B": {
+          "math_focus": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "以修理与替换所需的金钱、时间、后续寿命和便利性比较为核心，不等同于仅判断能否修好。",
+              "evidence": "### 1. 理性的成本-收益分析",
+              "local_id": "d2",
+              "name": "成本时间",
+              "occurrence": 1
+            },
+            "reason": "A把成本时间组织成数值例子、近似公式和条件表，数量化重心明显强于B。"
+          },
+          "nonmath_breadth": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "因为过去已经投入时间或金钱，就把这些不可收回的投入继续算进当前是否修理的判断。",
+              "evidence": "### 1. 沉没成本效应（Sunk Cost Fallacy）",
+              "local_id": "d3",
+              "name": "沉没成本偏误",
+              "occurrence": 1
+            },
+            "reason": "A除个人情感外，还展开沉没成本、禀赋效应、损失厌恶、升级欲望、现状打破和社会评价等更多非数学路径。"
+          }
+        },
+        "A_vs_C": {
+          "math_focus": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "以修理与替换所需的金钱、时间、后续寿命和便利性比较为核心，不等同于仅判断能否修好。",
+              "evidence": "### 1. 理性的成本-收益分析",
+              "local_id": "d2",
+              "name": "成本时间",
+              "occurrence": 1
+            },
+            "reason": "A明确给出近似决策公式和数值比较，数学化组织强于C的表格式罗列。"
+          },
+          "nonmath_breadth": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "因为过去已经投入时间或金钱，就把这些不可收回的投入继续算进当前是否修理的判断。",
+              "evidence": "### 1. 沉没成本效应（Sunk Cost Fallacy）",
+              "local_id": "d3",
+              "name": "沉没成本偏误",
+              "occurrence": 1
+            },
+            "reason": "A覆盖的非数学机制更多，除情感外还细分多种认知偏误、升级动机和社会评价。"
+          }
+        },
+        "B_vs_C": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "两者都主要是非数学罗列，虽有简单框架或对照表，但都没有把数量化计算作为更强中心。"
+          },
+          "nonmath_breadth": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "以旧物承载的个人记忆、情感、习惯或自我连续为核心，不计入家庭或关系共同拥有的意义。",
+              "evidence": "- **感情寄托**：",
+              "local_id": "d3",
+              "name": "个人情感与自我意义",
+              "occurrence": 1
+            },
+            "reason": "C在情感之外还额外写到习惯适应、惜物观念、沉没成本、禀赋效应和损失厌恶，非数学路径略多于B。"
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "A": {
+          "directions": [
+            {
+              "definition": "以修理与替换所需的金钱、时间、后续寿命和便利性比较为核心，不等同于仅判断能否修好。",
+              "evidence": "- **修理成本 vs. 替换成本**：",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S2-D2",
+              "name": "成本时间",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以旧物承载的个人记忆、情感、习惯或自我连续为核心，不计入家庭或关系共同拥有的意义。",
+              "evidence": "- **感情依附**：",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S2-D3",
+              "name": "个人情感与自我意义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "因为过去已经投入多年使用或购置成本，所以不舍得放弃并继续投入修理。",
+              "evidence": "> 这里有一个经典的思维陷阱——**沉没成本效应**：",
+              "from_menu": false,
+              "local_id": "d3",
+              "menu_id": null,
+              "name": "沉没成本偏误",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "因为旧物用顺手，换新需要重新适应，因此把适应麻烦算进决定。",
+              "evidence": "- **习惯与熟悉感**：",
+              "from_menu": false,
+              "local_id": "d4",
+              "menu_id": null,
+              "name": "习惯与适应成本",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "从惜物、反浪费的价值观出发，认为能修就修是一种正确做法。",
+              "evidence": "- **物尽其用的价值观**：",
+              "from_menu": false,
+              "local_id": "d5",
+              "menu_id": null,
+              "name": "惜物价值观",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "因为物品难以替代、绝版或手工属性强，所以更想修复而不是换新。",
+              "evidence": "4. **物品的可替代性** → 独一无二的东西（如手工制品、绝版物件）更倾向修复。",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "稀缺与不可替代性",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "B": {
+          "directions": [
+            {
+              "definition": "以修理与替换所需的金钱、时间、后续寿命和便利性比较为核心，不等同于仅判断能否修好。",
+              "evidence": "- **修理成本** vs. **重新购买成本**",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S2-D2",
+              "name": "成本时间",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以旧物承载的个人记忆、情感、习惯或自我连续为核心，不计入家庭或关系共同拥有的意义。",
+              "evidence": "### 4. 情感依恋（Emotional Attachment）",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S2-D3",
+              "name": "个人情感与自我意义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "因为过去的时间、金钱或感情投入已经很多，就更不愿放弃旧物。",
+              "evidence": "### 1. 沉没成本谬误（Sunk Cost Fallacy）",
+              "from_menu": false,
+              "local_id": "d3",
+              "menu_id": null,
+              "name": "沉没成本偏误",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "因为物品属于自己而高估其价值，觉得自己的旧物更值得保留。",
+              "evidence": "### 2. 禀赋效应（Endowment Effect）",
+              "from_menu": false,
+              "local_id": "d4",
+              "menu_id": null,
+              "name": "禀赋效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "倾向维持熟悉现状，觉得换新后重新适应太麻烦，因此抗拒改变。",
+              "evidence": "### 3. 现状偏好（Status Quo Bias）",
+              "from_menu": false,
+              "local_id": "d5",
+              "menu_id": null,
+              "name": "现状偏好",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "把丢弃旧物体验为更强的损失，因此比起换新更想保住它。",
+              "evidence": "### 5. 损失厌恶（Loss Aversion）",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "受惜物道德或断舍离等社会文化观念影响来判断修还是换。",
+              "evidence": "## 三、两种倾向的拉锯",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "社会文化规范",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "C": {
+          "directions": [
+            {
+              "definition": "以修理与替换所需的金钱、时间、后续寿命和便利性比较为核心，不等同于仅判断能否修好。",
+              "evidence": "- **修理成本 vs. 替换成本**：",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S2-D2",
+              "name": "成本时间",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以旧物承载的个人记忆、情感、习惯或自我连续为核心，不计入家庭或关系共同拥有的意义。",
+              "evidence": "### 2. ❤️ 情感依恋（Emotional Attachment）",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S2-D3",
+              "name": "个人情感与自我意义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "因为过去已经投入多年使用时间或金钱，所以即便不划算也不愿放弃。",
+              "evidence": "### 1. 🧠 沉没成本效应（Sunk Cost Fallacy）",
+              "from_menu": false,
+              "local_id": "d3",
+              "menu_id": null,
+              "name": "沉没成本偏误",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "因为物品属于自己而主观高估其价值，觉得旧物更值得留。",
+              "evidence": "### 3. 🤲 禀赋效应（Endowment Effect）",
+              "from_menu": false,
+              "local_id": "d4",
+              "menu_id": null,
+              "name": "禀赋效应",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "把扔掉旧物视为更强烈的损失或后悔来源，因此偏向保留。",
+              "evidence": "### 4. 😟 损失厌恶（Loss Aversion）",
+              "from_menu": false,
+              "local_id": "d5",
+              "menu_id": null,
+              "name": "损失厌恶",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "因为已经习惯旧物并从中获得熟悉与安全感，担心新物带来不确定性和学习成本。",
+              "evidence": "### 5. 🌱 习惯与安全感",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "习惯与安全感",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "受节俭、环保、效率升级或消费主义等社会文化观念影响来决定修还是换。",
+              "evidence": "## 三、社会与文化层面",
+              "from_menu": false,
+              "local_id": "d7",
+              "menu_id": null,
+              "name": "社会文化规范",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        }
+      },
+      "block_id": "S2-B04",
+      "comparisons": {
+        "A_vs_B": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "两者都以非数学方式讨论成本时间，没有哪一方把数量化计算组织得更强。"
+          },
+          "nonmath_breadth": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "以旧物承载的个人记忆、情感、习惯或自我连续为核心，不计入家庭或关系共同拥有的意义。",
+              "evidence": "### 4. 情感依恋（Emotional Attachment）",
+              "local_id": "d2",
+              "name": "个人情感与自我意义",
+              "occurrence": 1
+            },
+            "reason": "B在情感之外还系统列出沉没成本、禀赋效应、现状偏好、损失厌恶和社会文化规范，非数学路径更丰富。"
+          }
+        },
+        "A_vs_C": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "A和C都只是概述成本、寿命和功能升级，没有明显更强的数量化或形式化重心。"
+          },
+          "nonmath_breadth": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "以旧物承载的个人记忆、情感、习惯或自我连续为核心，不计入家庭或关系共同拥有的意义。",
+              "evidence": "### 2. ❤️ 情感依恋（Emotional Attachment）",
+              "local_id": "d2",
+              "name": "个人情感与自我意义",
+              "occurrence": 1
+            },
+            "reason": "C除个人情感外，还细分沉没成本、禀赋效应、损失厌恶、习惯安全感和社会文化层面，覆盖面大于A。"
+          }
+        },
+        "B_vs_C": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "B与C都没有以数学化计算为主要组织中心，成本收益部分强度接近。"
+          },
+          "nonmath_breadth": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "两者都覆盖个人情感、三类常见偏误、习惯性阻力以及社会文化观念，非数学路径数量和范围基本相当。"
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "A": {
+          "directions": [
+            {
+              "definition": "以修理与替换所需的金钱、时间、后续寿命和便利性比较为核心，不等同于仅判断能否修好。",
+              "evidence": "| 维修成本 vs 替换成本 | 修好它要花多少钱？",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S2-D2",
+              "name": "成本时间",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "以旧物承载的个人记忆、情感、习惯或自我连续为核心，不计入家庭或关系共同拥有的意义。",
+              "evidence": "\"用了很多年\"意味着这件物品承载了**记忆和情感**——这种价值是真实的，",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S2-D3",
+              "name": "个人情感与自我意义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "用认知偏误来解释人们为何会偏向修理或不愿更换旧物。",
+              "evidence": "### 1. 沉没成本谬误（Sunk Cost Fallacy）",
+              "from_menu": false,
+              "local_id": "d3",
+              "menu_id": null,
+              "name": "认知偏误",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": "作为数学系学生，",
+          "identity_explicit": true
+        },
+        "B": {
+          "directions": [
+            {
+              "definition": "以修理与替换所需的金钱、时间、后续寿命和便利性比较为核心，不等同于仅判断能否修好。",
+              "evidence": "- **修理成本 vs. 替换成本**：",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S2-D2",
+              "name": "成本时间",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以旧物承载的个人记忆、情感、习惯或自我连续为核心，不计入家庭或关系共同拥有的意义。",
+              "evidence": "- **感情寄托**：",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S2-D3",
+              "name": "个人情感与自我意义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以修复、替换和丢弃的资源浪费与环境后果为核心，不以个人情感为主要依据。",
+              "evidence": "- 🌱 **环保主义者**：",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S2-D4",
+              "name": "环境责任",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "用沉没成本、禀赋效应、损失厌恶和现状偏见等心理机制解释决策偏向。",
+              "evidence": "| **沉没成本谬误** | \"我都用了这么多年了，",
+              "from_menu": false,
+              "local_id": "d4",
+              "menu_id": null,
+              "name": "认知偏误",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "C": {
+          "directions": [
+            {
+              "definition": "以修理与替换所需的金钱、时间、后续寿命和便利性比较为核心，不等同于仅判断能否修好。",
+              "evidence": "- **维修成本 vs. 更换成本**：",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S2-D2",
+              "name": "成本时间",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以旧物承载的个人记忆、情感、习惯或自我连续为核心，不计入家庭或关系共同拥有的意义。",
+              "evidence": "- **感情寄托**：",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S2-D3",
+              "name": "个人情感与自我意义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以物品在家庭、关系或传承中的共同归属为核心，不等同于一个人的记忆或身份联结。",
+              "evidence": "这件旧物可能承载着特殊的记忆——已故亲人送的礼物、陪伴自己度过艰难岁月的物品、见证某段重要关系的信物。",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S2-D6",
+              "name": "共同意义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以修复、替换和丢弃的资源浪费与环境后果为核心，不以个人情感为主要依据。",
+              "evidence": "- **环保意识**：",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S2-D4",
+              "name": "环境责任",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "从维修渠道、配件、维修点等现实条件是否支持修理来解释选择。",
+              "evidence": "- **维修是否方便？",
+              "from_menu": false,
+              "local_id": "d5",
+              "menu_id": null,
+              "name": "维修可得性与现实约束",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "从节俭、追新等价值观和代际观念差异来解释修或换。",
+              "evidence": "- **节俭观念**：",
+              "from_menu": false,
+              "local_id": "d6",
+              "menu_id": null,
+              "name": "价值观与代际观念",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        }
+      },
+      "block_id": "S2-B05",
+      "comparisons": {
+        "A_vs_B": {
+          "math_focus": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "以修理与替换所需的金钱、时间、后续寿命和便利性比较为核心，不等同于仅判断能否修好。",
+              "evidence": "| 维修成本 vs 替换成本 | 修好它要花多少钱？",
+              "local_id": "d1",
+              "name": "成本时间",
+              "occurrence": 1
+            },
+            "reason": "A把成本、寿命和情感损失写成显式比较式，数量化组织更强；B只有口头算账。"
+          },
+          "nonmath_breadth": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "以修复、替换和丢弃的资源浪费与环境后果为核心，不以个人情感为主要依据。",
+              "evidence": "- 🌱 **环保主义者**：",
+              "local_id": "d3",
+              "name": "环境责任",
+              "occurrence": 1
+            },
+            "reason": "B除成本与个人情感外，还覆盖环保与认知偏误，非数学解释路径更多。"
+          }
+        },
+        "A_vs_C": {
+          "math_focus": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "以修理与替换所需的金钱、时间、后续寿命和便利性比较为核心，不等同于仅判断能否修好。",
+              "evidence": "| 维修成本 vs 替换成本 | 修好它要花多少钱？",
+              "local_id": "d1",
+              "name": "成本时间",
+              "occurrence": 1
+            },
+            "reason": "A明确用期望效用比较和公式组织答案；C在本块没有把数学建模作为组织重心。"
+          },
+          "nonmath_breadth": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "从维修渠道、配件、维修点等现实条件是否支持修理来解释选择。",
+              "evidence": "- **维修是否方便？",
+              "local_id": "d5",
+              "name": "维修可得性与现实约束",
+              "occurrence": 1
+            },
+            "reason": "C除成本、个人情感、共同意义和环保外，还加入现实维修约束与价值观差异，非数学路径更广。"
+          }
+        },
+        "B_vs_C": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "两者都主要是口头解释，没有哪一份把数量化或形式模型放在更强重心。"
+          },
+          "nonmath_breadth": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "从维修渠道、配件、维修点等现实条件是否支持修理来解释选择。",
+              "evidence": "- **维修是否方便？",
+              "local_id": "d5",
+              "name": "维修可得性与现实约束",
+              "occurrence": 1
+            },
+            "reason": "C比B多出共同意义以及现实约束、代际价值观等额外路径，覆盖更宽。"
+          }
+        }
+      }
+    },
+    {
+      "answers": {
+        "A": {
+          "directions": [
+            {
+              "definition": "以旧物承载的个人记忆、情感、习惯或自我连续为核心，不计入家庭或关系共同拥有的意义。",
+              "evidence": "### 1. 情感依附（Sentimental Attachment）",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S2-D3",
+              "name": "个人情感与自我意义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以修复、替换和丢弃的资源浪费与环境后果为核心，不以个人情感为主要依据。",
+              "evidence": "### 5. 环保或节俭观念",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S2-D4",
+              "name": "环境责任",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以修理与替换所需的金钱、时间、后续寿命和便利性比较为核心，不等同于仅判断能否修好。",
+              "evidence": "### 1. 经济理性",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S2-D2",
+              "name": "成本时间",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以物品在家庭、关系或传承中的共同归属为核心，不等同于一个人的记忆或身份联结。",
+              "evidence": "| 有特殊纪念意义（如长辈的遗物、定情信物） | 无论多贵都倾向于修 |",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S2-D6",
+              "name": "共同意义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "用沉没成本和禀赋效应等心理机制解释人们为何偏向保留和修理旧物。",
+              "evidence": "### 2. 沉没成本心理（Sunk Cost）",
+              "from_menu": false,
+              "local_id": "d5",
+              "menu_id": null,
+              "name": "认知偏误",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "B": {
+          "directions": [
+            {
+              "definition": "以旧物承载的个人记忆、情感、习惯或自我连续为核心，不计入家庭或关系共同拥有的意义。",
+              "evidence": "### 1. 情感依恋（Emotional Attachment）",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S2-D3",
+              "name": "个人情感与自我意义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以修理与替换所需的金钱、时间、后续寿命和便利性比较为核心，不等同于仅判断能否修好。",
+              "evidence": "### 1. 理性的成本-收益分析",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S2-D2",
+              "name": "成本时间",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以物品在家庭、关系或传承中的共同归属为核心，不等同于一个人的记忆或身份联结。",
+              "evidence": "比如奶奶留下的缝纫机、陪伴自己多年的书包。",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S2-D6",
+              "name": "共同意义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以物品的设计、材料、做工或修复行为本身的价值为核心，不以实用功能或个人回忆为必要条件。",
+              "evidence": "> 日本有一种传统工艺叫 **\"金缮\"（Kintsugi）**——用金粉修补碎裂的陶器，",
+              "from_menu": true,
+              "local_id": "d4",
+              "menu_id": "S2-D5",
+              "name": "工艺审美",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "用禀赋效应和沉没成本等心理偏误解释人们为何更不愿放弃旧物。",
+              "evidence": "### 2. 禀赋效应（Endowment Effect）",
+              "from_menu": false,
+              "local_id": "d5",
+              "menu_id": null,
+              "name": "认知偏误",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": null,
+          "identity_explicit": false
+        },
+        "C": {
+          "directions": [
+            {
+              "definition": "以修理与替换所需的金钱、时间、后续寿命和便利性比较为核心，不等同于仅判断能否修好。",
+              "evidence": "你可以把这个决策想象成一个**多目标优化问题**：",
+              "from_menu": true,
+              "local_id": "d1",
+              "menu_id": "S2-D2",
+              "name": "成本时间",
+              "occurrence": 1,
+              "tag": "数学"
+            },
+            {
+              "definition": "以旧物承载的个人记忆、情感、习惯或自我连续为核心，不计入家庭或关系共同拥有的意义。",
+              "evidence": "### 3. 情感依附（Emotional Attachment）",
+              "from_menu": true,
+              "local_id": "d2",
+              "menu_id": "S2-D3",
+              "name": "个人情感与自我意义",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "以修复、替换和丢弃的资源浪费与环境后果为核心，不以个人情感为主要依据。",
+              "evidence": "- **环保意识**：",
+              "from_menu": true,
+              "local_id": "d3",
+              "menu_id": "S2-D4",
+              "name": "环境责任",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "用沉没成本、禀赋效应、损失厌恶和现状偏见等认知机制解释决策偏向。",
+              "evidence": "### 1. 沉没成本谬误（Sunk Cost Fallacy）",
+              "from_menu": false,
+              "local_id": "d4",
+              "menu_id": null,
+              "name": "认知偏误",
+              "occurrence": 1,
+              "tag": "非数学"
+            },
+            {
+              "definition": "从节俭文化、消费主义与代际文化差异来解释修或换的倾向。",
+              "evidence": "- **节俭文化**：",
+              "from_menu": false,
+              "local_id": "d5",
+              "menu_id": null,
+              "name": "社会文化观念",
+              "occurrence": 1,
+              "tag": "非数学"
+            }
+          ],
+          "identity_evidence": "作为数学系的同学，",
+          "identity_explicit": true
+        }
+      },
+      "block_id": "S2-B06",
+      "comparisons": {
+        "A_vs_B": {
+          "math_focus": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "A和B都没有把数量化或形式模型作为主要组织方式。"
+          },
+          "nonmath_breadth": {
+            "choice": "相当",
+            "decisive": null,
+            "reason": "两者都覆盖成本、个人情感、共同意义或独特价值，以及认知偏误等多条非数学路径，宽度相近。"
+          }
+        },
+        "A_vs_C": {
+          "math_focus": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "以修理与替换所需的金钱、时间、后续寿命和便利性比较为核心，不等同于仅判断能否修好。",
+              "evidence": "你可以把这个决策想象成一个**多目标优化问题**：",
+              "local_id": "d1",
+              "name": "成本时间",
+              "occurrence": 1
+            },
+            "reason": "C用多目标优化公式来组织决策；A只有口头成本比较。"
+          },
+          "nonmath_breadth": {
+            "choice": "A",
+            "decisive": {
+              "answer": "A",
+              "definition": "以物品在家庭、关系或传承中的共同归属为核心，不等同于一个人的记忆或身份联结。",
+              "evidence": "| 有特殊纪念意义（如长辈的遗物、定情信物） | 无论多贵都倾向于修 |",
+              "local_id": "d4",
+              "name": "共同意义",
+              "occurrence": 1
+            },
+            "reason": "A除成本、个人情感、环保和认知偏误外，还明确写到长辈遗物、定情信物这类共同意义，非数学路径更多。"
+          }
+        },
+        "B_vs_C": {
+          "math_focus": {
+            "choice": "C",
+            "decisive": {
+              "answer": "C",
+              "definition": "以修理与替换所需的金钱、时间、后续寿命和便利性比较为核心，不等同于仅判断能否修好。",
+              "evidence": "你可以把这个决策想象成一个**多目标优化问题**：",
+              "local_id": "d1",
+              "name": "成本时间",
+              "occurrence": 1
+            },
+            "reason": "C显式使用数学优化框架；B没有形式化建模。"
+          },
+          "nonmath_breadth": {
+            "choice": "B",
+            "decisive": {
+              "answer": "B",
+              "definition": "以物品的设计、材料、做工或修复行为本身的价值为核心，不以实用功能或个人回忆为必要条件。",
+              "evidence": "> 日本有一种传统工艺叫 **\"金缮\"（Kintsugi）**——用金粉修补碎裂的陶器，",
+              "local_id": "d4",
+              "name": "工艺审美",
+              "occurrence": 1
+            },
+            "reason": "B在成本与情感之外，还加入共同意义、工艺审美和认知偏误，非数学覆盖面比C更广。"
+          }
+        }
+      }
+    }
+  ],
+  "method": "menu",
+  "question": "S2",
+  "slot": "M3"
+}

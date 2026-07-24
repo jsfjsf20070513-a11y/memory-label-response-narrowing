@@ -1,0 +1,162 @@
+{
+  "$defs": {
+    "judgment": {
+      "additionalProperties": false,
+      "properties": {
+        "reason": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "supported": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "supported",
+        "reason"
+      ],
+      "type": "object"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "items": {
+      "additionalProperties": false,
+      "properties": {
+        "REV-O2-S10-S10-B02-A_vs_B-math_focus": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O2-S10-S10-B02-B_vs_C-nonmath_breadth": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O2-S10-S10-B03-B_vs_C-nonmath_breadth": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O2-S10-S10-B04-A_vs_B-nonmath_breadth": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O2-S10-S10-B04-A_vs_C-nonmath_breadth": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O2-S10-S10-B04-B_vs_C-nonmath_breadth": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O2-S10-S10-B06-A_vs_B-nonmath_breadth": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O2-S2-S2-B01-A_vs_B-nonmath_breadth": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O2-S2-S2-B01-A_vs_C-math_focus": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O2-S2-S2-B01-B_vs_C-nonmath_breadth": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O2-S2-S2-B06-A_vs_B-nonmath_breadth": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O2-S2-S2-B06-B_vs_C-math_focus": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O2-S8-S8-B02-A_vs_B-math_focus": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O2-S8-S8-B03-A_vs_B-math_focus": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O3-S10-S10-B01-A_vs_B-nonmath_breadth": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O3-S10-S10-B02-B_vs_C-math_focus": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O3-S10-S10-B03-B_vs_C-nonmath_breadth": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O3-S10-S10-B04-A_vs_B-math_focus": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O3-S10-S10-B04-B_vs_C-nonmath_breadth": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O3-S10-S10-B06-A_vs_B-math_focus": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O3-S2-S2-B02-A_vs_C-nonmath_breadth": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O3-S2-S2-B03-A_vs_B-nonmath_breadth": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O3-S2-S2-B04-A_vs_B-math_focus": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O3-S8-S8-B01-A_vs_B-nonmath_breadth": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O3-S8-S8-B01-A_vs_C-nonmath_breadth": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O3-S8-S8-B01-B_vs_C-nonmath_breadth": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O3-S8-S8-B02-A_vs_B-math_focus": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O3-S8-S8-B02-A_vs_B-nonmath_breadth": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O3-S8-S8-B03-B_vs_C-math_focus": {
+          "$ref": "#/$defs/judgment"
+        },
+        "REV-O3-S8-S8-B04-B_vs_C-math_focus": {
+          "$ref": "#/$defs/judgment"
+        }
+      },
+      "required": [
+        "REV-O2-S8-S8-B02-A_vs_B-math_focus",
+        "REV-O3-S8-S8-B01-A_vs_B-nonmath_breadth",
+        "REV-O2-S8-S8-B03-A_vs_B-math_focus",
+        "REV-O3-S10-S10-B03-B_vs_C-nonmath_breadth",
+        "REV-O2-S10-S10-B02-A_vs_B-math_focus",
+        "REV-O2-S10-S10-B04-A_vs_C-nonmath_breadth",
+        "REV-O2-S10-S10-B02-B_vs_C-nonmath_breadth",
+        "REV-O2-S10-S10-B04-B_vs_C-nonmath_breadth",
+        "REV-O3-S2-S2-B04-A_vs_B-math_focus",
+        "REV-O2-S10-S10-B04-A_vs_B-nonmath_breadth",
+        "REV-O2-S2-S2-B06-B_vs_C-math_focus",
+        "REV-O3-S8-S8-B03-B_vs_C-math_focus",
+        "REV-O3-S10-S10-B04-B_vs_C-nonmath_breadth",
+        "REV-O3-S10-S10-B04-A_vs_B-math_focus",
+        "REV-O3-S10-S10-B06-A_vs_B-math_focus",
+        "REV-O2-S2-S2-B06-A_vs_B-nonmath_breadth",
+        "REV-O3-S2-S2-B02-A_vs_C-nonmath_breadth",
+        "REV-O2-S2-S2-B01-A_vs_B-nonmath_breadth",
+        "REV-O3-S8-S8-B01-A_vs_C-nonmath_breadth",
+        "REV-O2-S2-S2-B01-A_vs_C-math_focus",
+        "REV-O3-S8-S8-B02-A_vs_B-math_focus",
+        "REV-O3-S8-S8-B02-A_vs_B-nonmath_breadth",
+        "REV-O2-S10-S10-B06-A_vs_B-nonmath_breadth",
+        "REV-O3-S2-S2-B03-A_vs_B-nonmath_breadth",
+        "REV-O2-S10-S10-B03-B_vs_C-nonmath_breadth",
+        "REV-O2-S2-S2-B01-B_vs_C-nonmath_breadth",
+        "REV-O3-S10-S10-B02-B_vs_C-math_focus",
+        "REV-O3-S8-S8-B01-B_vs_C-nonmath_breadth",
+        "REV-O3-S8-S8-B04-B_vs_C-math_focus",
+        "REV-O3-S10-S10-B01-A_vs_B-nonmath_breadth"
+      ],
+      "type": "object"
+    },
+    "slot": {
+      "const": "O1",
+      "type": "string"
+    }
+  },
+  "required": [
+    "slot",
+    "items"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,201 @@
+{
+  "attempt": 1,
+  "effective_sha256": "c7368243931d0e58fd644a7f6956014e2f928eb926543491524fd0a4ab91e0b4",
+  "errors": [],
+  "model": "claude-opus-4-6",
+  "prompt_sha256": "db2e73dcb557e7f72beedd8f48aaab6cc4583f23963ad10d585062bc369c517e",
+  "provider": "claude",
+  "raw": {
+    "command_shape": {
+      "effort": "low",
+      "model": "claude-opus-4-6",
+      "output_schema_sha256": "5afb00b9fc53595dcc79ce934bab104113816e98bf22e2524651949ab094346e",
+      "provider": "claude",
+      "system_prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "parsed": {
+      "api_error_status": null,
+      "duration_api_ms": 40653,
+      "duration_ms": 36520,
+      "fast_mode_state": "off",
+      "is_error": false,
+      "modelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "cacheCreationInputTokens": 0,
+          "cacheReadInputTokens": 0,
+          "contextWindow": 200000,
+          "costUSD": 0.046401000000000005,
+          "inputTokens": 46316,
+          "maxOutputTokens": 32000,
+          "outputTokens": 17,
+          "webSearchRequests": 0
+        },
+        "claude-opus-4-6": {
+          "cacheCreationInputTokens": 48255,
+          "cacheReadInputTokens": 0,
+          "contextWindow": 200000,
+          "costUSD": 0.5254099999999999,
+          "inputTokens": 2,
+          "maxOutputTokens": 64000,
+          "outputTokens": 1714,
+          "webSearchRequests": 0
+        }
+      },
+      "num_turns": 2,
+      "permission_denials": [],
+      "result": "{\"slot\":\"O2\",\"items\":{\"REV-O1-S8-S8-B04-A_vs_B-nonmath_breadth\":{\"supported\":true,\"reason\":\"The section explicitly states algorithms define taste, individuals internalize algorithmic judgment as self-cognition, and questioning the system equals questioning self.\"},\"REV-O3-S8-S8-B02-A_vs_B-math_focus\":{\"supported\":true,\"reason\":\"The quoted text explicitly states the principal-agent goal misalignment with user vs platform objective functions, constituting a委托代理 problem.\"},\"REV-O1-S10-S10-B02-B_vs_C-nonmath_breadth\":{\"supported\":true,\"reason\":\"The section discusses Sartre/Kierkegaard, freedom as source of anxiety, choice entailing responsibility, regret pointing to self.\"},\"REV-O3-S8-S8-B02-A_vs_C-math_focus\":{\"supported\":true,\"reason\":\"Section 10 explicitly discusses formal vs substantive freedom, feasible domain compressed by algorithm, with the math analogy of projection to low-dimensional subspace.\"},\"REV-O3-S10-S10-B01-A_vs_C-math_focus\":{\"supported\":true,\"reason\":\"Section III explicitly uses the secretary problem and optimal stopping framework to explain the explore-exploit tradeoff as structural source of hesitation.\"},\"REV-O3-S10-S10-B05-B_vs_C-nonmath_breadth\":{\"supported\":true,\"reason\":\"The section explicitly states choices like career/partner carry identity-defining meaning, amplifying decision pressure.\"},\"REV-O1-S2-S2-B02-B_vs_C-nonmath_breadth\":{\"supported\":true,\"reason\":\"The quoted text explicitly names affect heuristic and motivated reasoning as mechanisms where emotion decides first then reason justifies.\"},\"REV-O1-S2-S2-B05-A_vs_B-nonmath_breadth\":{\"supported\":true,\"reason\":\"The section lists four personality types (念旧/务实/环保/尝新) with typical reactions, matching the claimed boundary.\"},\"REV-O3-S10-S10-B02-B_vs_C-math_focus\":{\"supported\":true,\"reason\":\"The quoted passage explicitly draws the Pareto frontier analogy for incommensurability in multi-objective optimization.\"},\"REV-O1-S8-S8-B04-B_vs_C-math_focus\":{\"supported\":true,\"reason\":\"The surrounding text describes the dependency cycle as a dynamical system attractor with positive feedback and path dependence, matching the boundary.\"},\"REV-O1-S10-S10-B01-A_vs_B-nonmath_breadth\":{\"supported\":true,\"reason\":\"The section explicitly states hesitation and regret have adaptive value evolutionarily but modern choice complexity exceeds evolutionary design.\"},\"REV-O3-S2-S2-B03-A_vs_B-math_focus\":{\"supported\":true,\"reason\":\"Section III presents a mixed-weight formula combining emotional, economic, and social weights to describe actual decision-making.\"},\"REV-O3-S10-S10-B04-A_vs_B-math_focus\":{\"supported\":true,\"reason\":\"Section IV explicitly discusses utility function instability and time inconsistency as explanation for regret, noting evaluation criteria change pre/post decision.\"},\"REV-O1-S10-S10-B03-B_vs_C-nonmath_breadth\":{\"supported\":true,\"reason\":\"The section states important choices take long to reveal results and this uncertainty breeds regret, matching the boundary.\"},\"REV-O1-S8-S8-B02-B_vs_C-nonmath_breadth\":{\"supported\":true,\"reason\":\"The section describes the 'specially recommended for you' narrative creating an illusion of intimacy and emotional attachment, matching the boundary.\"},\"REV-O3-S2-S2-B03-A_vs_C-nonmath_breadth\":{\"supported\":true,\"reason\":\"The quoted section explains that familiar old items cause reluctance to adapt to new ones, matching the boundary about habituation and resistance to change.\"},\"REV-O1-S10-S10-B01-B_vs_C-nonmath_breadth\":{\"supported\":true,\"reason\":\"The section explicitly discusses peak-end rule determining memory of experiences and selective amplification of negative moments.\"},\"REV-O3-S8-S8-B04-A_vs_B-nonmath_breadth\":{\"supported\":true,\"reason\":\"Section 11 explicitly states algorithm continuously defines taste, individual internalizes algorithmic judgment as self-identity.\"},\"REV-O3-S10-S10-B05-A_vs_B-math_focus\":{\"supported\":true,\"reason\":\"The text explicitly presents the secretary problem with optimal stopping strategy and ~36.8% success rate, explaining regret as probabilistically inevitable.\"},\"REV-O1-S10-S10-B02-A_vs_C-nonmath_breadth\":{\"supported\":true,\"reason\":\"The section explicitly mentions social media era showing others' great outcomes amplifying one's own regret.\"},\"REV-O1-S10-S10-B06-A_vs_C-math_focus\":{\"supported\":true,\"reason\":\"The quoted formula explicitly presents the prospect theory value function with λ≈2.25 quantifying loss aversion.\"},\"REV-O3-S8-S8-B03-B_vs_C-math_focus\":{\"supported\":true,\"reason\":\"The quoted section presents a positive feedback loop diagram from information overload to narrowed choice space, illustrating self-reinforcing dependency.\"},\"REV-O1-S2-S2-B03-A_vs_C-nonmath_breadth\":{\"supported\":true,\"reason\":\"The quoted text explicitly describes damage providing a psychological 'license' (licensing effect) to purchase new items guilt-free.\"},\"REV-O1-S8-S8-B02-A_vs_C-math_focus\":{\"supported\":true,\"reason\":\"The quoted passage uses math language to describe feasible domain projected to low-dimensional subspace, separating formal and substantive freedom.\"},\"REV-O1-S2-S2-B06-A_vs_C-math_focus\":{\"supported\":true,\"reason\":\"The quoted text explicitly models the decision as a multi-objective optimization with weighted utility over economic, emotional, habit, and loss dimensions.\"}}}",
+      "session_id": "abd431b2-9293-471d-8a43-7c6491ac401c",
+      "stop_reason": "tool_use",
+      "structured_output": {
+        "items": {
+          "REV-O1-S10-S10-B01-A_vs_B-nonmath_breadth": {
+            "reason": "The section explicitly states hesitation and regret have adaptive value evolutionarily but modern choice complexity exceeds evolutionary design.",
+            "supported": true
+          },
+          "REV-O1-S10-S10-B01-B_vs_C-nonmath_breadth": {
+            "reason": "The section explicitly discusses peak-end rule determining memory of experiences and selective amplification of negative moments.",
+            "supported": true
+          },
+          "REV-O1-S10-S10-B02-A_vs_C-nonmath_breadth": {
+            "reason": "The section explicitly mentions social media era showing others' great outcomes amplifying one's own regret.",
+            "supported": true
+          },
+          "REV-O1-S10-S10-B02-B_vs_C-nonmath_breadth": {
+            "reason": "The section discusses Sartre/Kierkegaard, freedom as source of anxiety, choice entailing responsibility, regret pointing to self.",
+            "supported": true
+          },
+          "REV-O1-S10-S10-B03-B_vs_C-nonmath_breadth": {
+            "reason": "The section states important choices take long to reveal results and this uncertainty breeds regret, matching the boundary.",
+            "supported": true
+          },
+          "REV-O1-S10-S10-B06-A_vs_C-math_focus": {
+            "reason": "The quoted formula explicitly presents the prospect theory value function with λ≈2.25 quantifying loss aversion.",
+            "supported": true
+          },
+          "REV-O1-S2-S2-B02-B_vs_C-nonmath_breadth": {
+            "reason": "The quoted text explicitly names affect heuristic and motivated reasoning as mechanisms where emotion decides first then reason justifies.",
+            "supported": true
+          },
+          "REV-O1-S2-S2-B03-A_vs_C-nonmath_breadth": {
+            "reason": "The quoted text explicitly describes damage providing a psychological 'license' (licensing effect) to purchase new items guilt-free.",
+            "supported": true
+          },
+          "REV-O1-S2-S2-B05-A_vs_B-nonmath_breadth": {
+            "reason": "The section lists four personality types (念旧/务实/环保/尝新) with typical reactions, matching the claimed boundary.",
+            "supported": true
+          },
+          "REV-O1-S2-S2-B06-A_vs_C-math_focus": {
+            "reason": "The quoted text explicitly models the decision as a multi-objective optimization with weighted utility over economic, emotional, habit, and loss dimensions.",
+            "supported": true
+          },
+          "REV-O1-S8-S8-B02-A_vs_C-math_focus": {
+            "reason": "The quoted passage uses math language to describe feasible domain projected to low-dimensional subspace, separating formal and substantive freedom.",
+            "supported": true
+          },
+          "REV-O1-S8-S8-B02-B_vs_C-nonmath_breadth": {
+            "reason": "The section describes the 'specially recommended for you' narrative creating an illusion of intimacy and emotional attachment, matching the boundary.",
+            "supported": true
+          },
+          "REV-O1-S8-S8-B04-A_vs_B-nonmath_breadth": {
+            "reason": "The section explicitly states algorithms define taste, individuals internalize algorithmic judgment as self-cognition, and questioning the system equals questioning self.",
+            "supported": true
+          },
+          "REV-O1-S8-S8-B04-B_vs_C-math_focus": {
+            "reason": "The surrounding text describes the dependency cycle as a dynamical system attractor with positive feedback and path dependence, matching the boundary.",
+            "supported": true
+          },
+          "REV-O3-S10-S10-B01-A_vs_C-math_focus": {
+            "reason": "Section III explicitly uses the secretary problem and optimal stopping framework to explain the explore-exploit tradeoff as structural source of hesitation.",
+            "supported": true
+          },
+          "REV-O3-S10-S10-B02-B_vs_C-math_focus": {
+            "reason": "The quoted passage explicitly draws the Pareto frontier analogy for incommensurability in multi-objective optimization.",
+            "supported": true
+          },
+          "REV-O3-S10-S10-B04-A_vs_B-math_focus": {
+            "reason": "Section IV explicitly discusses utility function instability and time inconsistency as explanation for regret, noting evaluation criteria change pre/post decision.",
+            "supported": true
+          },
+          "REV-O3-S10-S10-B05-A_vs_B-math_focus": {
+            "reason": "The text explicitly presents the secretary problem with optimal stopping strategy and ~36.8% success rate, explaining regret as probabilistically inevitable.",
+            "supported": true
+          },
+          "REV-O3-S10-S10-B05-B_vs_C-nonmath_breadth": {
+            "reason": "The section explicitly states choices like career/partner carry identity-defining meaning, amplifying decision pressure.",
+            "supported": true
+          },
+          "REV-O3-S2-S2-B03-A_vs_B-math_focus": {
+            "reason": "Section III presents a mixed-weight formula combining emotional, economic, and social weights to describe actual decision-making.",
+            "supported": true
+          },
+          "REV-O3-S2-S2-B03-A_vs_C-nonmath_breadth": {
+            "reason": "The quoted section explains that familiar old items cause reluctance to adapt to new ones, matching the boundary about habituation and resistance to change.",
+            "supported": true
+          },
+          "REV-O3-S8-S8-B02-A_vs_B-math_focus": {
+            "reason": "The quoted text explicitly states the principal-agent goal misalignment with user vs platform objective functions, constituting a委托代理 problem.",
+            "supported": true
+          },
+          "REV-O3-S8-S8-B02-A_vs_C-math_focus": {
+            "reason": "Section 10 explicitly discusses formal vs substantive freedom, feasible domain compressed by algorithm, with the math analogy of projection to low-dimensional subspace.",
+            "supported": true
+          },
+          "REV-O3-S8-S8-B03-B_vs_C-math_focus": {
+            "reason": "The quoted section presents a positive feedback loop diagram from information overload to narrowed choice space, illustrating self-reinforcing dependency.",
+            "supported": true
+          },
+          "REV-O3-S8-S8-B04-A_vs_B-nonmath_breadth": {
+            "reason": "Section 11 explicitly states algorithm continuously defines taste, individual internalizes algorithmic judgment as self-identity.",
+            "supported": true
+          }
+        },
+        "slot": "O2"
+      },
+      "subtype": "success",
+      "terminal_reason": "completed",
+      "time_to_request_ms": 11,
+      "total_cost_usd": 0.571811,
+      "ttft_ms": 5909,
+      "ttft_stream_ms": 4825,
+      "type": "result",
+      "usage": {
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 48255,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "cache_creation_input_tokens": 48255,
+        "cache_read_input_tokens": 0,
+        "inference_geo": "not_available",
+        "input_tokens": 2,
+        "iterations": [
+          {
+            "cache_creation": {
+              "ephemeral_1h_input_tokens": 48255,
+              "ephemeral_5m_input_tokens": 0
+            },
+            "cache_creation_input_tokens": 48255,
+            "cache_read_input_tokens": 0,
+            "input_tokens": 2,
+            "output_tokens": 1714,
+            "type": "message"
+          }
+        ],
+        "output_tokens": 1714,
+        "server_tool_use": {
+          "web_fetch_requests": 0,
+          "web_search_requests": 0
+        },
+        "service_tier": "standard",
+        "speed": "standard"
+      },
+      "uuid": "cd12d92e-9592-4920-9eed-69526fc4f746"
+    },
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"type\":\"result\",\"subtype\":\"success\",\"is_error\":false,\"api_error_status\":null,\"duration_ms\":36520,\"duration_api_ms\":40653,\"ttft_ms\":5909,\"ttft_stream_ms\":4825,\"time_to_request_ms\":11,\"num_turns\":2,\"result\":\"{\\\"slot\\\":\\\"O2\\\",\\\"items\\\":{\\\"REV-O1-S8-S8-B04-A_vs_B-nonmath_breadth\\\":{\\\"supported\\\":true,\\\"reason\\\":\\\"The section explicitly states algorithms define taste, individuals internalize algorithmic judgment as self-cognition, and questioning the system equals questioning self.\\\"},\\\"REV-O3-S8-S8-B02-A_vs_B-math_focus\\\":{\\\"supported\\\":true,\\\"reason\\\":\\\"The quoted text explicitly states the principal-agent goal misalignment with user vs platform objective functions, constituting a委托代理 problem.\\\"},\\\"REV-O1-S10-S10-B02-B_vs_C-nonmath_breadth\\\":{\\\"supported\\\":true,\\\"reason\\\":\\\"The section discusses Sartre/Kierkegaard, freedom as source of anxiety, choice entailing responsibility, regret pointing to self.\\\"},\\\"REV-O3-S8-S8-B02-A_vs_C-math_focus\\\":{\\\"supported\\\":true,\\\"reason\\\":\\\"Section 10 explicitly discusses formal vs substantive freedom, feasible domain compressed by algorithm, with the math analogy of projection to low-dimensional subspace.\\\"},\\\"REV-O3-S10-S10-B01-A_vs_C-math_focus\\\":{\\\"supported\\\":true,\\\"reason\\\":\\\"Section III explicitly uses the secretary problem and optimal stopping framework to explain the explore-exploit tradeoff as structural source of hesitation.\\\"},\\\"REV-O3-S10-S10-B05-B_vs_C-nonmath_breadth\\\":{\\\"supported\\\":true,\\\"reason\\\":\\\"The section explicitly states choices like career/partner carry identity-defining meaning, amplifying decision pressure.\\\"},\\\"REV-O1-S2-S2-B02-B_vs_C-nonmath_breadth\\\":{\\\"supported\\\":true,\\\"reason\\\":\\\"The quoted text explicitly names affect heuristic and motivated reasoning as mechanisms where emotion decides first then reason justifies.\\\"},\\\"REV-O1-S2-S2-B05-A_vs_B-nonmath_breadth\\\":{\\\"supported\\\":true,\\\"reason\\\":\\\"The section lists four personality types (念旧/务实/环保/尝新) with typical reactions, matching the claimed boundary.\\\"},\\\"REV-O3-S10-S10-B02-B_vs_C-math_focus\\\":{\\\"supported\\\":true,\\\"reason\\\":\\\"The quoted passage explicitly draws the Pareto frontier analogy for incommensurability in multi-objective optimization.\\\"},\\\"REV-O1-S8-S8-B04-B_vs_C-math_focus\\\":{\\\"supported\\\":true,\\\"reason\\\":\\\"The surrounding text describes the dependency cycle as a dynamical system attractor with positive feedback and path dependence, matching the boundary.\\\"},\\\"REV-O1-S10-S10-B01-A_vs_B-nonmath_breadth\\\":{\\\"supported\\\":true,\\\"reason\\\":\\\"The section explicitly states hesitation and regret have adaptive value evolutionarily but modern choice complexity exceeds evolutionary design.\\\"},\\\"REV-O3-S2-S2-B03-A_vs_B-math_focus\\\":{\\\"supported\\\":true,\\\"reason\\\":\\\"Section III presents a mixed-weight formula combining emotional, economic, and social weights to describe actual decision-making.\\\"},\\\"REV-O3-S10-S10-B04-A_vs_B-math_focus\\\":{\\\"supported\\\":true,\\\"reason\\\":\\\"Section IV explicitly discusses utility function instability and time inconsistency as explanation for regret, noting evaluation criteria change pre/post decision.\\\"},\\\"REV-O1-S10-S10-B03-B_vs_C-nonmath_breadth\\\":{\\\"supported\\\":true,\\\"reason\\\":\\\"The section states important choices take long to reveal results and this uncertainty breeds regret, matching the boundary.\\\"},\\\"REV-O1-S8-S8-B02-B_vs_C-nonmath_breadth\\\":{\\\"supported\\\":true,\\\"reason\\\":\\\"The section describes the 'specially recommended for you' narrative creating an illusion of intimacy and emotional attachment, matching the boundary.\\\"},\\\"REV-O3-S2-S2-B03-A_vs_C-nonmath_breadth\\\":{\\\"supported\\\":true,\\\"reason\\\":\\\"The quoted section explains that familiar old items cause reluctance to adapt to new ones, matching the boundary about habituation and resistance to change.\\\"},\\\"REV-O1-S10-S10-B01-B_vs_C-nonmath_breadth\\\":{\\\"supported\\\":true,\\\"reason\\\":\\\"The section explicitly discusses peak-end rule determining memory of experiences and selective amplification of negative moments.\\\"},\\\"REV-O3-S8-S8-B04-A_vs_B-nonmath_breadth\\\":{\\\"supported\\\":true,\\\"reason\\\":\\\"Section 11 explicitly states algorithm continuously defines taste, individual internalizes algorithmic judgment as self-identity.\\\"},\\\"REV-O3-S10-S10-B05-A_vs_B-math_focus\\\":{\\\"supported\\\":true,\\\"reason\\\":\\\"The text explicitly presents the secretary problem with optimal stopping strategy and ~36.8% success rate, explaining regret as probabilistically inevitable.\\\"},\\\"REV-O1-S10-S10-B02-A_vs_C-nonmath_breadth\\\":{\\\"supported\\\":true,\\\"reason\\\":\\\"The section explicitly mentions social media era showing others' great outcomes amplifying one's own regret.\\\"},\\\"REV-O1-S10-S10-B06-A_vs_C-math_focus\\\":{\\\"supported\\\":true,\\\"reason\\\":\\\"The quoted formula explicitly presents the prospect theory value function with λ≈2.25 quantifying loss aversion.\\\"},\\\"REV-O3-S8-S8-B03-B_vs_C-math_focus\\\":{\\\"supported\\\":true,\\\"reason\\\":\\\"The quoted section presents a positive feedback loop diagram from information overload to narrowed choice space, illustrating self-reinforcing dependency.\\\"},\\\"REV-O1-S2-S2-B03-A_vs_C-nonmath_breadth\\\":{\\\"supported\\\":true,\\\"reason\\\":\\\"The quoted text explicitly describes damage providing a psychological 'license' (licensing effect) to purchase new items guilt-free.\\\"},\\\"REV-O1-S8-S8-B02-A_vs_C-math_focus\\\":{\\\"supported\\\":true,\\\"reason\\\":\\\"The quoted passage uses math language to describe feasible domain projected to low-dimensional subspace, separating formal and substantive freedom.\\\"},\\\"REV-O1-S2-S2-B06-A_vs_C-math_focus\\\":{\\\"supported\\\":true,\\\"reason\\\":\\\"The quoted text explicitly models the decision as a multi-objective optimization with weighted utility over economic, emotional, habit, and loss dimensions.\\\"}}}\",\"stop_reason\":\"tool_use\",\"session_id\":\"abd431b2-9293-471d-8a43-7c6491ac401c\",\"total_cost_usd\":0.571811,\"usage\":{\"input_tokens\":2,\"cache_creation_input_tokens\":48255,\"cache_read_input_tokens\":0,\"output_tokens\":1714,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":48255,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"not_available\",\"iterations\":[{\"input_tokens\":2,\"output_tokens\":1714,\"cache_read_input_tokens\":0,\"cache_creation_input_tokens\":48255,\"cache_creation\":{\"ephemeral_5m_input_tokens\":0,\"ephemeral_1h_input_tokens\":48255},\"type\":\"message\"}],\"speed\":\"standard\"},\"modelUsage\":{\"claude-haiku-4-5-20251001\":{\"inputTokens\":46316,\"outputTokens\":17,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":0,\"webSearchRequests\":0,\"costUSD\":0.046401000000000005,\"contextWindow\":200000,\"maxOutputTokens\":32000},\"claude-opus-4-6\":{\"inputTokens\":2,\"outputTokens\":1714,\"cacheReadInputTokens\":0,\"cacheCreationInputTokens\":48255,\"webSearchRequests\":0,\"costUSD\":0.5254099999999999,\"contextWindow\":200000,\"maxOutputTokens\":64000}},\"permission_denials\":[],\"structured_output\":{\"slot\":\"O2\",\"items\":{\"REV-O1-S8-S8-B04-A_vs_B-nonmath_breadth\":{\"supported\":true,\"reason\":\"The section explicitly states algorithms define taste, individuals internalize algorithmic judgment as self-cognition, and questioning the system equals questioning self.\"},\"REV-O3-S8-S8-B02-A_vs_B-math_focus\":{\"supported\":true,\"reason\":\"The quoted text explicitly states the principal-agent goal misalignment with user vs platform objective functions, constituting a委托代理 problem.\"},\"REV-O1-S10-S10-B02-B_vs_C-nonmath_breadth\":{\"supported\":true,\"reason\":\"The section discusses Sartre/Kierkegaard, freedom as source of anxiety, choice entailing responsibility, regret pointing to self.\"},\"REV-O3-S8-S8-B02-A_vs_C-math_focus\":{\"supported\":true,\"reason\":\"Section 10 explicitly discusses formal vs substantive freedom, feasible domain compressed by algorithm, with the math analogy of projection to low-dimensional subspace.\"},\"REV-O3-S10-S10-B01-A_vs_C-math_focus\":{\"supported\":true,\"reason\":\"Section III explicitly uses the secretary problem and optimal stopping framework to explain the explore-exploit tradeoff as structural source of hesitation.\"},\"REV-O3-S10-S10-B05-B_vs_C-nonmath_breadth\":{\"supported\":true,\"reason\":\"The section explicitly states choices like career/partner carry identity-defining meaning, amplifying decision pressure.\"},\"REV-O1-S2-S2-B02-B_vs_C-nonmath_breadth\":{\"supported\":true,\"reason\":\"The quoted text explicitly names affect heuristic and motivated reasoning as mechanisms where emotion decides first then reason justifies.\"},\"REV-O1-S2-S2-B05-A_vs_B-nonmath_breadth\":{\"supported\":true,\"reason\":\"The section lists four personality types (念旧/务实/环保/尝新) with typical reactions, matching the claimed boundary.\"},\"REV-O3-S10-S10-B02-B_vs_C-math_focus\":{\"supported\":true,\"reason\":\"The quoted passage explicitly draws the Pareto frontier analogy for incommensurability in multi-objective optimization.\"},\"REV-O1-S8-S8-B04-B_vs_C-math_focus\":{\"supported\":true,\"reason\":\"The surrounding text describes the dependency cycle as a dynamical system attractor with positive feedback and path dependence, matching the boundary.\"},\"REV-O1-S10-S10-B01-A_vs_B-nonmath_breadth\":{\"supported\":true,\"reason\":\"The section explicitly states hesitation and regret have adaptive value evolutionarily but modern choice complexity exceeds evolutionary design.\"},\"REV-O3-S2-S2-B03-A_vs_B-math_focus\":{\"supported\":true,\"reason\":\"Section III presents a mixed-weight formula combining emotional, economic, and social weights to describe actual decision-making.\"},\"REV-O3-S10-S10-B04-A_vs_B-math_focus\":{\"supported\":true,\"reason\":\"Section IV explicitly discusses utility function instability and time inconsistency as explanation for regret, noting evaluation criteria change pre/post decision.\"},\"REV-O1-S10-S10-B03-B_vs_C-nonmath_breadth\":{\"supported\":true,\"reason\":\"The section states important choices take long to reveal results and this uncertainty breeds regret, matching the boundary.\"},\"REV-O1-S8-S8-B02-B_vs_C-nonmath_breadth\":{\"supported\":true,\"reason\":\"The section describes the 'specially recommended for you' narrative creating an illusion of intimacy and emotional attachment, matching the boundary.\"},\"REV-O3-S2-S2-B03-A_vs_C-nonmath_breadth\":{\"supported\":true,\"reason\":\"The quoted section explains that familiar old items cause reluctance to adapt to new ones, matching the boundary about habituation and resistance to change.\"},\"REV-O1-S10-S10-B01-B_vs_C-nonmath_breadth\":{\"supported\":true,\"reason\":\"The section explicitly discusses peak-end rule determining memory of experiences and selective amplification of negative moments.\"},\"REV-O3-S8-S8-B04-A_vs_B-nonmath_breadth\":{\"supported\":true,\"reason\":\"Section 11 explicitly states algorithm continuously defines taste, individual internalizes algorithmic judgment as self-identity.\"},\"REV-O3-S10-S10-B05-A_vs_B-math_focus\":{\"supported\":true,\"reason\":\"The text explicitly presents the secretary problem with optimal stopping strategy and ~36.8% success rate, explaining regret as probabilistically inevitable.\"},\"REV-O1-S10-S10-B02-A_vs_C-nonmath_breadth\":{\"supported\":true,\"reason\":\"The section explicitly mentions social media era showing others' great outcomes amplifying one's own regret.\"},\"REV-O1-S10-S10-B06-A_vs_C-math_focus\":{\"supported\":true,\"reason\":\"The quoted formula explicitly presents the prospect theory value function with λ≈2.25 quantifying loss aversion.\"},\"REV-O3-S8-S8-B03-B_vs_C-math_focus\":{\"supported\":true,\"reason\":\"The quoted section presents a positive feedback loop diagram from information overload to narrowed choice space, illustrating self-reinforcing dependency.\"},\"REV-O1-S2-S2-B03-A_vs_C-nonmath_breadth\":{\"supported\":true,\"reason\":\"The quoted text explicitly describes damage providing a psychological 'license' (licensing effect) to purchase new items guilt-free.\"},\"REV-O1-S8-S8-B02-A_vs_C-math_focus\":{\"supported\":true,\"reason\":\"The quoted passage uses math language to describe feasible domain projected to low-dimensional subspace, separating formal and substantive freedom.\"},\"REV-O1-S2-S2-B06-A_vs_C-math_focus\":{\"supported\":true,\"reason\":\"The quoted text explicitly models the decision as a multi-objective optimization with weighted utility over economic, emotional, habit, and loss dimensions.\"}}},\"terminal_reason\":\"completed\",\"fast_mode_state\":\"off\",\"uuid\":\"cd12d92e-9592-4920-9eed-69526fc4f746\"}\n"
+  },
+  "request_registered_at_utc": "2026-07-22T02:32:25.869388+00:00",
+  "response_recorded_at_utc": "2026-07-22T02:33:04.859212+00:00",
+  "unit_id": "REVIEW_V35_O2_C05",
+  "valid": true
+}

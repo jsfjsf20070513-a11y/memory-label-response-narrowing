@@ -1,0 +1,9 @@
+{
+  "files": {
+    "answers_blinded.json": "3b0ac359e8bbab3623fe899160298e1ffc7b8a300ac24fc305552f8b259f3167",
+    "answers_unblinded.json": "c9dc7369dbb202210856c1d5b18fdb51244e487e69e2dba80d8ef1e9cc642726",
+    "manifest_sentinel.json": "fc66c6ddbb17983aed6701fbe3023eba2942ca869021730850540274bf0f2879",
+    "source_v34_attestation.json": "f71751f4792ef3b4a6a81180d753fc942b7d406cd3b6beedb9730a0d31cc93c0"
+  },
+  "stage": "generation"
+}

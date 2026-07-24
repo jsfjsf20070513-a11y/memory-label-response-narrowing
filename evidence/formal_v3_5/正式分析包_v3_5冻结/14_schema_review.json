@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "items": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "reason": {"minLength": 1, "type": "string"},
+          "supported": {"type": "boolean"},
+          "task_id": {"minLength": 1, "type": "string"}
+        },
+        "required": ["task_id", "supported", "reason"],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "slot": {"pattern": "^[MO][123]$", "type": "string"}
+  },
+  "required": ["slot", "items"],
+  "type": "object"
+}

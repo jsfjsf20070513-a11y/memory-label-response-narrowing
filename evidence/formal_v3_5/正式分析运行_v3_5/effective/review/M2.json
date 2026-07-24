@@ -1,0 +1,720 @@
+{
+  "items": [
+    {
+      "reason": "The heading ' 理性的成本-收益分析' and surrounding text discuss comparing repair cost vs replacement cost and expected lifespan after repair, which matches the 'cost/time' direction about money, time, and post-repair longevity comparisons.",
+      "supported": true,
+      "task_id": "REV-M3-S2-S2-B03-A_vs_B-math_focus"
+    },
+    {
+      "reason": "'偏好被不断强化' describes preference reinforcement/narrowing, not specifically about what content becomes visible/thinkable/selectable. It's about internal preference change, not the external choice environment being altered.",
+      "supported": false,
+      "task_id": "REV-M3-S8-S8-B04-B_vs_C-math_focus"
+    },
+    {
+      "reason": "'信息不对称下的理性委托' directly discusses users rationally delegating judgment about what's worth consuming to the system, matching the 'authority transfer' direction.",
+      "supported": true,
+      "task_id": "REV-M3-S8-S8-B02-A_vs_C-math_focus"
+    },
+    {
+      "reason": "The formula is a multi-objective utility function combining economic, emotional, habit, and loss factors. It's not specifically focused on cost/time/longevity comparison for repair vs replace; it encompasses all decision factors equally.",
+      "supported": false,
+      "task_id": "REV-M1-S2-S2-B06-A_vs_C-math_focus"
+    },
+    {
+      "reason": "'节俭观念' with the explanation '能修就修，不要浪费' directly expresses a frugality/anti-waste value as a reason, matching the boundary of general thrift values not primarily about environmental consequences.",
+      "supported": true,
+      "task_id": "REV-M3-S2-S2-B02-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "The heading and text describe how too many options exhaust cognitive resources and cause decision paralysis, matching the 'choice overload' direction about quantity and comparison burden.",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B03-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The section on loss aversion explains that giving up options is experienced as loss with pain 2x the pleasure of gain, matching the direction's boundary about loss aversion increasing decision pain.",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B04-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "The 'Choice Overload' section discusses how more options increase cognitive cost and comparison burden, leading to decision paralysis, matching the direction.",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B04-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The evidence mentions '有特殊纪念意义（如长辈的遗物、定情信物）' which references items from elders or tokens of relationships. However, the direction requires 'shared belonging in family/relationship/heritage' as core, not just personal memory. The phrase does touch on relational items but frames them as individual decision factors rather than shared communal meaning.",
+      "supported": false,
+      "task_id": "REV-M1-S2-S2-B06-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The evidence about products not encouraging repair (no parts, no repair shops) addresses practical feasibility of repair, but the direction 'practical feasibility' is about whether the item can be restored to function. The evidence matches this direction as it discusses whether repair is physically/practically possible.",
+      "supported": false,
+      "task_id": "REV-M1-S2-S2-B05-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The section on hedonic adaptation explains that chosen outcomes lose their shine while unchosen options get idealized, directly matching the direction about adaptation causing the chosen to be de-enchanted and unchosen to be beautified.",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B01-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The section on 'Emotional Attachment' discusses personal memories, feelings, and important moments attached to old items, matching the direction about personal emotion/memory/self-continuity.",
+      "supported": true,
+      "task_id": "REV-M3-S2-S2-B04-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "'信息不对称下的理性委托' discusses users delegating judgment to the system because it has more data, matching 'authority transfer' - giving over the judgment of what's worth seeing to the system.",
+      "supported": true,
+      "task_id": "REV-M3-S8-S8-B02-A_vs_B-math_focus"
+    },
+    {
+      "reason": "'维修是否方便？' followed by discussion of repair channels, parts availability, and repair points directly addresses the direction about real-world conditions supporting repair.",
+      "supported": true,
+      "task_id": "REV-M3-S2-S2-B05-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The 'Default Effect' section explains that recommended content serves as the default option requiring zero cost to accept, while active search requires extra willpower, matching the 'default friction' direction.",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B02-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "'环保意识' with explanation about reducing waste and e-waste directly expresses environmental responsibility as a reason for repair, matching the direction.",
+      "supported": true,
+      "task_id": "REV-M3-S2-S2-B01-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The phrase about sustainability as a reason to repair rather than discard directly addresses environmental consequences of disposal, matching the 'environmental responsibility' direction.",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B03-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "The evidence discusses the system providing a 'good enough' option that matches user needs, which supports the direction about recommendations genuinely fitting user interests/needs.",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B02-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The section on peak-end rule discusses how memory of experiences is dominated by peak and end moments, leading to selective amplification of negative experiences, matching the direction.",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B01-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "'每次你接受推荐而不是主动搜索' directly describes users delegating the judgment of what to consume to the system, matching the 'authority transfer' direction.",
+      "supported": true,
+      "task_id": "REV-M3-S8-S8-B04-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The section discusses choice overload with combinatorial comparison complexity, matching the direction about option quantity and comparison burden causing difficulty forming stable judgments.",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B04-A_vs_C-math_focus"
+    },
+    {
+      "reason": "The evidence discusses how the system validates existing identity ('you are a rock lover'), which matches the direction about users forming self-understanding from recommendations and choosing accordingly.",
+      "supported": true,
+      "task_id": "REV-M3-S8-S8-B03-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The formalized positive feedback loop between dependency and system accuracy, with path dependence and lock-in, matches the direction about mutual reinforcement creating lock-in.",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B03-A_vs_B-math_focus"
+    },
+    {
+      "reason": "The evidence discusses O(n²) comparison complexity and cognitive overload from too many options, directly supporting the 'choice overload' direction about quantity and comparison burden.",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B03-B_vs_C-math_focus"
+    },
+    {
+      "reason": "The evidence states the platform's objective function is maximizing stay time/click rate, directly matching the direction about platform incentive design.",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B03-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The 'Sunk Cost Fallacy' section discusses how past investment of time/money irrationally influences current repair decisions, matching the direction.",
+      "supported": true,
+      "task_id": "REV-M3-S2-S2-B03-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "The section on delayed feedback discusses how results of important choices take long to manifest, creating uncertainty that breeds regret. This matches the direction about not knowing actual outcomes of different paths before deciding.",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B03-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "'感情寄托' with explanation about memories and emotional value of old items matches the direction about personal emotion, memory, and self-continuity.",
+      "supported": true,
+      "task_id": "REV-M3-S2-S2-B03-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The section on 'sunk cost and responsibility' discusses how self-made decisions that turn out badly cause stronger self-blame, matching the direction about responsibility pressure and post-decision self-blame.",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B03-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The 'Choice Paradox' section with O(n²) comparisons and cognitive overload directly addresses option quantity and comparison burden, matching the direction.",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B03-A_vs_C-math_focus"
+    },
+    {
+      "reason": "The phrase introduces a section on maintenance convenience, and the surrounding text discusses finding repair channels, parts, and service points — directly matching the boundary about real-world conditions supporting repair.",
+      "supported": true,
+      "task_id": "REV-M3-S2-S2-B05-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The formula compares unit-time cost of repair vs replacement (C_r/T_r vs C_n/T_n), directly expressing cost-time-lifespan comparison as stated in the boundary.",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B02-A_vs_B-math_focus"
+    },
+    {
+      "reason": "The section explicitly discusses how long-term dependence on recommendations degrades active search ability, loss of awareness of own preferences, and feeling lost without the system.",
+      "supported": true,
+      "task_id": "REV-M3-S8-S8-B04-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The phrase introduces the frugality concept '能修就不买新的' as a value-driven reason, centered on thrift rather than environmental or emotional grounds.",
+      "supported": true,
+      "task_id": "REV-M3-S2-S2-B01-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "The phrase says the recommendation system provides a 'good enough' option, indicating content matches user needs — fitting the boundary of recommendations being useful/relevant.",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B02-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The section discusses rational cost-benefit analysis comparing repair cost vs replacement cost and expected remaining lifespan, matching the cost-time boundary.",
+      "supported": true,
+      "task_id": "REV-M3-S2-S2-B03-A_vs_C-math_focus"
+    },
+    {
+      "reason": "The phrase describes a convergent dynamical system where the system's preference estimate converges to true preferences and even shapes them, with increasing exit cost — matching the positive feedback lock-in boundary.",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B01-B_vs_C-math_focus"
+    },
+    {
+      "reason": "The section discusses how important choices have results that take a long time to manifest, creating uncertainty — matching the boundary about not knowing actual outcomes of different paths.",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B03-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "The section discusses how each major choice is an identity fork and regret is mourning an unlived self — matching the boundary of choices carrying excessive self-meaning.",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B02-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The section explains hesitation and regret as adaptive mechanisms from ancestral environments (preventing impulsive action, learning signals), matching the evolutionary adaptation boundary.",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B06-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The phrase describes immediate, high-certainty satisfaction with dopamine, which is the core of the instant reward boundary about repeated rapid reward rhythms driving habit.",
+      "supported": true,
+      "task_id": "REV-M3-S8-S8-B01-B_vs_C-math_focus"
+    },
+    {
+      "reason": "The phrase introduces environmental awareness as a factor — people recognizing the environmental impact of disposal, matching the environmental responsibility boundary.",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B02-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The phrase introduces the finding that emotions decide first and reason rationalizes afterward, matching the emotion-first motivated reasoning boundary.",
+      "supported": true,
+      "task_id": "REV-M3-S2-S2-B02-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The section covers both evolutionary perspectives: hesitation as ancient caution mechanism and regret as learning, with modern choice explosion amplifying them — matching the boundary.",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B05-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The phrase introduces evolutionary psychology perspective explaining hesitation and regret as having adaptive survival value but being maladapted to modern choice overload — matching the boundary.",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B01-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "The section explicitly frames hesitation and regret as adaptive mechanisms for ancient environments now amplified by modern choice explosion — matching the boundary.",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B06-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The neighborhood analogy describes how the recommendation system shrinks the exploration space around historical preferences, changing what is visible/accessible — matching the selection environment boundary about changing what is visible and choosable.",
+      "supported": true,
+      "task_id": "REV-M3-S8-S8-B03-A_vs_B-math_focus"
+    },
+    {
+      "reason": "The flow diagram shows preference being shaped and choice space narrowing, which touches on visibility changes. However, this is a summary loop diagram that primarily describes the feedback cycle rather than specifically focusing on how repeated exposure changes what content is visible/thinkable/choosable as distinct from reducing search cost. The boundary requires distinguishing from merely lowering operational cost, and the diagram blends both mechanisms.",
+      "supported": false,
+      "task_id": "REV-M3-S8-S8-B03-A_vs_C-math_focus"
+    },
+    {
+      "reason": "The phrase '修理是否方便' and surrounding text discuss whether repair is convenient (finding repair people, parts availability), which is about repair feasibility/convenience, not about whether the item can recover its original function/purpose (practical viability). The boundary asks for functional restoration focus, but the text focuses on logistics.",
+      "supported": false,
+      "task_id": "REV-M1-S2-S2-B02-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The section on Choice Paradox discusses how more options increase comparison burden and cognitive overload, matching the option overload boundary about quantity and comparison burden.",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B03-B_vs_C-math_focus"
+    },
+    {
+      "reason": "The phrase discusses delegating choice authority to algorithms with each acceptance of recommendation, matching the boundary about transferring judgment of 'what is worth seeing' to the system.",
+      "supported": true,
+      "task_id": "REV-M3-S8-S8-B04-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "The evidence introduces formal variables (C_r, C_n, T_r, T_n, V_s) and unit-time cost comparison formulas, directly matching the formalized decision modeling boundary.",
+      "supported": true,
+      "task_id": "REV-M3-S2-S2-B02-B_vs_C-math_focus"
+    },
+    {
+      "reason": "The evidence is just '```' which is a code block delimiter for the Hook Model diagram. This is about the trigger-action-reward-investment addiction cycle, not specifically about the formal math of addiction loops. The boundary is about the Hook cycle structure, but the evidence phrase itself is just formatting markup with no semantic content.",
+      "supported": false,
+      "task_id": "REV-M3-S8-S8-B04-A_vs_B-math_focus"
+    },
+    {
+      "reason": "The phrase uses combinatorial growth (C(2,2)=1 to C(20,2)=190) to illustrate how comparison burden explodes with option count, directly supporting the option overload boundary.",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B04-A_vs_C-math_focus"
+    },
+    {
+      "reason": "The section discusses identity forking through choices and mourning the unlived self, matching the identity projection boundary.",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B02-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The multi-objective optimization formula includes economic, emotional, habit, and loss dimensions. While it contains cost-related terms, its core is a holistic multi-factor model, not specifically focused on cost-time-lifespan comparison. The boundary requires cost/time/lifespan as core, but the formula emphasizes the multi-dimensional nature beyond just cost-time.",
+      "supported": false,
+      "task_id": "REV-M3-S2-S2-B06-A_vs_C-math_focus"
+    },
+    {
+      "reason": "The phrase introduces a Pareto front analogy for incommensurability of values. While this relates to value conflict, the boundary asks about value conflict as core (not simplifiable to single standard), and the evidence is used to illustrate incommensurability. However, this is a math analogy supporting the concept, and the direction is 'value conflict' — the Pareto analogy does support the idea that different options satisfy incommensurable values. Reconsidering: it does support value conflict. Changing to true.",
+      "supported": false,
+      "task_id": "REV-M3-S10-S10-B02-B_vs_C-math_focus"
+    },
+    {
+      "reason": "The text describes recommended content being 'actually not bad' and clicking a recommended video finding it interesting, directly expressing that recommendations match user interests — fitting the match-useful boundary.",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B01-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The phrase discusses algorithm recommendations overlapping with popular content creating social pressure and fear of being out of touch — matching the social conformity boundary.",
+      "supported": true,
+      "task_id": "REV-M3-S8-S8-B02-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The multi-objective optimization formula encompasses economic, emotional, habit, and loss dimensions holistically. The cost-time boundary requires cost/time/lifespan comparison as core, but this formula is broader and not specifically centered on cost-time-lifespan comparison.",
+      "supported": false,
+      "task_id": "REV-M3-S2-S2-B06-B_vs_C-math_focus"
+    },
+    {
+      "reason": "该节明确讨论选项数量增加导致两两比较呈组合爆炸增长、工作记忆容量有限无法充分比较，符合选项过载方向且未假定每个选项后果必然不确定。",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B04-A_vs_B-math_focus"
+    },
+    {
+      "reason": "证据引出秘书问题，说明即使最优策略成功概率仅约36.8%，符合方向边界。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B05-A_vs_C-math_focus"
+    },
+    {
+      "reason": "该节讨论了自由选择放弃自由选择的悖论，以及被预先塑造的偏好和选项中的自主性问题。",
+      "supported": true,
+      "task_id": "REV-M3-S8-S8-B01-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该节讨论旧物承载记忆和情感，是个人记忆和情感依恋，不涉及家庭共同拥有的意义。",
+      "supported": true,
+      "task_id": "REV-M3-S2-S2-B04-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "公式展示了维修成本、情感损失、新品成本和额外效用的比较，核心是金钱和效用的权衡，符合成本时间方向。",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B05-A_vs_B-math_focus"
+    },
+    {
+      "reason": "该节讨论Pareto不可比性——多维度评估下无严格支配关系，符合价值冲突方向。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B01-A_vs_B-math_focus"
+    },
+    {
+      "reason": "证据讨论维修成本vs替换成本的金钱比较，符合成本时间方向。",
+      "supported": true,
+      "task_id": "REV-M3-S2-S2-B05-A_vs_B-math_focus"
+    },
+    {
+      "reason": "邻域收缩类比说明推荐系统改变了什么内容可见可选，符合选择环境方向。",
+      "supported": true,
+      "task_id": "REV-M3-S8-S8-B03-B_vs_C-math_focus"
+    },
+    {
+      "reason": "证据描述依赖度与精度相互驱动的正反馈回路和锁定效应，符合方向边界。",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B03-B_vs_C-math_focus"
+    },
+    {
+      "reason": "该公式包含情感权重和社会权重，不仅限于金钱/时间/寿命/便利性比较，虽含经济权重但整体是综合决策模型而非聚焦成本时间。",
+      "supported": false,
+      "task_id": "REV-M1-S2-S2-B03-A_vs_C-math_focus"
+    },
+    {
+      "reason": "证据描述正反馈循环中系统估计收敛于真实偏好乃至塑造偏好、离开成本递增，符合方向边界。",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B01-A_vs_B-math_focus"
+    },
+    {
+      "reason": "证据明确将决策问题描述为多目标优化和效用函数框架，符合形式化决策建模方向。",
+      "supported": true,
+      "task_id": "REV-M3-S2-S2-B01-A_vs_C-math_focus"
+    },
+    {
+      "reason": "该节讨论重要选择结果不可预知、大脑厌恶不确定性导致焦虑，符合后果不确定方向。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B06-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该节将犹豫后悔解释为远古生存机制在现代高选项环境中过度激活，符合进化适应机制方向。",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B05-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该节讨论选项数量增多导致认知成本上升和信息过载，符合选项过载方向。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B03-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据讨论比较复杂度O(n²)随选项增加急剧增长，符合选项过载方向。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B03-A_vs_C-math_focus"
+    },
+    {
+      "reason": "证据讨论的是推荐系统验证既有身份认同，这是关于确认偏误和身份强化，不是以'形成对我是谁的理解并反过来按该自我理解继续选择'的回路为核心。虽提及身份认同被强化，但未明确描述用户从推荐中形成自我理解再反向选择的完整回路。",
+      "supported": false,
+      "task_id": "REV-M3-S8-S8-B03-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据说明选项增多时大脑需更多比较和评估，符合选项过载方向。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B05-B_vs_C-math_focus"
+    },
+    {
+      "reason": "该节讨论沉没成本让人既不甘继续又舍不得放弃，符合方向边界。",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B01-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "证据讨论沉没成本让人不愿放弃当前选项又不甘错过新选项，符合方向边界。",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B02-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "金缮工艺以修复行为本身的审美价值为核心，符合工艺审美方向。",
+      "supported": true,
+      "task_id": "REV-M3-S2-S2-B06-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该节讨论重要选择结果无法提前验证导致焦虑，符合后果不确定方向。",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B04-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "该节讨论Pareto不可比性，多维度下无严格支配关系，符合价值冲突方向。",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B01-A_vs_B-math_focus"
+    },
+    {
+      "reason": "该节讨论前额叶、杏仁核等脑区机制解释犹豫与后悔，符合神经科学视角方向。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B01-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "环保主义者角色以减少浪费为核心考量，符合环境责任方向。",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B05-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "证据将决策描述为多目标优化和效用函数框架，符合形式化决策建模方向。",
+      "supported": true,
+      "task_id": "REV-M3-S2-S2-B01-B_vs_C-math_focus"
+    },
+    {
+      "reason": "证据给出前景理论价值函数公式，展示损失-收益不对称性，符合损失厌恶方向。",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B06-B_vs_C-math_focus"
+    },
+    {
+      "reason": "证据讨论选项越多比较负担呈组合增长，符合选项过载方向。",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B05-A_vs_B-math_focus"
+    },
+    {
+      "reason": "环保主义者角色以减少浪费为考量，符合环境责任方向。",
+      "supported": true,
+      "task_id": "REV-M3-S2-S2-B05-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "期望效用公式比较修理成本、修后寿命概率与新品成本，符合成本时间方向。",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B01-B_vs_C-math_focus"
+    },
+    {
+      "reason": "The phrase '找得到人修吗' discusses whether repair channels/parts are available, which is about feasibility of finding repair services—closer to cost/convenience than whether the item can regain its original function.",
+      "supported": false,
+      "task_id": "REV-M1-S2-S2-B01-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The phrase explicitly states choices are given 'identity definition' meaning—'my choice represents who I am'—directly expressing that choices carry excessive self-meaning, matching the boundary.",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B05-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "'重新定义了你是什么样的人' directly expresses the idea that recommendations reshape one's self-understanding, supporting the identity-loop direction.",
+      "supported": true,
+      "task_id": "REV-M3-S8-S8-B02-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "The phrase mentions everyone using recommendation platforms and the social cost of leaving, directly expressing group behavior driving dependence, matching social conformity direction.",
+      "supported": true,
+      "task_id": "REV-M3-S8-S8-B01-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "The section heading 'Cognitive Dissonance' and its content describe post-decision psychological discomfort from discovering flaws in chosen option or merits in unchosen ones, matching the boundary.",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B05-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The phrase describes immediate, high-certainty satisfaction with dopamine, expressing rapid reward that promotes staying, matching the instant reward direction.",
+      "supported": true,
+      "task_id": "REV-M3-S8-S8-B01-A_vs_B-math_focus"
+    },
+    {
+      "reason": "'环保意识 | 修好减少浪费' directly addresses environmental consequences of disposal vs repair, matching environmental responsibility direction.",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B01-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "'不确定性下的焦虑' discusses inability to predict outcomes of different paths before deciding, matching the 'outcome uncertainty' direction distinct from merely having too many options.",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B01-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "'自我归因' describes attributing bad outcomes to one's own judgment, expressing self-blame from bearing responsibility, matching the responsibility pressure direction.",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B04-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "The section on Choice Overload discusses how number of options and comparison burden increases difficulty, matching the option overload direction.",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B06-A_vs_B-math_focus"
+    },
+    {
+      "reason": "The phrase discusses misalignment between user and platform objective functions and user's lack of monitoring means, directly matching the principal-agent conflict direction.",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B02-A_vs_C-math_focus"
+    },
+    {
+      "reason": "The phrase about social comparison in social media era discusses others' visible choices changing one's standard for a good decision, matching the direction.",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B02-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The phrase discusses cognitive load growing combinatorially with n options, directly about option quantity and comparison burden, matching the direction.",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B06-A_vs_C-math_focus"
+    },
+    {
+      "reason": "'偏好被不断强化' in context of filter bubble describes how repeated exposure changes what's visible and thinkable, matching the selection environment direction about exposure altering available options.",
+      "supported": true,
+      "task_id": "REV-M3-S8-S8-B04-A_vs_C-math_focus"
+    },
+    {
+      "reason": "The sunk cost section describes people counting past irrecoverable investments in current repair decisions, directly matching the sunk cost bias direction.",
+      "supported": true,
+      "task_id": "REV-M3-S2-S2-B03-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The formula compares repair cost + emotional loss vs new item cost - additional utility, which is a cost/time/value comparison framework matching the cost-time direction.",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B05-A_vs_C-math_focus"
+    },
+    {
+      "reason": "The Pareto optimality section discusses multiple incommensurable dimensions preventing single-standard ranking, directly matching value conflict direction.",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B01-A_vs_C-math_focus"
+    },
+    {
+      "reason": "The multi-objective utility formula includes economic, emotional, habit, and loss components—the economic term u_经济 directly involves cost-time comparison for repair vs replace.",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B06-B_vs_C-math_focus"
+    },
+    {
+      "reason": "'当周围所有人都在同一个范式中运作时' discusses group behavior and social disconnection risk driving dependence, matching social conformity direction.",
+      "supported": true,
+      "task_id": "REV-M3-S8-S8-B03-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "'修理是否方便？' asks about availability of repair people and parts, which is about convenience/access rather than whether the item can regain its original function. The boundary excludes cost and waiting, and this phrase is more about practical access than functional restoration.",
+      "supported": false,
+      "task_id": "REV-M1-S2-S2-B02-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "The formula compares unit-time cost of repair vs replacement (C_r/T_r vs C_n/T_n), directly expressing cost, time, and lifespan comparison, matching the direction.",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B02-B_vs_C-math_focus"
+    },
+    {
+      "reason": "The phrase lists repair cost vs replacement cost as a key question, directly about monetary comparison for repair vs buy new, matching cost-time direction.",
+      "supported": true,
+      "task_id": "REV-M3-S2-S2-B05-A_vs_C-math_focus"
+    },
+    {
+      "reason": "The Choice Overload section discusses how more options increase comparison burden and cause decision paralysis, matching option overload direction.",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B06-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "Section heading and content discuss how more options increase combinatorial comparison load, matching option overload direction.",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B06-A_vs_C-math_focus"
+    },
+    {
+      "reason": "The phrase discusses cognitive load growing with n options and combinatorial comparisons, directly about option quantity and comparison burden matching option overload.",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B05-A_vs_B-math_focus"
+    },
+    {
+      "reason": "'选项越多' section discusses increasing options causing comparison overload and decision paralysis, matching option overload direction.",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B06-B_vs_C-math_focus"
+    },
+    {
+      "reason": "The phrase about accepting default options describes how recommendations serve as defaults requiring extra effort to override, matching the default friction direction.",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B01-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "'更深层的根源' section includes evolutionary perspective explaining cautious mechanisms persisting in modern choice-rich environments, matching evolutionary adaptation direction.",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B05-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "The passage after '设：' introduces formal variables C_r, C_n, T_r, T_n, V_s and compares unit-time costs in equations, matching formal decision modeling direction.",
+      "supported": true,
+      "task_id": "REV-M3-S2-S2-B02-A_vs_B-math_focus"
+    },
+    {
+      "reason": "The phrase about active exploration ability and willingness atrophying directly expresses skill degradation from long-term reliance, matching the skill deterioration direction.",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B03-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "The heading and surrounding text explicitly discuss anxiety from unpredictable outcomes of important choices, which matches 'posterior uncertainty' as a distinct factor from merely having too many options.",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B06-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "The phrase mentions 'having taste' or 'being nostalgic' as social perceptions, not about the design, materials, or craftsmanship of the object itself.",
+      "supported": false,
+      "task_id": "REV-M3-S2-S2-B02-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The passage about Kintsugi explicitly describes a repair technique where the craft and materials (gold powder) make the repaired object beautiful, valuing the repair process itself aesthetically.",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B06-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The sentence states we cannot fully predict future results of each choice, directly expressing the core of outcome uncertainty distinct from option overload.",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B05-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "The phrase mentions '节俭、环保' as a personal value driving the repair decision, but it's listed alongside other factors and doesn't elaborate on resource waste or environmental consequences as a core argument.",
+      "supported": false,
+      "task_id": "REV-M1-S2-S2-B03-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The phrase '选项越多' introduces the paradox of choice section which is entirely about how increasing number of options and comparison burden causes difficulty, matching the direction.",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B05-A_vs_C-math_focus"
+    },
+    {
+      "reason": "The text discusses how everyone using these platforms creates social cost of missing topics and culture, directly expressing group behavior driving dependence.",
+      "supported": true,
+      "task_id": "REV-M3-S8-S8-B01-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The phrase directly states the platform's objective function is maximizing user dwell time/click rate, matching the direction boundary exactly.",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B03-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The section on Pareto incomparability discusses how options satisfy different incommensurable dimensions with no strict dominance, directly expressing value conflict.",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B01-A_vs_C-math_focus"
+    },
+    {
+      "reason": "The phrase mentions items of special commemorative meaning like an elder's relic or love token—this is personal emotional/memorial value, not shared communal belonging as a distinct concept.",
+      "supported": false,
+      "task_id": "REV-M3-S2-S2-B06-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "'找得到人修吗' asks about availability of repair channels/parts, which is about feasibility of repair access, but the boundary specifies 'whether the item can be restored to function and continue its original use' not mainly about cost/waiting. The text focuses on whether repair is findable, which is about practical feasibility—this is borderline but the actual content is about repair channel availability rather than whether the item can resume its function.",
+      "supported": false,
+      "task_id": "REV-M1-S2-S2-B01-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "The formula explicitly compares repair cost, probability of continued use, and new item cost—directly expressing cost/time/lifespan comparison as the core.",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B01-A_vs_C-math_focus"
+    },
+    {
+      "reason": "The phrase '环保意识 | 修好减少浪费' directly expresses environmental responsibility through reducing waste, matching the direction.",
+      "supported": true,
+      "task_id": "REV-M3-S2-S2-B01-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The phrase uses combinatorial comparison counts to illustrate how option quantity increases comparison burden, directly supporting the 'option overload' direction.",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B04-A_vs_B-math_focus"
+    },
+    {
+      "reason": "The phrase discusses products being designed to discourage repair (no parts, no repair points)—this is about repair accessibility/convenience, not about whether the item can functionally be restored. The boundary says 'not mainly about cost and waiting' but the evidence is about structural barriers to repair, which is closer to feasibility. However the boundary focuses on 'can the item resume its original function' vs repair infrastructure—this is more about infrastructure than functional capability. Supported is borderline but the text is about inability to find parts/repair points which does relate to whether the item can practically be restored to function.",
+      "supported": false,
+      "task_id": "REV-M1-S2-S2-B05-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The text about social comparison discusses how seeing others' choices on social media changes one's standard for a good decision, matching the direction.",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B02-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "The section discusses how results of important choices cannot be verified in advance, causing anxiety from uncertainty—matching the direction of outcome uncertainty distinct from mere option quantity.",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B04-B_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The phrase 'as a math student you might think of' is a framing device addressing the reader, not itself expressing the concept of value conflict or incommensurability. The surrounding context about Pareto front does, but the specific phrase is just an address to the reader.",
+      "supported": false,
+      "task_id": "REV-M3-S10-S10-B02-A_vs_B-math_focus"
+    },
+    {
+      "reason": "The section on '不可通约性' directly discusses how options satisfy different incommensurable value dimensions with no single ranking scale, matching value conflict.",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B04-A_vs_C-nonmath_breadth"
+    },
+    {
+      "reason": "The formula includes repair cost/new price ratio as a key variable in the decision, directly expressing cost-time-lifespan comparison.",
+      "supported": true,
+      "task_id": "REV-M1-S2-S2-B03-A_vs_B-math_focus"
+    },
+    {
+      "reason": "The phrase explicitly states the principal-agent problem with misaligned objective functions between user and platform, matching the direction.",
+      "supported": true,
+      "task_id": "REV-M1-S8-S8-B02-A_vs_B-math_focus"
+    },
+    {
+      "reason": "The text discusses social media showing others' results amplifying regret, matching social comparison as changing standards for good decisions.",
+      "supported": true,
+      "task_id": "REV-M1-S10-S10-B02-A_vs_B-nonmath_breadth"
+    },
+    {
+      "reason": "The section explicitly explains hesitation and regret as evolutionarily valuable mechanisms for survival caution and learning, matching the direction.",
+      "supported": true,
+      "task_id": "REV-M3-S10-S10-B06-A_vs_B-nonmath_breadth"
+    }
+  ],
+  "slot": "M2"
+}

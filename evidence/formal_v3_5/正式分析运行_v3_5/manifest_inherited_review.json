@@ -1,0 +1,10 @@
+{
+  "files": {
+    "effective/review/M1.json": "26a86fe9c10136c6ad2c75e52956185db1a8fcbcafb2e9c29adc11b6d4346b41",
+    "effective/review/M2.json": "0bf9f5d5e82ac7dc7544a27cfbc96443d61da06fb3ad051744b067578e026b37",
+    "effective/review/M3.json": "3d14f92262a45375190365d89fbdb3fea2378bb3a00c86f62b6c70bbae8925f7",
+    "manifest_coding.json": "6dc493c7491e841542f3ca38b3790da3aa9baa71ac08e7dbb99ec95c4f05314e",
+    "source_v34_attestation.json": "f71751f4792ef3b4a6a81180d753fc942b7d406cd3b6beedb9730a0d31cc93c0"
+  },
+  "stage": "inherited_review"
+}

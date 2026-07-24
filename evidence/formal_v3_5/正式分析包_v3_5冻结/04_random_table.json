@@ -1,0 +1,459 @@
+{
+  "blind_mapping": {
+    "S10-B01": {
+      "A": "M",
+      "B": "N",
+      "C": "G"
+    },
+    "S10-B02": {
+      "A": "G",
+      "B": "M",
+      "C": "N"
+    },
+    "S10-B03": {
+      "A": "G",
+      "B": "N",
+      "C": "M"
+    },
+    "S10-B04": {
+      "A": "M",
+      "B": "N",
+      "C": "G"
+    },
+    "S10-B05": {
+      "A": "M",
+      "B": "N",
+      "C": "G"
+    },
+    "S10-B06": {
+      "A": "N",
+      "B": "G",
+      "C": "M"
+    },
+    "S2-B01": {
+      "A": "G",
+      "B": "N",
+      "C": "M"
+    },
+    "S2-B02": {
+      "A": "N",
+      "B": "M",
+      "C": "G"
+    },
+    "S2-B03": {
+      "A": "M",
+      "B": "G",
+      "C": "N"
+    },
+    "S2-B04": {
+      "A": "N",
+      "B": "M",
+      "C": "G"
+    },
+    "S2-B05": {
+      "A": "M",
+      "B": "G",
+      "C": "N"
+    },
+    "S2-B06": {
+      "A": "N",
+      "B": "G",
+      "C": "M"
+    },
+    "S8-B01": {
+      "A": "G",
+      "B": "M",
+      "C": "N"
+    },
+    "S8-B02": {
+      "A": "M",
+      "B": "G",
+      "C": "N"
+    },
+    "S8-B03": {
+      "A": "N",
+      "B": "M",
+      "C": "G"
+    },
+    "S8-B04": {
+      "A": "G",
+      "B": "N",
+      "C": "M"
+    }
+  },
+  "encoding_question_order": {
+    "M1": [
+      "S2",
+      "S8",
+      "S10"
+    ],
+    "M2": [
+      "S10",
+      "S8",
+      "S2"
+    ],
+    "M3": [
+      "S2",
+      "S8",
+      "S10"
+    ],
+    "O1": [
+      "S2",
+      "S10",
+      "S8"
+    ],
+    "O2": [
+      "S2",
+      "S8",
+      "S10"
+    ],
+    "O3": [
+      "S10",
+      "S2",
+      "S8"
+    ]
+  },
+  "generation_order": [
+    {
+      "arm": "M",
+      "block_id": "S8-B04",
+      "call_index": 1,
+      "question": "S8"
+    },
+    {
+      "arm": "N",
+      "block_id": "S2-B03",
+      "call_index": 2,
+      "question": "S2"
+    },
+    {
+      "arm": "N",
+      "block_id": "S2-B01",
+      "call_index": 3,
+      "question": "S2"
+    },
+    {
+      "arm": "G",
+      "block_id": "S2-B03",
+      "call_index": 4,
+      "question": "S2"
+    },
+    {
+      "arm": "M",
+      "block_id": "S10-B01",
+      "call_index": 5,
+      "question": "S10"
+    },
+    {
+      "arm": "G",
+      "block_id": "S10-B02",
+      "call_index": 6,
+      "question": "S10"
+    },
+    {
+      "arm": "M",
+      "block_id": "S10-B06",
+      "call_index": 7,
+      "question": "S10"
+    },
+    {
+      "arm": "G",
+      "block_id": "S8-B01",
+      "call_index": 8,
+      "question": "S8"
+    },
+    {
+      "arm": "N",
+      "block_id": "S2-B06",
+      "call_index": 9,
+      "question": "S2"
+    },
+    {
+      "arm": "N",
+      "block_id": "S10-B01",
+      "call_index": 10,
+      "question": "S10"
+    },
+    {
+      "arm": "M",
+      "block_id": "S10-B03",
+      "call_index": 11,
+      "question": "S10"
+    },
+    {
+      "arm": "N",
+      "block_id": "S2-B04",
+      "call_index": 12,
+      "question": "S2"
+    },
+    {
+      "arm": "M",
+      "block_id": "S10-B05",
+      "call_index": 13,
+      "question": "S10"
+    },
+    {
+      "arm": "G",
+      "block_id": "S2-B05",
+      "call_index": 14,
+      "question": "S2"
+    },
+    {
+      "arm": "N",
+      "block_id": "S10-B05",
+      "call_index": 15,
+      "question": "S10"
+    },
+    {
+      "arm": "M",
+      "block_id": "S8-B01",
+      "call_index": 16,
+      "question": "S8"
+    },
+    {
+      "arm": "M",
+      "block_id": "S8-B03",
+      "call_index": 17,
+      "question": "S8"
+    },
+    {
+      "arm": "G",
+      "block_id": "S2-B04",
+      "call_index": 18,
+      "question": "S2"
+    },
+    {
+      "arm": "G",
+      "block_id": "S10-B03",
+      "call_index": 19,
+      "question": "S10"
+    },
+    {
+      "arm": "M",
+      "block_id": "S10-B02",
+      "call_index": 20,
+      "question": "S10"
+    },
+    {
+      "arm": "N",
+      "block_id": "S2-B02",
+      "call_index": 21,
+      "question": "S2"
+    },
+    {
+      "arm": "N",
+      "block_id": "S10-B04",
+      "call_index": 22,
+      "question": "S10"
+    },
+    {
+      "arm": "G",
+      "block_id": "S2-B02",
+      "call_index": 23,
+      "question": "S2"
+    },
+    {
+      "arm": "N",
+      "block_id": "S10-B06",
+      "call_index": 24,
+      "question": "S10"
+    },
+    {
+      "arm": "M",
+      "block_id": "S2-B04",
+      "call_index": 25,
+      "question": "S2"
+    },
+    {
+      "arm": "N",
+      "block_id": "S10-B03",
+      "call_index": 26,
+      "question": "S10"
+    },
+    {
+      "arm": "G",
+      "block_id": "S8-B04",
+      "call_index": 27,
+      "question": "S8"
+    },
+    {
+      "arm": "M",
+      "block_id": "S10-B04",
+      "call_index": 28,
+      "question": "S10"
+    },
+    {
+      "arm": "G",
+      "block_id": "S10-B01",
+      "call_index": 29,
+      "question": "S10"
+    },
+    {
+      "arm": "M",
+      "block_id": "S2-B03",
+      "call_index": 30,
+      "question": "S2"
+    },
+    {
+      "arm": "M",
+      "block_id": "S2-B06",
+      "call_index": 31,
+      "question": "S2"
+    },
+    {
+      "arm": "N",
+      "block_id": "S8-B03",
+      "call_index": 32,
+      "question": "S8"
+    },
+    {
+      "arm": "M",
+      "block_id": "S2-B02",
+      "call_index": 33,
+      "question": "S2"
+    },
+    {
+      "arm": "M",
+      "block_id": "S2-B05",
+      "call_index": 34,
+      "question": "S2"
+    },
+    {
+      "arm": "G",
+      "block_id": "S8-B02",
+      "call_index": 35,
+      "question": "S8"
+    },
+    {
+      "arm": "N",
+      "block_id": "S10-B02",
+      "call_index": 36,
+      "question": "S10"
+    },
+    {
+      "arm": "G",
+      "block_id": "S2-B01",
+      "call_index": 37,
+      "question": "S2"
+    },
+    {
+      "arm": "G",
+      "block_id": "S8-B03",
+      "call_index": 38,
+      "question": "S8"
+    },
+    {
+      "arm": "N",
+      "block_id": "S8-B04",
+      "call_index": 39,
+      "question": "S8"
+    },
+    {
+      "arm": "M",
+      "block_id": "S2-B01",
+      "call_index": 40,
+      "question": "S2"
+    },
+    {
+      "arm": "G",
+      "block_id": "S10-B06",
+      "call_index": 41,
+      "question": "S10"
+    },
+    {
+      "arm": "N",
+      "block_id": "S2-B05",
+      "call_index": 42,
+      "question": "S2"
+    },
+    {
+      "arm": "M",
+      "block_id": "S8-B02",
+      "call_index": 43,
+      "question": "S8"
+    },
+    {
+      "arm": "G",
+      "block_id": "S10-B04",
+      "call_index": 44,
+      "question": "S10"
+    },
+    {
+      "arm": "G",
+      "block_id": "S2-B06",
+      "call_index": 45,
+      "question": "S2"
+    },
+    {
+      "arm": "N",
+      "block_id": "S8-B01",
+      "call_index": 46,
+      "question": "S8"
+    },
+    {
+      "arm": "G",
+      "block_id": "S10-B05",
+      "call_index": 47,
+      "question": "S10"
+    },
+    {
+      "arm": "N",
+      "block_id": "S8-B02",
+      "call_index": 48,
+      "question": "S8"
+    }
+  ],
+  "review_order_rule": "按 sha256(f'{seed}|{reviewer_slot}|{task_id}') 升序；任务集出现后不新增随机数",
+  "seed": 2026071401,
+  "sentinel_task_order": {
+    "M1": [
+      "T3",
+      "T4",
+      "T2",
+      "T1",
+      "T5",
+      "T6"
+    ],
+    "M2": [
+      "T2",
+      "T4",
+      "T3",
+      "T5",
+      "T6",
+      "T1"
+    ],
+    "M3": [
+      "T3",
+      "T2",
+      "T5",
+      "T6",
+      "T4",
+      "T1"
+    ],
+    "O1": [
+      "T6",
+      "T3",
+      "T2",
+      "T5",
+      "T4",
+      "T1"
+    ],
+    "O2": [
+      "T1",
+      "T2",
+      "T3",
+      "T6",
+      "T4",
+      "T5"
+    ],
+    "O3": [
+      "T6",
+      "T1",
+      "T2",
+      "T3",
+      "T5",
+      "T4"
+    ]
+  },
+  "version": "formal-v1"
+}

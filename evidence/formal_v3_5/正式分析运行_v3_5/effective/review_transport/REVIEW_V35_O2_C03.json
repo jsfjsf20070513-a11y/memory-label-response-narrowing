@@ -1,0 +1,125 @@
+{
+  "items": {
+    "REV-O1-S10-S10-B01-A_vs_B-math_focus": {
+      "reason": "该节明确用Pareto不可比性说明多维度评估下无严格支配关系，犹豫必然。",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B02-B_vs_C-math_focus": {
+      "reason": "该节讨论了不可公度性，并明确类比多目标优化的Pareto前沿，说明无绝对优劣。",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B03-A_vs_C-math_focus": {
+      "reason": "公式明确展示了修正效用函数，其中max项随选项数增加而增大，从而降低满意度。",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B05-A_vs_B-math_focus": {
+      "reason": "证据描述了秘书问题最优策略，回答中明确说明成功率约1/e≈36.8%，后悔是概率必然。",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B06-B_vs_C-nonmath_breadth": {
+      "reason": "引用Festinger认知失调理论，说明不可逆决定后持有矛盾认知产生心理不适。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B01-A_vs_C-nonmath_breadth": {
+      "reason": "该节讨论了修好再坏导致修理钱白花的二次损失恐惧。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B02-A_vs_B-math_focus": {
+      "reason": "公式比较了修与换的单位时间成本，并引入情感变量V_s。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B03-A_vs_B-math_focus": {
+      "reason": "加权公式用情感、经济、社会三个权重描述实际决策过程。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B03-A_vs_C-math_focus": {
+      "reason": "同一加权公式确实用情感、经济、社会权重描述实际决策。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B04-A_vs_B-nonmath_breadth": {
+      "reason": "该节明确讨论现状偏好，倾向维持现状抗拒改变。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B04-A_vs_C-nonmath_breadth": {
+      "reason": "该节列出节俭文化、环保理念与消费主义的文化对比拉锯。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B05-A_vs_B-math_focus": {
+      "reason": "不等式明确表达了修理成本+情感损失与新品成本-额外效用的关系。",
+      "supported": true
+    },
+    "REV-O1-S8-S8-B03-A_vs_B-math_focus": {
+      "reason": "该段用d_t和a_t形式化了依赖度与精度的正反馈回路。",
+      "supported": true
+    },
+    "REV-O1-S8-S8-B03-A_vs_B-nonmath_breadth": {
+      "reason": "第10点明确讨论了第三人效应和控制幻觉，指出知道算法影响反而可能降低警惕。",
+      "supported": true
+    },
+    "REV-O1-S8-S8-B03-B_vs_C-nonmath_breadth": {
+      "reason": "第8点明确讨论偏好内生性，指出长期使用后被影响与遵循偏好的边界模糊。",
+      "supported": true
+    },
+    "REV-O1-S8-S8-B04-A_vs_C-math_focus": {
+      "reason": "证据短语\"这是最关键的机制，\"仅为引导句，本身未表达动力系统吸引子或正反馈的数学内容。",
+      "supported": false
+    },
+    "REV-O3-S10-S10-B01-A_vs_B-math_focus": {
+      "reason": "该节用秘书问题和最优停止框架解释探索与利用的结构性权衡。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B01-A_vs_C-nonmath_breadth": {
+      "reason": "该节从前额叶、杏仁核、纹状体和疼痛脑区解释犹豫与后悔的神经机制。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B06-A_vs_C-math_focus": {
+      "reason": "该节用前景理论公式解释失去痛苦大于获得，并说明即便客观最优也可能主观净负面。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B01-A_vs_B-nonmath_breadth": {
+      "reason": "该句明确提到消费主义鼓励拥抱新品的社会拉力。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B02-A_vs_B-math_focus": {
+      "reason": "该节包含用修理成本、新物成本、寿命和情感价值构建的单位时间成本比较模型。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B02-A_vs_B-nonmath_breadth": {
+      "reason": "该节列出修好留作备用、改变用途等中间处理路径。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B03-B_vs_C-nonmath_breadth": {
+      "reason": "该条解释了习惯与熟悉感导致对换新适应成本的抵触。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B04-A_vs_B-nonmath_breadth": {
+      "reason": "表格中明确列出断舍离文化影响作为倾向替换的因素。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B04-A_vs_C-nonmath_breadth": {
+      "reason": "总结部分明确将旧物与自我身份、人生记忆和安全感相连来解释犹豫。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B04-B_vs_C-nonmath_breadth": {
+      "reason": "表格中明确提到断舍离文化影响作为倾向替换的因素。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B05-A_vs_B-math_focus": {
+      "reason": "证据仅为\"$$\"，无法判断具体内容；但回答中确实有含情感项的不等式。不过证据短语本身不足以表达声明的方向。",
+      "supported": false
+    },
+    "REV-O3-S8-S8-B01-B_vs_C-math_focus": {
+      "reason": "该段用状态向量、算子、压缩映射、噪声和吸引子形式化说明推荐系统的收敛效应。",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B03-A_vs_B-nonmath_breadth": {
+      "reason": "第7点明确说明推荐系统已成平台底层架构，无法关闭，缺少退出选项。",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B04-B_vs_C-math_focus": {
+      "reason": "\"正反馈回路\"仅为概念词，未直接表达动力系统吸引子的形式化内容，边界要求的吸引子式描述需更具体的数学表述。",
+      "supported": false
+    }
+  },
+  "slot": "O2"
+}

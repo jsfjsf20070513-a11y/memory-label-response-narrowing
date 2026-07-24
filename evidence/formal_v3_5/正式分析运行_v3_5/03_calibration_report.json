@@ -1,0 +1,10 @@
+{
+  "calls": 2,
+  "criterion": "Codex M3 分表与 O3 开放运输须各自首试通过长文结构、语义、证据定位与金标准",
+  "inherited_calibration_manifest_sha256": "fd198c880593477da9e1cd73dfc4578458aa10c0322f3681796cc1cddbb007d3",
+  "slots": [
+    "M3",
+    "O3"
+  ],
+  "status": "PASS"
+}

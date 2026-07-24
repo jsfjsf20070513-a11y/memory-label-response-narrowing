@@ -1,0 +1,125 @@
+{
+  "items": {
+    "REV-O1-S10-S10-B04-A_vs_B-math_focus": {
+      "reason": "证据短语是损失厌恶公式U(损失)≈-2·U(收益)，明确形式化了损失厌恶，符合边界。",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B04-A_vs_B-nonmath_breadth": {
+      "reason": "该节描述了重要选择结果无法提前验证导致无限循环思虑(rumination)，符合边界。",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B04-A_vs_C-math_focus": {
+      "reason": "该段讨论效用函数U1≠U2导致决策前后评价标准变化，符合边界。",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B05-A_vs_B-nonmath_breadth": {
+      "reason": "证据短语明确说选择被赋予身份定义意义，让决定像定义自我，符合边界。",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B05-A_vs_C-math_focus": {
+      "reason": "回答给出了前景理论价值函数V(x)的分段公式，λ≈2.25，表达了失去痛苦约为获得快乐2倍，符合边界。",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B05-B_vs_C-nonmath_breadth": {
+      "reason": "证据短语明确说选择被赋予身份定义意义，让决定像定义自我，符合边界。",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B06-A_vs_B-nonmath_breadth": {
+      "reason": "证据短语指向的段落明确提到前扣带皮层和杏仁核因不确定性持续发出焦虑信号，符合边界。",
+      "supported": true
+    },
+    "REV-O1-S10-S10-B06-A_vs_C-nonmath_breadth": {
+      "reason": "证据短语指向的段落明确提到前扣带皮层和杏仁核因不确定性发出焦虑信号，符合边界。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B01-B_vs_C-nonmath_breadth": {
+      "reason": "证据短语指向丢弃愧疚感段落，明确说觉得扔掉能修的东西是浪费，符合边界。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B02-B_vs_C-math_focus": {
+      "reason": "回答给出了C_r/T_r vs C_n/T_n的公式以及含V_s情感变量的扩展版本，符合边界。",
+      "supported": true
+    },
+    "REV-O1-S2-S2-B05-B_vs_C-nonmath_breadth": {
+      "reason": "证据短语指向周围人看法段落，说明社会评价影响决策，符合边界。",
+      "supported": true
+    },
+    "REV-O1-S8-S8-B01-A_vs_C-nonmath_breadth": {
+      "reason": "该节明确描述第三人效应：人倾向认为他人更易被媒体影响从而降低警惕，符合边界。",
+      "supported": true
+    },
+    "REV-O1-S8-S8-B01-B_vs_C-nonmath_breadth": {
+      "reason": "该节描述选择支持偏误：点击后大脑自动合理化选择，事后归因低估系统影响力，符合边界。",
+      "supported": true
+    },
+    "REV-O1-S8-S8-B02-A_vs_B-math_focus": {
+      "reason": "该节明确列出用户与平台的效用函数max表达式，形式化了利益冲突，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B03-A_vs_C-math_focus": {
+      "reason": "该节将多属性选择表述为R^d上向量的偏序比较，说明不可全序排序，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S10-S10-B06-B_vs_C-nonmath_breadth": {
+      "reason": "第三节用进化视角解释犹豫和后悔是远古高风险环境的适应机制，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B01-B_vs_C-nonmath_breadth": {
+      "reason": "证据短语指向消费主义拉力段落，明确说社会鼓励拥抱新品，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B02-A_vs_C-nonmath_breadth": {
+      "reason": "该节列出修好继续用、买新替换、买新但旧物不扔、改变用途等多种结局，包含中间处理路径，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B04-A_vs_C-math_focus": {
+      "reason": "第四节用按情感价值与修理成本分支的条件伪代码概括了决策模式，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B05-A_vs_C-math_focus": {
+      "reason": "证据指向含$$的不等式，回答中确实有含情感项V_emotional的修/换不等式，并讨论了偏误放大与真实情感的区分，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B05-B_vs_C-nonmath_breadth": {
+      "reason": "第四节提到维修是否方便、配件停产、无维修点等现实约束逼人换新，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B06-A_vs_C-math_focus": {
+      "reason": "第四节给出了含经济、情感、习惯、损失感加权的多目标优化公式，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B06-A_vs_C-nonmath_breadth": {
+      "reason": "第三节明确以不可替代性为关键因素，按纪念意义、独特性、可替代性列表决定修换，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S2-S2-B06-B_vs_C-math_focus": {
+      "reason": "第四节给出含经济、情感、习惯、损失感的多目标优化公式，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B01-A_vs_B-math_focus": {
+      "reason": "回答用状态向量x_t、算子T、压缩映射、噪声ε_t和吸引子basin等概念形式化了推荐系统让兴趣收敛，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B02-A_vs_B-nonmath_breadth": {
+      "reason": "证据短语所在段落讨论系统通过反馈循环固化兴趣图谱、减少偶然发现可能性并重塑自我，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B02-B_vs_C-nonmath_breadth": {
+      "reason": "该段说算法由数千名工程师持续优化处理数十亿数据而人脑是十万年前硬件，构成不对称博弈，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B03-A_vs_B-math_focus": {
+      "reason": "该段用d_t和a_t变量形式化了依赖度与预测精度相互提升的正反馈回路，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B03-B_vs_C-nonmath_breadth": {
+      "reason": "第8节讨论偏好内生性：长期使用后偏好被系统塑造，真实偏好边界模糊，符合边界。",
+      "supported": true
+    },
+    "REV-O3-S8-S8-B04-A_vs_C-math_focus": {
+      "reason": "证据短语仅为'正反馈回路'三字，虽回答中有描述该回路的文字图示，但未以动力系统吸引子的数学形式化表达，边界要求'动力系统吸引子式'被夸大。",
+      "supported": false
+    }
+  },
+  "slot": "O2"
+}

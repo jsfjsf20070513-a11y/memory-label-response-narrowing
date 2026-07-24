@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "blocks": {"items": {"$ref": "#/$defs/block"}, "minItems": 1, "type": "array"},
+    "method": {"const": "open"},
+    "question": {"enum": ["S2", "S8", "S10"]},
+    "slot": {"enum": ["O1", "O2", "O3"]}
+  },
+  "required": ["slot", "method", "question", "blocks"],
+  "type": "object",
+  "$defs": {
+    "answer": {
+      "additionalProperties": false,
+      "properties": {
+        "directions": {"items": {"$ref": "#/$defs/direction"}, "type": "array"},
+        "identity_evidence": {"type": ["string", "null"]},
+        "identity_explicit": {"type": "boolean"}
+      },
+      "required": ["directions", "identity_explicit", "identity_evidence"],
+      "type": "object"
+    },
+    "block": {
+      "additionalProperties": false,
+      "properties": {
+        "answers": {"additionalProperties": false, "properties": {"A": {"$ref": "#/$defs/answer"}, "B": {"$ref": "#/$defs/answer"}, "C": {"$ref": "#/$defs/answer"}}, "required": ["A", "B", "C"], "type": "object"},
+        "block_id": {"pattern": "^S(2|8|10)-B(0[1-9]|1[0-9])$", "type": "string"},
+        "comparisons": {"additionalProperties": false, "properties": {"A_vs_B": {"$ref": "#/$defs/comparison"}, "A_vs_C": {"$ref": "#/$defs/comparison"}, "B_vs_C": {"$ref": "#/$defs/comparison"}}, "required": ["A_vs_B", "A_vs_C", "B_vs_C"], "type": "object"}
+      },
+      "required": ["block_id", "answers", "comparisons"],
+      "type": "object"
+    },
+    "comparison": {"additionalProperties": false, "properties": {"math_focus": {"$ref": "#/$defs/verdict"}, "nonmath_breadth": {"$ref": "#/$defs/verdict"}}, "required": ["math_focus", "nonmath_breadth"], "type": "object"},
+    "decisive": {
+      "additionalProperties": false,
+      "properties": {"answer": {"enum": ["A", "B", "C"]}, "definition": {"minLength": 1, "type": "string"}, "evidence": {"minLength": 1, "type": "string"}, "local_id": {"pattern": "^d[0-9]+$", "type": "string"}, "name": {"minLength": 1, "type": "string"}, "occurrence": {"minimum": 1, "type": "integer"}},
+      "required": ["answer", "local_id", "name", "definition", "evidence", "occurrence"],
+      "type": "object"
+    },
+    "direction": {
+      "additionalProperties": false,
+      "properties": {"definition": {"minLength": 1, "type": "string"}, "evidence": {"minLength": 1, "type": "string"}, "local_id": {"pattern": "^d[0-9]+$", "type": "string"}, "name": {"minLength": 1, "type": "string"}, "occurrence": {"minimum": 1, "type": "integer"}, "tag": {"enum": ["数学", "非数学", "无法归类"]}},
+      "required": ["local_id", "name", "definition", "evidence", "occurrence", "tag"],
+      "type": "object"
+    },
+    "verdict": {
+      "additionalProperties": false,
+      "allOf": [{"if": {"properties": {"choice": {"enum": ["A", "B", "C"]}}, "required": ["choice"]}, "then": {"properties": {"decisive": {"$ref": "#/$defs/decisive"}}}, "else": {"properties": {"decisive": {"type": "null"}}}}],
+      "properties": {"choice": {"enum": ["A", "B", "C", "相当", "无法判断"]}, "decisive": {"oneOf": [{"$ref": "#/$defs/decisive"}, {"type": "null"}]}, "reason": {"minLength": 1, "type": "string"}},
+      "required": ["choice", "reason", "decisive"],
+      "type": "object"
+    }
+  }
+}
