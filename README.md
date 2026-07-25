@@ -2,6 +2,9 @@
 
 **User Background Labels and Response Breadth in Language Models**
 
+> 第一次进入项目，请先读 [`START_HERE.md`](START_HERE.md)。它解释题目编号、
+> `S8' / S10'`、12 个主块、`p` 值和完整数据分别是什么。
+
 这是一个小型、预注册、可复核的研究项目。我们问的不是“AI 记忆是好是坏”，而是一个更小的问题：
 
 > 面对同一个本可从多个角度回答的问题，当模型提前知道“用户是数学系本科生”时，回答是否更偏数学，同时减少其他方向？
@@ -26,11 +29,12 @@
 
 ## 先读什么
 
-1. 本页；
-2. [`docs/results/16_正式实验v3_5结果_人话版_2026-07-22.md`](docs/results/16_%E6%AD%A3%E5%BC%8F%E5%AE%9E%E9%AA%8Cv3_5%E7%BB%93%E6%9E%9C_%E4%BA%BA%E8%AF%9D%E7%89%88_2026-07-22.md)；
-3. [`docs/method/05_预注册修订稿_v0_2.md`](docs/method/05_%E9%A2%84%E6%B3%A8%E5%86%8C%E4%BF%AE%E8%AE%A2%E7%A8%BF_v0_2.md)；
-4. [`HANDOFF_2026_07_24_项目协作_TO_LINGYUNLEO.md`](HANDOFF_2026_07_24_%E9%A1%B9%E7%9B%AE%E5%8D%8F%E4%BD%9C_TO_LINGYUNLEO.md)；
-5. `paper/manuscript.md`。
+1. [`START_HERE.md`](START_HERE.md)；
+2. 本页；
+3. [`docs/results/16_正式实验v3_5结果_人话版_2026-07-22.md`](docs/results/16_%E6%AD%A3%E5%BC%8F%E5%AE%9E%E9%AA%8Cv3_5%E7%BB%93%E6%9E%9C_%E4%BA%BA%E8%AF%9D%E7%89%88_2026-07-22.md)；
+4. [`docs/method/05_预注册修订稿_v0_2.md`](docs/method/05_%E9%A2%84%E6%B3%A8%E5%86%8C%E4%BF%AE%E8%AE%A2%E7%A8%BF_v0_2.md)；
+5. [`HANDOFF_2026_07_24_项目协作_TO_LINGYUNLEO.md`](HANDOFF_2026_07_24_%E9%A1%B9%E7%9B%AE%E5%8D%8F%E4%BD%9C_TO_LINGYUNLEO.md)；
+6. `paper/manuscript.md`。
 
 ## 复现正式结果
 
