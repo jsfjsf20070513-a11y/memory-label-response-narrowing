@@ -8,7 +8,8 @@
 1. 先读 `START_HERE.md`，随时在 Issue 里问；不用等“全看完”才开口。
 2. 用自己的话说目前理解到哪里。复述不一致时，大家先把问题讲清。
 3. 再读 `README.md` 和 `HANDOFF_2026_07_24_项目协作_TO_LINGYUNLEO.md`。
-4. 想核数字时，运行 `PYTHONDONTWRITEBYTECODE=1 sh scripts/verify_formal_v3_5.sh`。
+4. 想核数字时，先运行 `python3 scripts/check_result_hashes.py`；只有本机 CLI 与冻结登记
+   版本一致时，再运行 `PYTHONDONTWRITEBYTECODE=1 sh scripts/verify_formal_v3_5.sh`。
 5. 阅读笔记和第一个 PR 都是可选的讨论载体，不是加入项目的资格考试。
 
 ## 从讨论到实验
@@ -25,7 +26,8 @@
 - 标题说明是 `paper`、`analysis` 还是 `docs`。
 - 正文写清“改了什么”、“为什么”、“用什么证据支撑”。
 - 改动数字、图表或结论时，必须附复现命令。
-- 提交前运行 `scripts/verify_formal_v3_5.sh` 和 `scripts/check_repo_privacy.py`。
+- 提交前必须运行 `scripts/check_repo_privacy.py` 和 `scripts/check_result_hashes.py`。
+  `scripts/verify_formal_v3_5.sh` 在 CLI 版本匹配时运行；版本不匹配时必须报告，不绕过。
 
 ## 写作约定
 

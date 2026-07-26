@@ -37,18 +37,28 @@
 3. 本页；
 4. [`docs/results/16_正式实验v3_5结果_人话版_2026-07-22.md`](docs/results/16_%E6%AD%A3%E5%BC%8F%E5%AE%9E%E9%AA%8Cv3_5%E7%BB%93%E6%9E%9C_%E4%BA%BA%E8%AF%9D%E7%89%88_2026-07-22.md)；
 5. [`docs/method/05_预注册修订稿_v0_2.md`](docs/method/05_%E9%A2%84%E6%B3%A8%E5%86%8C%E4%BF%AE%E8%AE%A2%E7%A8%BF_v0_2.md)；
-6. [`HANDOFF_2026_07_24_项目协作_TO_LINGYUNLEO.md`](HANDOFF_2026_07_24_%E9%A1%B9%E7%9B%AE%E5%8D%8F%E4%BD%9C_TO_LINGYUNLEO.md)；
-7. `paper/manuscript.md`。
+6. [`docs/method/16_正式实验关账后方法澄清_2026-07-26.md`](docs/method/16_%E6%AD%A3%E5%BC%8F%E5%AE%9E%E9%AA%8C%E5%85%B3%E8%B4%A6%E5%90%8E%E6%96%B9%E6%B3%95%E6%BE%84%E6%B8%85_2026-07-26.md)；
+7. [`HANDOFF_2026_07_24_项目协作_TO_LINGYUNLEO.md`](HANDOFF_2026_07_24_%E9%A1%B9%E7%9B%AE%E5%8D%8F%E4%BD%9C_TO_LINGYUNLEO.md)；
+8. `paper/manuscript.md`。
 
 ## 复现正式结果
 
-Python 需满足 `evidence/formal_v3_5/正式分析包_v3_5冻结/requirements.lock.txt`。在仓库根目录执行：
+先做当前环境可以稳定完成的静态核验：
+
+```bash
+python3 scripts/check_repo_privacy.py
+python3 scripts/check_result_hashes.py
+```
+
+完整重新汇总还要求当前 Claude/Codex CLI 与开跑登记版本完全一致：
 
 ```bash
 PYTHONDONTWRITEBYTECODE=1 sh scripts/verify_formal_v3_5.sh
 ```
 
-通过标准：重新汇总后 `summary.json`、`audit.json` 和 `manifest_results.json` 的 SHA-256 与关账记录完全一致。
+2026-07-26 用户更新 Codex CLI 后，静态哈希检查与冻结证据检查仍通过，但完整汇总被版本
+闸门主动阻止。原因、影响和不绕过原则见
+[`docs/repro/2026-07-26-cli-version-drift.md`](docs/repro/2026-07-26-cli-version-drift.md)。
 
 ## 协作方式
 
