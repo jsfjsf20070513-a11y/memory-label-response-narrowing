@@ -1,25 +1,29 @@
 #!/bin/sh
 # 校验已关账的 formal v3.5 证据包。
 #
-# 主次分明:
-#   主检查(任一不过即失败,退出码 1)
-#     1. 仓库隐私边界
-#     2. 已存结果哈希逐字节一致
-#     3. 冻结证据未被本次运行改动
-#   次检查(不过只降级报告,退出码仍为 0)
-#     4. 从冻结包重新汇总一遍(逐字节重算)
+# 默认严格:任何一项不过都失败(退出码 1),包括逐字节重算未完成。
+# 只有调用者显式加 --allow-version-drift,且失败确实是格式明确的纯 CLI 版本漂移,
+# 才降级为 [PARTIAL] 并以 0 退出。降级由调用者主动选择,脚本不替他选。
 #
-# 为什么第 4 项是次要的:
-#   重算要经过冻结包内的 verify_run_authorization()。那个闸门是为"防止未经授权
-#   调用模型"造的(它的首条错误即"缺正式开跑登记,拒绝调用模型"),但 aggregate
-#   一次模型都不调,只是把已存编码重算汇总。于是日常升级 CLI 就会让一个纯离线
-#   操作停摆。冻结包不得回改,所以在这一层把它降级为次要项。
+# 检查项:
+#   1. 仓库隐私边界
+#   2. 冻结证据在运行前是干净的(index + worktree + untracked)
+#   3. 从冻结包逐字节重算
+#   4. 已存结果哈希与登记字节一致
+#   5. 冻结证据在运行后仍然干净(与 2 对照,证明本次运行未改动)
 #
-#   降级不等于隐瞒:跳过时会明确打印"未完成重算",且主检查 2 独立保证已存结果
-#   未被改动。要做正式发表前的完整复验,请还原登记的 CLI 版本并加 --strict。
+# 关于第 4 项能证明什么:
+#   它只确认"已存结果文件的字节没有漂移",**不能**证明当初的汇总逻辑或汇总
+#   结果正确 —— 后者正是第 3 项重算要验证的内容。因此第 4 项通过不足以成为
+#   跳过第 3 项的理由;跳过只能靠调用者显式授权。
 #
-# 用法: sh scripts/verify_formal_v3_5.sh [--strict]
-#   --strict  任何原因导致重算失败都判为失败(含 CLI 版本漂移)
+# 为什么需要 --allow-version-drift:
+#   冻结包内的 verify_run_authorization() 是为"防止未经授权调用模型"造的闸门
+#   (首条错误即"缺正式开跑登记,拒绝调用模型"),但 aggregate 不调用任何模型,
+#   只是把已存编码重新汇总。于是日常授权升级 CLI 也会让纯离线重算停摆。
+#   冻结包不得回改,故在本层提供显式降级开关,而不改动包内闸门。
+#
+# 用法: sh scripts/verify_formal_v3_5.sh [--allow-version-drift]
 
 set -eu
 
@@ -30,21 +34,39 @@ export PYTHONDONTWRITEBYTECODE=1
 ROOT=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
 PACKAGE="$ROOT/evidence/formal_v3_5/正式分析包_v3_5冻结"
 AUTH="$ROOT/evidence/formal_v3_5/正式分析运行_v3_5/00_open_analysis_v3_5.json"
-VERSION_GATE_MARKER="开跑登记的 CLI 版本与现场不符"
+EVIDENCE_PATH="evidence/formal_v3_5"
+# 版本漂移错误的精确格式;只接受这一种形态,混合错误不得降级。
+DRIFT_RE='^开跑登记的 CLI 版本与现场不符：\{.*\}$'
 
-STRICT=0
+ALLOW_DRIFT=0
 for arg in "$@"; do
   case "$arg" in
-    --strict) STRICT=1 ;;
-    -h|--help) sed -n '2,26p' "$0" | sed 's/^# \{0,1\}//'; exit 0 ;;
-    *) echo "未知参数:$arg(用法:sh scripts/verify_formal_v3_5.sh [--strict])" >&2; exit 2 ;;
+    --allow-version-drift) ALLOW_DRIFT=1 ;;
+    -h|--help) sed -n '2,27p' "$0" | sed 's/^# \{0,1\}//'; exit 0 ;;
+    *) echo "未知参数:$arg(用法:sh scripts/verify_formal_v3_5.sh [--allow-version-drift])" >&2; exit 2 ;;
   esac
 done
 
-# ---- 主检查 1:隐私边界 ----
+# 完整工作区状态:同时覆盖 index、worktree 与 untracked。
+evidence_status() {
+  if git -C "$ROOT" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+    git -C "$ROOT" status --porcelain --untracked-files=all -- "$EVIDENCE_PATH"
+  fi
+}
+
+# ---- 检查 1:隐私边界 ----
 python3 "$ROOT/scripts/check_repo_privacy.py"
 
-# ---- 次检查 4:逐字节重算 ----
+# ---- 检查 2:运行前冻结证据必须干净 ----
+BEFORE=$(evidence_status)
+if [ -n "$BEFORE" ]; then
+  echo "[FAIL] 运行前 $EVIDENCE_PATH 就不干净,无法证明本次运行是否改动了冻结证据" >&2
+  echo "$BEFORE" >&2
+  exit 1
+fi
+echo "[PASS] frozen evidence clean before run"
+
+# ---- 检查 3:逐字节重算 ----
 RECOMPUTED=0
 DRIFT_LINE=""
 AGG_LOG=$(mktemp)
@@ -52,33 +74,37 @@ trap 'rm -f "$AGG_LOG"' EXIT
 
 if (cd "$PACKAGE" && python3 analysis_v2.py aggregate) >"$AGG_LOG" 2>&1; then
   RECOMPUTED=1
-elif [ "$STRICT" -eq 0 ] && grep -q "$VERSION_GATE_MARKER" "$AGG_LOG"; then
-  DRIFT_LINE=$(grep "$VERSION_GATE_MARKER" "$AGG_LOG" | head -1)
-elif [ "$STRICT" -eq 1 ] && grep -q "$VERSION_GATE_MARKER" "$AGG_LOG"; then
-  echo "[FAIL] --strict:CLI 版本与开跑登记不符,按失败处理" >&2
-  grep "$VERSION_GATE_MARKER" "$AGG_LOG" >&2
-  exit 1
+  echo "[PASS] aggregate recomputation reproduced"
 else
-  echo "[FAIL] 重算失败,且不是 CLI 版本漂移" >&2
-  cat "$AGG_LOG" >&2
-  exit 1
+  # 只有整份日志恰好一行、且完全匹配版本漂移格式时,才认定为纯漂移。
+  NONEMPTY=$(grep -c '[^[:space:]]' "$AGG_LOG" || true)
+  if [ "$ALLOW_DRIFT" -eq 1 ] && [ "$NONEMPTY" -eq 1 ] && grep -qE "$DRIFT_RE" "$AGG_LOG"; then
+    DRIFT_LINE=$(grep -E "$DRIFT_RE" "$AGG_LOG" | head -1)
+  elif [ "$ALLOW_DRIFT" -eq 1 ]; then
+    echo "[FAIL] 重算失败,但不是格式明确的纯 CLI 版本漂移,不予降级" >&2
+    cat "$AGG_LOG" >&2
+    exit 1
+  else
+    echo "[FAIL] 重算未完成(默认严格模式)。确属已知版本漂移时,可显式加 --allow-version-drift。" >&2
+    cat "$AGG_LOG" >&2
+    exit 1
+  fi
 fi
 
-# ---- 主检查 2:已存结果哈希 ----
+# ---- 检查 4:已存结果哈希 ----
 python3 "$ROOT/scripts/check_result_hashes.py"
 
-# ---- 主检查 3:冻结证据未被改动 ----
-if git -C "$ROOT" rev-parse --is-inside-work-tree >/dev/null 2>&1 \
-   && ! git -C "$ROOT" diff --quiet -- evidence/formal_v3_5; then
-  echo "[FAIL] aggregate changed frozen tracked evidence" >&2
-  git -C "$ROOT" diff --stat -- evidence/formal_v3_5 >&2
+# ---- 检查 5:运行后冻结证据仍然干净 ----
+AFTER=$(evidence_status)
+if [ -n "$AFTER" ]; then
+  echo "[FAIL] 本次运行改动了冻结证据 $EVIDENCE_PATH" >&2
+  echo "$AFTER" >&2
   exit 1
 fi
-echo "[PASS] frozen evidence untouched"
+echo "[PASS] frozen evidence unchanged by this run"
 
 # ---- 报告 ----
 if [ "$RECOMPUTED" -eq 1 ]; then
-  echo "[PASS] aggregate recomputation reproduced"
   echo "[PASS] formal v3.5 collaboration snapshot fully verified"
   exit 0
 fi
@@ -93,11 +119,11 @@ except Exception as exc:
 PY
 )
 
-echo "[SKIP] aggregate recomputation —— 次要项:环境漂移,非结果问题"
+echo "[WARN] aggregate recomputation NOT performed —— 调用者以 --allow-version-drift 显式降级"
 echo "       登记版本:$REGISTERED"
 echo "       现场:${DRIFT_LINE#*：}"
-echo "       本次未完成逐字节重算;已存结果由主检查 2 独立确认未被改动。"
-echo "       要完整复验:还原上述登记版本后加 --strict 重跑。"
+echo "       检查 4 只确认已存结果字节未漂移,不能证明当初的汇总逻辑或结果正确。"
+echo "       要完整复验:还原上述登记版本后不带参数重跑。"
 echo "       若本次漂移尚未登记,请在 docs/repro/ 追加一条记录。"
-echo "[PASS] formal v3.5 collaboration snapshot verified (recompute skipped)"
+echo "[PARTIAL] formal v3.5 snapshot partially verified (recomputation skipped)"
 exit 0
