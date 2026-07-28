@@ -7,28 +7,36 @@
 #
 # 检查项:
 #   1. 仓库隐私边界
-#   2. 冻结证据在运行前无未提交改动;并记录**完整文件树哈希清单**
+#   2. 运行前:git 状态干净(index+worktree+untracked)+ 冻结目录无任何被
+#      .gitignore 忽略的文件(硬失败)+ 记录 lstat 文件树清单作基线
 #   3. 从冻结包逐字节重算
 #   4. 已存结果哈希与登记字节一致
-#   5. 运行后重算文件树哈希清单,与检查 2 的清单**逐字节比对**
+#   5. 运行后:git 状态 与 lstat 清单 **双重校验**,证明本次运行未改动冻结证据
 #
-# 检查 5 为什么不用 git:
-#   `git status --untracked-files=all` **看不见被 .gitignore 忽略的文件**,而本仓忽略了
-#   *.tmp、__pycache__/、*.py[cod] 等。故障注入验证过:往冻结目录放一个 .tmp 文件,
-#   纯 git 版检查仍会输出"未改变"并整体 PASS。因此改用不经过 git 的完整文件树哈希,
-#   新增、修改、删除(含被忽略的文件)一律会被发现。回归测试见
-#   scripts/test_verify_fault_injection.sh。
+# 设计要点(每条都来自被复现过的漏洞,不是假想):
+#   - git 相关检查一律 fail closed:不在 git 工作树内、或 git 命令本身失败,
+#     直接 [FAIL],绝不解释成"没有问题"。(归档副本没有 .git 时,旧版会把
+#     ls-files 的失败静默当成"无污染"。)
+#   - `git status --untracked-files=all` 看不见被 .gitignore 忽略的文件
+#     (本仓忽略 *.tmp、__pycache__/、*.py[cod] 等),所以"无被忽略文件"必须
+#     用 `git ls-files --others --ignored --exclude-standard` 单独硬检查;
+#     且运行前后清单比对抓不住"运行前就已存在的污染",故该硬检查独立于清单比对。
+#   - lstat 清单记录 类型/mode/symlink 目标/目录项,不只记内容哈希:
+#     否则 aggregate 留下的未跟踪 symlink、或只改执行位的变化会漏判。
+#   - git 状态与 lstat 清单在运行后**双重校验**,谁报异常都算失败。
+#   - 清理 trap 在任何 mktemp 之前安装,任何提前退出路径都不泄漏临时文件。
+#   - 重算失败不提前退出:先跑完检查 4、5 再统一退出,防止"失败 + 留下改动"
+#     静默逃逸。
+#   回归测试(隔离沙箱,不触碰真实冻结目录):scripts/test_verify_fault_injection.sh
 #
 # 关于第 4 项能证明什么:
-#   它只确认"已存结果文件的字节没有漂移",**不能**证明当初的汇总逻辑或汇总
-#   结果正确 —— 后者正是第 3 项重算要验证的内容。因此第 4 项通过不足以成为
-#   跳过第 3 项的理由;跳过只能靠调用者显式授权。
+#   它只确认"已存结果文件的字节没有漂移",不能证明当初的汇总逻辑或结果正确 ——
+#   后者正是第 3 项重算要验证的内容。因此第 4 项通过不足以成为跳过第 3 项的理由。
 #
 # 为什么需要 --allow-version-drift:
-#   冻结包内的 verify_run_authorization() 是为"防止未经授权调用模型"造的闸门
-#   (首条错误即"缺正式开跑登记,拒绝调用模型"),但 aggregate 不调用任何模型,
-#   只是把已存编码重新汇总。于是日常授权升级 CLI 也会让纯离线重算停摆。
-#   冻结包不得回改,故在本层提供显式降级开关,而不改动包内闸门。
+#   冻结包内的 verify_run_authorization() 是为"防止未经授权调用模型"造的闸门,
+#   但 aggregate 不调用任何模型,只是把已存编码重新汇总。日常授权升级 CLI 会让
+#   纯离线重算停摆。冻结包不得回改,故在本层提供显式降级开关。
 #
 # 用法: sh scripts/verify_formal_v3_5.sh [--allow-version-drift]
 
@@ -49,40 +57,67 @@ ALLOW_DRIFT=0
 for arg in "$@"; do
   case "$arg" in
     --allow-version-drift) ALLOW_DRIFT=1 ;;
-    -h|--help) sed -n '2,27p' "$0" | sed 's/^# \{0,1\}//'; exit 0 ;;
+    -h|--help) awk 'NR==1{next} /^#/{sub(/^# ?/,""); print; next} {exit}' "$0"; exit 0 ;;
     *) echo "未知参数:$arg(用法:sh scripts/verify_formal_v3_5.sh [--allow-version-drift])" >&2; exit 2 ;;
   esac
 done
 
-# git 视角的状态:覆盖 index、worktree、untracked。
-# **注意它看不见被 .gitignore 忽略的文件**(本仓忽略了 *.tmp、__pycache__/、*.py[cod] 等),
-# 所以它只用于"运行前是否有未提交改动",不能用来证明目录未被改动。
-evidence_status() {
-  if git -C "$ROOT" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
-    git -C "$ROOT" status --porcelain --untracked-files=all -- "$EVIDENCE_PATH"
-  fi
+# ---- 前置:必须在 git 工作树内(fail closed) ----
+if ! git -C "$ROOT" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+  echo "[FAIL] $ROOT 不在 git 工作树内,无法校验冻结证据的干净状态(fail closed)。" >&2
+  echo "       归档/解压副本请先还原为完整 git 仓库再运行本校验。" >&2
+  exit 1
+fi
+
+# ---- 清理 trap:先安装,再创建任何临时文件 ----
+BEFORE_MANIFEST=""
+AFTER_MANIFEST=""
+AGG_LOG=""
+cleanup() {
+  for f in "$BEFORE_MANIFEST" "$AFTER_MANIFEST" "$AGG_LOG"; do
+    if [ -n "$f" ]; then rm -f "$f"; fi
+  done
+}
+trap cleanup EXIT
+
+# git 视角的状态:覆盖 index、worktree、untracked。看不见被忽略的文件。
+git_evidence_status() {
+  git -C "$ROOT" status --porcelain --untracked-files=all -- "$EVIDENCE_PATH"
 }
 
-# 完整文件树清单:遍历目录下每一个文件算 SHA-256,**完全不经过 git**,
-# 因此被 .gitignore 忽略的文件也在内。新增、修改、删除都会改变这份清单。
-# 这是判定"冻结证据是否被本次运行改动"的唯一依据。
+# lstat 文件树清单:不经过 git,逐项记录 类型/mode/内容哈希(常规文件)/
+# symlink 目标/目录项。新增、修改、删除、类型变化、mode 变化都会改变这份清单。
 evidence_manifest() {
   python3 - "$ROOT/$EVIDENCE_PATH" <<'PY'
-import hashlib, os, sys
+import hashlib, os, stat, sys
 root = sys.argv[1]
 rows = []
-for dirpath, dirnames, filenames in os.walk(root):
-    dirnames.sort()
-    for name in sorted(filenames):
-        path = os.path.join(dirpath, name)
-        if os.path.islink(path) or not os.path.isfile(path):
-            rows.append(f"{'nonfile':<64}  {os.path.relpath(path, root)}")
-            continue
+def record(path):
+    st = os.lstat(path)
+    rel = os.path.relpath(path, root)
+    mode = oct(stat.S_IMODE(st.st_mode))
+    if stat.S_ISLNK(st.st_mode):
+        rows.append(f"l {mode} {rel} -> {os.readlink(path)}")
+    elif stat.S_ISDIR(st.st_mode):
+        rows.append(f"d {mode} {rel}")
+    elif stat.S_ISREG(st.st_mode):
         digest = hashlib.sha256()
         with open(path, "rb") as handle:
             for chunk in iter(lambda: handle.read(1 << 20), b""):
                 digest.update(chunk)
-        rows.append(f"{digest.hexdigest()}  {os.path.relpath(path, root)}")
+        rows.append(f"f {mode} {digest.hexdigest()} {rel}")
+    else:
+        rows.append(f"? {mode} {rel}")
+for dirpath, dirnames, filenames in os.walk(root):
+    record(dirpath)
+    dirnames.sort()
+    for name in sorted(filenames):
+        record(os.path.join(dirpath, name))
+    # symlink 指向目录时会出现在 dirnames 里且不被下钻,单独记录
+    for name in sorted(dirnames):
+        p = os.path.join(dirpath, name)
+        if os.path.islink(p):
+            record(p)
 rows.sort()
 print("\n".join(rows))
 PY
@@ -91,26 +126,23 @@ PY
 # ---- 检查 1:隐私边界 ----
 python3 "$ROOT/scripts/check_repo_privacy.py"
 
-# ---- 检查 2:运行前冻结证据必须干净 ----
-BEFORE_STATUS=$(evidence_status)
+# ---- 检查 2a:运行前 git 状态必须干净(fail closed) ----
+if ! BEFORE_STATUS=$(git_evidence_status); then
+  echo "[FAIL] 运行前 git status 执行失败,无法判定冻结证据状态(fail closed)。" >&2
+  exit 1
+fi
 if [ -n "$BEFORE_STATUS" ]; then
   echo "[FAIL] 运行前 $EVIDENCE_PATH 有未提交改动,无法证明本次运行是否改动了冻结证据" >&2
   echo "$BEFORE_STATUS" >&2
   exit 1
 fi
 
-# 记录运行前的完整文件树清单(含被忽略的文件),供检查 5 比对。
-BEFORE_MANIFEST=$(mktemp)
-AFTER_MANIFEST=$(mktemp)
-evidence_manifest >"$BEFORE_MANIFEST"
-
-# 冻结目录里**不得存在任何被 .gitignore 忽略的文件**。
-# 这是硬失败,不是警告:冻结证据必须处于其登记状态,多一个 .tmp / .pyc / __pycache__
-# 就说明目录已被污染,此时任何"未改变"的结论都不可信。
-#
-# 注意仅靠"运行前后清单比对"抓不住这一类:污染若在运行**之前**就存在,前后清单一致,
-# 会照常给出 PASS —— 这正是 2026-07-28 故障注入复核命中的漏洞。
-IGNORED_NOW=$(git -C "$ROOT" ls-files --others --ignored --exclude-standard -- "$EVIDENCE_PATH" 2>/dev/null || true)
+# ---- 检查 2b:冻结目录不得存在任何被 .gitignore 忽略的文件(硬失败,fail closed) ----
+# 运行前后清单比对抓不住"运行前就存在的污染",所以这一条必须独立硬检查。
+if ! IGNORED_NOW=$(git -C "$ROOT" ls-files --others --ignored --exclude-standard -- "$EVIDENCE_PATH"); then
+  echo "[FAIL] git ls-files 执行失败,无法判定是否存在被忽略的污染文件(fail closed)。" >&2
+  exit 1
+fi
 if [ -n "$IGNORED_NOW" ]; then
   echo "[FAIL] 冻结目录中存在被 .gitignore 忽略的文件,冻结证据已被污染:" >&2
   echo "$IGNORED_NOW" | sed 's/^/         /' >&2
@@ -118,7 +150,12 @@ if [ -n "$IGNORED_NOW" ]; then
   exit 1
 fi
 
-echo "[PASS] frozen evidence clean before run（无未提交改动、无被忽略文件;完整清单已记录）"
+# ---- 检查 2c:记录运行前 lstat 清单作基线 ----
+BEFORE_MANIFEST=$(mktemp)
+AFTER_MANIFEST=$(mktemp)
+evidence_manifest >"$BEFORE_MANIFEST"
+
+echo "[PASS] frozen evidence clean before run（git 状态干净、无被忽略文件、lstat 基线已记录）"
 
 # ---- 检查 3:逐字节重算 ----
 RECOMPUTED=0
@@ -126,7 +163,6 @@ DRIFT_LINE=""
 AGG_STATUS=0
 AGG_REASON=""
 AGG_LOG=$(mktemp)
-trap 'rm -f "$AGG_LOG" "$BEFORE_MANIFEST" "$AFTER_MANIFEST"' EXIT
 
 if (cd "$PACKAGE" && python3 analysis_v2.py aggregate) >"$AGG_LOG" 2>&1; then
   RECOMPUTED=1
@@ -145,29 +181,38 @@ else
   fi
 fi
 
-# 注意:重算失败时**不在此处退出**。aggregate 可能在失败前已经写了一部分文件,
-# 必须先跑完检查 5(运行后冻结证据)才能知道冻结证据有没有被改脏。提前 exit
-# 会跳过那一步,让"失败 + 留下改动"这种最危险的情况静默逃逸。
+# 注意:重算失败时不在此处退出。aggregate 可能在失败前已写了一部分文件,
+# 必须先跑完检查 4、5 才能知道冻结证据有没有被改脏。
 
-# ---- 检查 4:已存结果哈希(重算失败也执行,信息更全) ----
+# ---- 检查 4:已存结果哈希(重算失败也执行) ----
 HASH_STATUS=0
 if ! python3 "$ROOT/scripts/check_result_hashes.py"; then
   HASH_STATUS=1
 fi
 
-# ---- 检查 5:运行后冻结证据仍然干净(无论前面成败,必须执行) ----
-# 以完整文件树清单为准,不以 git 为准 —— git 看不见被忽略的文件。
+# ---- 检查 5:运行后 git 状态 与 lstat 清单 双重校验(无论前面成败,必须执行) ----
 POST_STATUS=0
+if ! AFTER_STATUS=$(git_evidence_status); then
+  POST_STATUS=1
+  echo "[FAIL] 运行后 git status 执行失败,无法判定冻结证据状态(fail closed)。" >&2
+else
+  if [ -n "$AFTER_STATUS" ]; then
+    POST_STATUS=1
+    echo "[FAIL] 本次运行改动了冻结证据 $EVIDENCE_PATH(git 状态):" >&2
+    echo "$AFTER_STATUS" | sed 's/^/       /' >&2
+  fi
+fi
 evidence_manifest >"$AFTER_MANIFEST"
 if ! diff -q "$BEFORE_MANIFEST" "$AFTER_MANIFEST" >/dev/null 2>&1; then
   POST_STATUS=1
-  echo "[FAIL] 本次运行改动了冻结证据 $EVIDENCE_PATH(文件树哈希清单不一致)" >&2
+  echo "[FAIL] 本次运行改动了冻结证据 $EVIDENCE_PATH(lstat 文件树清单不一致):" >&2
   diff "$BEFORE_MANIFEST" "$AFTER_MANIFEST" | sed 's/^/       /' >&2
-  if [ "$AGG_STATUS" -ne 0 ]; then
-    echo "       ⚠ 重算是失败的,却仍留下了改动 —— 冻结包可能被写脏,请人工核对后再继续。" >&2
-  fi
-else
-  echo "[PASS] frozen evidence unchanged by this run（按完整文件树哈希,含被忽略文件）"
+fi
+if [ "$POST_STATUS" -ne 0 ] && [ "$AGG_STATUS" -ne 0 ]; then
+  echo "       ⚠ 重算是失败的,却仍留下了改动 —— 冻结包可能被写脏,请人工核对后再继续。" >&2
+fi
+if [ "$POST_STATUS" -eq 0 ]; then
+  echo "[PASS] frozen evidence unchanged by this run（git 状态与 lstat 清单双重校验）"
 fi
 
 # ---- 统一退出:任何一项不过都失败 ----
@@ -182,7 +227,7 @@ if [ "$AGG_STATUS" -ne 0 ] || [ "$HASH_STATUS" -ne 0 ] || [ "$POST_STATUS" -ne 0
     echo "  - 检查 4 已存结果哈希:不一致" >&2
   fi
   if [ "$POST_STATUS" -ne 0 ]; then
-    echo "  - 检查 5 运行后冻结证据:已被改动" >&2
+    echo "  - 检查 5 运行后冻结证据:已被改动或无法判定" >&2
   fi
   exit 1
 fi

@@ -45,6 +45,9 @@
 - 反例和失败结果不得删掉：S8' 复现失败、AI-only 判读、样本窄和运输修补历史都是论文必写限制。
 - 如果一段只有作者能解释清楚，先退回讨论，不用术语遮住理解分歧。
 - 改动 `scripts/verify_formal_v3_5.sh` 时必须同时运行
-  `sh scripts/test_verify_fault_injection.sh`。该测试用故障注入验证"被 `.gitignore`
-  忽略的污染文件(`.tmp` / `__pycache__` / `.pyc`)必须被检出"。冻结目录中存在任何
-  被忽略的文件都是**硬失败**,不是警告。
+  `sh scripts/test_verify_fault_injection.sh`。该测试**全部在 mktemp 沙箱中的仓库
+  副本上执行,不触碰真实冻结目录**,共 7 项断言:被忽略污染检出(须匹配精确错误
+  信息,不认"随便什么非零退出")、无关错误对照、干净路径阴性对照、运行中注入
+  symlink、运行中只改 mode、无 `.git` 副本 fail closed、临时文件零泄漏。
+  冻结目录中存在任何被忽略的文件都是**硬失败**,不是警告;git 命令失败一律
+  fail closed,不得解释成"没有问题"。
