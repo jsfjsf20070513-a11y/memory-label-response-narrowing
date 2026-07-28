@@ -151,8 +151,9 @@ if [ -n "$IGNORED_NOW" ]; then
 fi
 
 # ---- 检查 2c:记录运行前 lstat 清单作基线 ----
-BEFORE_MANIFEST=$(mktemp)
-AFTER_MANIFEST=$(mktemp)
+# 专属前缀:让调用方(含回归测试)能精确识别本脚本的临时文件,不与 OS 噪声混淆
+BEFORE_MANIFEST=$(mktemp "${TMPDIR:-/tmp}/verify_fv35.XXXXXX")
+AFTER_MANIFEST=$(mktemp "${TMPDIR:-/tmp}/verify_fv35.XXXXXX")
 evidence_manifest >"$BEFORE_MANIFEST"
 
 echo "[PASS] frozen evidence clean before run（git 状态干净、无被忽略文件、lstat 基线已记录）"
@@ -162,7 +163,7 @@ RECOMPUTED=0
 DRIFT_LINE=""
 AGG_STATUS=0
 AGG_REASON=""
-AGG_LOG=$(mktemp)
+AGG_LOG=$(mktemp "${TMPDIR:-/tmp}/verify_fv35.XXXXXX")
 
 if (cd "$PACKAGE" && python3 analysis_v2.py aggregate) >"$AGG_LOG" 2>&1; then
   RECOMPUTED=1

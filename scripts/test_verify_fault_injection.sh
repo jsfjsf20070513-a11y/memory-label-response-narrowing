@@ -5,7 +5,10 @@
 #   R3:被 .gitignore 忽略的 .tmp 放进冻结目录,校验仍整体 PASS;
 #   R4:①回归测试直接写真实冻结目录;②只断言非零退出,无关错误也算"检测成功";
 #      ③git 失败被静默解释成"无污染"(fail open);④manifest 只记内容哈希,
-#      漏判 symlink 与 mode 变化;⑤污染路径泄漏临时文件。
+#      漏判 symlink 与 mode 变化;⑤污染路径泄漏临时文件;
+#   R5:⑥"TMPDIR 必须为空"在 macOS 恒定误报——Apple Git 触发 xcrun 在空 TMPDIR
+#      里写 xcrun_db,那不是校验器的泄漏;⑦"真实证据零接触"只靠 git status 证明,
+#      而 git status 恰恰看不见 ignored 文件,守卫自身带着被修的盲区。
 # 本测试对每一条都固化一个断言,并遵守两条纪律:
 #   1. **一切注入都发生在 mktemp -d 沙箱里的仓库副本上,真实冻结目录零接触**
 #      (对真实仓库只做只读的 git status,首尾各一次,证明未被本测试改动)。
@@ -35,8 +38,46 @@ SANDBOX=$(mktemp -d)
 cleanup() { rm -rf "$SANDBOX"; }
 trap cleanup EXIT
 
+# lstat 文件树清单(与校验器同构,不经过 git):ignored 文件、symlink、mode 全在内。
+# "真实证据零接触"必须由它托底 —— git status 恰恰看不见 ignored 文件,
+# 用它当守卫等于带着本 PR 要修的盲区(第五轮复核以故障注入证实过假阳性)。
+tree_manifest() {
+  python3 - "$1" <<'PY2'
+import hashlib, os, stat, sys
+root = sys.argv[1]
+rows = []
+def record(path):
+    st = os.lstat(path)
+    rel = os.path.relpath(path, root)
+    mode = oct(stat.S_IMODE(st.st_mode))
+    if stat.S_ISLNK(st.st_mode):
+        rows.append(f"l {mode} {rel} -> {os.readlink(path)}")
+    elif stat.S_ISDIR(st.st_mode):
+        rows.append(f"d {mode} {rel}")
+    elif stat.S_ISREG(st.st_mode):
+        digest = hashlib.sha256()
+        with open(path, "rb") as handle:
+            for chunk in iter(lambda: handle.read(1 << 20), b""):
+                digest.update(chunk)
+        rows.append(f"f {mode} {digest.hexdigest()} {rel}")
+    else:
+        rows.append(f"? {mode} {rel}")
+for dirpath, dirnames, filenames in os.walk(root):
+    record(dirpath)
+    dirnames.sort()
+    for name in sorted(filenames):
+        record(os.path.join(dirpath, name))
+    for name in sorted(dirnames):
+        p = os.path.join(dirpath, name)
+        if os.path.islink(p):
+            record(p)
+rows.sort()
+print("\n".join(rows))
+PY2
+}
+
 # 真实仓库只读基线(证明本测试没碰真实证据;放在一切动作之前)
-REAL_BEFORE=$(git -C "$ROOT" status --porcelain --untracked-files=all -- evidence)
+REAL_BEFORE=$(tree_manifest "$ROOT/evidence")
 
 # ---- 搭沙箱:复制仓库(不含 .git),独立 git 初始化,替换 aggregate 为受控桩 ----
 REPO="$SANDBOX/repo"
@@ -126,10 +167,14 @@ else
   bad "断言 3:干净状态行为异常(rc=$RC)"
   printf '%s\n' "$OUT" | sed 's/^/    /' >&2
 fi
-if [ -z "$(ls -A "$TMPISO")" ]; then
-  ok "断言 3b:隔离 TMPDIR 运行后为空,无临时文件泄漏"
+# 模拟 macOS 工具链噪声:Apple Git 会触发 xcrun 在空 TMPDIR 写 xcrun_db。
+# 断言只认校验器专属前缀(verify_fv35.*)的残留,OS 噪声不得导致误报。
+touch "$TMPISO/xcrun_db"
+LEFTOVER=$(find "$TMPISO" -name 'verify_fv35.*' 2>/dev/null || true)
+if [ -z "$LEFTOVER" ]; then
+  ok "断言 3b:无 verify_fv35.* 残留(TMPDIR 中存在 xcrun_db 噪声,未误报)"
 else
-  bad "断言 3b:泄漏了临时文件:$(ls -A "$TMPISO" | tr '\n' ' ')"
+  bad "断言 3b:校验器泄漏了临时文件:$LEFTOVER"
 fi
 
 # ---- 断言 4:aggregate 运行中留下未跟踪 symlink → 运行后检查必须抓到 ----
@@ -169,12 +214,27 @@ else
   printf '%s\n' "$OUT" | sed 's/^/    /' >&2
 fi
 
-# ---- 断言 7:真实仓库冻结证据全程未被本测试触碰 ----
-REAL_AFTER=$(git -C "$ROOT" status --porcelain --untracked-files=all -- evidence)
-if [ "$REAL_BEFORE" = "$REAL_AFTER" ]; then
-  ok "断言 7:真实 evidence/ 的 git 状态首尾一致,本测试零接触"
+# ---- 断言 7a(守卫自检):零接触守卫必须能看见 ignored 文件 ----
+# 在沙箱里验证托底机制本身没有盲区:放一个 ignored 文件,清单必须变化。
+SELFCHK_BEFORE=$(tree_manifest "$REPO/evidence")
+printf 'guard self check\n' >"$REPO/$PKG_REL/fi_guard_check.tmp"
+SELFCHK_AFTER=$(tree_manifest "$REPO/evidence")
+rm -f "$REPO/$PKG_REL/fi_guard_check.tmp"
+if [ "$SELFCHK_BEFORE" != "$SELFCHK_AFTER" ]; then
+  ok "断言 7a:零接触守卫(lstat 清单)能看见 ignored 文件,自身无盲区"
 else
-  bad "断言 7:真实 evidence/ 状态发生变化,请立即人工核对!"
+  bad "断言 7a:守卫看不见 ignored 文件 —— 断言 7 的"零接触"证明无效!"
+fi
+
+# ---- 断言 7b:真实仓库冻结证据全程未被本测试触碰(lstat 清单托底) ----
+REAL_AFTER=$(tree_manifest "$ROOT/evidence")
+if [ "$REAL_BEFORE" = "$REAL_AFTER" ]; then
+  ok "断言 7b:真实 evidence/ 的 lstat 清单首尾一致(含 ignored/symlink/mode),本测试零接触"
+else
+  bad "断言 7b:真实 evidence/ 发生变化,请立即人工核对!"
+  printf '%s\n' "$REAL_AFTER" > "$SANDBOX/real_after.txt"
+  printf '%s\n' "$REAL_BEFORE" > "$SANDBOX/real_before.txt"
+  diff "$SANDBOX/real_before.txt" "$SANDBOX/real_after.txt" | sed 's/^/    /' >&2 || true
 fi
 
 if [ "$FAILED" -ne 0 ]; then
@@ -182,4 +242,4 @@ if [ "$FAILED" -ne 0 ]; then
   echo "[FAIL] 故障注入回归测试未通过" >&2
   exit 1
 fi
-echo "[PASS] 故障注入回归测试通过(7 项断言,全部在隔离沙箱执行)"
+echo "[PASS] 故障注入回归测试通过(9 项断言;注入全部在隔离沙箱,真实证据由 lstat 清单确证零接触)"
