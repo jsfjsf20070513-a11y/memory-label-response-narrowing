@@ -69,6 +69,8 @@ echo "[PASS] frozen evidence clean before run"
 # ---- 检查 3:逐字节重算 ----
 RECOMPUTED=0
 DRIFT_LINE=""
+AGG_STATUS=0
+AGG_REASON=""
 AGG_LOG=$(mktemp)
 trap 'rm -f "$AGG_LOG"' EXIT
 
@@ -81,27 +83,54 @@ else
   if [ "$ALLOW_DRIFT" -eq 1 ] && [ "$NONEMPTY" -eq 1 ] && grep -qE "$DRIFT_RE" "$AGG_LOG"; then
     DRIFT_LINE=$(grep -E "$DRIFT_RE" "$AGG_LOG" | head -1)
   elif [ "$ALLOW_DRIFT" -eq 1 ]; then
-    echo "[FAIL] 重算失败,但不是格式明确的纯 CLI 版本漂移,不予降级" >&2
-    cat "$AGG_LOG" >&2
-    exit 1
+    AGG_STATUS=1
+    AGG_REASON="重算失败,但不是格式明确的纯 CLI 版本漂移,不予降级"
   else
-    echo "[FAIL] 重算未完成(默认严格模式)。确属已知版本漂移时,可显式加 --allow-version-drift。" >&2
-    cat "$AGG_LOG" >&2
-    exit 1
+    AGG_STATUS=1
+    AGG_REASON="重算未完成(默认严格模式)。确属已知版本漂移时,可显式加 --allow-version-drift。"
   fi
 fi
 
-# ---- 检查 4:已存结果哈希 ----
-python3 "$ROOT/scripts/check_result_hashes.py"
+# 注意:重算失败时**不在此处退出**。aggregate 可能在失败前已经写了一部分文件,
+# 必须先跑完检查 5(运行后冻结证据)才能知道冻结证据有没有被改脏。提前 exit
+# 会跳过那一步,让"失败 + 留下改动"这种最危险的情况静默逃逸。
 
-# ---- 检查 5:运行后冻结证据仍然干净 ----
+# ---- 检查 4:已存结果哈希(重算失败也执行,信息更全) ----
+HASH_STATUS=0
+if ! python3 "$ROOT/scripts/check_result_hashes.py"; then
+  HASH_STATUS=1
+fi
+
+# ---- 检查 5:运行后冻结证据仍然干净(无论前面成败,必须执行) ----
+POST_STATUS=0
 AFTER=$(evidence_status)
 if [ -n "$AFTER" ]; then
+  POST_STATUS=1
   echo "[FAIL] 本次运行改动了冻结证据 $EVIDENCE_PATH" >&2
   echo "$AFTER" >&2
+  if [ "$AGG_STATUS" -ne 0 ]; then
+    echo "       ⚠ 重算是失败的,却仍留下了改动 —— 冻结包可能被写脏,请人工核对后再继续。" >&2
+  fi
+else
+  echo "[PASS] frozen evidence unchanged by this run"
+fi
+
+# ---- 统一退出:任何一项不过都失败 ----
+if [ "$AGG_STATUS" -ne 0 ] || [ "$HASH_STATUS" -ne 0 ] || [ "$POST_STATUS" -ne 0 ]; then
+  echo "" >&2
+  echo "[FAIL] 校验未通过:" >&2
+  if [ "$AGG_STATUS" -ne 0 ]; then
+    echo "  - 检查 3 重算:$AGG_REASON" >&2
+    sed 's/^/      /' "$AGG_LOG" >&2
+  fi
+  if [ "$HASH_STATUS" -ne 0 ]; then
+    echo "  - 检查 4 已存结果哈希:不一致" >&2
+  fi
+  if [ "$POST_STATUS" -ne 0 ]; then
+    echo "  - 检查 5 运行后冻结证据:已被改动" >&2
+  fi
   exit 1
 fi
-echo "[PASS] frozen evidence unchanged by this run"
 
 # ---- 报告 ----
 if [ "$RECOMPUTED" -eq 1 ]; then
