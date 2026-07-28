@@ -7,10 +7,17 @@
 #
 # 检查项:
 #   1. 仓库隐私边界
-#   2. 冻结证据在运行前是干净的(index + worktree + untracked)
+#   2. 冻结证据在运行前无未提交改动;并记录**完整文件树哈希清单**
 #   3. 从冻结包逐字节重算
 #   4. 已存结果哈希与登记字节一致
-#   5. 冻结证据在运行后仍然干净(与 2 对照,证明本次运行未改动)
+#   5. 运行后重算文件树哈希清单,与检查 2 的清单**逐字节比对**
+#
+# 检查 5 为什么不用 git:
+#   `git status --untracked-files=all` **看不见被 .gitignore 忽略的文件**,而本仓忽略了
+#   *.tmp、__pycache__/、*.py[cod] 等。故障注入验证过:往冻结目录放一个 .tmp 文件,
+#   纯 git 版检查仍会输出"未改变"并整体 PASS。因此改用不经过 git 的完整文件树哈希,
+#   新增、修改、删除(含被忽略的文件)一律会被发现。回归测试见
+#   scripts/test_verify_fault_injection.sh。
 #
 # 关于第 4 项能证明什么:
 #   它只确认"已存结果文件的字节没有漂移",**不能**证明当初的汇总逻辑或汇总
@@ -47,24 +54,71 @@ for arg in "$@"; do
   esac
 done
 
-# 完整工作区状态:同时覆盖 index、worktree 与 untracked。
+# git 视角的状态:覆盖 index、worktree、untracked。
+# **注意它看不见被 .gitignore 忽略的文件**(本仓忽略了 *.tmp、__pycache__/、*.py[cod] 等),
+# 所以它只用于"运行前是否有未提交改动",不能用来证明目录未被改动。
 evidence_status() {
   if git -C "$ROOT" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
     git -C "$ROOT" status --porcelain --untracked-files=all -- "$EVIDENCE_PATH"
   fi
 }
 
+# 完整文件树清单:遍历目录下每一个文件算 SHA-256,**完全不经过 git**,
+# 因此被 .gitignore 忽略的文件也在内。新增、修改、删除都会改变这份清单。
+# 这是判定"冻结证据是否被本次运行改动"的唯一依据。
+evidence_manifest() {
+  python3 - "$ROOT/$EVIDENCE_PATH" <<'PY'
+import hashlib, os, sys
+root = sys.argv[1]
+rows = []
+for dirpath, dirnames, filenames in os.walk(root):
+    dirnames.sort()
+    for name in sorted(filenames):
+        path = os.path.join(dirpath, name)
+        if os.path.islink(path) or not os.path.isfile(path):
+            rows.append(f"{'nonfile':<64}  {os.path.relpath(path, root)}")
+            continue
+        digest = hashlib.sha256()
+        with open(path, "rb") as handle:
+            for chunk in iter(lambda: handle.read(1 << 20), b""):
+                digest.update(chunk)
+        rows.append(f"{digest.hexdigest()}  {os.path.relpath(path, root)}")
+rows.sort()
+print("\n".join(rows))
+PY
+}
+
 # ---- 检查 1:隐私边界 ----
 python3 "$ROOT/scripts/check_repo_privacy.py"
 
 # ---- 检查 2:运行前冻结证据必须干净 ----
-BEFORE=$(evidence_status)
-if [ -n "$BEFORE" ]; then
-  echo "[FAIL] 运行前 $EVIDENCE_PATH 就不干净,无法证明本次运行是否改动了冻结证据" >&2
-  echo "$BEFORE" >&2
+BEFORE_STATUS=$(evidence_status)
+if [ -n "$BEFORE_STATUS" ]; then
+  echo "[FAIL] 运行前 $EVIDENCE_PATH 有未提交改动,无法证明本次运行是否改动了冻结证据" >&2
+  echo "$BEFORE_STATUS" >&2
   exit 1
 fi
-echo "[PASS] frozen evidence clean before run"
+
+# 记录运行前的完整文件树清单(含被忽略的文件),供检查 5 比对。
+BEFORE_MANIFEST=$(mktemp)
+AFTER_MANIFEST=$(mktemp)
+evidence_manifest >"$BEFORE_MANIFEST"
+
+# 冻结目录里**不得存在任何被 .gitignore 忽略的文件**。
+# 这是硬失败,不是警告:冻结证据必须处于其登记状态,多一个 .tmp / .pyc / __pycache__
+# 就说明目录已被污染,此时任何"未改变"的结论都不可信。
+#
+# 注意仅靠"运行前后清单比对"抓不住这一类:污染若在运行**之前**就存在,前后清单一致,
+# 会照常给出 PASS —— 这正是 2026-07-28 故障注入复核命中的漏洞。
+IGNORED_NOW=$(git -C "$ROOT" ls-files --others --ignored --exclude-standard -- "$EVIDENCE_PATH" 2>/dev/null || true)
+if [ -n "$IGNORED_NOW" ]; then
+  echo "[FAIL] 冻结目录中存在被 .gitignore 忽略的文件,冻结证据已被污染:" >&2
+  echo "$IGNORED_NOW" | sed 's/^/         /' >&2
+  echo "       git status 看不见这些文件。请人工确认来源后删除,再重跑本校验。" >&2
+  exit 1
+fi
+
+echo "[PASS] frozen evidence clean before run（无未提交改动、无被忽略文件;完整清单已记录）"
 
 # ---- 检查 3:逐字节重算 ----
 RECOMPUTED=0
@@ -72,7 +126,7 @@ DRIFT_LINE=""
 AGG_STATUS=0
 AGG_REASON=""
 AGG_LOG=$(mktemp)
-trap 'rm -f "$AGG_LOG"' EXIT
+trap 'rm -f "$AGG_LOG" "$BEFORE_MANIFEST" "$AFTER_MANIFEST"' EXIT
 
 if (cd "$PACKAGE" && python3 analysis_v2.py aggregate) >"$AGG_LOG" 2>&1; then
   RECOMPUTED=1
@@ -102,17 +156,18 @@ if ! python3 "$ROOT/scripts/check_result_hashes.py"; then
 fi
 
 # ---- 检查 5:运行后冻结证据仍然干净(无论前面成败,必须执行) ----
+# 以完整文件树清单为准,不以 git 为准 —— git 看不见被忽略的文件。
 POST_STATUS=0
-AFTER=$(evidence_status)
-if [ -n "$AFTER" ]; then
+evidence_manifest >"$AFTER_MANIFEST"
+if ! diff -q "$BEFORE_MANIFEST" "$AFTER_MANIFEST" >/dev/null 2>&1; then
   POST_STATUS=1
-  echo "[FAIL] 本次运行改动了冻结证据 $EVIDENCE_PATH" >&2
-  echo "$AFTER" >&2
+  echo "[FAIL] 本次运行改动了冻结证据 $EVIDENCE_PATH(文件树哈希清单不一致)" >&2
+  diff "$BEFORE_MANIFEST" "$AFTER_MANIFEST" | sed 's/^/       /' >&2
   if [ "$AGG_STATUS" -ne 0 ]; then
     echo "       ⚠ 重算是失败的,却仍留下了改动 —— 冻结包可能被写脏,请人工核对后再继续。" >&2
   fi
 else
-  echo "[PASS] frozen evidence unchanged by this run"
+  echo "[PASS] frozen evidence unchanged by this run（按完整文件树哈希,含被忽略文件）"
 fi
 
 # ---- 统一退出:任何一项不过都失败 ----
