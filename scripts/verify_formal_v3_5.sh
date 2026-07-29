@@ -11,7 +11,10 @@
 #      记录 lstat 文件树清单基线 + **基线后 ignored 复查**(关竞态窗口)
 #   3. 从冻结包逐字节重算
 #   4. 已存结果哈希与登记字节一致
-#   5. 运行后:git 状态、lstat 清单、**ignored 终检** 三重校验
+#   5. 运行后:git 状态、lstat 清单、ignored 快照 三重校验
+#
+# 前提:**验证期间独占工作树**。所有检查均为时点快照,不抵抗外部并发写
+# (有限次快照原理上挡不住,见 list_ignored_or_die 处注释)。
 #
 # 设计要点(每条都来自被复现过的漏洞,不是假想):
 #   - git 相关检查一律 fail closed:不在 git 工作树内、或 git 命令本身失败,
@@ -138,11 +141,12 @@ if [ -n "$BEFORE_STATUS" ]; then
 fi
 
 # ignored 检查(fail closed),供运行前、基线后、运行后三处复用。
-# 三处缺一不可:单次检查与基线建立之间存在竞态窗口——污染若恰在 ls-files 返回空之后、
-# 基线清单生成之前出现,它会被纳入基线,前后清单一致、git status 又看不见,四道全漏。
-# 该竞态已被第六轮复核用 git wrapper 实际复现(退出码 0 放行)。
-# 关闭方式:基线建立后立即复查一次;运行结束后再终检一次——凡持续存在到任一检查点的
-# 污染必被其后最近的检查抓到。(出现后又自行消失的瞬态污染超出终态检查的能力范围。)
+# 基线后复查关闭"首查返回空→建基线"这个已被实际复现的窗口(第六轮,git wrapper);
+# 运行后快照抓"存在于该快照时刻"的污染。
+# **并发边界(第七轮复核后明确)**:三次检查都是时点快照,有限次快照对抗不了外部
+# 并发写——复核者已用计数 shim 证明"末次快照后写入"仍会放行。因此本脚本的前提是
+# **验证期间独占工作树**(没有其他进程在写本仓库);它不抵抗、也不声称抵抗并发注入。
+# 要抵抗并发写需要锁或只读快照副本,不是更多次轮询。
 list_ignored_or_die() {  # $1 = 阶段描述
   if ! _IG=$(git -C "$ROOT" ls-files --others --ignored --exclude-standard -- "$EVIDENCE_PATH"); then
     echo "[FAIL] git ls-files 执行失败($1),无法判定是否存在被忽略的污染文件(fail closed)。" >&2
@@ -227,19 +231,20 @@ if ! diff -q "$BEFORE_MANIFEST" "$AFTER_MANIFEST" >/dev/null 2>&1; then
   echo "[FAIL] 本次运行改动了冻结证据 $EVIDENCE_PATH(lstat 文件树清单不一致):" >&2
   diff "$BEFORE_MANIFEST" "$AFTER_MANIFEST" | sed 's/^/       /' >&2
 fi
-# ignored 终检:清单比对只能发现"基线之后出现"的污染;若污染在竞态窗口混入基线,
-# 前后清单一致——只有对终态直接再查 ignored 才能抓到。
+# ignored 运行后快照:清单比对只能发现"基线之后出现"的污染;若污染在竞态窗口混入
+# 基线,前后清单一致——只有直接再查 ignored 才能抓到。它抓的是"快照时刻仍存在"的
+# 污染;快照之后的写入见文件头声明的独占工作树前提。
 IGNORED_END=$(list_ignored_or_die "运行后")
 if [ -n "$IGNORED_END" ]; then
   POST_STATUS=1
-  echo "[FAIL] 运行后冻结目录中存在被 .gitignore 忽略的文件(无论何时混入,终态即污染):" >&2
+  echo "[FAIL] 运行后快照发现冻结目录存在被 .gitignore 忽略的文件:" >&2
   echo "$IGNORED_END" | sed 's/^/       /' >&2
 fi
 if [ "$POST_STATUS" -ne 0 ] && [ "$AGG_STATUS" -ne 0 ]; then
   echo "       ⚠ 重算是失败的,却仍留下了改动 —— 冻结包可能被写脏,请人工核对后再继续。" >&2
 fi
 if [ "$POST_STATUS" -eq 0 ]; then
-  echo "[PASS] frozen evidence unchanged by this run（git 状态与 lstat 清单双重校验）"
+  echo "[PASS] frozen evidence unchanged by this run（git 状态、lstat 清单、ignored 快照三重校验）"
 fi
 
 # ---- 统一退出:任何一项不过都失败 ----
