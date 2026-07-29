@@ -244,10 +244,10 @@ rm -f "$RACE_FILE" "$RACE_MARK"
 # ---- 断言 7:aggregate 运行中写入被忽略的 .tmp → 运行后 ignored 终检必须抓到 ----
 AGG_MODE=ignoredfile
 run_verifier --allow-version-drift
-if [ "$RC" -ne 0 ] && printf '%s' "$OUT" | grep -q "运行后冻结目录中存在被 .gitignore 忽略的文件"; then
-  ok "断言 7:运行中写入 ignored 文件 → 被运行后终检以精确原因拒绝"
+if [ "$RC" -ne 0 ] && printf '%s' "$OUT" | grep -q "运行后快照发现冻结目录存在被 .gitignore 忽略的文件"; then
+  ok "断言 7:运行中写入 ignored 文件 → 被运行后快照以精确原因拒绝"
 else
-  bad "断言 7:运行中的 ignored 污染未被终检抓到(rc=$RC)"
+  bad "断言 7:运行中的 ignored 污染未被运行后快照抓到(rc=$RC)"
   printf '%s\n' "$OUT" | sed 's/^/    /' >&2
 fi
 rm -f "$REPO/$PKG_REL/fi_midrun_pollution.tmp"
