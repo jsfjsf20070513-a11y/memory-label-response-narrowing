@@ -14,7 +14,54 @@ CONTENT_PATTERNS = {
     "OpenAI_style_key": re.compile(rb"sk-[A-Za-z0-9_-]{16,}"),
     "GitHub_token": re.compile(rb"gh[pousr]_[A-Za-z0-9]{20,}"),
     "private_key": re.compile(rb"BEGIN [A-Z ]+ PRIVATE KEY"),
+    # 红线审计 2026-07-29 扩充(对抗测试曾证明旧版对下列内容全部 PASS):
+    "student_id_email": re.compile(rb"\b[0-9]{8,13}@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"),
+    "personal_email": re.compile(
+        rb"\b[A-Za-z0-9._%+-]+@(?:gmail|qq|163|126|outlook|hotmail|foxmail)\.(?:com|cn)\b"
+    ),
+    "cn_mobile": re.compile(rb"\b1[3-9][0-9]{9}\b"),
+    "wechat_export_marker": re.compile(("微信聊天" "导出|聊天记录" "导出").encode("utf-8"))  # 拆写避免自匹配,
 }
+# 文件名级标记:聊天导出与逐判官表格类文件不得入库,无论内容
+FORBIDDEN_FILENAME_PATTERNS = ("聊天" "导出", "chat.txt")  # 拆写避免自匹配
+FORBIDDEN_EXTRA_SUFFIXES = {".tsv", ".7z"}
+
+# 提交元数据(红线审计 2026-07-29):git 历史的作者/提交者身份也可能泄露 PII。
+# 规则:HEAD 的作者与提交者邮箱必须是化名(allowlist 后缀),否则 FAIL——止住增量;
+# 历史中已存在的非化名邮箱只 WARN 计数(存量处理走脱敏镜像策略,见披露登记 E4)。
+PSEUDONYM_EMAIL_SUFFIXES = ("users.noreply.github.com", "test.invalid")
+
+
+def check_git_identity(failures: list) -> None:
+    import subprocess
+    try:
+        head = subprocess.run(
+            ["git", "-C", str(ROOT), "log", "-1", "--format=%ae%n%ce"],
+            capture_output=True, text=True, check=True,
+        ).stdout.split()
+    except Exception as exc:
+        failures.append(f"git identity check failed closed: {exc}")
+        return
+    for email in head:
+        if not email.endswith(PSEUDONYM_EMAIL_SUFFIXES):
+            failures.append(
+                "HEAD commit author/committer email is not pseudonymous; "
+                "set repo-local git config user.email to a noreply address"
+            )
+            break
+    try:
+        history = subprocess.run(
+            ["git", "-C", str(ROOT), "log", "--all", "--format=%ae%n%ce"],
+            capture_output=True, text=True, check=True,
+        ).stdout.split()
+    except Exception:
+        return
+    legacy = sum(1 for e in set(history) if not e.endswith(PSEUDONYM_EMAIL_SUFFIXES))
+    if legacy:
+        print(
+            f"[WARN] git history contains {legacy} non-pseudonymous identity value(s); "
+            "covered by mirror strategy (disclosure ledger E4), fix before any publication"
+        )
 
 
 def iter_files():
@@ -28,8 +75,10 @@ def main() -> None:
     failures = []
     for path in iter_files():
         relative = path.relative_to(ROOT)
-        if path.suffix.lower() in FORBIDDEN_SUFFIXES:
+        if path.suffix.lower() in FORBIDDEN_SUFFIXES | FORBIDDEN_EXTRA_SUFFIXES:
             failures.append(f"forbidden suffix: {relative}")
+        if any(marker in path.name for marker in FORBIDDEN_FILENAME_PATTERNS):
+            failures.append(f"forbidden chat-export filename: {relative}")
         if FORBIDDEN_PARTS.intersection(relative.parts):
             failures.append(f"forbidden directory: {relative}")
         if any(fragment in path.name for fragment in FORBIDDEN_NAME_FRAGMENTS):
@@ -40,6 +89,7 @@ def main() -> None:
         for label, pattern in CONTENT_PATTERNS.items():
             if pattern.search(data):
                 failures.append(f"{label}: {relative}")
+    check_git_identity(failures)
     if failures:
         raise SystemExit("[FAIL] repository privacy boundary\n" + "\n".join(sorted(set(failures))))
     print("[PASS] repository privacy boundary")
