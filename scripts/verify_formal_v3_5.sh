@@ -7,11 +7,11 @@
 #
 # 检查项:
 #   1. 仓库隐私边界
-#   2. 运行前:git 状态干净(index+worktree+untracked)+ 冻结目录无任何被
-#      .gitignore 忽略的文件(硬失败)+ 记录 lstat 文件树清单作基线
+#   2. 运行前:git 状态干净(index+worktree+untracked)+ ignored 硬检查 +
+#      记录 lstat 文件树清单基线 + **基线后 ignored 复查**(关竞态窗口)
 #   3. 从冻结包逐字节重算
 #   4. 已存结果哈希与登记字节一致
-#   5. 运行后:git 状态 与 lstat 清单 **双重校验**,证明本次运行未改动冻结证据
+#   5. 运行后:git 状态、lstat 清单、**ignored 终检** 三重校验
 #
 # 设计要点(每条都来自被复现过的漏洞,不是假想):
 #   - git 相关检查一律 fail closed:不在 git 工作树内、或 git 命令本身失败,
@@ -137,12 +137,22 @@ if [ -n "$BEFORE_STATUS" ]; then
   exit 1
 fi
 
-# ---- 检查 2b:冻结目录不得存在任何被 .gitignore 忽略的文件(硬失败,fail closed) ----
-# 运行前后清单比对抓不住"运行前就存在的污染",所以这一条必须独立硬检查。
-if ! IGNORED_NOW=$(git -C "$ROOT" ls-files --others --ignored --exclude-standard -- "$EVIDENCE_PATH"); then
-  echo "[FAIL] git ls-files 执行失败,无法判定是否存在被忽略的污染文件(fail closed)。" >&2
-  exit 1
-fi
+# ignored 检查(fail closed),供运行前、基线后、运行后三处复用。
+# 三处缺一不可:单次检查与基线建立之间存在竞态窗口——污染若恰在 ls-files 返回空之后、
+# 基线清单生成之前出现,它会被纳入基线,前后清单一致、git status 又看不见,四道全漏。
+# 该竞态已被第六轮复核用 git wrapper 实际复现(退出码 0 放行)。
+# 关闭方式:基线建立后立即复查一次;运行结束后再终检一次——凡持续存在到任一检查点的
+# 污染必被其后最近的检查抓到。(出现后又自行消失的瞬态污染超出终态检查的能力范围。)
+list_ignored_or_die() {  # $1 = 阶段描述
+  if ! _IG=$(git -C "$ROOT" ls-files --others --ignored --exclude-standard -- "$EVIDENCE_PATH"); then
+    echo "[FAIL] git ls-files 执行失败($1),无法判定是否存在被忽略的污染文件(fail closed)。" >&2
+    exit 1
+  fi
+  printf '%s' "$_IG"
+}
+
+# ---- 检查 2b:运行前不得存在任何被 .gitignore 忽略的文件(硬失败) ----
+IGNORED_NOW=$(list_ignored_or_die "运行前")
 if [ -n "$IGNORED_NOW" ]; then
   echo "[FAIL] 冻结目录中存在被 .gitignore 忽略的文件,冻结证据已被污染:" >&2
   echo "$IGNORED_NOW" | sed 's/^/         /' >&2
@@ -156,7 +166,15 @@ BEFORE_MANIFEST=$(mktemp "${TMPDIR:-/tmp}/verify_fv35.XXXXXX")
 AFTER_MANIFEST=$(mktemp "${TMPDIR:-/tmp}/verify_fv35.XXXXXX")
 evidence_manifest >"$BEFORE_MANIFEST"
 
-echo "[PASS] frozen evidence clean before run（git 状态干净、无被忽略文件、lstat 基线已记录）"
+# ---- 检查 2d:基线建立后立即复查 ignored(关闭"检查完→建基线"竞态窗口) ----
+IGNORED_NOW=$(list_ignored_or_die "基线复查")
+if [ -n "$IGNORED_NOW" ]; then
+  echo "[FAIL] 基线建立后复查发现被 .gitignore 忽略的污染文件(出现在检查与基线的间隙):" >&2
+  echo "$IGNORED_NOW" | sed 's/^/         /' >&2
+  exit 1
+fi
+
+echo "[PASS] frozen evidence clean before run（git 状态干净、ignored 双查通过、lstat 基线已记录）"
 
 # ---- 检查 3:逐字节重算 ----
 RECOMPUTED=0
@@ -208,6 +226,14 @@ if ! diff -q "$BEFORE_MANIFEST" "$AFTER_MANIFEST" >/dev/null 2>&1; then
   POST_STATUS=1
   echo "[FAIL] 本次运行改动了冻结证据 $EVIDENCE_PATH(lstat 文件树清单不一致):" >&2
   diff "$BEFORE_MANIFEST" "$AFTER_MANIFEST" | sed 's/^/       /' >&2
+fi
+# ignored 终检:清单比对只能发现"基线之后出现"的污染;若污染在竞态窗口混入基线,
+# 前后清单一致——只有对终态直接再查 ignored 才能抓到。
+IGNORED_END=$(list_ignored_or_die "运行后")
+if [ -n "$IGNORED_END" ]; then
+  POST_STATUS=1
+  echo "[FAIL] 运行后冻结目录中存在被 .gitignore 忽略的文件(无论何时混入,终态即污染):" >&2
+  echo "$IGNORED_END" | sed 's/^/       /' >&2
 fi
 if [ "$POST_STATUS" -ne 0 ] && [ "$AGG_STATUS" -ne 0 ]; then
   echo "       ⚠ 重算是失败的,却仍留下了改动 —— 冻结包可能被写脏,请人工核对后再继续。" >&2

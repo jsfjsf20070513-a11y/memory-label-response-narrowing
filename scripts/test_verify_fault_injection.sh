@@ -8,7 +8,10 @@
 #      漏判 symlink 与 mode 变化;⑤污染路径泄漏临时文件;
 #   R5:⑥"TMPDIR 必须为空"在 macOS 恒定误报——Apple Git 触发 xcrun 在空 TMPDIR
 #      里写 xcrun_db,那不是校验器的泄漏;⑦"真实证据零接触"只靠 git status 证明,
-#      而 git status 恰恰看不见 ignored 文件,守卫自身带着被修的盲区。
+#      而 git status 恰恰看不见 ignored 文件,守卫自身带着被修的盲区;
+#   R6:⑧单次 ignored 检查与 lstat 基线之间有竞态窗口——污染恰在 ls-files 返回空后、
+#      建基线前出现,会混入基线,前后清单一致、git status 看不见,退出码 0 放行
+#      (复核者用 git wrapper 精确复现)。修法:基线后复查 + 运行后终检。
 # 本测试对每一条都固化一个断言,并遵守两条纪律:
 #   1. **一切注入都发生在 mktemp -d 沙箱里的仓库副本上,真实冻结目录零接触**
 #      (对真实仓库只做只读的 git status,首尾各一次,证明未被本测试改动)。
@@ -92,8 +95,9 @@ cat > "$REPO/$PKG_REL/analysis_v2.py" <<'PYEOF'
 # 故障注入桩:替代冻结包 aggregate,行为由 FI_AGG_MODE 控制。
 #   drift(默认) 只打印一行纯版本漂移错误后退出 1;
 #   symlink     先在冻结包内留下一个未跟踪 symlink,再按 drift 退出;
-#   modechange  先给 core.py 加执行位,再按 drift 退出。
-# 后两种模拟"aggregate 中途失败并弄脏冻结目录",校验脚本必须抓到。
+#   modechange  先给 core.py 加执行位,再按 drift 退出;
+#   ignoredfile 先在冻结包内写一个被 .gitignore 忽略的 .tmp,再按 drift 退出。
+# 后三种模拟"aggregate 中途失败并弄脏冻结目录",校验脚本必须抓到。
 import os, stat, sys
 mode = os.environ.get("FI_AGG_MODE", "drift")
 here = os.path.dirname(os.path.abspath(__file__))
@@ -102,6 +106,9 @@ if mode == "symlink":
 elif mode == "modechange":
     p = os.path.join(here, "core.py")
     os.chmod(p, os.stat(p).st_mode | stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH)
+elif mode == "ignoredfile":
+    with open(os.path.join(here, "fi_midrun_pollution.tmp"), "w") as fh:
+        fh.write("mid-run pollution")
 print("开跑登记的 CLI 版本与现场不符：{'claude_cli_version': 'fi-stub', 'codex_cli_version': 'fi-stub'}", file=sys.stderr)
 sys.exit(1)
 PYEOF
@@ -200,7 +207,51 @@ fi
 chmod 644 "$REPO/$PKG_REL/core.py"
 AGG_MODE=drift
 
-# ---- 断言 6:无 .git 的归档副本必须 fail closed,不得宣称"干净" ----
+# ---- 断言 6(第六轮竞态,按复核者手法用 git shim 复现):----
+# shim 在第一次 ls-files --ignored 返回空之后立刻注入污染文件——即"检查完→建基线"
+# 窗口。修复后,基线后的 ignored 复查必须以精确原因失败;修复前这里退出码 0 放行。
+SHIMDIR="$SANDBOX/gitshim"
+mkdir -p "$SHIMDIR"
+REAL_GIT=$(command -v git)
+RACE_MARK="$SANDBOX/race_done"
+RACE_FILE="$REPO/$PKG_REL/fi_race_pollution.tmp"
+cat > "$SHIMDIR/git" <<SHIMEOF
+#!/bin/sh
+case "\$*" in
+  *"ls-files --others --ignored"*)
+    "$REAL_GIT" "\$@"; rc=\$?
+    if [ ! -f "$RACE_MARK" ]; then
+      : >"$RACE_MARK"
+      printf 'race pollution\n' >"$RACE_FILE"
+    fi
+    exit \$rc ;;
+  *) exec "$REAL_GIT" "\$@" ;;
+esac
+SHIMEOF
+chmod +x "$SHIMDIR/git"
+if OUT=$(cd "$REPO" && PATH="$SHIMDIR:$PATH" FI_AGG_MODE=drift \
+    sh scripts/verify_formal_v3_5.sh --allow-version-drift 2>&1); then RC=0; else RC=$?; fi
+if [ "$RC" -ne 0 ] && printf '%s' "$OUT" | grep -q "基线建立后复查发现"; then
+  ok "断言 6:竞态注入(ls-files 返回后立刻污染)→ 被基线后复查以精确原因拒绝"
+else
+  bad "断言 6:竞态窗口未被关闭(rc=$RC)"
+  printf '%s\n' "$OUT" | sed 's/^/    /' >&2
+fi
+rm -f "$RACE_FILE" "$RACE_MARK"
+
+# ---- 断言 7:aggregate 运行中写入被忽略的 .tmp → 运行后 ignored 终检必须抓到 ----
+AGG_MODE=ignoredfile
+run_verifier --allow-version-drift
+if [ "$RC" -ne 0 ] && printf '%s' "$OUT" | grep -q "运行后冻结目录中存在被 .gitignore 忽略的文件"; then
+  ok "断言 7:运行中写入 ignored 文件 → 被运行后终检以精确原因拒绝"
+else
+  bad "断言 7:运行中的 ignored 污染未被终检抓到(rc=$RC)"
+  printf '%s\n' "$OUT" | sed 's/^/    /' >&2
+fi
+rm -f "$REPO/$PKG_REL/fi_midrun_pollution.tmp"
+AGG_MODE=drift
+
+# ---- 断言 8:无 .git 的归档副本必须 fail closed,不得宣称"干净" ----
 NOGIT="$SANDBOX/nogit"
 mkdir -p "$NOGIT"
 cp -R "$REPO/." "$NOGIT/"
@@ -208,30 +259,30 @@ rm -rf "$NOGIT/.git"
 printf 'fault injection canary\n' >"$NOGIT/$PKG_REL/fi_polluted.tmp"
 if OUT=$(cd "$NOGIT" && sh scripts/verify_formal_v3_5.sh --allow-version-drift 2>&1); then RC=0; else RC=$?; fi
 if [ "$RC" -ne 0 ] && printf '%s' "$OUT" | grep -q "$NOGIT_MSG"; then
-  ok "断言 6:无 .git 副本 → fail closed,明确报\"不在 git 工作树内\""
+  ok "断言 8:无 .git 副本 → fail closed,明确报\"不在 git 工作树内\""
 else
-  bad "断言 6:无 .git 副本未 fail closed(rc=$RC)"
+  bad "断言 8:无 .git 副本未 fail closed(rc=$RC)"
   printf '%s\n' "$OUT" | sed 's/^/    /' >&2
 fi
 
-# ---- 断言 7a(守卫自检):零接触守卫必须能看见 ignored 文件 ----
+# ---- 断言 9a(守卫自检):零接触守卫必须能看见 ignored 文件 ----
 # 在沙箱里验证托底机制本身没有盲区:放一个 ignored 文件,清单必须变化。
 SELFCHK_BEFORE=$(tree_manifest "$REPO/evidence")
 printf 'guard self check\n' >"$REPO/$PKG_REL/fi_guard_check.tmp"
 SELFCHK_AFTER=$(tree_manifest "$REPO/evidence")
 rm -f "$REPO/$PKG_REL/fi_guard_check.tmp"
 if [ "$SELFCHK_BEFORE" != "$SELFCHK_AFTER" ]; then
-  ok "断言 7a:零接触守卫(lstat 清单)能看见 ignored 文件,自身无盲区"
+  ok "断言 9a:零接触守卫(lstat 清单)能看见 ignored 文件,自身无盲区"
 else
-  bad "断言 7a:守卫看不见 ignored 文件 —— 断言 7 的"零接触"证明无效!"
+  bad "断言 9a:守卫看不见 ignored 文件 —— 断言 7 的"零接触"证明无效!"
 fi
 
-# ---- 断言 7b:真实仓库冻结证据全程未被本测试触碰(lstat 清单托底) ----
+# ---- 断言 9b:真实仓库冻结证据全程未被本测试触碰(lstat 清单托底) ----
 REAL_AFTER=$(tree_manifest "$ROOT/evidence")
 if [ "$REAL_BEFORE" = "$REAL_AFTER" ]; then
-  ok "断言 7b:真实 evidence/ 的 lstat 清单首尾一致(含 ignored/symlink/mode),本测试零接触"
+  ok "断言 9b:真实 evidence/ 的 lstat 清单首尾一致(含 ignored/symlink/mode),本测试零接触"
 else
-  bad "断言 7b:真实 evidence/ 发生变化,请立即人工核对!"
+  bad "断言 9b:真实 evidence/ 发生变化,请立即人工核对!"
   printf '%s\n' "$REAL_AFTER" > "$SANDBOX/real_after.txt"
   printf '%s\n' "$REAL_BEFORE" > "$SANDBOX/real_before.txt"
   diff "$SANDBOX/real_before.txt" "$SANDBOX/real_after.txt" | sed 's/^/    /' >&2 || true
@@ -242,4 +293,4 @@ if [ "$FAILED" -ne 0 ]; then
   echo "[FAIL] 故障注入回归测试未通过" >&2
   exit 1
 fi
-echo "[PASS] 故障注入回归测试通过(9 项断言;注入全部在隔离沙箱,真实证据由 lstat 清单确证零接触)"
+echo "[PASS] 故障注入回归测试通过(11 项断言;注入全部在隔离沙箱,真实证据由 lstat 清单确证零接触)"
