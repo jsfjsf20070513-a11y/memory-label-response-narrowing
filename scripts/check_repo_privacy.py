@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import hashlib
+import json
 import re
 from pathlib import Path
 
@@ -30,6 +32,81 @@ FORBIDDEN_EXTRA_SUFFIXES = {".tsv", ".7z"}
 # 规则:HEAD 的作者与提交者邮箱必须是化名(allowlist 后缀),否则 FAIL——止住增量;
 # 历史中已存在的非化名邮箱只 WARN 计数(存量处理走脱敏镜像策略,见披露登记 E4)。
 PSEUDONYM_EMAIL_SUFFIXES = ("users.noreply.github.com", "test.invalid")
+LITERATURE_MANIFEST = ROOT / "literature/metadata/download_manifest.json"
+REDISTRIBUTABLE_PDF_LICENSES = {
+    "CC-BY-3.0",
+    "CC-BY-4.0",
+    "CC-BY-NC-ND-4.0",
+    "CC-BY-NC-SA-4.0",
+}
+
+
+def file_sha256(path: Path) -> str:
+    hasher = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            hasher.update(chunk)
+    return hasher.hexdigest()
+
+
+def licensed_literature_pdfs(failures: list[str]) -> set[Path]:
+    """Return a fail-closed allowlist for licensed, manifest-pinned PDFs."""
+    if not LITERATURE_MANIFEST.exists():
+        return set()
+    try:
+        manifest = json.loads(LITERATURE_MANIFEST.read_text(encoding="utf-8"))
+    except Exception as exc:
+        failures.append(f"literature manifest cannot be parsed: {exc}")
+        return set()
+    if not isinstance(manifest, list):
+        failures.append("literature manifest must be a JSON list")
+        return set()
+
+    allowed: set[Path] = set()
+    for item in manifest:
+        if item.get("download_status") != "downloaded":
+            continue
+        local_path = item.get("local_pdf_path")
+        if not isinstance(local_path, str):
+            failures.append("downloaded literature item lacks local_pdf_path")
+            continue
+        relative = Path(local_path)
+        path = (ROOT / relative).resolve()
+        if (
+            relative.is_absolute()
+            or relative.parent != Path("literature/papers")
+            or relative.suffix.lower() != ".pdf"
+            or path.parent != (ROOT / "literature/papers").resolve()
+        ):
+            failures.append(f"invalid literature PDF path in manifest: {local_path}")
+            continue
+        if item.get("redistribution_status") != "allowed":
+            failures.append(f"literature PDF is not marked redistributable: {local_path}")
+            continue
+        if item.get("license") not in REDISTRIBUTABLE_PDF_LICENSES:
+            failures.append(f"literature PDF has unapproved license: {local_path}")
+            continue
+        if not item.get("license_evidence_url"):
+            failures.append(f"literature PDF lacks license evidence: {local_path}")
+            continue
+        if not path.is_file():
+            failures.append(f"manifest-listed literature PDF is missing: {local_path}")
+            continue
+        if path.stat().st_size != item.get("byte_size"):
+            failures.append(f"literature PDF size mismatch: {local_path}")
+            continue
+        if file_sha256(path) != item.get("sha256"):
+            failures.append(f"literature PDF hash mismatch: {local_path}")
+            continue
+        with path.open("rb") as handle:
+            if handle.read(5) != b"%PDF-":
+                failures.append(f"manifest-listed file is not a PDF: {local_path}")
+                continue
+        if path in allowed:
+            failures.append(f"duplicate literature PDF path in manifest: {local_path}")
+            continue
+        allowed.add(path)
+    return allowed
 
 
 def check_git_identity(failures: list) -> None:
@@ -72,10 +149,15 @@ def iter_files():
 
 
 def main() -> None:
-    failures = []
+    failures: list[str] = []
+    literature_pdf_allowlist = licensed_literature_pdfs(failures)
     for path in iter_files():
         relative = path.relative_to(ROOT)
-        if path.suffix.lower() in FORBIDDEN_SUFFIXES | FORBIDDEN_EXTRA_SUFFIXES:
+        is_licensed_literature_pdf = path.resolve() in literature_pdf_allowlist
+        if (
+            path.suffix.lower() in FORBIDDEN_SUFFIXES | FORBIDDEN_EXTRA_SUFFIXES
+            and not is_licensed_literature_pdf
+        ):
             failures.append(f"forbidden suffix: {relative}")
         if any(marker in path.name for marker in FORBIDDEN_FILENAME_PATTERNS):
             failures.append(f"forbidden chat-export filename: {relative}")
@@ -83,8 +165,12 @@ def main() -> None:
             failures.append(f"forbidden directory: {relative}")
         if any(fragment in path.name for fragment in FORBIDDEN_NAME_FRAGMENTS):
             failures.append(f"forbidden private filename: {relative}")
-        if path.stat().st_size > 20 * 1024 * 1024:
+        if path.stat().st_size > 20 * 1024 * 1024 and not is_licensed_literature_pdf:
             failures.append(f"file larger than 20 MiB: {relative}")
+        # PDF binary streams can coincidentally match PII byte patterns. Only
+        # manifest-pinned, licensed, hash-verified PDFs bypass content scanning.
+        if is_licensed_literature_pdf:
+            continue
         data = path.read_bytes()
         for label, pattern in CONTENT_PATTERNS.items():
             if pattern.search(data):

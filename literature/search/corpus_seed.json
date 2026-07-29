@@ -1,0 +1,397 @@
+[
+  {
+    "source": "acl_anthology",
+    "id": "2026.acl-long.723",
+    "role": ["closest", "human_evaluation"],
+    "in_final_review": true,
+    "screening_decision": "include"
+  },
+  {
+    "source": "acl_anthology",
+    "id": "2024.emnlp-main.382",
+    "role": ["closest", "human_evaluation"],
+    "in_final_review": true,
+    "screening_decision": "include"
+  },
+  {
+    "source": "acl_anthology",
+    "id": "2026.eacl-long.348",
+    "role": ["closest", "human_evaluation"],
+    "in_final_review": true,
+    "screening_decision": "include"
+  },
+  {
+    "source": "acl_anthology",
+    "id": "2026.acl-long.2079",
+    "role": ["closest", "persona_cues"],
+    "in_final_review": true,
+    "screening_decision": "include"
+  },
+  {
+    "source": "acl_anthology",
+    "id": "2026.acl-short.43",
+    "role": ["closest", "irrelevant_background"],
+    "in_final_review": true,
+    "screening_decision": "include"
+  },
+  {
+    "source": "acl_anthology",
+    "id": "2025.findings-acl.1254",
+    "role": ["closest", "identity_cues"],
+    "in_final_review": true,
+    "screening_decision": "include"
+  },
+  {
+    "source": "acl_anthology",
+    "id": "2022.findings-emnlp.66",
+    "role": ["measurement", "semantic_diversity"],
+    "in_final_review": true,
+    "screening_decision": "include"
+  },
+  {
+    "source": "acl_anthology",
+    "id": "2024.emnlp-main.306",
+    "role": ["measurement", "intervention", "perspective_coverage"],
+    "in_final_review": true,
+    "screening_decision": "include"
+  },
+  {
+    "source": "acl_anthology",
+    "id": "2025.emnlp-main.1721",
+    "role": ["measurement", "semantic_diversity"],
+    "in_final_review": true,
+    "screening_decision": "include"
+  },
+  {
+    "source": "acl_anthology",
+    "id": "2025.tacl-1.41",
+    "role": ["measurement", "human_evaluation"],
+    "in_final_review": true,
+    "screening_decision": "include"
+  },
+  {
+    "source": "acl_anthology",
+    "id": "2023.emnlp-main.676",
+    "role": ["evaluation_validity", "llm_as_judge"],
+    "in_final_review": true,
+    "screening_decision": "include"
+  },
+  {
+    "source": "acl_anthology",
+    "id": "C18-1281",
+    "role": ["evaluation_validity", "human_agreement"],
+    "in_final_review": true,
+    "screening_decision": "include"
+  },
+  {
+    "source": "acl_anthology",
+    "id": "2025.coling-industry.29",
+    "role": ["intervention", "memory_control"],
+    "in_final_review": true,
+    "screening_decision": "include"
+  },
+  {
+    "source": "acl_anthology",
+    "id": "2026.acl-long.884",
+    "role": ["intervention", "identity_robustness"],
+    "in_final_review": true,
+    "screening_decision": "include"
+  },
+  {
+    "source": "acl_anthology",
+    "id": "2024.acl-long.399",
+    "role": ["background", "personalization_benchmark"],
+    "in_final_review": false,
+    "screening_decision": "background_only"
+  },
+  {
+    "source": "acl_anthology",
+    "id": "2025.findings-emnlp.1261",
+    "role": ["background", "persona_cues"],
+    "in_final_review": false,
+    "screening_decision": "background_only"
+  },
+  {
+    "source": "acl_anthology",
+    "id": "2025.findings-emnlp.916",
+    "role": ["background", "personalization_evaluation"],
+    "in_final_review": false,
+    "screening_decision": "background_only"
+  },
+  {
+    "source": "acl_anthology",
+    "id": "2025.findings-emnlp.923",
+    "role": ["background", "personalized_dialogue"],
+    "in_final_review": false,
+    "screening_decision": "background_only"
+  },
+  {
+    "source": "acl_anthology",
+    "id": "2026.findings-acl.159",
+    "role": ["background", "proactive_personalization"],
+    "in_final_review": false,
+    "screening_decision": "background_only"
+  },
+  {
+    "source": "acl_anthology",
+    "id": "2025.findings-acl.927",
+    "role": ["background", "persona_evaluation"],
+    "in_final_review": false,
+    "screening_decision": "background_only"
+  },
+  {
+    "source": "acl_anthology",
+    "id": "2025.findings-acl.277",
+    "role": ["background", "survey"],
+    "in_final_review": false,
+    "screening_decision": "background_only"
+  },
+  {
+    "source": "acl_anthology",
+    "id": "2024.emnlp-main.737",
+    "role": ["background", "personalized_alignment"],
+    "in_final_review": false,
+    "screening_decision": "background_only"
+  },
+  {
+    "source": "acl_anthology",
+    "id": "2025.coling-main.752",
+    "role": ["background", "persona_testbed"],
+    "in_final_review": false,
+    "screening_decision": "background_only"
+  },
+  {
+    "source": "acl_anthology",
+    "id": "2024.emnlp-main.1110",
+    "role": ["background", "virtual_personas"],
+    "in_final_review": false,
+    "screening_decision": "background_only"
+  },
+  {
+    "source": "acl_anthology",
+    "id": "2021.naacl-main.157",
+    "role": ["background", "personalized_response_generation"],
+    "in_final_review": false,
+    "screening_decision": "background_only"
+  },
+  {
+    "source": "acl_anthology",
+    "id": "2025.naacl-long.598",
+    "role": ["background", "few_shot_personalization"],
+    "in_final_review": false,
+    "screening_decision": "background_only"
+  },
+  {
+    "source": "acl_anthology",
+    "id": "2022.naacl-srw.10",
+    "role": ["background", "diverse_generation"],
+    "in_final_review": false,
+    "screening_decision": "background_only"
+  },
+  {
+    "source": "arxiv",
+    "id": "2606.06614",
+    "role": ["closest", "human_evaluation"],
+    "in_final_review": true,
+    "screening_decision": "include"
+  },
+  {
+    "source": "arxiv",
+    "id": "2607.02374",
+    "role": ["closest", "reasoning_drift"],
+    "in_final_review": true,
+    "screening_decision": "include"
+  },
+  {
+    "source": "arxiv",
+    "id": "2601.16621",
+    "role": ["closest", "intervention", "filter_bubble"],
+    "in_final_review": true,
+    "screening_decision": "include",
+    "code_url": "https://github.com/XueyangFeng/RPEval"
+  },
+  {
+    "source": "arxiv",
+    "id": "2601.13722",
+    "role": ["closest", "intervention", "over_personalization"],
+    "in_final_review": true,
+    "screening_decision": "include"
+  },
+  {
+    "source": "arxiv",
+    "id": "2509.02910",
+    "role": ["closest", "choice_narrowing"],
+    "in_final_review": true,
+    "screening_decision": "include"
+  },
+  {
+    "source": "arxiv",
+    "id": "2604.24698",
+    "role": ["closest", "persona_homogenization"],
+    "in_final_review": true,
+    "screening_decision": "include"
+  },
+  {
+    "source": "arxiv",
+    "id": "2603.04409",
+    "role": ["measurement", "human_evaluation"],
+    "in_final_review": true,
+    "screening_decision": "include",
+    "venue_override": "ICLR 2026",
+    "landing_url_override": "https://openreview.net/forum?id=kVaE2kYjtV"
+  },
+  {
+    "source": "arxiv",
+    "id": "2306.05685",
+    "role": ["evaluation_validity", "llm_as_judge"],
+    "in_final_review": true,
+    "screening_decision": "include",
+    "venue_override": "NeurIPS 2023 Datasets and Benchmarks",
+    "doi_override": "10.52202/075280-2020",
+    "code_url": "https://github.com/lm-sys/FastChat/tree/main/fastchat/llm_judge"
+  },
+  {
+    "source": "arxiv",
+    "id": "2604.14473",
+    "role": ["intervention", "memory_selection"],
+    "in_final_review": true,
+    "screening_decision": "include",
+    "code_url": "https://github.com/jfisher52/Response_Utility_Optimized_Memory_Selection"
+  },
+  {
+    "source": "arxiv",
+    "id": "2403.14720",
+    "role": ["intervention", "input_boundary"],
+    "in_final_review": true,
+    "screening_decision": "include"
+  },
+  {
+    "source": "arxiv",
+    "id": "2410.10813",
+    "role": ["background", "long_term_memory"],
+    "in_final_review": false,
+    "screening_decision": "background_only",
+    "year_override": 2025,
+    "venue_override": "ICLR 2025",
+    "code_url": "https://github.com/xiaowu0162/LongMemEval"
+  },
+  {
+    "source": "arxiv",
+    "id": "2404.03302",
+    "role": ["background", "irrelevant_input"],
+    "in_final_review": false,
+    "screening_decision": "background_only",
+    "venue_override": "COLM 2024",
+    "code_url": "https://github.com/Di-viner/LLM-Robustness-to-Irrelevant-Information"
+  },
+  {
+    "source": "arxiv",
+    "id": "2605.25535",
+    "role": ["background", "memory_selection"],
+    "in_final_review": false,
+    "screening_decision": "background_only"
+  },
+  {
+    "source": "arxiv",
+    "id": "2606.25361",
+    "role": ["background", "memory_roles"],
+    "in_final_review": false,
+    "screening_decision": "background_only"
+  },
+  {
+    "source": "arxiv",
+    "id": "2607.01071",
+    "role": ["intervention", "memory_sycophancy"],
+    "in_final_review": false,
+    "screening_decision": "background_only",
+    "code_url": "https://github.com/XMUDeepLIT/MemSyco-Bench"
+  },
+  {
+    "source": "arxiv",
+    "id": "2606.10949",
+    "role": ["intervention", "memory_sycophancy"],
+    "in_final_review": false,
+    "screening_decision": "background_only"
+  },
+  {
+    "source": "arxiv",
+    "id": "2601.22547",
+    "role": ["background", "filter_bubble"],
+    "in_final_review": false,
+    "screening_decision": "background_only"
+  },
+  {
+    "source": "arxiv",
+    "id": "2607.15284",
+    "role": ["background", "filter_bubble", "user_control"],
+    "in_final_review": false,
+    "screening_decision": "background_only",
+    "year_override": 2024,
+    "publication_date_override": "2024",
+    "venue_override": "ICWSM 2024",
+    "doi_override": "10.1609/icwsm.v18i1.31364"
+  },
+  {
+    "source": "arxiv",
+    "id": "2501.00273",
+    "role": ["background", "semantic_diversity"],
+    "in_final_review": false,
+    "screening_decision": "background_only",
+    "year_override": 2025,
+    "publication_date_override": "2025-08-28",
+    "venue_override": "Proceedings of the National Academy of Sciences 122(35)",
+    "doi_override": "10.1073/pnas.2504966122",
+    "landing_url_override": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12415252/",
+    "pdf_url_override": "https://europepmc.org/articles/PMC12415252?pdf=render",
+    "license_override": "CC-BY-NC-ND-4.0",
+    "license_evidence_url_override": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12415252/",
+    "redistribution_status_override": "allowed",
+    "redistribution_note_override": "The version of record is distributed under CC BY-NC-ND 4.0. This repository stores the unmodified PDF for non-commercial research use.",
+    "source_platforms_add": ["pubmed", "pubmed_central", "europe_pmc"],
+    "pmcid_override": "PMC12415252",
+    "download_source_override": "europe_pmc"
+  },
+  {
+    "source": "arxiv",
+    "id": "2501.19361",
+    "role": ["background", "semantic_diversity"],
+    "in_final_review": false,
+    "screening_decision": "background_only"
+  },
+  {
+    "source": "arxiv",
+    "id": "2603.19519",
+    "role": ["intervention", "semantic_diversity"],
+    "in_final_review": false,
+    "screening_decision": "background_only"
+  },
+  {
+    "source": "pmlr",
+    "id": "v239/lazovich23a",
+    "role": ["closest", "filter_bubble"],
+    "in_final_review": true,
+    "screening_decision": "include"
+  },
+  {
+    "source": "neurips",
+    "id": "2024/7f1f0218e45f5414c79c0679633e47bc",
+    "role": ["evaluation_validity", "llm_as_judge"],
+    "in_final_review": true,
+    "screening_decision": "include"
+  },
+  {
+    "source": "crossref_journal",
+    "id": "10.5210/dad.2025.203",
+    "role": ["background", "long_term_memory", "human_evaluation"],
+    "in_final_review": false,
+    "screening_decision": "background_only",
+    "arxiv_id": "2409.12524",
+    "code_url": "https://github.com/ryuichi-sumida/LUFY",
+    "landing_url_override": "https://journals.uic.edu/ojs/index.php/dad/article/view/14138",
+    "pdf_url_override": "https://journals.uic.edu/ojs/index.php/dad/article/download/14138/12125/93254",
+    "license_override": "CC-BY-3.0",
+    "license_evidence_url_override": "https://www.dialogue-and-discourse.org/about.shtml",
+    "redistribution_status_override": "allowed",
+    "redistribution_note_override": "Dialogue & Discourse states that its articles are distributed under the Creative Commons Attribution 3.0 license."
+  }
+]

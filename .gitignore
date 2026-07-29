@@ -16,6 +16,8 @@ venv/
 *.zip
 *.jsonl
 *.pdf
+# 文献包只允许提交经逐篇核实、在 manifest 中登记许可的原始 PDF。
+!literature/papers/*.pdf
 raw_chat_export/
 recovery/
 tmp/

@@ -1,0 +1,5 @@
+literature/papers/*.pdf binary
+literature/search/*.csv text eol=lf
+# Markdown 的两个尾随空格是有意保留的硬换行。
+literature/review.md whitespace=-trailing-space
+literature/search/search_protocol.md whitespace=-trailing-space
