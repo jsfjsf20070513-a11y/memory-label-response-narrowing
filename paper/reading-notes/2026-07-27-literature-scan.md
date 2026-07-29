@@ -15,7 +15,7 @@
 
 ### 本项目的冻结边界
 
-本项目当前的**观察**只适用于：单一 Claude Opus 4.6；主检验仅 `S2`、`S10′` 两题，各独立生成 6 次，共 12 个主块；单一背景措辞；Claude Max / Claude Code CLI 通道，温度、最大输出等订阅层参数不可控；全部编码由 AI 完成；三名人类判官只做关账后的校准。人类联合分数与冻结 AI 联合分数逐块一致 10/12，状态为 `calibration_supported`，但回答可能显露数学身份，因此不是完全双盲，也不是独立复制。证据见 [`文献检索执行规格 §背景`](../../docs/next-step/2026-07-27-文献检索执行规格-v1.md) 和 [`人类校验关账报告`](../../docs/human-validation/10_人类校验关账报告_2026-07-24.md)。
+本项目当前的**观察**只适用于：单一 Claude Opus 4.6；主检验仅 `S2`、`S10′` 两题，各独立生成 6 次，共 12 个主块；`S8′` 是 `PILOT_ONLY` 线索的 4 块重测，未过 `3/4` 门槛，不能和主结果混写；背景注入也只有一种逐字措辞，即 `已知用户背景：用户是数学系本科生。`；Claude Max / Claude Code CLI 通道的温度、最大输出等订阅层参数不可控；全部编码由 AI 完成；三名人类判官只做关账后的校准。人类联合分数与冻结 AI 联合分数逐块一致 10/12，状态为 `calibration_supported`，但回答可能显露数学身份，因此不是完全双盲，也不是独立复制。证据见 [`文献检索执行规格 §背景`](../../docs/next-step/2026-07-27-文献检索执行规格-v1.md) 和 [`人类校验关账报告`](../../docs/human-validation/10_人类校验关账报告_2026-07-24.md)。
 
 本项目当前的**解释边界**是：冻结实验观察到回答组织方向发生变化，但没有证明模型内部机制，也没有检验“更数学”对数学本科生究竟更有帮助还是更受限制。这个价值问题仍是下一步问题，不是已经得到的结果。
 
@@ -278,12 +278,12 @@ OpenReview 的完整题名查询 `Response-Aware User Memory Selection` 返回�
 
 ## 待核清单（【仅检索命中】）
 
-下表论文只在检索结果或元数据中见到，本轮没有打开正文，因此没有用它们支持上面的实质结论。
+下表论文只在检索结果、API 搜索记录或 ACL XML 查询命中中见到；本轮没有打开它们的论文落地页或正文，因此统一标为 `【仅检索命中】`，也没有用它们支持上面的实质结论。
 
 | 论文 | 链接 | 为何没打开 |
 |---|---|---|
 | The Chameleon’s Limit | [arXiv:2604.24698](https://arxiv.org/abs/2604.24698) | 群体 persona 多样性与本项目相邻，但优先级低于已达到 4/5 的 MirrorStories |
-| Unpacking Human Preference for LLMs: Demographically Aware Evaluation with the HUMAINE Framework | [OpenReview](https://openreview.net/forum?id=kVaE2kYjtV) | OpenReview 网页触发验证；本轮只核到元数据 |
+| Unpacking Human Preference for LLMs: Demographically Aware Evaluation with the HUMAINE Framework | [OpenReview](https://openreview.net/forum?id=kVaE2kYjtV) | 只在 OpenReview API 搜索记录中见到；论文网页触发验证，未打开落地页 |
 | LMUnit: Fine-grained Evaluation with Natural Language Unit Tests | [arXiv:2412.13091](https://arxiv.org/abs/2412.13091) | 可能补充细粒度评价方法，但不是任务 3 三问的直接证据 |
 | Position: What Are We Measuring? Rethinking Evaluation in Natural Language Generation | [ACL](https://aclanthology.org/2026.gem-main.79/) | 可能补充构念效度术语；本轮先使用已打开的 MetricEval |
 | The Task Shield | [arXiv:2412.16682](https://arxiv.org/abs/2412.16682) | 可能提供 Spotlighting 的条件性反证，但未完成正文定位 |
