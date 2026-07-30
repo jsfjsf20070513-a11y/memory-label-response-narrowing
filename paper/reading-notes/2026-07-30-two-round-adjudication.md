@@ -27,7 +27,7 @@
 
 反向：lingyun 轮的最强候选 MirrorStories 不在 Claude 轮的任何候选或待核清单中。两轮唯一实质重叠是规格起点文献（如 Re-Centering Humans）。
 
-**复算锚点（不依赖已关闭 PR 的可变状态，无需恢复任何 PDF 提交）**：上述检索针对 PR #9 关闭时的 head `7463376aed50b99270941d4a625519186eb0f19f`；其语料清单 `literature/metadata/papers.json` 的 SHA-256 = `1a93cae57dca9bc2c397d3501a693e447bbbc5daeecaf207cc5c2e57fd81d83a`，复算方式 `git show 7463376a…:literature/metadata/papers.json | shasum -a 256`；候选缺席检查方式 `git grep -l "<arXiv ID>" 7463376a…`。**合并顺序依赖**：本文件引用的 lingyun 轮报告在 PR #10 分支上；按复核意见，PR #10 应先进 base、本 PR 随后更新再合并，使 main 自身可复算两轮并集。
+**复算锚点（不依赖已关闭 PR 的可变状态，无需恢复任何 PDF 提交）**：上述检索针对 PR #9 关闭时的 head `7463376aed50b99270941d4a625519186eb0f19f`；其语料清单 `literature/metadata/papers.json` 的 SHA-256 = `1a93cae57dca9bc2c397d3501a693e447bbbc5daeecaf207cc5c2e57fd81d83a`，复算方式 `git show 7463376a…:literature/metadata/papers.json | shasum -a 256`；候选缺席检查方式 `git grep -l "<arXiv ID>" 7463376a…`。**合并顺序依赖（已解决，2026-07-30）**：PR #10 已合入 main（merge commit `7aa6aed`），lingyun 轮报告仓内路径为同目录 [`2026-07-27-literature-scan.md`](2026-07-27-literature-scan.md)；本 PR 分支已并入该 base，main 合入本 PR 后自身即可复算两轮并集。
 
 **解释**：检索源决定视野——lingyun 轮走 arXiv API / ACL 官方 XML / OpenReview / OpenAlex，Claude 轮以 Google WebSearch 为主。**两轮并集才是真实覆盖面**；任何单轮的"未检出"结论，其范围限定词都不可省略。这也是方法学发现：抢先权检查依赖检索方式，后续若再做定向检索，应保持多源。
 
