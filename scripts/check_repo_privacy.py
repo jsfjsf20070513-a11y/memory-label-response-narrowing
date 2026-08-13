@@ -65,7 +65,28 @@ def check_git_identity(failures: list) -> None:
 
 
 def iter_files():
-    for path in ROOT.rglob("*"):
+    """扫描范围 = 已追踪文件 + 未追踪且未被 .gitignore 忽略的文件。
+
+    2026-08-13 变更:_local/ 本地研究档案(原始 PDF、导出恢复件等,永不入库)迁入
+    工作树后,旧的 rglob 全树扫描令本守卫永久报红,报警疲劳会掩盖真实泄露。
+    新口径下,被忽略且未追踪的文件不做内容扫描——它们只能经 AGENTS.md 明令禁止的
+    `git add -f` 入库,而一旦被强行加入即成为已追踪文件,下次运行必被扫描
+    (回归测试 T4 固化此路径)。git 不可用时 fail closed,不静默退化。
+    """
+    import os
+    import subprocess
+    try:
+        listed = b"".join(
+            subprocess.run(
+                ["git", "-C", str(ROOT), "ls-files", "-z", *extra],
+                capture_output=True, check=True,
+            ).stdout
+            for extra in (["--cached"], ["--others", "--exclude-standard"])
+        )
+    except Exception as exc:
+        raise SystemExit(f"[FAIL] git file listing failed closed: {exc}")
+    for name in sorted({n for n in listed.split(b"\x00") if n}):
+        path = ROOT / os.fsdecode(name)
         if ".git" in path.parts or not path.is_file():
             continue
         yield path
